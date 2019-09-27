@@ -1,0 +1,37 @@
+// locais votação
+{
+    "_id" : ObjectId("5d8b934cc05d210e237b72a7"),
+    "NR_ZONA" : "158",
+    "NR_SECAO" : "78",
+    "CD_LOCAL" : "13",
+    "NR_LATITUDE" : "-22.738604",
+    "NR_LONGITUDE" : "-47.353618",
+    "DS_LOCAL" : "E.E. PROFª MARIA JOSE DE MATTOS GOBBO",
+    "DS_ENDERECO" : "R COELHO NETO, 650",
+    "NM_BAIRRO" : "VILA DAINESE",
+    "CD_BAIRRO" : "9",
+    "NM_CIDADE" : "AMERICANA"
+}
+
+{
+    "_id" : ObjectId("5d8b934cc05d210e237b72cc"),
+    "NR_ZONA" : "158",
+    "NR_SECAO" : "103",
+    "CD_LOCAL" : "16",
+    "NR_LATITUDE" : "-22.747544",
+    "NR_LONGITUDE" : "-47.355342",
+    "DS_LOCAL" : "E.E. PROFª OLYMPIA BARTH DE OLIVEIRA",
+    "DS_ENDERECO" : "R ITAPEMIRIM, 149",
+    "NM_BAIRRO" : "JARDIM IPIRANGA",
+    "CD_BAIRRO" : "3",
+    "NM_CIDADE" : "AMERICANA"
+}
+
+// patidos
+
+{
+    "Sigla" : "PRP",
+    "Nome" : "PARTIDO PROGRESSISTA DEMOCRÁTICO",
+    "Legenda" : "44",
+    "Espectro" : "CD"
+}

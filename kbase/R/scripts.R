@@ -1,4 +1,5 @@
-setwd('C:/Users/ricardo/Desktop/ds/datascience/kbase/R') # windows
+setwd('C:/Users/heavyrick/Desktop/datascience/kbase/R') # windows- pc
+#setwd('C:/Users/ricardo/Desktop/ds/datascience/kbase/R') # windows
 #setwd('/home/usuario/www/repositorios/datascience/kbase/R') # linux
 
 "
@@ -23,6 +24,8 @@ sqldf("SELECT * FROM df_partidos ORDER BY Legenda ASC")
 # Partidos e espectros políticos
 
 # 1) Qual a quantidade de votos por partido ?
+
+title_text = 'Eleições municipais 2016 | Americana: '
 
 " 
 Os votos ficam na base `df_secao_votacao_num` e devem ser juntados com a base `df_partidos`. Temos que retornar a quantidade de votos por 
@@ -51,7 +54,7 @@ chart_df1 +
   geom_bar(stat = "identity") + 
   scale_fill_grey(start = 0.65, end = 0.20) +
   coord_flip() + 
-  ggtitle('Votos por partido') + 
+  ggtitle(paste(title_text, 'Votos por partido')) + 
   xlab('Partidos') + 
   ylab('Qtde Votos') +
   theme(legend.position="none",
@@ -81,7 +84,7 @@ chart_df2 +
   geom_bar(stat = "identity") + 
   scale_fill_grey(start = 0.85, end = 0.20) +
   coord_flip() + 
-  ggtitle('Quantidade de candidatos que receberam votos por partido') + 
+  ggtitle(paste(title_text, 'Quantidade de candidatos que receberam votos por partido')) + 
   xlab('Partidos') + 
   ylab('Qtde Candidatos') +
   theme(legend.position="none",
@@ -94,6 +97,8 @@ com votos,
 "
 
 # 3) Qual a distribuição dos votos por espectro político?
+
+# Select dos dados
 
 df3 = sqldf("
       SELECT 
@@ -114,3 +119,19 @@ df3 = sqldf("
       HAVING SUM(v.QT_VOTOS) > 0
       ORDER BY Votos DESC
       ")
+
+# Feito a escala de cores manualmente pelo https://www.colorhexa.com
+
+chart_df3 <- ggplot(df3, aes(x = reorder(Espectro, ColorIdx), y = Votos, fill=as.factor(ColorIdx)))
+chart_df3 + 
+  geom_bar(width=0.7, stat = "identity") + 
+  #scale_fill_gradient(low = "red", high = "blue") +
+  scale_fill_manual(values = c("#990000", "#80001a", "#660033", "#4d004d", "#330066", "#1a0080", "#000099") ) +
+  ggtitle(paste(title_text,'Quantidade de votos por espectro político')) + 
+  xlab('Espectro') + 
+  ylab('Votos') +
+  theme(legend.position="none",
+        plot.title = element_text(size = 11, face='bold'), 
+        axis.title = element_text(size=12, color='black'))
+
+
