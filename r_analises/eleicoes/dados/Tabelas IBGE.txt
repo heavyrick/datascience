@@ -1,0 +1,18 @@
+Tabelas IBGE
+
+- Tabela 6579 
+População residente estimada
+https://sidra.ibge.gov.br/pesquisa/estimapop/tabelas
+https://sidra.ibge.gov.br/tabela/6579
+
+- Tabela 1309 
+População residente, por sexo, situação e localização da área
+https://sidra.ibge.gov.br/tabela/1309
+
+- Tabela 3107
+População residente, por situação do domicílio, sexo e grupos de idade - Sinopse
+https://sidra.ibge.gov.br/tabela/3107
+
+- Tabela 1973 
+Pessoas que frequentavam creche ou escola por nível de ensino, sexo e grupos de idade
+https://sidra.ibge.gov.br/tabela/1973
