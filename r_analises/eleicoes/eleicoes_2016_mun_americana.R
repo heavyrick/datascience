@@ -1,7 +1,8 @@
 #================================================================#
 # Definindo o ambiente
 
-ambiente = 'windowsPc'
+ambiente = 'appleMac'
+db_access <<- 'remote' # define o local de acesso aos dados, se remote, então acessa o atlasDB
 
 switch(ambiente, 
   windowsPc={
@@ -12,6 +13,9 @@ switch(ambiente,
   },
   linuxPC={
     setwd('/home/usuario/www/repositorios/datascience/kbase/R')
+  },
+  appleMac={
+    setwd('/Users/ricardoalmeida/ds/datascience/r_analises/eleicoes')
   }
 )
 

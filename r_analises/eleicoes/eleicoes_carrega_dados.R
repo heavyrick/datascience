@@ -29,7 +29,12 @@ Legenda
 Espectro
 "
 
-col_partidos <- mongo("partidos", url = "mongodb://localhost:27017/eleicoes")
+if(db_access == 'remote'){
+  col_partidos <- mongo(collection = "lista_partidos", db="eleicoes", url = "mongodb+srv://dbuser:Xk5Jp8n5rHaXmtM@cluster0-tpq89.mongodb.net/test?retryWrites=true&w=majority")  
+} else { # Local
+  col_partidos <- mongo("lista_partidos", url = "mongodb://localhost:27017/eleicoes") 
+}
+
 df_partidos = col_partidos$find ('{}')
 
 #================================================================#
@@ -49,7 +54,12 @@ IdBairro
 Cidade
 "
 
-col_locais_votacao <- mongo("locais_votacao", url = "mongodb://localhost:27017/eleicoes")
+if(db_access == 'remote'){
+  col_locais_votacao <- mongo(collection = "locais_votacao", db="eleicoes", url = "mongodb+srv://dbuser:Xk5Jp8n5rHaXmtM@cluster0-tpq89.mongodb.net/test?retryWrites=true&w=majority")  
+} else { # Local
+  col_locais_votacao <- mongo("locais_votacao", url = "mongodb://localhost:27017/eleicoes")
+}
+
 df_locais_votacao = col_locais_votacao$find ('{}')
 
 # Converter as colunas de latitude e longitude de valores `character` para `numeric`
@@ -80,7 +90,12 @@ NR_PARTIDO
 QT_VOTOS
 "
 
-col_secao_votacao_mun <- mongo("secao_votacao_mun", url = "mongodb://localhost:27017/eleicoes")
+if(db_access == 'remote'){
+  col_secao_votacao_mun <- mongo(collection = "secao_votacao_mun_americana_2016", db="eleicoes", url = "mongodb+srv://dbuser:Xk5Jp8n5rHaXmtM@cluster0-tpq89.mongodb.net/test?retryWrites=true&w=majority")  
+} else { # Local
+  col_secao_votacao_mun <- mongo("secao_votacao_mun", url = "mongodb://localhost:27017/eleicoes")
+}
+
 df_secao_votacao_mun = col_secao_votacao_mun$find ('{}')
 
 #================================================================#
@@ -119,7 +134,12 @@ e considerando os votos apenas para deputados estaduais e federais,
 e tirando os votos brancos e nulos (95,96)
 "
 
-col_secao_votacao_gerais <- mongo("secao_votacao_gerais", url = "mongodb://localhost:27017/eleicoes")
+if(db_access == 'remote'){
+  col_secao_votacao_gerais <- mongo(collection = "secao_votacao_gerais_2018", db="eleicoes", url = "mongodb+srv://dbuser:Xk5Jp8n5rHaXmtM@cluster0-tpq89.mongodb.net/test?retryWrites=true&w=majority")  
+} else { # Local
+  col_secao_votacao_gerais <- mongo("secao_votacao_gerais", url = "mongodb://localhost:27017/eleicoes")
+}
+
 df_secao_votacao_gerais = col_secao_votacao_gerais$find(
   query =  '{"NR_TURNO": "1", "CD_CARGO": { "$in": ["6", "7"]}, "NR_VOTAVEL": {"$nin": ["95", "96"]} }',
   fields = '{"NR_ZONA": "1", "NR_SECAO": "1", "CD_CARGO": "1", "DS_CARGO": "1", "NR_VOTAVEL": "1", "NR_PARTIDO": "1", "NM_VOTAVEL": "1", "QT_VOTOS": "1"}',
