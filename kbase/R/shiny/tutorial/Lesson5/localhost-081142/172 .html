@@ -1,0 +1,1325 @@
+<pre>slowQuery
+
+DATE: 06/November/2019 09:32:31 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 3.9401857852936 seconds
+    [query] => SELECT p.idprofile, p.name, p.is_enabled, p.idvpp, p.source, p.allow_modification, p.os, p.allow_unitAdminAccess, 
+                       p.categories, GROUP_CONCAT(u.idunit) as idunits,
+                      (SELECT count(*) FROM appinstall_app_profile aap WHERE aap.idprofile = p.idprofile AND appconfig_status = "NOK") as appconfig_invalid
+                FROM appinstall_profiles p LEFT JOIN appinstall_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND p.os = :os AND p.is_hidden = 0  AND p.allow_modification = 1 AND p.is_districtlevel = 0 AND p.source != "appstore"  AND p.source IN ("appstore","vpp","googleplay","apk") GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'appinstall_profiles',
+  'manager_install' => '1',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'source' => 'appstore,vpp,googleplay,apk',
+  'idprofiles' => '8,12,13,17,18,25,33,40,41,42,47,48,60,63',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'current_os' => 'mac',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) AppInstall::controller -> File: /Sites/web/mdm/classes/Controller.php (line 694)
+4) AppInstall::getProfiles -> File: /Sites/web/mdm/classes/profiles/AppInstall.php (line 69)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/AppInstall.php (line 1008)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>INSERT INTO log_acoes_web (pk_usuario_acao, acao, ip_encrypt, data, pk_objeto, info)
+                    VALUES (:iduser, :acao, AES_ENCRYPT(:ip, "M05yL3C0rp0r4t10N"), :now, :objeto, :info)
+
+DATE: 06/November/2019 09:33:08 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 4.4509930610657 seconds
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/business/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'usertab_current_os' => 'mac',
+  'usertab_current_idcompany' => 'officecompany',
+  'profile_type' => 'APP_LOCK',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) Company::checkPremium -> File: /Sites/web/business/public/screens/scules/mdm/profiles.php (line 17)
+2) log::logAcoesSistemaWeb -> File: /Sites/web/business/classes/Company.php (line 1044)
+3) DB::stmtExec -> File: /Sites/web/business/classes/log.php (line 172)
+4) log::dolog -> File: /Sites/web/business/classes/DB.php (line 258)
+5) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/business/classes/log.php (line 22)
+6) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>INSERT INTO companies_actions (idcompany, action_name, date_created, description)
+                VALUES (:idcompany, :action_name, :date_created, :description)
+                ON DUPLICATE KEY UPDATE idcompany = :idcompany
+
+DATE: 06/November/2019 09:36:59 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 4.7233910560608 seconds
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/business/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'usertab_current_os' => 'mac',
+  'usertab_current_idcompany' => 'officecompany',
+  'selected' => 'P',
+  'profile_type' => 'APPINSTALL_ENTERPRISE',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) Company::checkPremium -> File: /Sites/web/business/public/screens/scules/mdm/pkginstall/profiles.php (line 4)
+2) CompanyAction::newAction -> File: /Sites/web/business/classes/Company.php (line 1048)
+3) DB::stmtExec -> File: /Sites/web/business/classes/CompanyAction.php (line 326)
+4) log::dolog -> File: /Sites/web/business/classes/DB.php (line 258)
+5) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/business/classes/log.php (line 22)
+6) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>INSERT INTO log_acoes_web (pk_usuario_acao, acao, ip_encrypt, data, pk_objeto, info)
+                    VALUES (:iduser, :acao, AES_ENCRYPT(:ip, "M05yL3C0rp0r4t10N"), :now, :objeto, :info)
+
+DATE: 06/November/2019 09:37:09 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 6.563807964325 seconds
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/business/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'usertab_current_os' => 'mac',
+  'usertab_current_idcompany' => 'officecompany',
+  'profile_type' => 'INSTALL_BOOK',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) Company::checkPremium -> File: /Sites/web/business/public/screens/scules/mdm/profiles.php (line 17)
+2) log::logAcoesSistemaWeb -> File: /Sites/web/business/classes/Company.php (line 1044)
+3) DB::stmtExec -> File: /Sites/web/business/classes/log.php (line 172)
+4) log::dolog -> File: /Sites/web/business/classes/DB.php (line 258)
+5) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/business/classes/log.php (line 22)
+6) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 09:52:58 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 4.3359611034393 seconds
+    [query] => SELECT DISTINCT d.deviceudid , d.total_disk, d.is_supervised, d.device_model, d.osversion, d.battery, d.date_last_beat, IF(d.device_name IS NULL, "Device without name", device_name) as device_name, d.tags, d.available_disk, d.ios_maximum_resident_users, d.asset_tag, d.date_info, d.model_name, d.android_admin_enabled, d.android_usage_access_enabled, d.isBluetoothOn, d.iTunesStoreAccountIsActive, d.has_passcode, (d.available_disk/d.total_disk) as percent_disk, dd.iddep, d.IsFrozen 
+                FROM device_info d LEFT JOIN dep_devices dd ON d.serial_number = dd.serial_number AND d.os IN ("ios", "mac", "tvos") AND dd.op_type != "deleted"
+                WHERE d.deviceudid IN ("C4578F1E-1641-5FA8-8B58-31CB86E326E2","564DA1DD-D6CD-20C1-E2E4-DD80A64CA62A","564DB0F9-DC88-841F-B3EA-C3A4D40333A2","441CD8FF-1F1A-57A0-B9D7-E6647287E5D7","0B8824A8-301A-60F0-6EB6-7B5797FB52C6","8E1A6F28-7621-1CA7-E40D-708A818A8266","CC0C7492-AACF-B1B4-F6FD-190121C57A38","A5992DB2-A145-2DCF-7053-62E38A2067EA","719C4D9E-74B9-533C-1834-48880C510BCD","094036F4-151E-1C7A-822E-69C02BD5C928","215ADE4C-9BBC-72AD-4C80-66B4CDFB6BAB","856CF822-7B4E-B565-34B0-66A3F8764E62","9609177F-1DF3-5924-9F56-688720E1C3E0","993930C6-C53C-5E10-8F3C-738DAFF9D934","0AA7A671-5843-0E27-6B4F-DB4088BF34DD")
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'school_devices',
+  'term_by' => '1',
+  'attributes' => 'is_supervised,device_model,osversion,battery,date_last_beat,device_name,tags,available_disk,ios_maximum_resident_users,asset_tag,date_info,model_name,android_admin_enabled,android_usage_access_enabled,isBluetoothOn,iTunesStoreAccountIsActive,has_passcode',
+  'page' => '1',
+  'current_os' => 'mac',
+  'filter_devices' => '1',
+  'filter_enrollment_model' => 'DEVICE_ENROLLMENT',
+  'user' => '{"type":"ADMIN","iddevicegroups_admin":[]}',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) SchoolController::controller -> File: /Sites/web/mdm/classes/Controller.php (line 539)
+4) School::getDevices -> File: /Sites/web/mdm/classes/SchoolController.php (line 23)
+5) School::separateInDatabases -> File: /Sites/web/mdm/classes/School.php (line 695)
+6) Device::getDevicesByDatabase -> File: /Sites/web/mdm/classes/School.php (line 765)
+7) DB::stmtExec -> File: /Sites/web/mdm/classes/Device.php (line 2930)
+8) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+9) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+10) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 10:23:29 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 5.4093818664551 seconds
+    [query] => SELECT p.idprofile, p.name, p.allow_modification, p.is_enabled, p.os, p.allow_unitAdminAccess, GROUP_CONCAT(u.idunit) as idunits 
+                FROM generic_profiles p LEFT JOIN generic_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND type = :type  AND p.os = :os  AND p.allow_modification = 1 AND p.is_districtlevel = 0 AND p.is_hidden = :is_hidden AND p.idprofile IN (0119,163) GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_generic_profiles',
+  'type' => 'ADCERTIFICATE',
+  'is_hidden' => '0',
+  'idprofiles' => '119,163',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'mac',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) GenericProfile::controller -> File: /Sites/web/mdm/classes/Controller.php (line 988)
+4) GenericProfile::getProfiles -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 47)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 364)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>INSERT INTO companies_actions (idcompany, action_name, date_created, description)
+                VALUES (:idcompany, :action_name, :date_created, :description)
+                ON DUPLICATE KEY UPDATE idcompany = :idcompany
+
+DATE: 06/November/2019 15:11:16 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 6.651458978653 seconds
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/business/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'usertab_current_os' => 'mac',
+  'usertab_current_idcompany' => 'officecompany',
+  'profile_type' => 'APPINSTALL',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) Company::checkPremium -> File: /Sites/web/business/public/screens/scules/mdm/profiles.php (line 17)
+2) CompanyAction::newAction -> File: /Sites/web/business/classes/Company.php (line 1048)
+3) DB::stmtExec -> File: /Sites/web/business/classes/CompanyAction.php (line 326)
+4) log::dolog -> File: /Sites/web/business/classes/DB.php (line 258)
+5) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/business/classes/log.php (line 22)
+6) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 15:25:04 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 5.939208984375 seconds
+    [query] => SELECT  p.idprofile, 
+                        p.name, 
+                        p.is_enabled, 
+                        p.idvpp, 
+                        p.source, 
+                        p.allow_modification, 
+                        p.os, 
+                        p.allow_unitAdminAccess, 
+                        p.categories, 
+                        GROUP_CONCAT(u.idunit) as idunits,
+                      (
+                          SELECT count(*) 
+                          FROM appinstall_app_profile aap 
+                          WHERE aap.idprofile = p.idprofile AND appconfig_status = "NOK"
+                      ) AS appconfig_invalid
+                FROM appinstall_profiles p LEFT JOIN appinstall_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND p.os = :os AND p.is_hidden = 0  AND p.allow_modification = 1 AND p.is_districtlevel = 0 AND p.source != "appstore"  AND p.source IN ("appstore","vpp","googleplay","apk") GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'appinstall_profiles',
+  'manager_install' => '1',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'source' => 'appstore,vpp,googleplay,apk',
+  'idprofiles' => '8,12,13,17,18,25,33,40,41,42,47,48,63,68,69,70',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'current_os' => 'mac',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) AppInstall::controller -> File: /Sites/web/mdm/classes/Controller.php (line 694)
+4) AppInstall::getProfiles -> File: /Sites/web/mdm/classes/profiles/AppInstall.php (line 69)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/AppInstall.php (line 1035)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>INSERT INTO log_acoes_web (pk_usuario_acao, acao, ip_encrypt, data, pk_objeto, info)
+                    VALUES (:iduser, :acao, AES_ENCRYPT(:ip, "M05yL3C0rp0r4t10N"), :now, :objeto, :info)
+
+DATE: 06/November/2019 16:09:06 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 4.2848470211029 seconds
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/business/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'usertab_current_os' => 'mac',
+  'usertab_current_idcompany' => 'officecompany',
+  'type' => 'W',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) Company::checkPremium -> File: /Sites/web/business/public/screens/scules/mdm/applist/profiles.php (line 5)
+2) log::logAcoesSistemaWeb -> File: /Sites/web/business/classes/Company.php (line 1044)
+3) DB::stmtExec -> File: /Sites/web/business/classes/log.php (line 172)
+4) log::dolog -> File: /Sites/web/business/classes/DB.php (line 258)
+5) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/business/classes/log.php (line 22)
+6) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 16:41:30 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 6.931058883667 seconds
+    [query] => SELECT p.idprofile, p.name, p.is_enabled, p.allow_modification, p.os, p.allow_unitAdminAccess, p.read_only, GROUP_CONCAT(u.idunit) as idunits
+                FROM webclip_profiles p LEFT JOIN webclip_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND p.os = :os  AND p.allow_modification = 1 AND p.is_districtlevel = 0 AND p.idprofile IN (03,4,5,6,7,8,12,13) GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_webclip_profiles',
+  'idprofiles' => '3,4,5,6,7,8,12,13',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'mac',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) Webclip::controller -> File: /Sites/web/mdm/classes/Controller.php (line 737)
+4) Webclip::getProfiles -> File: /Sites/web/mdm/classes/profiles/Webclip.php (line 46)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/Webclip.php (line 270)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 16:43:01 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 5.8267660140991 seconds
+    [query] => SELECT p.idprofile, p.name, p.allow_modification, p.is_enabled, p.os, p.allow_unitAdminAccess, GROUP_CONCAT(u.idunit) as idunits 
+                FROM generic_profiles p LEFT JOIN generic_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND type = :type  AND p.os = :os  AND p.allow_modification = 1 AND p.is_districtlevel = 0 AND p.is_hidden = :is_hidden AND p.idprofile IN (0101,143) GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_generic_profiles',
+  'type' => 'FONTS',
+  'is_hidden' => '0',
+  'idprofiles' => '101,143',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'mac',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) GenericProfile::controller -> File: /Sites/web/mdm/classes/Controller.php (line 988)
+4) GenericProfile::getProfiles -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 47)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 364)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 16:44:30 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 4.8650729656219 seconds
+    [query] => SELECT p.idprofile, p.name, p.is_enabled, p.allow_modification, p.os, p.allow_unitAdminAccess, GROUP_CONCAT(u.idunit) as idunits
+                FROM applock_profiles p LEFT JOIN applock_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND p.is_hidden = 0 AND p.os = :os  AND p.allow_modification = 1 AND p.is_districtlevel = 0 GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'applock_profiles',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'current_os' => 'mac',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) Applock::controller -> File: /Sites/web/mdm/classes/Controller.php (line 659)
+4) Applock::getProfiles -> File: /Sites/web/mdm/classes/profiles/Applock.php (line 49)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/Applock.php (line 451)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 16:44:58 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 5.7656700611115 seconds
+    [query] => SELECT p.idprofile, p.name, p.is_enabled, p.allow_modification, p.os, p.allow_unitAdminAccess, GROUP_CONCAT(u.idunit) as idunits
+                FROM applock_profiles p LEFT JOIN applock_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND p.is_hidden = 0 AND p.os = :os  AND p.allow_modification = 1 AND p.is_districtlevel = 0 GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'applock_profiles',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'current_os' => 'ios',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) Applock::controller -> File: /Sites/web/mdm/classes/Controller.php (line 659)
+4) Applock::getProfiles -> File: /Sites/web/mdm/classes/profiles/Applock.php (line 49)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/Applock.php (line 451)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 16:45:12 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 9.9518141746521 seconds
+    [query] => SELECT p.idprofile, p.name, p.allow_modification, p.is_enabled, p.os, p.allow_unitAdminAccess, GROUP_CONCAT(u.idunit) as idunits 
+                FROM generic_profiles p LEFT JOIN generic_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND type = :type  AND p.os = :os  AND p.allow_modification = 1 AND p.is_districtlevel = 0 AND p.is_hidden = :is_hidden GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'get_generic_profiles',
+  'type' => 'CERT_TRANSP',
+  'is_hidden' => '0',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'current_os' => 'ios',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) GenericProfile::controller -> File: /Sites/web/mdm/classes/Controller.php (line 988)
+4) GenericProfile::getProfiles -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 47)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 364)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 16:45:32 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 10.243968009949 seconds
+    [query] => SELECT p.idprofile, p.name, p.allow_modification, p.is_enabled, p.os, p.allow_unitAdminAccess, GROUP_CONCAT(u.idunit) as idunits 
+                FROM generic_profiles p LEFT JOIN generic_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND type = :type  AND p.os = :os  AND p.allow_modification = 1 AND p.is_districtlevel = 0 AND p.is_hidden = :is_hidden GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'get_generic_profiles',
+  'type' => 'CERT_TRANSP',
+  'is_hidden' => '0',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'current_os' => 'ios',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) GenericProfile::controller -> File: /Sites/web/mdm/classes/Controller.php (line 988)
+4) GenericProfile::getProfiles -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 47)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 364)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 16:46:03 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 10.147892951965 seconds
+    [query] => SELECT p.idprofile, p.name, p.allow_modification, p.is_enabled, p.os, p.allow_unitAdminAccess, GROUP_CONCAT(u.idunit) as idunits 
+                FROM generic_profiles p LEFT JOIN generic_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND type = :type  AND p.os = :os  AND p.allow_modification = 1 AND p.is_districtlevel = 0 AND p.is_hidden = :is_hidden GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'get_generic_profiles',
+  'type' => 'KIOSKMODE',
+  'is_hidden' => '0',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'current_os' => 'ios',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) GenericProfile::controller -> File: /Sites/web/mdm/classes/Controller.php (line 988)
+4) GenericProfile::getProfiles -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 47)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 364)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 16:47:16 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 5.4545800685883 seconds
+    [query] => SELECT p.idprofile, p.name, p.allow_modification, p.is_enabled, p.os, p.allow_unitAdminAccess, GROUP_CONCAT(u.idunit) as idunits 
+                FROM generic_profiles p LEFT JOIN generic_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND type = :type  AND p.os = :os  AND p.allow_modification = 1 AND p.is_districtlevel = 0 AND p.is_hidden = :is_hidden GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'get_generic_profiles',
+  'type' => 'LDAP',
+  'is_hidden' => '0',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'current_os' => 'ios',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) GenericProfile::controller -> File: /Sites/web/mdm/classes/Controller.php (line 988)
+4) GenericProfile::getProfiles -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 47)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 364)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 16:47:32 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 7.8669471740723 seconds
+    [query] => SELECT p.idprofile, p.name, p.is_enabled, p.type, p.allow_modification, p.os, p.allow_unitAdminAccess, GROUP_CONCAT(u.idunit) as idunits, p.read_only
+                FROM applist_profiles p LEFT JOIN applist_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND 
+                        p.is_hidden = 0 AND 
+                        p.iduser_creator IS NULL AND 
+                        p.os = :os  AND p.type IN ("NOTIFICATION")  AND p.allow_modification = 1 AND p.is_districtlevel = 0 GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'applist_profiles',
+  'types' => 'NOTIFICATION',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'current_os' => 'ios',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) AppList::controller -> File: /Sites/web/mdm/classes/Controller.php (line 451)
+4) AppList::getProfiles -> File: /Sites/web/mdm/classes/profiles/AppList.php (line 54)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/AppList.php (line 817)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 16:47:58 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 5.9143059253693 seconds
+    [query] => SELECT p.idprofile, p.name, p.ssid, p.security, p.os, p.allow_unitAdminAccess, GROUP_CONCAT(u.idunit) as idunits
+                FROM wifi_networks p LEFT JOIN wifi_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND p.os = :os  AND p.allow_modification = 1 AND p.is_districtlevel = 0 AND p.is_hidden = :is_hidden GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'wifi_profiles',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'current_os' => 'ios',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) Wifi::controller -> File: /Sites/web/mdm/classes/Controller.php (line 648)
+4) Wifi::getProfiles -> File: /Sites/web/mdm/classes/profiles/Wifi.php (line 77)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/Wifi.php (line 609)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 16:48:28 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 4.9803071022034 seconds
+    [query] => SELECT p.idprofile, p.name, p.allow_modification, p.is_enabled, p.os, p.allow_unitAdminAccess, GROUP_CONCAT(u.idunit) as idunits 
+                FROM generic_profiles p LEFT JOIN generic_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND type = :type  AND p.os = :os  AND p.allow_modification = 1 AND p.is_districtlevel = 0 AND p.is_hidden = :is_hidden GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'get_generic_profiles',
+  'type' => 'ACCESSIBILITY',
+  'is_hidden' => '0',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'current_os' => 'mac',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) GenericProfile::controller -> File: /Sites/web/mdm/classes/Controller.php (line 988)
+4) GenericProfile::getProfiles -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 47)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 364)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 16:49:10 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 6.4003739356995 seconds
+    [query] => SELECT p.idprofile, p.name, p.allow_modification, p.is_enabled, p.os, p.allow_unitAdminAccess, GROUP_CONCAT(u.idunit) as idunits 
+                FROM generic_profiles p LEFT JOIN generic_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND type = :type  AND p.os = :os  AND p.allow_modification = 1 AND p.is_districtlevel = 0 AND p.is_hidden = :is_hidden GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'get_generic_profiles',
+  'type' => 'CONTENTCACHING',
+  'is_hidden' => '0',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'current_os' => 'mac',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) GenericProfile::controller -> File: /Sites/web/mdm/classes/Controller.php (line 988)
+4) GenericProfile::getProfiles -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 47)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 364)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 16:49:20 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 2.5596919059753 seconds
+    [query] => SELECT p.idprofile, p.name, p.allow_modification, p.is_enabled, p.os, p.allow_unitAdminAccess, GROUP_CONCAT(u.idunit) as idunits 
+                FROM generic_profiles p LEFT JOIN generic_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND type = :type  AND p.os = :os  AND p.allow_modification = 1 AND p.is_districtlevel = 0 AND p.is_hidden = :is_hidden GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'get_generic_profiles',
+  'type' => 'DIRECTORY',
+  'is_hidden' => '0',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'current_os' => 'mac',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) GenericProfile::controller -> File: /Sites/web/mdm/classes/Controller.php (line 988)
+4) GenericProfile::getProfiles -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 47)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 364)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 16:49:27 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 5.7376141548157 seconds
+    [query] => SELECT p.idprofile, p.name, p.allow_modification, p.is_enabled, p.os, p.allow_unitAdminAccess, GROUP_CONCAT(u.idunit) as idunits 
+                FROM generic_profiles p LEFT JOIN generic_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND type = :type  AND p.os = :os  AND p.allow_modification = 1 AND p.is_districtlevel = 0 AND p.is_hidden = :is_hidden GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'get_generic_profiles',
+  'type' => 'DOCK',
+  'is_hidden' => '0',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'current_os' => 'mac',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) GenericProfile::controller -> File: /Sites/web/mdm/classes/Controller.php (line 988)
+4) GenericProfile::getProfiles -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 47)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 364)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 16:50:06 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 13.191792964935 seconds
+    [query] => SELECT p.idprofile, p.name, p.allow_modification, p.is_enabled, p.os, p.allow_unitAdminAccess, GROUP_CONCAT(u.idunit) as idunits 
+                FROM generic_profiles p LEFT JOIN generic_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND type = :type  AND p.os = :os  AND p.allow_modification = 1 AND p.is_districtlevel = 0 AND p.is_hidden = :is_hidden GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'get_generic_profiles',
+  'type' => 'EXTENSIONS',
+  'is_hidden' => '0',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'current_os' => 'mac',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) GenericProfile::controller -> File: /Sites/web/mdm/classes/Controller.php (line 988)
+4) GenericProfile::getProfiles -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 47)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 364)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 16:50:30 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 3.3031370639801 seconds
+    [query] => SELECT p.idprofile, p.name, p.allow_modification, p.is_enabled, p.os, p.allow_unitAdminAccess, GROUP_CONCAT(u.idunit) as idunits 
+                FROM generic_profiles p LEFT JOIN generic_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND type = :type  AND p.os = :os  AND p.allow_modification = 1 AND p.is_districtlevel = 0 AND p.is_hidden = :is_hidden GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'get_generic_profiles',
+  'type' => 'KIOSKMODE',
+  'is_hidden' => '0',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'current_os' => 'mac',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) GenericProfile::controller -> File: /Sites/web/mdm/classes/Controller.php (line 988)
+4) GenericProfile::getProfiles -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 47)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 364)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 16:50:58 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 2.3185200691223 seconds
+    [query] => SELECT p.idprofile, p.name, p.allow_modification, p.is_enabled, p.os, p.allow_unitAdminAccess, GROUP_CONCAT(u.idunit) as idunits 
+                FROM generic_profiles p LEFT JOIN generic_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND type = :type  AND p.os = :os  AND p.allow_modification = 1 AND p.is_districtlevel = 0 AND p.is_hidden = :is_hidden GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'get_generic_profiles',
+  'type' => 'VPN',
+  'is_hidden' => '0',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'current_os' => 'mac',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) GenericProfile::controller -> File: /Sites/web/mdm/classes/Controller.php (line 988)
+4) GenericProfile::getProfiles -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 47)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 364)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 16:51:15 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 6.3438911437988 seconds
+    [query] => SELECT p.idprofile, p.name, p.allow_modification, p.is_enabled, p.os, p.allow_unitAdminAccess, GROUP_CONCAT(u.idunit) as idunits 
+                FROM generic_profiles p LEFT JOIN generic_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND type = :type  AND p.os = :os  AND p.allow_modification = 1 AND p.is_districtlevel = 0 AND p.is_hidden = :is_hidden GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'get_generic_profiles',
+  'type' => 'SYSTEMEXTENSIONS',
+  'is_hidden' => '0',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'current_os' => 'mac',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) GenericProfile::controller -> File: /Sites/web/mdm/classes/Controller.php (line 988)
+4) GenericProfile::getProfiles -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 47)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 364)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 16:51:32 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 9.0313670635223 seconds
+    [query] => SELECT p.idprofile, p.name, p.allow_modification, p.is_enabled, p.os, p.allow_unitAdminAccess, GROUP_CONCAT(u.idunit) as idunits 
+                FROM generic_profiles p LEFT JOIN generic_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND type = :type  AND p.os = :os  AND p.allow_modification = 1 AND p.is_districtlevel = 0 AND p.is_hidden = :is_hidden GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'get_generic_profiles',
+  'type' => 'SOFTWAREDELAY',
+  'is_hidden' => '0',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'current_os' => 'mac',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) GenericProfile::controller -> File: /Sites/web/mdm/classes/Controller.php (line 988)
+4) GenericProfile::getProfiles -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 47)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 364)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 17:03:37 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 7.458016872406 seconds
+    [query] => SELECT p.idprofile, p.name, p.allow_modification, p.is_enabled, p.os, p.allow_unitAdminAccess, GROUP_CONCAT(u.idunit) as idunits 
+                FROM generic_profiles p LEFT JOIN generic_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND type = :type  AND p.os = :os  AND p.allow_modification = 1 AND p.is_districtlevel = 0 AND p.is_hidden = :is_hidden AND p.idprofile IN (046,47,181) GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_generic_profiles',
+  'type' => 'ARD',
+  'is_hidden' => '0',
+  'idprofiles' => '46,47,181',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'mac',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) GenericProfile::controller -> File: /Sites/web/mdm/classes/Controller.php (line 988)
+4) GenericProfile::getProfiles -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 47)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 364)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 17:03:59 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 3.9825839996338 seconds
+    [query] => SELECT p.idprofile, p.name, p.allow_modification, p.is_enabled, p.os, p.allow_unitAdminAccess, GROUP_CONCAT(u.idunit) as idunits 
+                FROM generic_profiles p LEFT JOIN generic_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND type = :type  AND p.os = :os  AND p.allow_modification = 1 AND p.is_districtlevel = 0 AND p.is_hidden = :is_hidden AND p.idprofile IN (096,97,99,142) GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_generic_profiles',
+  'type' => 'CONTENTCACHING',
+  'is_hidden' => '0',
+  'idprofiles' => '96,97,99,142',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'mac',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) GenericProfile::controller -> File: /Sites/web/mdm/classes/Controller.php (line 988)
+4) GenericProfile::getProfiles -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 47)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 364)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>INSERT INTO log_acoes_web (pk_usuario_acao, acao, ip_encrypt, data, pk_objeto, info)
+                    VALUES (:iduser, :acao, AES_ENCRYPT(:ip, "M05yL3C0rp0r4t10N"), :now, :objeto, :info)
+
+DATE: 06/November/2019 17:05:19 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 6.049252986908 seconds
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/business/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'usertab_current_os' => 'ios',
+  'usertab_current_idcompany' => 'officecompany',
+  'profile_type' => 'AIRPLAY',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) Company::checkPremium -> File: /Sites/web/business/public/screens/scules/mdm/profiles.php (line 17)
+2) log::logAcoesSistemaWeb -> File: /Sites/web/business/classes/Company.php (line 1044)
+3) DB::stmtExec -> File: /Sites/web/business/classes/log.php (line 172)
+4) log::dolog -> File: /Sites/web/business/classes/DB.php (line 258)
+5) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/business/classes/log.php (line 22)
+6) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 06/November/2019 17:05:35 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 8.7426910400391 seconds
+    [query] => SELECT p.idprofile, p.name, p.is_enabled, p.type, p.allow_modification, p.os, p.allow_unitAdminAccess, GROUP_CONCAT(u.idunit) as idunits, p.read_only
+                FROM applist_profiles p LEFT JOIN applist_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND 
+                        p.is_hidden = 0 AND 
+                        p.iduser_creator IS NULL AND 
+                        p.os = :os  AND p.idprofile IN (01,2,5,6,9) AND p.type IN ("B","W")  AND p.allow_modification = 1 AND p.is_districtlevel = 0 GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'applist_profiles',
+  'types' => 'B,W',
+  'idprofiles' => '1,2,5,6,9',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) AppList::controller -> File: /Sites/web/mdm/classes/Controller.php (line 451)
+4) AppList::getProfiles -> File: /Sites/web/mdm/classes/profiles/AppList.php (line 54)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/AppList.php (line 817)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>INSERT INTO log_acoes_web (pk_usuario_acao, acao, ip_encrypt, data, pk_objeto, info)
+                    VALUES (:iduser, :acao, AES_ENCRYPT(:ip, "M05yL3C0rp0r4t10N"), :now, :objeto, :info)
+
+DATE: 06/November/2019 17:19:12 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 5.0711231231689 seconds
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/business/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'usertab_current_os' => 'mac',
+  'usertab_current_idcompany' => 'officecompany',
+  'type' => 'location',
+  'profile_type' => 'SCEP',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) Company::checkPremium -> File: /Sites/web/business/public/screens/scules/mdm/profiles.php (line 17)
+2) log::logAcoesSistemaWeb -> File: /Sites/web/business/classes/Company.php (line 1044)
+3) DB::stmtExec -> File: /Sites/web/business/classes/log.php (line 172)
+4) log::dolog -> File: /Sites/web/business/classes/DB.php (line 258)
+5) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/business/classes/log.php (line 22)
+6) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br>

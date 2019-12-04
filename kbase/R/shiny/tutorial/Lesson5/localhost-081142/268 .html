@@ -1,0 +1,49 @@
+<pre>slowQuery
+
+DATE: 23/October/2019 08:52:54 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 2.4572701454163 seconds
+    [query] => SELECT DISTINCT d.deviceudid , d.total_disk, d.is_supervised, d.device_model, d.osversion, d.battery, d.date_last_beat, IF(d.device_name IS NULL, "Device without name", device_name) as device_name, d.tags, d.available_disk, d.ios_maximum_resident_users, d.asset_tag, d.date_info, d.model_name, d.android_admin_enabled, d.android_usage_access_enabled, d.isBluetoothOn, d.iTunesStoreAccountIsActive, d.lostmode_status, d.has_passcode, (d.available_disk/d.total_disk) as percent_disk, dd.iddep 
+                FROM device_info d LEFT JOIN dep_devices dd ON d.serial_number = dd.serial_number AND d.os IN ("ios", "mac", "tvos") AND dd.op_type != "deleted"
+                WHERE d.deviceudid IN ("84086c2dd50f9a269a21f4126393a6aaa680e499","7671fdbdd8487154df124b59dbfb5b206ff32e49","bc38a47fcc3140696c16b5eea6057a9f8d796c03","53359d8f6878a68eed6b0ca6f3504d49ce8ed676","7b373a787c8f6d3e917bb08cd0a3e9061f709db8","02ebe9738c7a9c6a95f6dc44409fc4d2d7e5c9c3","8b57c03a2fb75d31f58fbd9c9c09039dd1c332b2","c2ae1c15831d4abd26b239b83b136349f231489d")
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'school_devices',
+  'term_by' => '1',
+  'attributes' => 'is_supervised,device_model,osversion,battery,date_last_beat,device_name,tags,available_disk,ios_maximum_resident_users,asset_tag,date_info,model_name,android_admin_enabled,android_usage_access_enabled,isBluetoothOn,iTunesStoreAccountIsActive,lostmode_status,has_passcode',
+  'page' => '1',
+  'current_os' => 'ios',
+  'filter_devices' => '1',
+  'filter_enrollment_model' => 'DEVICE_ENROLLMENT',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) SchoolController::controller -> File: /Sites/web/mdm/classes/Controller.php (line 555)
+4) School::getDevices -> File: /Sites/web/mdm/classes/SchoolController.php (line 23)
+5) School::separateInDatabases -> File: /Sites/web/mdm/classes/School.php (line 683)
+6) Device::getDevicesByDatabase -> File: /Sites/web/mdm/classes/School.php (line 752)
+7) DB::stmtExec -> File: /Sites/web/mdm/classes/Device.php (line 2895)
+8) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 425)
+9) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+10) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br>

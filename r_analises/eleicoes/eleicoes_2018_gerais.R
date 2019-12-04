@@ -165,7 +165,7 @@ df4 = sqldf("
 "Agora vamos para um mapa, para mostrar a distribuição dos votos na cidade, baseando-se nas seções"
 
 
-df5 = sqldf("
+ger_df5 = sqldf("
       SELECT 
         SUM(v.QT_VOTOS) AS Votos, l.DS_LOCAL, l.NR_LATITUDE as lat, l.NR_LONGITUDE as lng, l.NM_BAIRRO, l.NM_CIDADE
       FROM 
@@ -180,15 +180,15 @@ df5 = sqldf("
 
 # Mapa com todos os locais de votação e quantidade de votos em cada
 
-leaflet(data = df5) %>% addTiles() %>%
+leaflet(data = ger_df5) %>% addTiles() %>%
   addMarkers(~lng, ~lat, 
              popup = paste(
-               "<p><b>", as.character(df5$DS_LOCAL), "</b> <br />",
-               as.character(df5$NM_BAIRRO), " <br /> ", 
-               as.character(df5$NM_CIDADE)  ,"/SP <br /> </p>",
-               "<p><b>", as.character(df5$Votos), " Votos</b> <br /> </p>"
+               "<p><b>", as.character(ger_df5$DS_LOCAL), "</b> <br />",
+               as.character(ger_df5$NM_BAIRRO), " <br /> ", 
+               as.character(ger_df5$NM_CIDADE)  ,"/SP <br /> </p>",
+               "<p><b>", as.character(ger_df5$Votos), " Votos</b> <br /> </p>"
              ), 
-             label = as.character(df5$Votos),
+             label = as.character(ger_df5$Votos),
              labelOptions = labelOptions(noHide = T, direction = "bottom",
                                          style = list(
                                            "color" = "red",
@@ -202,7 +202,7 @@ leaflet(data = df5) %>% addTiles() %>%
 # Mapa com a distribuição dos votos nos locais de votação
 
 mapa_votos <- function() {
-  leaflet(data = df5) %>%
+  leaflet(data = ger_df5) %>%
     addProviderTiles(providers$CartoDB.Positron) %>%
     addHeatmap(lng = ~lng, lat = ~lat, intensity = ~Votos, blur = 20, max = 0.05, radius = 15)
 }
@@ -211,7 +211,7 @@ mapa_votos()
 
 
 
-df6 = sqldf("
+ger_df6 = sqldf("
       SELECT 
         SUM(v.QT_VOTOS) AS Votos, l.DS_LOCAL, l.NR_LATITUDE as lat, l.NR_LONGITUDE as lng, l.NM_BAIRRO, l.NM_CIDADE, v.NR_PARTIDO, 
           (CASE WHEN p.Sigla IS NULL THEN 'BRANCO/NULO' ELSE p.Sigla END) AS Sigla
@@ -229,11 +229,11 @@ df6 = sqldf("
 
 mapa_votos_2 <- function() {
   
-  lf <- leaflet(data = df6) %>%
+  lf <- leaflet(data = ger_df6) %>%
     addProviderTiles(providers$CartoDB.Positron)
   
   purrr::walk(
-    names(df6),
+    names(ger_df6),
     function(Sigla) {
       # print(Sigla)
       lf <<- lf %>%
@@ -247,7 +247,7 @@ mapa_votos_2 <- function() {
   
   lf %>%
     addLayersControl(
-      baseGroups = names(df6),
+      baseGroups = names(ger_df6),
       options = layersControlOptions(collapsed = FALSE)
     )
 }
@@ -256,9 +256,14 @@ mapa_votos_2()
 
 
 purrr::walk(
-  names(df6),
+  names(ger_df6),
   function(df) {
     
     print(df[df])
   }
 )
+
+#================================================================#
+
+
+

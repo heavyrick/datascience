@@ -1,0 +1,268 @@
+<pre>INSERT INTO log_acoes_web (pk_usuario_acao, acao, ip_encrypt, data, pk_objeto, info)
+                    VALUES (:pk_usuario, :acao, AES_ENCRYPT(:ip, "M05yL3M@NaG3R"), :now, :objeto, :info)
+
+DATE: 31/October/2019 11:22:10 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 3.2566680908203 seconds
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/manager/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'usertab_current_os' => 'ios',
+  'usertab_current_idschool' => 'officeschool',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) School::checkPremium -> File: /Sites/web/manager/public/screens/scules/support/tickets/ticket_new.php (line 4)
+2) log::logAcoesSistemaWeb -> File: /Sites/web/manager/classes/School.php (line 1223)
+3) DB::stmtExec -> File: /Sites/web/manager/classes/log.php (line 186)
+4) log::dolog -> File: /Sites/web/manager/classes/DB.php (line 283)
+5) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/manager/classes/log.php (line 22)
+6) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>INSERT INTO log_acoes_web (pk_usuario_acao, acao, ip_encrypt, data, pk_objeto, info)
+                    VALUES (:pk_usuario, :acao, AES_ENCRYPT(:ip, "M05yL3M@NaG3R"), :now, :objeto, :info)
+
+DATE: 31/October/2019 12:19:07 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 6.6414740085602 seconds
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/manager/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'operation' => 'ticketmessage_save',
+  'idticket' => '23',
+  'message' => 'TICKET DOES NOT LEAVE THE STACK',
+  'files' => 
+  array (
+    0 => '',
+  ),
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) ::include_once -> File: /Sites/web/manager/public/Controller/mosyledesk.php (line 3)
+2) log::logAcoesSistemaWeb -> File: /Sites/web/manager/public/Controller/header_controller.php (line 16)
+3) DB::stmtExec -> File: /Sites/web/manager/classes/log.php (line 186)
+4) log::dolog -> File: /Sites/web/manager/classes/DB.php (line 283)
+5) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/manager/classes/log.php (line 22)
+6) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>INSERT INTO log_acoes_web (pk_usuario_acao, acao, ip_encrypt, data, pk_objeto, info)
+                    VALUES (:iduser, :acao, AES_ENCRYPT(:ip, "M05yL3C0rp0r4t10N"), :now, :objeto, :info)
+
+DATE: 31/October/2019 12:27:00 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 3.7642149925232 seconds
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/business/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'usertab_current_os' => 'mac',
+  'usertab_current_idcompany' => 'officecompany',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) Company::checkPremium -> File: /Sites/web/business/public/screens/scules/support/tickets/ticket_new.php (line 5)
+2) log::logAcoesSistemaWeb -> File: /Sites/web/business/classes/Company.php (line 1044)
+3) DB::stmtExec -> File: /Sites/web/business/classes/log.php (line 172)
+4) log::dolog -> File: /Sites/web/business/classes/DB.php (line 258)
+5) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/business/classes/log.php (line 22)
+6) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 31/October/2019 15:34:31 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 2.8419270515442 seconds
+    [query] => SELECT p.iddep, p.name, p.access_token_expires, p.org_name, p.org_type,
+                       p.date_last_cursor, p.invalid_reason, p.all_locations,
+                       p.sync_status, p.date_created, p.idaccount, 
+                        (SELECT GROUP_CONCAT(u.idunit) FROM dep_unit_account u WHERE p.iddep = u.iddep) as idunits,
+                        (SELECT GROUP_CONCAT(u.iduser) FROM dep_unit_account u WHERE p.iddep = u.iddep) as idusers, 
+                        (SELECT GROUP_CONCAT(u.idusergroups) FROM dep_unit_account u WHERE p.iddep = u.iddep) as idusergroups
+                FROM dep_accounts p LEFT JOIN dep_unit_account u ON p.iddep = u.iddep WHERE p.is_deleted = 0 AND ((p.all_locations = 0  OR u.iduser IN (1473) OR u.idusergroups IS NOT NULL)) GROUP BY p.iddep
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_dep_accounts',
+  'usergroups' => 'ALL',
+  'admins' => '1473',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'mac',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) Dep::controller -> File: /Sites/web/mdm/classes/Controller.php (line 804)
+4) Dep::getAccounts -> File: /Sites/web/mdm/classes/Dep.php (line 77)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/Dep.php (line 416)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 31/October/2019 17:19:53 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 4.3120651245117 seconds
+    [query] => SELECT
+                    a.iddep, a.name, a.access_token_expires, a.org_name, 
+                    a.date_last_cursor, a.invalid_reason, a.sync_status, a.date_created, a.all_locations, p.idunit, 
+                    (SELECT GROUP_CONCAT(u.iduser) FROM dep_unit_account u WHERE a.iddep = u.iddep) as idusers, 
+                    (SELECT GROUP_CONCAT(u.idusergroups) FROM dep_unit_account u WHERE a.iddep = u.iddep) as idusergroups,
+                    p.iddep_profile, p.profile_name, p.enrollment, p.profile_uuid, p.is_default, p.os, p.iddevicegroups, p.idcart
+                FROM dep_accounts a
+                LEFT JOIN dep_profiles p ON p.iddep = a.iddep AND p.is_deleted = 0 AND p.os IN ("ios") LEFT JOIN dep_unit_account u ON a.iddep = u.iddep WHERE a.is_deleted = 0 AND ((a.all_locations = 0  OR u.iduser IN (1473) OR u.idusergroups IS NOT NULL)) GROUP BY a.iddep, p.iddep_profile 
+                  ORDER BY a.iddep ASC, p.is_default DESC, p.profile_name ASC
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_dep_accounts_with_profiles',
+  'os' => 'ios',
+  'index_by_accounts' => '1',
+  'usergroups' => 'ALL',
+  'admins' => '1473',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) Dep::controller -> File: /Sites/web/mdm/classes/Controller.php (line 804)
+4) Dep::getAccountsWithProfiles -> File: /Sites/web/mdm/classes/Dep.php (line 299)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/Dep.php (line 1376)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 31/October/2019 17:20:49 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 4.6166090965271 seconds
+    [query] => SELECT
+                    a.iddep, a.name, a.access_token_expires, a.org_name, 
+                    a.date_last_cursor, a.invalid_reason, a.sync_status, a.date_created, a.all_locations, p.idunit, 
+                    (SELECT GROUP_CONCAT(u.iduser) FROM dep_unit_account u WHERE a.iddep = u.iddep) as idusers, 
+                    (SELECT GROUP_CONCAT(u.idusergroups) FROM dep_unit_account u WHERE a.iddep = u.iddep) as idusergroups,
+                    p.iddep_profile, p.profile_name, p.enrollment, p.profile_uuid, p.is_default, p.os, p.iddevicegroups, p.idcart
+                FROM dep_accounts a
+                LEFT JOIN dep_profiles p ON p.iddep = a.iddep AND p.is_deleted = 0 AND p.os IN ("ios") WHERE a.is_deleted = 0 GROUP BY a.iddep, p.iddep_profile 
+                  ORDER BY a.iddep ASC, p.is_default DESC, p.profile_name ASC
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'get_dep_accounts_with_profiles',
+  'os' => 'ios',
+  'index_by_accounts' => '1',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'current_os' => 'ios',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) Dep::controller -> File: /Sites/web/mdm/classes/Controller.php (line 804)
+4) Dep::getAccountsWithProfiles -> File: /Sites/web/mdm/classes/Dep.php (line 299)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/Dep.php (line 1376)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>INSERT INTO log_acoes_web (pk_usuario_acao, acao, ip_encrypt, data, pk_objeto, info)
+                    VALUES (:iduser, :acao, AES_ENCRYPT(:ip, "M05yL3C0rp0r4t10N"), :now, :objeto, :info)
+
+DATE: 31/October/2019 17:21:08 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 4.6697990894318 seconds
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/business/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'usertab_current_os' => 'tvos',
+  'usertab_current_idcompany' => 'officecompany',
+  'profile_type' => 'MOSYLE_LOGIN',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) Company::checkPremium -> File: /Sites/web/business/public/screens/scules/mdm/profiles.php (line 15)
+2) log::logAcoesSistemaWeb -> File: /Sites/web/business/classes/Company.php (line 1044)
+3) DB::stmtExec -> File: /Sites/web/business/classes/log.php (line 172)
+4) log::dolog -> File: /Sites/web/business/classes/DB.php (line 258)
+5) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/business/classes/log.php (line 22)
+6) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br>

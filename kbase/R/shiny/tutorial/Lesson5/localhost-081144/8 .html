@@ -1,0 +1,375 @@
+<pre>INSERT INTO log_acoes_web (pk_usuario_acao, acao, ip_encrypt, data, pk_objeto, info)
+                    VALUES (:iduser, :acao, AES_ENCRYPT(:ip, "M05yL3C0rp0r4t10N"), :now, :objeto, :info)
+
+DATE: 07/November/2019 12:31:06 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 5.5027031898499 seconds
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/business/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'usertab_current_os' => 'mac',
+  'usertab_current_idcompany' => 'officecompany',
+  'profile_type' => 'CUSTOMCOMMAND',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) Company::checkPremium -> File: /Sites/web/business/public/screens/scules/mdm/profiles.php (line 17)
+2) log::logAcoesSistemaWeb -> File: /Sites/web/business/classes/Company.php (line 1044)
+3) DB::stmtExec -> File: /Sites/web/business/classes/log.php (line 172)
+4) log::dolog -> File: /Sites/web/business/classes/DB.php (line 258)
+5) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/business/classes/log.php (line 22)
+6) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 07/November/2019 12:31:15 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 6.7732968330383 seconds
+    [query] => SELECT p.idprofile, p.name, p.allow_modification, p.is_enabled, p.os, p.allow_unitAdminAccess, GROUP_CONCAT(u.idunit) as idunits 
+                FROM generic_profiles p LEFT JOIN generic_unit_profile u ON p.idprofile = u.idprofile WHERE p.is_deleted = 0 AND type = :type  AND p.os = :os  AND p.allow_modification = 1 AND p.is_districtlevel = 0 AND p.is_hidden = :is_hidden AND p.idprofile IN (05,25) GROUP BY p.idprofile ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_generic_profiles',
+  'type' => 'DIRECTORY',
+  'is_hidden' => '0',
+  'idprofiles' => '5,25',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'mac',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) GenericProfile::controller -> File: /Sites/web/mdm/classes/Controller.php (line 988)
+4) GenericProfile::getProfiles -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 47)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/GenericProfile.php (line 364)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>UPDATE companies SET qty_ios = :qty_enrolls WHERE idcompany = :idcompany
+
+DATE: 07/November/2019 13:21:01 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 8.0871751308441 seconds
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/business/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36
+ARGS: 
+GET: array (
+  'account' => 'officecompany',
+)
+POST: 
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) ::include_once -> File: /Sites/web/business/public/index.php (line 121)
+2) ::require_once -> File: /Sites/web/business/public/index_main.php (line 133)
+3) Company::setQtyEnrollsOS -> File: /Sites/web/business/public/screens/scules/dashboard/main.php (line 33)
+4) DB::stmtExec -> File: /Sites/web/business/classes/Company.php (line 1390)
+5) log::dolog -> File: /Sites/web/business/classes/DB.php (line 258)
+6) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/business/classes/log.php (line 22)
+7) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>UPDATE companies SET qty_mac = :qty_enrolls WHERE idcompany = :idcompany
+
+DATE: 07/November/2019 16:33:07 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 6.1385319232941 seconds
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/business/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36
+ARGS: 
+GET: array (
+  'account' => 'officecompany',
+)
+POST: 
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) ::include_once -> File: /Sites/web/business/public/index.php (line 121)
+2) ::require_once -> File: /Sites/web/business/public/index_main.php (line 133)
+3) Company::setQtyEnrollsOS -> File: /Sites/web/business/public/screens/scules/dashboard/main.php (line 35)
+4) DB::stmtExec -> File: /Sites/web/business/classes/Company.php (line 1390)
+5) log::dolog -> File: /Sites/web/business/classes/DB.php (line 258)
+6) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/business/classes/log.php (line 22)
+7) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 07/November/2019 16:47:12 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 5.2418999671936 seconds
+    [query] => INSERT INTO appinstall_profiles (idprofile, name, date_created, date_modified, iduser_creator, is_enabled,
+                                                 force_install, idvpp, device_based, remove_apps, use_licenses_devices_with_app,
+                                                 source, os, update_apps, reinstall_apps, autoinstall, selfservice,allow_modification,
+                                                 network_tethered, allow_unitAdminAccess, is_districtlevel, idaccount, is_hidden,
+                                                 dontApplytoShared, categories, profile_version, all_locations, include_no_location, options)
+                VALUES (:idprofile, :name, :date_created, :date_modified, :iduser_creator, :is_enabled,
+                        :force_install, :idvpp, :device_based, :remove_apps, :use_licenses_devices_with_app,
+                        :source, :os, :update_apps, :reinstall_apps, :autoinstall, :selfservice, :allow_modification,
+                        :network_tethered, :allow_unitAdminAccess, :is_districtlevel, :idaccount, :is_hidden, :dontApplytoShared,
+                        :categories, :profile_version, :all_locations, :include_no_location, :options)
+                ON DUPLICATE KEY UPDATE
+                name                  = VALUES(name),
+                date_modified         = VALUES(date_modified),
+                force_install         = VALUES(force_install),
+                device_based          = VALUES(device_based),
+           
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'save_appinstall_school',
+  'usertab_current_os' => 'ios',
+  'usertab_current_idcompany' => 'officecompany',
+  'profileos' => 'ios',
+  'idprofile' => '0',
+  'mapping' => 'InstallAppController',
+  'is_district' => '0',
+  'appsource' => 'ipa',
+  'profilename' => 'TESTE ENTERPRISE',
+  'autoinstall' => '1',
+  'temporary_time' => '1',
+  'selfservice' => '1',
+  'remove_apps' => '0',
+  'update_apps' => '1',
+  'reinstall_apps' => '1',
+  'network_tethered' => '0',
+  'categories' => '',
+  'use_licenses_devices_with_app' => '1',
+  'assignment_values' => '[]',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) AppInstall::controller -> File: /Sites/web/mdm/classes/Controller.php (line 694)
+4) AppInstall::saveProfile -> File: /Sites/web/mdm/classes/profiles/AppInstall.php (line 133)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/AppInstall.php (line 821)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>INSERT INTO log_acoes_web (pk_usuario_acao, acao, ip_encrypt, data, pk_objeto, info)
+                    VALUES (:iduser, :acao, AES_ENCRYPT(:ip, "M05yL3C0rp0r4t10N"), :now, :objeto, :info)
+
+DATE: 07/November/2019 16:59:04 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 5.3262350559235 seconds
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/business/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'usertab_current_os' => 'ios',
+  'usertab_current_idcompany' => 'officecompany',
+  'profileos' => 'ios',
+  'idprofile' => '0',
+  'operation' => 'save_appinstall_school',
+  'mapping' => 'InstallAppController',
+  'is_district' => '0',
+  'appsource' => 'ipa',
+  'profilename' => 'APEPE',
+  'autoinstall' => '1',
+  'temporary_time' => '1',
+  'selfservice' => '1',
+  'remove_apps' => '0',
+  'update_apps' => '1',
+  'reinstall_apps' => '1',
+  'network_tethered' => '0',
+  'categories' => '',
+  'use_licenses_devices_with_app' => '1',
+  'assignment_values' => '[]',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) ::include_once -> File: /Sites/web/business/public/Controller/mapping.php (line 6)
+2) log::logAcoesSistemaWeb -> File: /Sites/web/business/public/Controller/header_controller.php (line 16)
+3) DB::stmtExec -> File: /Sites/web/business/classes/log.php (line 172)
+4) log::dolog -> File: /Sites/web/business/classes/DB.php (line 258)
+5) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/business/classes/log.php (line 22)
+6) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>INSERT INTO mdmcahe_profiles_count (idprofile, profile_type, is_deleted, os)
+            VALUES (:idprofile, :profile_type, :is_deleted, :os)
+            ON DUPLICATE KEY UPDATE
+            is_deleted = VALUES(is_deleted)
+
+DATE: 07/November/2019 16:59:10 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 4.6284351348877 seconds
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/business/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'usertab_current_os' => 'ios',
+  'usertab_current_idcompany' => 'officecompany',
+  'profileos' => 'ios',
+  'idprofile' => '0',
+  'operation' => 'save_appinstall_school',
+  'mapping' => 'InstallAppController',
+  'is_district' => '0',
+  'appsource' => 'ipa',
+  'profilename' => 'APEPE',
+  'autoinstall' => '1',
+  'temporary_time' => '1',
+  'selfservice' => '1',
+  'remove_apps' => '0',
+  'update_apps' => '1',
+  'reinstall_apps' => '1',
+  'network_tethered' => '0',
+  'categories' => '',
+  'use_licenses_devices_with_app' => '1',
+  'assignment_values' => '[]',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) AbstractPlatformAllowedController::__construct -> File: /Sites/web/business/public/Controller/mapping.php (line 23)
+2) AbstractController::__construct -> File: /Sites/web/business/classes/controllers/AbstractPlatformAllowedController.php (line 16)
+3) InstallAppController::switchController -> File: /Sites/web/business/classes/controllers/AbstractController.php (line 21)
+4) InstallAppController::saveAppinstallSchool -> File: /Sites/web/business/classes/controllers/InstallAppController.php (line 13)
+5) MDM::saveAppinstallProfile -> File: /Sites/web/business/classes/controllers/InstallAppController.php (line 122)
+6) MDMCache::setProfileCache -> File: /Sites/web/business/classes/MDM.php (line 1666)
+7) DB::stmtExec -> File: /Sites/web/business/classes/MDMCache.php (line 192)
+8) log::dolog -> File: /Sites/web/business/classes/DB.php (line 258)
+9) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/business/classes/log.php (line 22)
+10) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 07/November/2019 16:59:10 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 4.4448089599609 seconds
+    [query] => UPDATE appinstall_profiles SET running_background = :running_background WHERE idprofile = :idprofile
+)
+
+REMOTE_ADDR: 
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: array (
+  0 => '/Sites/web/mdm-business/classes/../background/Profiles.php',
+  1 => 'officebiz_01',
+  2 => '5dc469796c756.json',
+)
+GET: 
+POST: 
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) ProfileMDM::setStateBackgroundProcess -> File: /Sites/web/mdm/background/Profiles.php (line 48)
+2) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/ProfileMDM.php (line 131)
+3) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+4) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+5) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 07/November/2019 17:35:13 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 2.6264390945435 seconds
+    [query] => SELECT DISTINCT d.deviceudid , d.total_disk, d.is_supervised, d.device_model, d.osversion, d.battery, d.date_last_beat, IF(d.device_name IS NULL, "Device without name", device_name) as device_name, d.tags, d.available_disk, d.ios_maximum_resident_users, d.asset_tag, d.date_info, d.model_name, d.android_admin_enabled, d.android_usage_access_enabled, d.isBluetoothOn, d.iTunesStoreAccountIsActive, d.has_passcode, (d.available_disk/d.total_disk) as percent_disk, dd.iddep, d.IsFrozen 
+                FROM device_info d LEFT JOIN dep_devices dd ON d.serial_number = dd.serial_number AND d.os IN ("ios", "mac", "tvos") AND dd.op_type != "deleted"
+                WHERE d.deviceudid IN ("1db9a074f3b5f13bd6d407a8764a15b2b06be0fe","0f22a17ec45dff8f89cf39b854e48ca8d7eef680")
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'school_devices',
+  'term_by' => '1',
+  'attributes' => 'is_supervised,device_model,osversion,battery,date_last_beat,device_name,tags,available_disk,ios_maximum_resident_users,asset_tag,date_info,model_name,android_admin_enabled,android_usage_access_enabled,isBluetoothOn,iTunesStoreAccountIsActive,has_passcode',
+  'page' => '1',
+  'current_os' => 'ios',
+  'filter_devices' => '1',
+  'filter_enrollment_model' => 'DEVICE_ENROLLMENT',
+  'user' => '{"type":"ADMIN","iddevicegroups_admin":[]}',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) SchoolController::controller -> File: /Sites/web/mdm/classes/Controller.php (line 539)
+4) School::getDevices -> File: /Sites/web/mdm/classes/SchoolController.php (line 23)
+5) School::separateInDatabases -> File: /Sites/web/mdm/classes/School.php (line 695)
+6) Device::getDevicesByDatabase -> File: /Sites/web/mdm/classes/School.php (line 765)
+7) DB::stmtExec -> File: /Sites/web/mdm/classes/Device.php (line 2930)
+8) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+9) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+10) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br>

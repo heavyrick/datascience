@@ -1,0 +1,37 @@
+<pre>/Sites/web/mdm/classes/../assets/certs_sandbox/5d444b6ae69d51.pem
+
+DATE: 04/October/2019 08:55:31 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'bulk_send_push',
+  'deviceudid' => 'UE-967ECE5C-8C2F-42A7-8101-4F1B13687B97',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'current_os' => 'ios',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) BulkOperations::controller -> File: /Sites/web/mdm/classes/Controller.php (line 656)
+4) BulkOperations::sendPush -> File: /Sites/web/mdm/classes/BulkOperations.php (line 335)
+5) Device::sendPush -> File: /Sites/web/mdm/classes/BulkOperations.php (line 725)
+6) Push::sendMDMPushWithoutQueue -> File: /Sites/web/mdm/classes/Device.php (line 1842)
+7) Push::flushiOS -> File: /Sites/web/mdm/classes/Push.php (line 166)
+8) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Push.php (line 1335)
+9) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br>

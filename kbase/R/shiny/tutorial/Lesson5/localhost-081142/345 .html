@@ -1,0 +1,47 @@
+<pre>slowQuery
+
+DATE: 08/October/2019 13:17:05 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 3.9183661937714 seconds
+    [query] => SELECT DISTINCT d.deviceudid , d.total_disk, d.*, IF(d.device_name IS NULL, "Device without name", d.device_name) as device_name, AES_DECRYPT(d.last_ip_beat_encrypt, "M05yL3C0rp0r4t10N") as last_ip_beat, NULL as last_ip_beat_encrypt, AES_DECRYPT(d.last_lan_ip_encrypt, "M05yL3C0rp0r4t10N") as last_lan_ip, NULL as last_lan_ip_encrypt, (d.available_disk/d.total_disk) as percent_disk, dd.iddep 
+                FROM device_info d LEFT JOIN dep_devices dd ON d.serial_number = dd.serial_number AND d.os IN ("ios", "mac", "tvos") AND dd.op_type != "deleted"
+                WHERE d.deviceudid IN ("26827D98-095E-571E-8F86-57343694F484","564D3D78-22C6-681D-90ED-7F8289643E5B","564DCBE6-ECC0-AB25-DD8F-FEE69F45A2D5","564DE848-5289-F5CE-9BE1-3A5303AEAB15","955A2CFC-7FC1-5E69-B3B4-45DB771B875F","BDE0FBD0-0E3F-5BFB-82F6-A88953CD65DE","C4578F1E-1641-5FA8-8B58-31CB86E326E2")
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'date_start' => '',
+  'date_ends' => '1570551421',
+  'command_status' => 'pending',
+  'operation' => 'get_pending_commands',
+  'page' => '1',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'current_os' => 'mac',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) Command::controller -> File: /Sites/web/mdm/classes/Controller.php (line 912)
+4) BulkQueries::getDevicesInfo -> File: /Sites/web/mdm/classes/Command.php (line 131)
+5) Device::getDevicesByDatabase -> File: /Sites/web/mdm/classes/BulkQueries.php (line 553)
+6) DB::stmtExec -> File: /Sites/web/mdm/classes/Device.php (line 2895)
+7) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 425)
+8) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+9) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br>

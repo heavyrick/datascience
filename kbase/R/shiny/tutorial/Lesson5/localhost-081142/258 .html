@@ -1,0 +1,1050 @@
+<pre>[8-NOTICE] Trying to get property 'device' of non-object - Line 12 in /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_profiles.php
+
+DATE: 23/October/2019 09:14:18 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/business/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'usertab_current_os' => 'ios',
+  'usertab_current_idcompany' => 'officecompany',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'action' => 'PROFILES',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) ::include_once -> File: /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_all_profiles.php (line 28)
+2) MosyleUtils\Environment::MosyleUtils\{closure} -> File: /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_profiles.php (line 12)
+3) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+4) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+5) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[8-NOTICE] PDO::exec(): send of 21 bytes failed with errno=32 Broken pipe - Line 269 in /Sites/web/mdm/classes/DB.php
+
+DATE: 23/October/2019 09:26:41 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_device_compliance',
+  'type' => 'PROFILES',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'only_out_compliance' => '0',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) ComplianceReport::controller -> File: /Sites/web/mdm/classes/Controller.php (line 581)
+4) ComplianceReport::deviceCompliance -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 43)
+5) ComplianceReport::getAssignedProfiles -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 417)
+6) ComplianceReport::getAssignedProfilesNew -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1549)
+7) DB::prepare -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1735)
+8) PDO::exec -> File: /Sites/web/mdm/classes/DB.php (line 269)
+9) MosyleUtils\Environment::MosyleUtils\{closure} 
+10) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+11) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+12) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[8-NOTICE] Trying to get property 'device' of non-object - Line 12 in /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_profiles.php
+
+DATE: 23/October/2019 09:28:00 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/business/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'usertab_current_os' => 'ios',
+  'usertab_current_idcompany' => 'officecompany',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'action' => 'PROFILES',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) ::include_once -> File: /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_all_profiles.php (line 28)
+2) MosyleUtils\Environment::MosyleUtils\{closure} -> File: /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_profiles.php (line 12)
+3) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+4) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+5) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[2-WARNING] Cannot modify header information - headers already sent by (output started at /Sites/web/mdm/classes/ComplianceReport.php:1675) - Line 138 in /Sites/web/mdm/classes/Util.php
+
+DATE: 23/October/2019 10:09:24 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_device_compliance',
+  'type' => 'PROFILES',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'only_out_compliance' => '0',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Util::sendResponse -> File: /Sites/web/mdm/public/services/index.php (line 90)
+2) ::header -> File: /Sites/web/mdm/classes/Util.php (line 138)
+3) MosyleUtils\Environment::MosyleUtils\{closure} 
+4) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+5) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+6) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[2-WARNING] Cannot modify header information - headers already sent by (output started at /Sites/web/mdm/classes/ComplianceReport.php:1676) - Line 138 in /Sites/web/mdm/classes/Util.php
+
+DATE: 23/October/2019 10:10:36 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_device_compliance',
+  'type' => 'PROFILES',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'only_out_compliance' => '0',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Util::sendResponse -> File: /Sites/web/mdm/public/services/index.php (line 90)
+2) ::header -> File: /Sites/web/mdm/classes/Util.php (line 138)
+3) MosyleUtils\Environment::MosyleUtils\{closure} 
+4) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+5) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+6) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[2-WARNING] Cannot modify header information - headers already sent by (output started at /Sites/web/mdm/classes/ComplianceReport.php:1676) - Line 138 in /Sites/web/mdm/classes/Util.php
+
+DATE: 23/October/2019 10:11:16 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_device_compliance',
+  'type' => 'PROFILES',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'only_out_compliance' => '0',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Util::sendResponse -> File: /Sites/web/mdm/public/services/index.php (line 90)
+2) ::header -> File: /Sites/web/mdm/classes/Util.php (line 138)
+3) MosyleUtils\Environment::MosyleUtils\{closure} 
+4) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+5) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+6) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[2-WARNING] Cannot modify header information - headers already sent by (output started at /Sites/web/mdm/classes/ComplianceReport.php:1676) - Line 138 in /Sites/web/mdm/classes/Util.php
+
+DATE: 23/October/2019 10:20:15 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_device_compliance',
+  'type' => 'PROFILES',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'only_out_compliance' => '0',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Util::sendResponse -> File: /Sites/web/mdm/public/services/index.php (line 90)
+2) ::header -> File: /Sites/web/mdm/classes/Util.php (line 138)
+3) MosyleUtils\Environment::MosyleUtils\{closure} 
+4) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+5) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+6) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[2-WARNING] Cannot modify header information - headers already sent by (output started at /Sites/web/mdm/classes/ComplianceReport.php:1675) - Line 138 in /Sites/web/mdm/classes/Util.php
+
+DATE: 23/October/2019 10:21:07 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_device_compliance',
+  'type' => 'PROFILES',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'only_out_compliance' => '0',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Util::sendResponse -> File: /Sites/web/mdm/public/services/index.php (line 90)
+2) ::header -> File: /Sites/web/mdm/classes/Util.php (line 138)
+3) MosyleUtils\Environment::MosyleUtils\{closure} 
+4) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+5) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+6) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[8-NOTICE] Undefined index: type - Line 1676 in /Sites/web/mdm/classes/ComplianceReport.php
+
+DATE: 23/October/2019 10:22:07 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_device_compliance',
+  'type' => 'PROFILES',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'only_out_compliance' => '0',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) ComplianceReport::controller -> File: /Sites/web/mdm/classes/Controller.php (line 581)
+4) ComplianceReport::deviceCompliance -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 43)
+5) ComplianceReport::getAssignedProfiles -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 417)
+6) ComplianceReport::getAssignedProfilesNew -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1549)
+7) MosyleUtils\Environment::MosyleUtils\{closure} -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1676)
+8) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+9) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+10) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[8-NOTICE] Undefined index: type - Line 1676 in /Sites/web/mdm/classes/ComplianceReport.php
+
+DATE: 23/October/2019 10:23:25 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_device_compliance',
+  'type' => 'PROFILES',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'only_out_compliance' => '0',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) ComplianceReport::controller -> File: /Sites/web/mdm/classes/Controller.php (line 581)
+4) ComplianceReport::deviceCompliance -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 43)
+5) ComplianceReport::getAssignedProfiles -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 417)
+6) ComplianceReport::getAssignedProfilesNew -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1549)
+7) MosyleUtils\Environment::MosyleUtils\{closure} -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1676)
+8) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+9) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+10) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[8-NOTICE] Trying to get property 'device' of non-object - Line 12 in /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_profiles.php
+
+DATE: 23/October/2019 10:56:30 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/business/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'usertab_current_os' => 'ios',
+  'usertab_current_idcompany' => 'officecompany',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'action' => 'PROFILES',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) ::include_once -> File: /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_all_profiles.php (line 28)
+2) MosyleUtils\Environment::MosyleUtils\{closure} -> File: /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_profiles.php (line 12)
+3) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+4) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+5) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[8-NOTICE] Trying to get property 'device' of non-object - Line 12 in /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_profiles.php
+
+DATE: 23/October/2019 10:59:06 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/business/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'usertab_current_os' => 'ios',
+  'usertab_current_idcompany' => 'officecompany',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'action' => 'PROFILES',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) ::include_once -> File: /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_all_profiles.php (line 28)
+2) MosyleUtils\Environment::MosyleUtils\{closure} -> File: /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_profiles.php (line 12)
+3) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+4) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+5) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[8-NOTICE] Trying to get property 'device' of non-object - Line 12 in /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_profiles.php
+
+DATE: 23/October/2019 11:08:07 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/business/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'usertab_current_os' => 'ios',
+  'usertab_current_idcompany' => 'officecompany',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'action' => 'PROFILES',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) ::include_once -> File: /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_all_profiles.php (line 28)
+2) MosyleUtils\Environment::MosyleUtils\{closure} -> File: /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_profiles.php (line 12)
+3) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+4) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+5) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[8-NOTICE] Unknown: send of 5 bytes failed with errno=32 Broken pipe - Line 0 in Unknown
+
+DATE: 23/October/2019 11:14:50 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_device_compliance',
+  'type' => 'PROFILES',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'only_out_compliance' => '0',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) MosyleUtils\Environment::MosyleUtils\{closure} 
+2) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+3) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+4) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[2-WARNING] json_decode() expects parameter 1 to be string, array given - Line 180 in /Sites/web/mdm/classes/Log.php
+
+DATE: 23/October/2019 12:29:37 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_device_compliance',
+  'type' => 'PROFILES',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'only_out_compliance' => '0',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) ComplianceReport::controller -> File: /Sites/web/mdm/classes/Controller.php (line 581)
+4) ComplianceReport::deviceCompliance -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 43)
+5) ComplianceReport::getAssignedProfiles -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 417)
+6) ComplianceReport::getAssignedProfilesNew -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1549)
+7) Log::doLogJson -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1755)
+8) ::json_decode -> File: /Sites/web/mdm/classes/Log.php (line 180)
+9) MosyleUtils\Environment::MosyleUtils\{closure} 
+10) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+11) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+12) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[2-WARNING] array_push() expects parameter 1 to be array, null given - Line 192 in /Sites/web/mdm/classes/Log.php
+
+DATE: 23/October/2019 15:28:10 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_device_compliance',
+  'type' => 'PROFILES',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'only_out_compliance' => '0',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) ComplianceReport::controller -> File: /Sites/web/mdm/classes/Controller.php (line 581)
+4) ComplianceReport::deviceCompliance -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 43)
+5) ComplianceReport::getAssignedProfiles -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 417)
+6) ComplianceReport::getAssignedProfilesNew -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1549)
+7) Log::doLogJson -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1759)
+8) ::array_push -> File: /Sites/web/mdm/classes/Log.php (line 192)
+9) MosyleUtils\Environment::MosyleUtils\{closure} 
+10) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+11) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+12) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[2-WARNING] array_push() expects parameter 1 to be array, object given - Line 205 in /Sites/web/mdm/classes/Log.php
+
+DATE: 23/October/2019 15:35:44 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_device_compliance',
+  'type' => 'PROFILES',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'only_out_compliance' => '0',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) ComplianceReport::controller -> File: /Sites/web/mdm/classes/Controller.php (line 581)
+4) ComplianceReport::deviceCompliance -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 43)
+5) ComplianceReport::getAssignedProfiles -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 417)
+6) ComplianceReport::getAssignedProfilesNew -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1549)
+7) Log::doLogJson -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1759)
+8) ::array_push -> File: /Sites/web/mdm/classes/Log.php (line 205)
+9) MosyleUtils\Environment::MosyleUtils\{closure} 
+10) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+11) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+12) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[2-WARNING] array_push() expects parameter 1 to be array, object given - Line 205 in /Sites/web/mdm/classes/Log.php
+
+DATE: 23/October/2019 15:36:47 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_device_compliance',
+  'type' => 'PROFILES',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'only_out_compliance' => '0',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) ComplianceReport::controller -> File: /Sites/web/mdm/classes/Controller.php (line 581)
+4) ComplianceReport::deviceCompliance -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 43)
+5) ComplianceReport::getAssignedProfiles -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 417)
+6) ComplianceReport::getAssignedProfilesNew -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1549)
+7) Log::doLogJson -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1759)
+8) ::array_push -> File: /Sites/web/mdm/classes/Log.php (line 205)
+9) MosyleUtils\Environment::MosyleUtils\{closure} 
+10) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+11) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+12) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[2-WARNING] array_push() expects parameter 1 to be array, object given - Line 205 in /Sites/web/mdm/classes/Log.php
+
+DATE: 23/October/2019 15:37:44 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_device_compliance',
+  'type' => 'PROFILES',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'only_out_compliance' => '0',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) ComplianceReport::controller -> File: /Sites/web/mdm/classes/Controller.php (line 581)
+4) ComplianceReport::deviceCompliance -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 43)
+5) ComplianceReport::getAssignedProfiles -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 417)
+6) ComplianceReport::getAssignedProfilesNew -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1549)
+7) Log::doLogJson -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1759)
+8) ::array_push -> File: /Sites/web/mdm/classes/Log.php (line 205)
+9) MosyleUtils\Environment::MosyleUtils\{closure} 
+10) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+11) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+12) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[2-WARNING] array_push() expects parameter 1 to be array, object given - Line 205 in /Sites/web/mdm/classes/Log.php
+
+DATE: 23/October/2019 15:39:38 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_device_compliance',
+  'type' => 'PROFILES',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'only_out_compliance' => '0',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) ComplianceReport::controller -> File: /Sites/web/mdm/classes/Controller.php (line 581)
+4) ComplianceReport::deviceCompliance -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 43)
+5) ComplianceReport::getAssignedProfiles -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 417)
+6) ComplianceReport::getAssignedProfilesNew -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1549)
+7) Log::doLogJson -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1759)
+8) ::array_push -> File: /Sites/web/mdm/classes/Log.php (line 205)
+9) MosyleUtils\Environment::MosyleUtils\{closure} 
+10) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+11) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+12) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[8-NOTICE] Trying to get property 'device' of non-object - Line 12 in /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_profiles.php
+
+DATE: 23/October/2019 15:40:45 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/business/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'usertab_current_os' => 'ios',
+  'usertab_current_idcompany' => 'officecompany',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'action' => 'PROFILES',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) ::include_once -> File: /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_all_profiles.php (line 28)
+2) MosyleUtils\Environment::MosyleUtils\{closure} -> File: /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_profiles.php (line 12)
+3) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+4) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+5) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[2-WARNING] Cannot modify header information - headers already sent by (output started at /Sites/web/mdm/classes/Log.php:202) - Line 138 in /Sites/web/mdm/classes/Util.php
+
+DATE: 23/October/2019 15:44:55 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_device_compliance',
+  'type' => 'PROFILES',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'only_out_compliance' => '0',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Util::sendResponse -> File: /Sites/web/mdm/public/services/index.php (line 90)
+2) ::header -> File: /Sites/web/mdm/classes/Util.php (line 138)
+3) MosyleUtils\Environment::MosyleUtils\{closure} 
+4) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+5) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+6) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[2-WARNING] Cannot modify header information - headers already sent by (output started at /Sites/web/mdm/classes/Log.php:192) - Line 138 in /Sites/web/mdm/classes/Util.php
+
+DATE: 23/October/2019 16:01:21 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_device_compliance',
+  'type' => 'PROFILES',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'only_out_compliance' => '0',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Util::sendResponse -> File: /Sites/web/mdm/public/services/index.php (line 90)
+2) ::header -> File: /Sites/web/mdm/classes/Util.php (line 138)
+3) MosyleUtils\Environment::MosyleUtils\{closure} 
+4) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+5) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+6) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[2-WARNING] array_push() expects parameter 1 to be array, null given - Line 202 in /Sites/web/mdm/classes/Log.php
+
+DATE: 23/October/2019 16:36:46 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_device_compliance',
+  'type' => 'PROFILES',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'only_out_compliance' => '0',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) ComplianceReport::controller -> File: /Sites/web/mdm/classes/Controller.php (line 581)
+4) ComplianceReport::deviceCompliance -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 43)
+5) ComplianceReport::getAssignedProfiles -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 417)
+6) ComplianceReport::getAssignedProfilesNew -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1549)
+7) Log::doLogJson -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1759)
+8) ::array_push -> File: /Sites/web/mdm/classes/Log.php (line 202)
+9) MosyleUtils\Environment::MosyleUtils\{closure} 
+10) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+11) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+12) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[2-WARNING] Use of undefined constant self - assumed 'self' (this will throw an Error in a future version of PHP) - Line 172 in /Sites/web/mdm/classes/Log.php
+
+DATE: 23/October/2019 16:46:46 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_device_compliance',
+  'type' => 'PROFILES',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'only_out_compliance' => '0',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) ComplianceReport::controller -> File: /Sites/web/mdm/classes/Controller.php (line 581)
+4) ComplianceReport::deviceCompliance -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 43)
+5) ComplianceReport::getAssignedProfiles -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 417)
+6) ComplianceReport::getAssignedProfilesNew -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1549)
+7) Log::doLogJson -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1759)
+8) MosyleUtils\Environment::MosyleUtils\{closure} -> File: /Sites/web/mdm/classes/Log.php (line 172)
+9) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+10) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+11) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[8192-UNKNOWN] Non-static method Log::createFile() should not be called statically - Line 172 in /Sites/web/mdm/classes/Log.php
+
+DATE: 23/October/2019 16:47:24 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_device_compliance',
+  'type' => 'PROFILES',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'only_out_compliance' => '0',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) ComplianceReport::controller -> File: /Sites/web/mdm/classes/Controller.php (line 581)
+4) ComplianceReport::deviceCompliance -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 43)
+5) ComplianceReport::getAssignedProfiles -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 417)
+6) ComplianceReport::getAssignedProfilesNew -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1549)
+7) Log::doLogJson -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1759)
+8) MosyleUtils\Environment::MosyleUtils\{closure} -> File: /Sites/web/mdm/classes/Log.php (line 172)
+9) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+10) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+11) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[2-WARNING] array_push() expects parameter 1 to be array, null given - Line 198 in /Sites/web/mdm/classes/Log.php
+
+DATE: 23/October/2019 16:47:41 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_device_compliance',
+  'type' => 'PROFILES',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'only_out_compliance' => '0',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) ComplianceReport::controller -> File: /Sites/web/mdm/classes/Controller.php (line 581)
+4) ComplianceReport::deviceCompliance -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 43)
+5) ComplianceReport::getAssignedProfiles -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 417)
+6) ComplianceReport::getAssignedProfilesNew -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1549)
+7) Log::doLogJson -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1759)
+8) ::array_push -> File: /Sites/web/mdm/classes/Log.php (line 198)
+9) MosyleUtils\Environment::MosyleUtils\{closure} 
+10) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+11) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+12) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[2-WARNING] array_push() expects parameter 1 to be array, null given - Line 200 in /Sites/web/mdm/classes/Log.php
+
+DATE: 23/October/2019 16:48:25 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_device_compliance',
+  'type' => 'PROFILES',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'only_out_compliance' => '0',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) ComplianceReport::controller -> File: /Sites/web/mdm/classes/Controller.php (line 581)
+4) ComplianceReport::deviceCompliance -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 43)
+5) ComplianceReport::getAssignedProfiles -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 417)
+6) ComplianceReport::getAssignedProfilesNew -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1549)
+7) Log::doLogJson -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1759)
+8) ::array_push -> File: /Sites/web/mdm/classes/Log.php (line 200)
+9) MosyleUtils\Environment::MosyleUtils\{closure} 
+10) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+11) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+12) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[8-NOTICE] Trying to get property 'device' of non-object - Line 12 in /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_profiles.php
+
+DATE: 23/October/2019 16:50:45 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/business/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'usertab_current_os' => 'ios',
+  'usertab_current_idcompany' => 'officecompany',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'action' => 'PROFILES',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) ::include_once -> File: /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_all_profiles.php (line 28)
+2) MosyleUtils\Environment::MosyleUtils\{closure} -> File: /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_profiles.php (line 12)
+3) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+4) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+5) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[8-NOTICE] Trying to get property 'device' of non-object - Line 12 in /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_profiles.php
+
+DATE: 23/October/2019 16:54:18 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/business/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'usertab_current_os' => 'ios',
+  'usertab_current_idcompany' => 'officecompany',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'action' => 'PROFILES',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) ::include_once -> File: /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_all_profiles.php (line 28)
+2) MosyleUtils\Environment::MosyleUtils\{closure} -> File: /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_profiles.php (line 12)
+3) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+4) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+5) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>[8-NOTICE] Trying to get property 'device' of non-object - Line 12 in /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_profiles.php
+
+DATE: 23/October/2019 16:59:16 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/business/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'usertab_current_os' => 'ios',
+  'usertab_current_idcompany' => 'officecompany',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'action' => 'PROFILES',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) ::include_once -> File: /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_all_profiles.php (line 28)
+2) MosyleUtils\Environment::MosyleUtils\{closure} -> File: /Sites/web/business/public/screens/scules/mdm/deviceinfo/device_profiles.php (line 12)
+3) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/Environment.php (line 90)
+4) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+5) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br>

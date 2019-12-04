@@ -1,0 +1,105 @@
+<pre>SELECT SQL_CALC_FOUND_ROWS 
+                    
+                    obj.*,
+                    NULL as user_email_encrypt,
+                    AES_DECRYPT(obj.user_email_encrypt, "M05yL3C0rp0r4t10N") as user_email,
+                    (SELECT u.name FROM users u WHERE u.iduser = obj.iduser_support LIMIT 1) as user_support_name,
+                    (SELECT u.email FROM users u WHERE u.iduser = obj.iduser_support LIMIT 1) as user_support_email,
+                    (SELECT c.channel_team FROM conference_channels c WHERE c.idchannel = obj.idchannel) as channel_team
+                    
+                FROM conference_meetings obj
+                WHERE obj.is_removed = 0 AND obj.product_name IN ("MANAGER") AND ((obj.date_start + (obj.duration * 60)) >= 1572533247 OR obj.date_start IS NULL) AND obj.idorganization IN ("officeschool") AND obj.meeting_status != "CANCELED"
+                ORDER BY obj.date_start ASC, obj.date_created ASC
+                LIMIT 50
+                OFFSET 0 (3.2429940700531s)
+
+DATE: 31/October/2019 11:47:30 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'operation' => 'get_meetings',
+  'ignore_past' => '1',
+  'dont_ignore_waiting' => '1',
+  'not_canceled' => '1',
+  'ignore_expired' => '1',
+  'appkey' => 'nBn4QcRDCvt7QKwRk9KZBwYaaBQGwGuV',
+  'product_name' => 'MANAGER',
+  'idorganization' => 'officeschool',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) MosyleMeeting\Meeting::get -> File: /Sites/web/meeting/public/integration.php (line 61)
+2) MosyleUtils\DB::stmtExec -> File: /Sites/web/meeting/classes/Meeting.php (line 164)
+3) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/DB.php (line 231)
+4) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+5) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>INSERT INTO tickets_messages (idticketmessage, message, idticket, iduser_organization, iduser_screenguide, iduser_support, access_type, date_created, date_modified, is_removed, ip_address, is_defaultanswer, idmessage_reference, idlibrary_reference, message_tags) 
+                VALUES (:idticketmessage, :message, :idticket, :iduser_organization, :iduser_screenguide, :iduser_support, :access_type, :date_created, :date_modified, :is_removed, :ip_address, :is_defaultanswer, :idmessage_reference, :idlibrary_reference, :message_tags)
+                ON DUPLICATE KEY UPDATE message = :message, access_type = :access_type, date_modified = :date_modified, is_removed = :is_removed, is_defaultanswer = :is_defaultanswer, idmessage_reference = :idmessage_reference, idlibrary_reference = :idlibrary_reference, message_tags = :message_tags (3.4310839176178s)
+
+DATE: 31/October/2019 12:19:11 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'operation' => 'ticketmessage_save',
+  'idticket' => '23',
+  'message' => 'TICKET DOES NOT LEAVE THE STACK',
+  'appkey' => 'nBn4QcRDCvt7QKwRk9KZBwYaaBQGwGuV',
+  'panel_group' => 'MANAGER',
+  'idorganization' => 'officeschool',
+  'iduser_organization' => '385',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) TicketMessage::saveTicketMessage -> File: /Sites/web/desk/public/integration.php (line 199)
+2) MosyleUtils\DB::stmtExec -> File: /Sites/web/desk/classes/TicketMessage.php (line 237)
+3) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/DB.php (line 231)
+4) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+5) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>INSERT INTO tickets_chats (idticketchat, message, idticket, iduser_support, date_created, is_removed, ip_address) 
+                VALUES (:idticketchat, :message, :idticket, :iduser_support, :date_created, :is_removed, :ip_address)
+                ON DUPLICATE KEY UPDATE message = :message, is_removed = :is_removed (5.0943429470062s)
+
+DATE: 31/October/2019 14:09:46 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/desk/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'operation' => 'new_ticket_chat',
+  'idticket' => '23',
+  'idticketfiles' => '',
+  'message' => '#C0074 | MESSAGE TICKET 2 / DESK / comentário',
+  'files' => 
+  array (
+    0 => '',
+  ),
+  'iduser_support' => '22',
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) TicketChat::saveTicketChat -> File: /Sites/web/desk/public/controller/main.php (line 135)
+2) MosyleUtils\DB::stmtExec -> File: /Sites/web/desk/classes/TicketChat.php (line 144)
+3) MosyleUtils\Log::add -> File: /Sites/web/utils/libs/classes/DB.php (line 231)
+4) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/utils/libs/classes/Log.php (line 15)
+5) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br>

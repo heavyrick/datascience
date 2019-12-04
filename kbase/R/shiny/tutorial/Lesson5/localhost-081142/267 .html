@@ -1,0 +1,82 @@
+<pre>Message => SQLSTATE[HY000]: General error: 2006 MySQL server has gone away<br>officemanager.mosyle.com<br>Query => SELECT p.idprofile as idprofile, 
+                           p.name, 
+                           p.is_enabled, 
+                           "appinstall_profiles" as profile_table, 
+                           "INSTALL_APP" as profile_type, 
+                           "Install App" as type_name, 
+                           p.is_districtlevel, 
+                           p.idaccount, 
+                           p.dontApplytoShared, 
+                           p.scope, 
+                           0 as classmanager,
+                           :deviceudid as deviceudid, 
+                           NULL as idusermosyle
+                           FROM appinstall_profiles p
+                           WHERE 
+                           p.is_deleted = 0
+                           AND p.os = :os 
+                           
+                           
+                           AND p.idprofile IN (SELECT rel.idprofile FROM appinstall_device_profile rel WHERE rel.to_remove = 0 AND rel.deviceudid = :deviceudid)
+                           UNION
+                         SELECT p.idprofile as idprofile, 
+                                p.name, 
+                                p.is_enabled, 
+                                "appinstall_profiles" as profile_table, 
+                                "INSTALL_APP" as profile_type, 
+                                "Install App" as type_name, 
+                                p.is_districtlevel, 
+                                p.idaccount, 
+                                p.dontApplytoShared, 
+                                p.scope, 
+                                0 as classmanager,
+                                NULL as deviceudid, 
+                           :idusermosyle as idusermosyle
+                           FROM appinstall_profiles p
+                           WHERE 
+                           p.is_deleted = 0
+                           AND p.os = :os 
+                           
+                           
+                           
+                           AND p.idprofile IN (SELECT rel.idprofile FROM appinstall_device_profile rel WHERE rel.to_remove = 0 AND rel.idusermosyle = :idusermosyle)
+                           
+
+DATE: 23/October/2019 10:00:08 (America/Sao_Paulo)
+EXTRA_CONTENT: 
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_device_compliance',
+  'type' => 'PROFILES',
+  'deviceudid' => '74d61503e25858dba69bf56a89eb5d59f7d01b23',
+  'only_out_compliance' => '0',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'ios',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) ComplianceReport::controller -> File: /Sites/web/mdm/classes/Controller.php (line 581)
+4) ComplianceReport::deviceCompliance -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 43)
+5) ComplianceReport::getAssignedProfiles -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 417)
+6) ComplianceReport::getAssignedProfilesNew -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1549)
+7) DB::stmtExec -> File: /Sites/web/mdm/classes/ComplianceReport.php (line 1739)
+8) DB::stmtExec -> File: /Sites/web/mdm/classes/DB.php (line 433)
+9) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 441)
+10) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+11) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br>

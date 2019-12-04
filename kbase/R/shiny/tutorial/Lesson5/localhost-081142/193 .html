@@ -1,0 +1,235 @@
+<pre>slowQuery
+
+DATE: 04/November/2019 15:25:32 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 3.7446110248566 seconds
+    [query] => SELECT p.iddep, p.name, p.access_token_expires, p.org_name, p.org_type,
+                       p.date_last_cursor, p.invalid_reason, p.all_locations,
+                       p.sync_status, p.date_created, p.idaccount, 
+                        (SELECT GROUP_CONCAT(u.idunit) FROM dep_unit_account u WHERE p.iddep = u.iddep) as idunits,
+                        (SELECT GROUP_CONCAT(u.iduser) FROM dep_unit_account u WHERE p.iddep = u.iddep) as idusers, 
+                        (SELECT GROUP_CONCAT(u.idusergroups) FROM dep_unit_account u WHERE p.iddep = u.iddep) as idusergroups
+                FROM dep_accounts p LEFT JOIN dep_unit_account u ON p.iddep = u.iddep WHERE p.is_deleted = 0 AND ((p.all_locations = 0  OR u.iduser IN (1473) OR u.idusergroups IS NOT NULL)) GROUP BY p.iddep
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'business',
+  'MDM_DOMAIN' => 'officebiz-01',
+  'operation' => 'get_dep_accounts',
+  'usergroups' => 'ALL',
+  'admins' => '1473',
+  'iduserrequest' => '1473',
+  'lang' => 'en',
+  'loggedin_user_idusergroups_admin' => 'ALL',
+  'current_os' => 'tvos',
+)
+GLOBALS_DATABASE: officebiz_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) Dep::controller -> File: /Sites/web/mdm/classes/Controller.php (line 804)
+4) Dep::getAccounts -> File: /Sites/web/mdm/classes/Dep.php (line 77)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/Dep.php (line 416)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 04/November/2019 16:25:39 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 4.7897329330444 seconds
+    [query] => SELECT DISTINCT d.deviceudid , d.total_disk, d.is_supervised, d.device_model, d.osversion, d.battery, d.date_last_beat, IF(d.device_name IS NULL, "Device without name", device_name) as device_name, d.tags, d.available_disk, d.ios_maximum_resident_users, d.asset_tag, d.date_info, d.model_name, d.android_admin_enabled, d.android_usage_access_enabled, d.isBluetoothOn, d.iTunesStoreAccountIsActive, d.lostmode_status, d.has_passcode, (d.available_disk/d.total_disk) as percent_disk, dd.iddep, d.IsFrozen 
+                FROM device_info d LEFT JOIN dep_devices dd ON d.serial_number = dd.serial_number AND d.os IN ("ios", "mac", "tvos") AND dd.op_type != "deleted"
+                WHERE d.deviceudid IN ("84086c2dd50f9a269a21f4126393a6aaa680e499","4194638b879cfc922f2593027677873e18de7b48","7671fdbdd8487154df124b59dbfb5b206ff32e49","bc38a47fcc3140696c16b5eea6057a9f8d796c03","53359d8f6878a68eed6b0ca6f3504d49ce8ed676","7b373a787c8f6d3e917bb08cd0a3e9061f709db8","02ebe9738c7a9c6a95f6dc44409fc4d2d7e5c9c3","8b57c03a2fb75d31f58fbd9c9c09039dd1c332b2","c2ae1c15831d4abd26b239b83b136349f231489d")
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'school_devices',
+  'term_by' => '1',
+  'attributes' => 'is_supervised,device_model,osversion,battery,date_last_beat,device_name,tags,available_disk,ios_maximum_resident_users,asset_tag,date_info,model_name,android_admin_enabled,android_usage_access_enabled,isBluetoothOn,iTunesStoreAccountIsActive,lostmode_status,has_passcode',
+  'page' => '1',
+  'current_os' => 'ios',
+  'filter_devices' => '1',
+  'filter_enrollment_model' => 'DEVICE_ENROLLMENT',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) SchoolController::controller -> File: /Sites/web/mdm/classes/Controller.php (line 539)
+4) School::getDevices -> File: /Sites/web/mdm/classes/SchoolController.php (line 23)
+5) School::separateInDatabases -> File: /Sites/web/mdm/classes/School.php (line 695)
+6) Device::getDevicesByDatabase -> File: /Sites/web/mdm/classes/School.php (line 765)
+7) DB::stmtExec -> File: /Sites/web/mdm/classes/Device.php (line 2930)
+8) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+9) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+10) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 04/November/2019 16:26:06 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 2.7921051979065 seconds
+    [query] => SELECT p.idprofile as idprofile, p.options 
+                FROM generic_profiles p 
+                WHERE p.is_deleted = 0 AND p.is_hidden = 0 AND p.is_enabled = 1 AND p.type = "DEVICEAUTH"
+                    AND p.idprofile IN (SELECT rel.idprofile FROM generic_device_profile rel WHERE rel.to_remove = 0 AND rel.iduser IS NULL AND rel.deviceudid = :deviceudid)
+                GROUP BY p.idprofile ORDER BY p.idprofile
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'device_info',
+  'deviceudid' => '3d829e24a905fb318d64dc516b7961e539f2153c',
+  'options' => '{"security":1}',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'current_os' => 'tvos',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) Device::controller -> File: /Sites/web/mdm/classes/Controller.php (line 600)
+4) Device::getDevice -> File: /Sites/web/mdm/classes/Device.php (line 327)
+5) DeviceAuthentication::setDeviceInfo -> File: /Sites/web/mdm/classes/Device.php (line 810)
+6) DeviceAuthentication::getProfilesByDeviceudid -> File: /Sites/web/mdm/classes/profiles/DeviceAuthentication.php (line 141)
+7) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/DeviceAuthentication.php (line 183)
+8) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+9) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+10) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 04/November/2019 16:49:45 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 5.6281130313873 seconds
+    [query] => SELECT SQL_CALC_FOUND_ROWS
+                      
+                       p.idgroup, p.name, p.allow_modification, p.os, p.report_users,
+                       p.allow_unitAdminAccess, p.rules_visual, p.rules_processed,
+                       p.in_progress, p.idaccount, p.last_sync, p.is_hidden,p.icon, p.is_alert, p.auto_sync,
+                       GROUP_CONCAT(u.idunit) as idunits,
+                       (SELECT count(*) FROM dynamicgroup_devices WHERE idgroup = p.idgroup) as qtd_devices
+                       
+                FROM dynamicgroup_profiles p LEFT JOIN dynamicgroup_unit_profile u ON p.idgroup = u.idgroup WHERE p.is_districtlevel = 0 AND p.is_alert = 1 AND p.allow_modification = 1 AND p.os = "tvos" AND p.is_deleted = 0
+                 GROUP BY p.idgroup ORDER BY p.name
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'current_os' => 'tvos',
+  'is_alert' => '1',
+  'operation' => 'get_dynamicgroups_profiles',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) DynamicGroup::controller -> File: /Sites/web/mdm/classes/Controller.php (line 1033)
+4) DynamicGroup::getProfiles -> File: /Sites/web/mdm/classes/profiles/DynamicGroup.php (line 59)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/profiles/DynamicGroup.php (line 592)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 04/November/2019 17:21:48 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 6.1397960186005 seconds
+    [query] => SELECT DISTINCT d.deviceudid , d.total_disk, d.*, IF(d.device_name IS NULL, "Device without name", d.device_name) as device_name, AES_DECRYPT(d.last_ip_beat_encrypt, "M05yL3C0rp0r4t10N") as last_ip_beat, NULL as last_ip_beat_encrypt, AES_DECRYPT(d.last_lan_ip_encrypt, "M05yL3C0rp0r4t10N") as last_lan_ip, NULL as last_lan_ip_encrypt, (d.available_disk/d.total_disk) as percent_disk, dd.iddep, d.IsFrozen 
+                FROM device_info d LEFT JOIN dep_devices dd ON d.serial_number = dd.serial_number AND d.os IN ("ios", "mac", "tvos") AND dd.op_type != "deleted"
+                WHERE d.deviceudid IN ("1CD85FCF-04EA-5540-9E73-94FB4D36A392","291090AE-510E-5CE8-9DD3-42C947624500","564D27A7-0003-A82D-8C8D-45D2057902F2","564DADA4-13B0-D38A-018A-0C08A1797212","564DCBE6-ECC0-AB25-DD8F-FEE69F45A2D5","566B24A5-7ABE-5415-8579-85ABEB8852D7","6A497606-B643-5F86-A068-D12D898CFC0C","AA8E6A06-E5E4-5F85-B174-8CAA05C75950","C82DA4B7-B696-59D6-A977-4CE88A1C428B","FE0D2D39-D601-50EA-B454-A2DBA73325F9")
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'bulk_devices_info',
+  'export_info' => '0',
+  'devices' => '564DADA4-13B0-D38A-018A-0C08A1797212,564D27A7-0003-A82D-8C8D-45D2057902F2,1CD85FCF-04EA-5540-9E73-94FB4D36A392,C82DA4B7-B696-59D6-A977-4CE88A1C428B,6A497606-B643-5F86-A068-D12D898CFC0C,566B24A5-7ABE-5415-8579-85ABEB8852D7,FE0D2D39-D601-50EA-B454-A2DBA73325F9,AA8E6A06-E5E4-5F85-B174-8CAA05C75950,291090AE-510E-5CE8-9DD3-42C947624500,564DCBE6-ECC0-AB25-DD8F-FEE69F45A2D5',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'current_os' => 'mac',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) BulkOperations::controller -> File: /Sites/web/mdm/classes/Controller.php (line 641)
+4) BulkQueries::getDevicesInfo -> File: /Sites/web/mdm/classes/BulkOperations.php (line 31)
+5) Device::getDevicesByDatabase -> File: /Sites/web/mdm/classes/BulkQueries.php (line 553)
+6) DB::stmtExec -> File: /Sites/web/mdm/classes/Device.php (line 2930)
+7) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 426)
+8) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+9) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br>

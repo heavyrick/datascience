@@ -1,0 +1,104 @@
+<pre>SELECT SQL_CALC_FOUND_ROWS
+                       
+                       m.pk_materia, m.nome, m.nome_sala, m.mdm_platform, m.pk_unidade, m.data_criacao, m.teachers_alias, 
+                       m.data_modificacao, m.pk_usuario, m.pk_materia_tag,
+                       m.is_appleid_required, m.excluido, m.unique_identifier, m.idaccount, m.registered_from,
+                       u.nome as unit_name, IFNULL(mt.nome, "Classes without course") as course_name, 
+                       us.nome as teacher_name, us.photo_url, 
+                       u.allow_screenobservation, u.allow_teacherforceclassroom, 
+                       (SELECT GROUP_CONCAT(rum.pk_usuario) FROM rel_usuario_materia rum INNER JOIN usuarios u ON rum.rel_deleted = 0 AND u.pk_usuario = rum.pk_usuario AND u.excluido = "N" WHERE rum.pk_materia = m.pk_materia) as idstudents,
+                       (SELECT GROUP_CONCAT(c.pk_usuario) FROM coordenadores c INNER JOIN usuarios u ON u.pk_usuario = c.pk_usuario AND u.excluido = "N" WHERE c.pk_materia = m.pk_materia  AND (c.date_expiration IS NULL OR c.date_expiration > UNIX_TIMESTAMP())) as idcoordinators
+                       
+
+                FROM materias m
+                INNER JOIN unidades u ON u.pk_unidade = m.pk_unidade
+                LEFT JOIN materias_tags mt ON mt.pk_materia_tag = m.pk_materia_tag
+                INNER JOIN usuarios us ON us.pk_usuario = m.pk_usuario
+                WHERE m.pk_usuario IN (149,119,156,212,130,307,206,160,164,132,111,192,166,176,168,306,123,105,319,16,375,308,161,358,163,0) AND m.excluido = "N"
+                GROUP BY m.pk_materia
+                
+                ORDER BY mt.nome, m.nome
+                
+                
+
+DATE: 14/October/2019 08:40:37 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 3.0209629535675 seconds
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: http://localhost/web/manager/public/
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+ARGS: 
+GET: 
+POST: array (
+  'usertab_current_os' => 'ios',
+  'usertab_current_idschool' => 'officeschool',
+  'grouped_by' => 'TEACHERS',
+  'idgradelevels' => 
+  array (
+  ),
+  'idclassperiods' => 
+  array (
+  ),
+  'idunits' => 
+  array (
+  ),
+  'idaccounts' => 
+  array (
+  ),
+)
+GLOBALS_DATABASE: 
+SCHOOL: 
+COMPANY: 
+
+1) ::require_once -> File: /Sites/web/manager/public/screens/scules/hierarchy/users.php (line 101)
+2) User::getDescriptions -> File: /Sites/web/manager/public/screens/scules/hierarchy/users_list.php (line 88)
+3) ClassPeriod::getClassPeriods -> File: /Sites/web/manager/classes/User.php (line 1613)
+4) DB::stmtExec -> File: /Sites/web/manager/classes/ClassPeriod.php (line 411)
+5) log::dolog -> File: /Sites/web/manager/classes/DB.php (line 283)
+6) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/manager/classes/log.php (line 22)
+7) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br><pre>slowQuery
+
+DATE: 14/October/2019 08:42:13 (America/Sao_Paulo)
+EXTRA_CONTENT: Array
+(
+    [execution_time] => 6.1489808559418 seconds
+    [query] => SELECT * FROM manager_sg_users WHERE idprofile = :idprofile AND to_remove = :to_remove
+)
+
+REMOTE_ADDR: ::1
+HTTP_HOST: localhost
+HTTP_REFERER: 
+HTTP_USER_AGENT: 
+ARGS: 
+GET: 
+POST: array (
+  'secretkey' => 'officesecretkey_manager',
+  'appkey' => 'aN63UDr4Ug8F6S6ABMK0ifcM78E266iQ',
+  'force_mdm_type_server' => 'school',
+  'MDM_DOMAIN' => 'officesch-01',
+  'operation' => 'get_managersg_profile',
+  'idprofile' => '1',
+  'iduserrequest' => '385',
+  'lang' => 'en',
+  'current_os' => 'ios',
+  'limbo_belongs_all_locations' => '1',
+  'selection_mode' => 'SELECT_SPECIFIC',
+)
+GLOBALS_DATABASE: officesch_01
+SCHOOL: 
+COMPANY: 
+
+1) Controller::__construct -> File: /Sites/web/mdm/public/services/index.php (line 72)
+2) Controller::process -> File: /Sites/web/mdm/classes/Controller.php (line 49)
+3) ManagerSG::controller -> File: /Sites/web/mdm/classes/Controller.php (line 1021)
+4) ManagerSG::getRecipients -> File: /Sites/web/mdm/classes/ManagerSG.php (line 57)
+5) DB::stmtExec -> File: /Sites/web/mdm/classes/ManagerSG.php (line 430)
+6) Log::errorLog -> File: /Sites/web/mdm/classes/DB.php (line 425)
+7) MosyleUtils\Log::saveLocalFile -> File: /Sites/web/mdm/classes/Log.php (line 94)
+8) MosyleUtils\Log::backtrace -> File: /Sites/web/utils/libs/classes/Log.php (line 64)
+</pre>****************************************<br>

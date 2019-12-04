@@ -1,0 +1,117 @@
+---
+title: "Eleições Gerais"
+output: html_notebook
+---
+
+```{r config, include=FALSE}
+#================================================================#
+# Definindo o ambiente
+
+ambiente = 'appleMac'
+db_access <<- 'remote' # define o local de acesso aos dados, se remote, então acessa o atlasDB
+
+switch(ambiente, 
+  windowsPc={
+   setwd('C:/Users/heavyrick/Desktop/datascience/r_analises/eleicoes')
+  },
+  windowsNote={
+   setwd('C:/Users/ricardo/Desktop/ds/datascience/kbase/R')
+  },
+  linuxPC={
+    setwd('/home/usuario/www/repositorios/datascience/kbase/R')
+  },
+  appleMac={
+    setwd('/Users/ricardoalmeida/ds/datascience/r_analises/eleicoes')
+  }
+)
+#================================================================#
+
+# Carregar dados
+
+source(file = "eleicoes_carrega_dados.R", encoding = "UTF-8")
+```
+
+<h4 style="color:blue"> Partidos e espectros políticos </h4>
+<h5 style="color:red">Qual a quantidade de votos por partido ?</h5>
+<p>Os votos ficam na base `df_secao_votacao_gerais` e devem ser juntados com a base `df_partidos`. Temos que retornar a quantidade de votos por sigla partidária, não mostrando os que não tiveram votos.</p>
+
+```{r df_df1, include=FALSE, paged.print=TRUE}
+
+title_text = 'Eleições gerais 2018 | Americana: '
+
+votos_partido_df = sqldf("
+      SELECT p.Sigla, SUM(v.QT_VOTOS) as Votos 
+      FROM df_partidos p
+      LEFT JOIN df_secao_votacao_gerais v ON p.Legenda = v.NR_PARTIDO
+      GROUP BY p.Sigla
+      HAVING SUM(v.QT_VOTOS) > 0
+      ORDER BY Votos DESC
+      ")
+
+# O gráfico primeiro é preparado ordendando as colunas por quantidade de votos
+# a propriedade fill dá um degradê interessante para a contagem
+
+votos_partido_chart <- ggplot(
+  votos_partido_df, aes(
+      x = reorder(Sigla, -Votos), 
+      y = Votos, 
+      fill=as.factor(Votos)
+      )
+  )
+
+# Gráfico de barras horizontais para mostrar as votações
+# Fosse vertical os nomes iam ficar difíceis de ler, iam ficar encavalados
+
+votos_partido_func <- function() {
+  votos_partido_chart + 
+  geom_bar(stat = "identity") + 
+  scale_fill_grey(start = 0.65, end = 0.20) +
+  coord_flip() + 
+  ggtitle(paste(title_text, 'Votos por partido')) + 
+  xlab('Partidos') + 
+  ylab('Qtde Votos') +
+  theme(legend.position="none",
+        plot.title = element_text(size = 11, face='bold'), 
+        axis.title = element_text(size=12, color='black'))
+}
+```
+
+```{r echo=FALSE}
+votos_partido_func()
+```
+<h5 style="color:red">Qual a quantidade de vereadores que receberam votos por partido?</h5>
+```{r include=FALSE}
+# Select dos dados
+
+candidatos_votados_df = sqldf("
+      SELECT p.Sigla, COUNT(DISTINCT v.NR_VOTAVEL) as Candidatos 
+      FROM df_partidos p
+      INNER JOIN df_secao_votacao_gerais v ON p.Legenda = v.NR_PARTIDO
+      GROUP BY p.Sigla
+      ORDER BY Candidatos DESC
+      ")
+
+candidatos_votados_chart <- ggplot(
+  candidatos_votados_df, aes(
+    x = reorder(Sigla, -Candidatos), 
+    y = Candidatos, 
+    fill=as.factor(Candidatos)
+    )
+  )
+
+candidatos_votados_func <- function() {
+  candidatos_votados_chart + 
+  geom_bar(stat = "identity") + 
+  scale_fill_grey(start = 0.85, end = 0.20) +
+  coord_flip() + 
+  ggtitle(paste(title_text, 'Quantidade de candidatos que receberam votos por partido')) + 
+  xlab('Partidos') + 
+  ylab('Qtde Candidatos') +
+  theme(legend.position="none",
+        plot.title = element_text(size = 11, face='bold'), 
+        axis.title = element_text(size=12, color='black'))
+}
+```
+```{r echo=FALSE}
+candidatos_votados_func()
+```
