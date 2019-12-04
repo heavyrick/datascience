@@ -1,7 +1,7 @@
 #================================================================#
 # Definindo o ambiente
 
-ambiente = 'appleMac'
+ambiente = 'windowsNote'
 db_access <<- 'remote' # define o local de acesso aos dados, se remote, então acessa o atlasDB
 
 switch(ambiente,
@@ -9,7 +9,7 @@ switch(ambiente,
    setwd('C:/Users/heavyrick/Desktop/datascience/r_analises/eleicoes')
   },
   windowsNote={
-   setwd('C:/Users/ricardo/Desktop/ds/datascience/kbase/R')
+   setwd('C:/Users/ricardo/Desktop/ds/datascience/r_analises/eleicoes')
   },
   linuxPC={
    setwd('/home/usuario/www/repositorios/datascience/kbase/R')
@@ -143,4 +143,122 @@ Análise:
 
 #================================================================#
 
+# Seções e Bairros
 
+# 1) Qual a distribuição de voto por seções?
+
+"As seções não nos dizem muito sobre a distribuição dos votos, a diferença de votos entre elas é muito pequena. 
+Talvez esteja relacionado com a distribuição do eleitorado em seções pelo TSE. 
+Mas o que pode nos ajudar mais adiante, é entender a distribuição de votos por partido nos bairros.
+
+o dataframe abaixo mostrará a quantidade total de votos por bairro.
+"
+
+df4 = sqldf("
+      SELECT SUM(v.QT_VOTOS) AS Votos, l.NM_BAIRRO  
+      FROM df_secao_votacao_gerais v 
+      LEFT JOIN df_locais_votacao l ON l.NR_ZONA = v.NR_ZONA AND l.NR_SECAO = v.NR_SECAO
+      GROUP BY l.CD_BAIRRO
+      ORDER BY Votos DESC
+      ")
+
+"Agora vamos para um mapa, para mostrar a distribuição dos votos na cidade, baseando-se nas seções"
+
+
+df5 = sqldf("
+      SELECT 
+        SUM(v.QT_VOTOS) AS Votos, l.DS_LOCAL, l.NR_LATITUDE as lat, l.NR_LONGITUDE as lng, l.NM_BAIRRO, l.NM_CIDADE
+      FROM 
+        df_secao_votacao_gerais v 
+      LEFT JOIN 
+        df_locais_votacao l ON l.NR_ZONA = v.NR_ZONA AND l.NR_SECAO = v.NR_SECAO
+      GROUP BY 
+        l.CD_LOCAL, l.NR_LATITUDE, l.NR_LONGITUDE, l.NM_BAIRRO, l.NM_CIDADE 
+      ORDER BY 
+        Votos DESC
+      ")
+
+# Mapa com todos os locais de votação e quantidade de votos em cada
+
+leaflet(data = df5) %>% addTiles() %>%
+  addMarkers(~lng, ~lat, 
+             popup = paste(
+               "<p><b>", as.character(df5$DS_LOCAL), "</b> <br />",
+               as.character(df5$NM_BAIRRO), " <br /> ", 
+               as.character(df5$NM_CIDADE)  ,"/SP <br /> </p>",
+               "<p><b>", as.character(df5$Votos), " Votos</b> <br /> </p>"
+             ), 
+             label = as.character(df5$Votos),
+             labelOptions = labelOptions(noHide = T, direction = "bottom",
+                                         style = list(
+                                           "color" = "red",
+                                           "font-family" = "serif",
+                                           "font-style" = "bold",
+                                           "box-shadow" = "3px 3px rgba(0,0,0,0.25)",
+                                           "font-size" = "12px",
+                                           "border-color" = "rgba(0,0,0,0.5)"
+                                         )))
+
+# Mapa com a distribuição dos votos nos locais de votação
+
+mapa_votos <- function() {
+  leaflet(data = df5) %>%
+    addProviderTiles(providers$CartoDB.Positron) %>%
+    addHeatmap(lng = ~lng, lat = ~lat, intensity = ~Votos, blur = 20, max = 0.05, radius = 15)
+}
+
+mapa_votos()
+
+
+
+df6 = sqldf("
+      SELECT 
+        SUM(v.QT_VOTOS) AS Votos, l.DS_LOCAL, l.NR_LATITUDE as lat, l.NR_LONGITUDE as lng, l.NM_BAIRRO, l.NM_CIDADE, v.NR_PARTIDO, 
+          (CASE WHEN p.Sigla IS NULL THEN 'BRANCO/NULO' ELSE p.Sigla END) AS Sigla
+      FROM 
+        df_secao_votacao_mun v 
+      LEFT JOIN 
+        df_locais_votacao l ON l.NR_ZONA = v.NR_ZONA AND l.NR_SECAO = v.NR_SECAO
+      LEFT JOIN 
+        df_partidos p ON p.Legenda = v.NR_PARTIDO  
+      GROUP BY 
+        l.CD_LOCAL, l.NR_LATITUDE, l.NR_LONGITUDE, l.NM_BAIRRO, l.NM_CIDADE, v.NR_PARTIDO 
+      ORDER BY 
+        Votos DESC
+      ")
+
+mapa_votos_2 <- function() {
+  
+  lf <- leaflet(data = df6) %>%
+    addProviderTiles(providers$CartoDB.Positron)
+  
+  purrr::walk(
+    names(df6),
+    function(Sigla) {
+      # print(Sigla)
+      lf <<- lf %>%
+        #addHeatmap(lng = ~lng, lat = ~lat, group =df6$Sigla, intensity = ~Votos, blur = 20, max = 0.05, radius = 15)
+        addHeatmap(
+          #data = df6[[Sigla]],
+          layerId = Sigla, group = Sigla,
+          lng=~lng, lat=~lat, intensity = ~Votos,
+          blur = 20, max = 0.05, radius = 15)
+    })
+  
+  lf %>%
+    addLayersControl(
+      baseGroups = names(df6),
+      options = layersControlOptions(collapsed = FALSE)
+    )
+}
+
+mapa_votos_2()
+
+
+purrr::walk(
+  names(df6),
+  function(df) {
+    
+    print(df[df])
+  }
+)
