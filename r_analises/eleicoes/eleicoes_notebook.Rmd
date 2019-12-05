@@ -1,13 +1,13 @@
 ---
-title: "Eleições Gerais"
-output: html_notebook
+title: "Eleições Gerais 2018"
+output: html_document
 ---
 
 ```{r config, include=FALSE}
 #================================================================#
 # Definindo o ambiente
 
-ambiente = 'appleMac'
+ambiente = 'windowsNote'
 db_access <<- 'remote' # define o local de acesso aos dados, se remote, então acessa o atlasDB
 
 switch(ambiente, 
@@ -15,7 +15,7 @@ switch(ambiente,
    setwd('C:/Users/heavyrick/Desktop/datascience/r_analises/eleicoes')
   },
   windowsNote={
-   setwd('C:/Users/ricardo/Desktop/ds/datascience/kbase/R')
+   setwd('C:/Users/ricardo/Desktop/ds/datascience/r_analises/eleicoes')
   },
   linuxPC={
     setwd('/home/usuario/www/repositorios/datascience/kbase/R')
@@ -28,16 +28,24 @@ switch(ambiente,
 
 # Carregar dados
 
-source(file = "eleicoes_carrega_dados.R", encoding = "UTF-8")
+source(file = "eleicoes_carrega_dados.R", encoding = 'UTF8')
 ```
+### Sobre os dados
+Aqui será demonstrado dados relevantes das eleições gerais de 2018. Será dado foco para as votações aos cargos de <b>Deputado Estadual</b> e <b>Deputado Federal</b>, cujos votos foram dados por eleitores e eleitoras da cidade de Americana. Os dados são públicos e foram extraídos do portal do Tribunal Superior Eleitoral.
 
-<h4 style="color:blue"> Partidos e espectros políticos </h4>
-<h5 style="color:red">Qual a quantidade de votos por partido ?</h5>
-<p>Os votos ficam na base `df_secao_votacao_gerais` e devem ser juntados com a base `df_partidos`. Temos que retornar a quantidade de votos por sigla partidária, não mostrando os que não tiveram votos.</p>
+### Objetivo
+
+O objetivo é entender qual o desempenho eleitoral do PSOL na cidade de Americana na referida eleição
+
+-----
+
+### Partidos e espectros políticos
+#### Qual a quantidade de votos por partido ?
+Os votos ficam na base `df_secao_votacao_gerais` e devem ser juntados com a base `df_partidos`. Temos que retornar a quantidade de votos por sigla partidária, não mostrando os que não tiveram votos.
 
 ```{r df_df1, include=FALSE, paged.print=TRUE}
 
-title_text = 'Eleições gerais 2018 | Americana: '
+title_text = 'Eleições gerais 2018 | Americana '
 
 votos_partido_df = sqldf("
       SELECT p.Sigla, SUM(v.QT_VOTOS) as Votos 
@@ -79,7 +87,11 @@ votos_partido_func <- function() {
 ```{r echo=FALSE}
 votos_partido_func()
 ```
-<h5 style="color:red">Qual a quantidade de vereadores que receberam votos por partido?</h5>
+
+-----
+
+#### Qual a quantidade de vereadores que receberam votos por partido?
+
 ```{r include=FALSE}
 # Select dos dados
 
@@ -104,7 +116,7 @@ candidatos_votados_func <- function() {
   geom_bar(stat = "identity") + 
   scale_fill_grey(start = 0.85, end = 0.20) +
   coord_flip() + 
-  ggtitle(paste(title_text, 'Quantidade de candidatos que receberam votos por partido')) + 
+  ggtitle(paste('Quantidade de candidatos que receberam votos por partido'), subtitle = title_text) + 
   xlab('Partidos') + 
   ylab('Qtde Candidatos') +
   theme(legend.position="none",
@@ -115,3 +127,7 @@ candidatos_votados_func <- function() {
 ```{r echo=FALSE}
 candidatos_votados_func()
 ```
+
+-----
+
+#### D
