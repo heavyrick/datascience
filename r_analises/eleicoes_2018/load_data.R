@@ -17,6 +17,7 @@ library(htmltools)
 library(shiny)
 library(flexdashboard)
 library(datasets)
+library(highcharter)
 
 # inserir collections nos dataframes
 
@@ -72,36 +73,6 @@ df_locais_votacao$NR_LONGITUDE <- as.numeric(df_locais_votacao$NR_LONGITUDE)
 
 #================================================================#
 
-# Votos por seção (eleições municipais Americana 2016)
-
-"
-DT_GERACAO
-HH_GERACAO
-AA_GERACAO
-NR_TURNO
-DS_ELEICAO
-SG_UF
-CD_MUNICIPIO
-NM_MUNICIPIO
-NR_ZONA
-NR_SECAO
-CD_CARGO
-DS_CARGO
-NR_VOTAVEL
-NR_PARTIDO
-QT_VOTOS
-"
-
-if(db_access == 'remote'){
-  col_secao_votacao_mun <- mongo(collection = "secao_votacao_mun_americana_2016", db="eleicoes", url = "mongodb+srv://dbuser:Xk5Jp8n5rHaXmtM@cluster0-tpq89.mongodb.net/test?retryWrites=true&w=majority")  
-} else { # Local
-  col_secao_votacao_mun <- mongo("secao_votacao_mun", url = "mongodb://localhost:27017/eleicoes")
-}
-
-df_secao_votacao_mun = col_secao_votacao_mun$find ('{}')
-
-#================================================================#
-
 # Votos por seção (eleições gerais 2018)
 
 "
@@ -131,9 +102,8 @@ QT_VOTOS *
 "
 
 "
-Excluindo-se logo de cara os dados do segundo turno, 
-e considerando os votos apenas para deputados estaduais e federais, 
-e tirando os votos brancos e nulos (95,96)
+Excluindo-se logo de cara os dados do segundo turno e considerando apenas os votos válidos, 
+ou seja, desconsiderando os votos brancos e nulos (95,96)
 "
 
 if(db_access == 'remote'){
@@ -142,8 +112,8 @@ if(db_access == 'remote'){
   col_secao_votacao_gerais <- mongo("secao_votacao_gerais", url = "mongodb://localhost:27017/eleicoes")
 }
 
-df_secao_votacao_gerais = col_secao_votacao_gerais$find(
-  query =  '{"NR_TURNO": "1", "CD_CARGO": { "$in": ["6", "7"]}, "NR_VOTAVEL": {"$nin": ["95", "96"]} }',
+df_votos_validos = col_secao_votacao_gerais$find(
+  query =  '{"NR_TURNO": "1", "NR_VOTAVEL": {"$nin": ["95", "96"]} }',
   fields = '{"NR_ZONA": "1", "NR_SECAO": "1", "CD_CARGO": "1", "DS_CARGO": "1", "NR_VOTAVEL": "1", "NR_PARTIDO": "1", "NM_VOTAVEL": "1", "QT_VOTOS": "1"}',
   sort = '{}'
 )

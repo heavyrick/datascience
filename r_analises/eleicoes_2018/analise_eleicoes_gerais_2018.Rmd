@@ -1,8 +1,15 @@
 ---
 title: "Eleições Gerais 2018"
-output: html_document
-runtime: shiny
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    social: menu
+    source_code: embed
+runtime: shiny    
 ---
+
+Sidebar {.sidebar}
+=======================================================================
 
 ```{r config, include=FALSE}
 #================================================================#
@@ -13,49 +20,52 @@ db_access <<- 'remote' # define o local de acesso aos dados, se remote, então a
 
 switch(ambiente, 
   windowsPc={
-   setwd('C:/Users/heavyrick/Desktop/datascience/r_analises/eleicoes')
+   setwd('C:/Users/heavyrick/Desktop/datascience/r_analises/eleicoes_2018')
   },
   windowsNote={
-   setwd('C:/Users/ricardo/Desktop/ds/datascience/r_analises/eleicoes')
+   setwd('C:/Users/ricardo/Desktop/ds/datascience/r_analises/eleicoes_2018')
   },
   linuxPC={
     setwd('/home/usuario/www/repositorios/datascience/kbase/R')
   },
   appleMac={
-    setwd('/Users/ricardoalmeida/ds/datascience/r_analises/eleicoes')
+    setwd('/Users/ricardoalmeida/ds/datascience/r_analises/eleicoes_2018')
   }
 )
 #================================================================#
 
 # Carregar dados
 
-source(file = "eleicoes_carrega_dados.R")
+source(file = "load_data.R")
 ```
 ### Sobre os dados
-Aqui será demonstrado dados relevantes das eleições gerais de 2018. Será dado foco para as votações aos cargos de **Deputado Estadual** e **Deputado Federal**, cujos votos foram dados por eleitores e eleitoras da cidade de Americana. Os dados são públicos e foram extraídos do portal do Tribunal Superior Eleitoral.
+Aqui será demonstrado dados relevantes das eleições gerais de 2018. Será dado foco para as votações aos cargos legislativos cujo o PSOL teve candidatos **Deputado Estadual**, **Deputado Federal** e **Senado Federal**, cujos votos foram dados por eleitores e eleitoras da cidade de Americana. Os dados são públicos e foram extraídos do portal do Tribunal Superior Eleitoral.
 
 ### Objetivo
 
-O objetivo é entender qual o desempenho eleitoral do **PSOL** na cidade de Americana na referida eleição
+O objetivo é entender qual o desempenho eleitoral do **PSOL**, e da esquerda como um todo, na cidade de Americana na referida eleição.
 
 -----
 
 ### Partidos e espectros políticos
 #### Qual a quantidade de votos por partido ?
 
-Primeiro vamos ter uma visão mais geral do todo, olhando para o total de votos por partido.
+Primeiro vamos ter uma visão mais geral do todo, olhando para o total de votos por partido. A ordem das análises será normalmente essa: deputado estadual, deputado federal e senado.
 
 ```{r df_df1, include=FALSE, paged.print=TRUE}
 
 # Os votos ficam na base `df_secao_votacao_gerais` e devem ser juntados com a base `df_partidos`. 
 # Temos que retornar a quantidade de votos por sigla partidária, não mostrando os que não tiveram votos.
 
+# DS_CARGO | DS_CARGO | 3: Governador / 5: Senado / 6: Dep Federal / 7: Dep Estadual
+
 title_text = 'Eleições gerais 2018 | Americana '
 
-votos_partido_df = sqldf("
+votos_partido_dep_estadual_df = sqldf("
       SELECT p.Sigla, SUM(v.QT_VOTOS) as Votos 
       FROM df_partidos p
-      LEFT JOIN df_secao_votacao_gerais v ON p.Legenda = v.NR_PARTIDO
+      LEFT JOIN df_votos_validos v ON p.Legenda = v.NR_PARTIDO
+      WHERE v.CD_CARGO = 7
       GROUP BY p.Sigla
       HAVING SUM(v.QT_VOTOS) > 0
       ORDER BY Votos DESC
@@ -64,8 +74,8 @@ votos_partido_df = sqldf("
 # O gráfico primeiro é preparado ordendando as colunas por quantidade de votos
 # a propriedade fill dá um degradê interessante para a contagem
 
-votos_partido_chart <- ggplot(
-  votos_partido_df, aes(
+votos_partido_dep_estadual_chart <- ggplot(
+  votos_partido_dep_estadual_df, aes(
       x = reorder(Sigla, -Votos), 
       y = Votos, 
       fill=as.factor(Votos)
@@ -75,8 +85,8 @@ votos_partido_chart <- ggplot(
 # Gráfico de barras horizontais para mostrar as votações
 # Fosse vertical os nomes iam ficar difíceis de ler, iam ficar encavalados
 
-votos_partido_func <- function() {
-  votos_partido_chart + 
+votos_partido_dep_estadual_func <- function() {
+  votos_partido_dep_estadual_chart + 
   geom_bar(stat = "identity") + 
   scale_fill_grey(start = 0.65, end = 0.20) +
   coord_flip() + 
@@ -90,7 +100,7 @@ votos_partido_func <- function() {
 ```
 
 ```{r echo=FALSE}
-votos_partido_func()
+votos_partido_dep_estadual_func()
 ```
 
 -----
@@ -103,7 +113,7 @@ votos_partido_func()
 candidatos_votados_df = sqldf("
       SELECT p.Sigla, COUNT(DISTINCT v.NR_VOTAVEL) as Candidatos 
       FROM df_partidos p
-      INNER JOIN df_secao_votacao_gerais v ON p.Legenda = v.NR_PARTIDO
+      INNER JOIN df_votos_validos v ON p.Legenda = v.NR_PARTIDO
       GROUP BY p.Sigla
       ORDER BY Candidatos DESC
       ")
