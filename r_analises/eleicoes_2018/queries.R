@@ -355,11 +355,11 @@ leaflet(data = votos_partidos_dep_estadual_mapa) %>% addTiles() %>%
              label = as.character(votos_partidos_dep_estadual_mapa$Votos),
              labelOptions = labelOptions(noHide = T, direction = "bottom",
                                          style = list(
-                                           "color" = "red",
+                                           "color" = "black",
                                            "font-family" = "serif",
                                            "font-style" = "bold",
                                            "box-shadow" = "3px 3px rgba(0,0,0,0.25)",
-                                           "font-size" = "12px",
+                                           "font-size" = "10px",
                                            "border-color" = "rgba(0,0,0,0.5)"
                                          )))
 
@@ -501,5 +501,26 @@ purrr::walk(
         blur = 20, max = 0.05, radius = 15)
   })
 
+#########################################
+# Teste GGmap
 
+# -22.7240854,-47.2865387
+
+p <- ggmap(get_googlemap(center = c(lon = -122.335167, lat = 47.608013),
+                         zoom = 11, scale = 2,
+                         maptype ='terrain',
+                         color = 'color'))
+p + geom_point(aes(x = Longitude, y = Latitude,  colour = Initial.Type.Group), data = i2, size = 0.5) + 
+  theme(legend.position="bottom")
+
+p <- ggmap(get_googlemap(center = c(lon = 47.608013 , lat = -22.335167),
+                         zoom = 11, scale = 2,
+                         maptype ='terrain',
+                         color = 'color'))
+
+p + geom_point(aes(x = Longitude, y = Latitude,  colour = Initial.Type.Group), data = votos_partidos_senado_mapa, size = 0.5) + 
+  theme(legend.position="bottom")
+
+bbox <- c(left = -47.392144, bottom = -22.787158, right = -47.191336, top = -22.660375)
+ggmap(get_stamenmap(bbox, zoom = 13))
 
