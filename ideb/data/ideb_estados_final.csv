@@ -1,0 +1,705 @@
+estado / região;rede;uf;series;tipo;2005;2007;2009;2011;2013;2015;2017;2019;2021
+Norte;Total;;fundamental - anos iniciais;nota;3;3.4;3.8;4.2;4.3;4.7;4.9;;
+Norte;Pública;;fundamental - anos iniciais;nota;2.9;3.3;3.8;4.2;4.3;4.7;4.9;;
+Norte;Privada;;fundamental - anos iniciais;nota;5.5;5.6;5.9;6.1;6.1;6.4;6.8;;
+Norte;Estadual;;fundamental - anos iniciais;nota;3.2;3.6;4.2;4.5;4.7;5;5.4;;
+Rondônia;Total;RO;fundamental - anos iniciais;nota;3.6;4;4.3;4.7;5.2;5.4;5.8;;
+Rondônia;Pública;RO;fundamental - anos iniciais;nota;3.5;3.9;4.3;4.6;5.1;5.3;5.7;;
+Rondônia;Privada;RO;fundamental - anos iniciais;nota;5.7;5.7;;6.4;6.5;6.8;7.2;;
+Rondônia;Estadual;RO;fundamental - anos iniciais;nota;3.6;4;4.4;4.7;5.4;5.7;6.1;;
+Acre;Total;AC;fundamental - anos iniciais;nota;3.4;3.8;4.3;4.6;5.1;5.4;5.8;;
+Acre;Pública;AC;fundamental - anos iniciais;nota;3.3;3.7;4.2;4.5;5;5.3;5.7;;
+Acre;Privada;AC;fundamental - anos iniciais;nota;5.7;6;;6.2;6.7;7.1;7.4;;
+Acre;Estadual;AC;fundamental - anos iniciais;nota;3.3;3.8;4.5;4.7;5.2;5.5;6.1;;
+Amazonas;Total;AM;fundamental - anos iniciais;nota;3.1;3.6;3.9;4.3;4.7;5.2;5.4;;
+Amazonas;Pública;AM;fundamental - anos iniciais;nota;2.9;3.4;3.8;4.2;4.5;5;5.3;;
+Amazonas;Privada;AM;fundamental - anos iniciais;nota;5.5;5.7;;6.2;6.3;6.7;7;;
+Amazonas;Estadual;AM;fundamental - anos iniciais;nota;3.3;3.9;4.5;4.8;5.1;5.5;5.8;;
+Roraima;Total;RR;fundamental - anos iniciais;nota;3.7;4.1;4.3;4.7;5;5.2;5.5;;
+Roraima;Pública;RR;fundamental - anos iniciais;nota;3.6;4.1;4.2;4.5;4.8;5.1;5.4;;
+Roraima;Privada;RR;fundamental - anos iniciais;nota;6.1;5.9;;6.6;6.8;6.8;7.1;;
+Roraima;Estadual;RR;fundamental - anos iniciais;nota;3.5;3.5;4.2;4.5;4.8;5.1;;;
+Pará;Total;PA;fundamental - anos iniciais;nota;2.8;3.1;3.6;4.2;4;4.5;4.7;;
+Pará;Pública;PA;fundamental - anos iniciais;nota;2.7;3;3.6;4;3.8;4.3;4.5;;
+Pará;Privada;PA;fundamental - anos iniciais;nota;5.5;5.5;;5.9;5.9;6.1;6.5;;
+Pará;Estadual;PA;fundamental - anos iniciais;nota;2.8;2.8;3.7;4;3.6;4.2;4.5;;
+Amapá;Total;AP;fundamental - anos iniciais;nota;3.2;3.4;3.8;4.1;4;4.5;4.6;;
+Amapá;Pública;AP;fundamental - anos iniciais;nota;3;3.3;3.8;4;3.9;4.3;4.4;;
+Amapá;Privada;AP;fundamental - anos iniciais;nota;4.9;5.3;;6.1;6.1;6.4;6.8;;
+Amapá;Estadual;AP;fundamental - anos iniciais;nota;3.1;3;3.6;3.9;3.8;4.4;4.5;;
+Tocantins;Total;TO;fundamental - anos iniciais;nota;3.5;4.1;4.5;4.9;5.1;5.1;5.6;;
+Tocantins;Pública;TO;fundamental - anos iniciais;nota;3.4;4;4.4;4.8;5;5;5.4;;
+Tocantins;Privada;TO;fundamental - anos iniciais;nota;5.6;5.7;;6.5;6.7;6.7;7.3;;
+Tocantins;Estadual;TO;fundamental - anos iniciais;nota;3.6;4.2;4.5;4.9;5.1;5;5.8;;
+Nordeste;Total;;fundamental - anos iniciais;nota;2.9;3.5;3.8;4.2;4.3;4.8;5.1;;
+Nordeste;Pública;;fundamental - anos iniciais;nota;2.7;3.3;3.7;4;4.1;4.6;4.9;;
+Nordeste;Privada;;fundamental - anos iniciais;nota;5.4;5.5;5.8;6;6.2;6.3;6.5;;
+Nordeste;Estadual;;fundamental - anos iniciais;nota;2.9;3.3;3.7;3.9;4.1;4.5;4.7;;
+Maranhão;Total;MA;fundamental - anos iniciais;nota;2.9;3.7;3.9;4.1;4.1;4.6;4.8;;
+Maranhão;Pública;MA;fundamental - anos iniciais;nota;2.7;3.5;3.7;3.9;3.8;4.4;4.5;;
+Maranhão;Privada;MA;fundamental - anos iniciais;nota;4.9;5.3;5.5;5.8;6;6.1;6.5;;
+Maranhão;Estadual;MA;fundamental - anos iniciais;nota;3.2;3.3;4;4;4.2;4.3;4.1;;
+Piauí;Total;PI;fundamental - anos iniciais;nota;2.8;3.5;4;4.4;4.5;4.9;5.3;;
+Piauí;Pública;PI;fundamental - anos iniciais;nota;2.6;3.3;3.8;4.1;4.1;4.6;5;;
+Piauí;Privada;PI;fundamental - anos iniciais;nota;5.4;5.7;5.8;6.3;6.6;6.6;6.8;;
+Piauí;Estadual;PI;fundamental - anos iniciais;nota;2.6;3.2;3.8;4.1;4.5;4.6;5.5;;
+Ceará;Total;CE;fundamental - anos iniciais;nota;3.2;3.8;4.4;4.9;5.2;5.9;6.2;;
+Ceará;Pública;CE;fundamental - anos iniciais;nota;2.8;3.5;4.1;4.7;5;5.7;6.1;;
+Ceará;Privada;CE;fundamental - anos iniciais;nota;5.4;5.5;5.9;6;6.1;6.3;6.5;;
+Ceará;Estadual;CE;fundamental - anos iniciais;nota;3.2;3.5;4.2;4.4;5;5.8;6.7;;
+Rio Grande do Norte;Total;RN;fundamental - anos iniciais;nota;2.7;3.4;3.9;4.1;4.4;4.8;5;;
+Rio Grande do Norte;Pública;RN;fundamental - anos iniciais;nota;2.5;3.2;3.5;3.8;4;4.4;4.5;;
+Rio Grande do Norte;Privada;RN;fundamental - anos iniciais;nota;5;5;5.8;5.8;6.1;6.3;6.6;;
+Rio Grande do Norte;Estadual;RN;fundamental - anos iniciais;nota;2.6;3;3.5;3.7;3.9;4.5;4.6;;
+Paraíba;Total;;fundamental - anos iniciais;nota;3;3.4;3.9;4.3;4.5;4.9;5.1;;
+Paraíba;Pública;;fundamental - anos iniciais;nota;2.7;3.3;3.6;4;4.2;4.5;4.7;;
+Paraíba;Privada;;fundamental - anos iniciais;nota;5.4;5.5;5.8;5.9;6;6.5;6.7;;
+Paraíba;Estadual;;fundamental - anos iniciais;nota;3;3.5;3.7;4;4.2;4.4;4.7;;
+Pernambuco;Total;PE;fundamental - anos iniciais;nota;3.2;3.6;4.1;4.3;4.7;5;5.2;;
+Pernambuco;Pública;PE;fundamental - anos iniciais;nota;2.8;3.3;3.7;3.9;4.1;4.6;4.8;;
+Pernambuco;Privada;PE;fundamental - anos iniciais;nota;5.5;5.5;5.8;5.7;6.2;6.2;6.4;;
+Pernambuco;Estadual;PE;fundamental - anos iniciais;nota;3.1;3.5;3.9;4.2;4.3;4.7;4.9;;
+Alagoas;Total;AL;fundamental - anos iniciais;nota;2.5;3.3;3.7;3.8;4.1;4.7;5.2;;
+Alagoas;Pública;AL;fundamental - anos iniciais;nota;2.4;3.1;3.4;3.5;3.7;4.3;4.9;;
+Alagoas;Privada;AL;fundamental - anos iniciais;nota;5.1;5.2;5.5;5.9;6.2;6.3;6.5;;
+Alagoas;Estadual;AL;fundamental - anos iniciais;nota;2.9;3.3;3.3;3.4;3.7;4.1;4.9;;
+Sergipe;Total;SE;fundamental - anos iniciais;nota;3;3.4;3.8;4.1;4.4;4.6;4.9;;
+Sergipe;Pública;SE;fundamental - anos iniciais;nota;2.8;3.2;3.4;3.6;3.8;4.1;4.3;;
+Sergipe;Privada;SE;fundamental - anos iniciais;nota;5.3;5.5;5.7;6;6.1;6.2;6.7;;
+Sergipe;Estadual;SE;fundamental - anos iniciais;nota;3;3.4;3.7;3.9;4.1;4.3;4.7;;
+Bahia;Total;BA;fundamental - anos iniciais;nota;2.7;3.4;3.8;4.2;4.3;4.7;5.1;;
+Bahia;Pública;BA;fundamental - anos iniciais;nota;2.5;3.2;3.5;3.9;3.9;4.4;4.7;;
+Bahia;Privada;BA;fundamental - anos iniciais;nota;5.5;5.9;6.1;6.3;6.3;6.3;6.6;;
+Bahia;Estadual;BA;fundamental - anos iniciais;nota;2.6;2.6;3.2;3.8;4;4.3;4.9;;
+Sudeste;Total;;fundamental - anos iniciais;nota;4.6;4.8;5.3;5.6;5.9;6.1;6.4;;
+Sudeste;Pública;;fundamental - anos iniciais;nota;4.4;4.6;5.1;5.4;5.6;6;6.2;;
+Sudeste;Privada;;fundamental - anos iniciais;nota;6.3;6.3;6.8;6.8;6.9;7;7.4;;
+Sudeste;Estadual;;fundamental - anos iniciais;nota;4.5;4.7;5.4;5.5;5.9;6.3;6.5;;
+Minas Gerais;Total;MG;fundamental - anos iniciais;nota;4.7;4.7;5.6;5.9;6.1;6.3;6.5;;
+Minas Gerais;Pública;MG;fundamental - anos iniciais;nota;4.6;4.6;5.5;5.8;5.9;6.1;6.3;;
+Minas Gerais;Privada;MG;fundamental - anos iniciais;nota;6.9;6.7;7.1;7.4;7.6;7.8;8;;
+Minas Gerais;Estadual;MG;fundamental - anos iniciais;nota;4.9;4.9;5.8;6;6.2;6.3;6.5;;
+Espírito Santo;Total;ES;fundamental - anos iniciais;nota;4.2;4.6;5.1;5.2;5.4;5.7;6;;
+Espírito Santo;Pública;ES;fundamental - anos iniciais;nota;3.9;4.3;4.8;5;5.2;5.5;5.7;;
+Espírito Santo;Privada;ES;fundamental - anos iniciais;nota;6.3;6.3;7;7.1;7.3;7.6;7.8;;
+Espírito Santo;Estadual;ES;fundamental - anos iniciais;nota;3.7;4.1;5;5;5.3;5.5;5.9;;
+Rio de Janeiro;Total;RJ;fundamental - anos iniciais;nota;4.3;4.4;4.7;5.1;5.2;5.5;5.8;;
+Rio de Janeiro;Pública;RJ;fundamental - anos iniciais;nota;4;4.1;4.4;4.8;4.9;5.2;5.3;;
+Rio de Janeiro;Privada;RJ;fundamental - anos iniciais;nota;5.7;5.9;5.9;6.3;6.1;6.3;6.9;;
+Rio de Janeiro;Estadual;RJ;fundamental - anos iniciais;nota;3.7;3.8;4;4.3;4.7;5.1;4.8;;
+São Paulo;Total;SP;fundamental - anos iniciais;nota;4.7;5;5.5;5.6;6.1;6.4;6.6;;
+São Paulo;Pública;SP;fundamental - anos iniciais;nota;4.5;4.8;5.3;5.4;5.8;6.2;6.5;;
+São Paulo;Privada;SP;fundamental - anos iniciais;nota;6.5;6.4;7.2;7;7.3;7.1;7.4;;
+São Paulo;Estadual;SP;fundamental - anos iniciais;nota;4.5;4.7;5.4;5.4;5.7;6.4;6.5;;
+Sul;Total;;fundamental - anos iniciais;nota;4.4;4.8;5.1;5.5;5.8;6;6.2;;
+Sul;Pública;;fundamental - anos iniciais;nota;4.3;4.6;5;5.4;5.6;5.8;6;;
+Sul;Privada;;fundamental - anos iniciais;nota;6.2;6.3;6.7;7;7.2;7.4;7.5;;
+Sul;Estadual;;fundamental - anos iniciais;nota;4.2;4.6;4.9;5.4;5.6;5.6;5.8;;
+Paraná;Total;PR;fundamental - anos iniciais;nota;4.6;5;5.4;5.6;5.9;6.2;6.5;;
+Paraná;Pública;PR;fundamental - anos iniciais;nota;4.4;4.8;5.3;5.4;5.8;6.1;6.3;;
+Paraná;Privada;PR;fundamental - anos iniciais;nota;6.5;6.5;6.8;7;7.2;7.2;7.4;;
+Paraná;Estadual;PR;fundamental - anos iniciais;nota;5;5.2;5.2;5.2;6.2;6.2;6.3;;
+Santa Catarina;Total;SC;fundamental - anos iniciais;nota;4.4;4.9;5.2;5.8;6;6.3;6.5;;
+Santa Catarina;Pública;SC;fundamental - anos iniciais;nota;4.3;4.7;5.1;5.7;5.9;6.1;6.3;;
+Santa Catarina;Privada;SC;fundamental - anos iniciais;nota;6.4;6.6;7.1;7.1;7.5;7.7;7.8;;
+Santa Catarina;Estadual;SC;fundamental - anos iniciais;nota;4.3;4.7;5;5.7;5.7;5.9;6;;
+Rio Grande do Sul;Total;RS;fundamental - anos iniciais;nota;4.3;4.6;4.9;5.1;5.6;5.7;5.8;;
+Rio Grande do Sul;Pública;RS;fundamental - anos iniciais;nota;4.1;4.5;4.7;5.1;5.4;5.5;5.6;;
+Rio Grande do Sul;Privada;RS;fundamental - anos iniciais;nota;5.8;6.1;6.4;6.7;7.2;7.4;7.4;;
+Rio Grande do Sul;Estadual;RS;fundamental - anos iniciais;nota;4.2;4.5;4.8;5.1;5.5;5.5;5.7;;
+Centro-Oeste;Total;;fundamental - anos iniciais;nota;4;4.4;4.9;5.3;5.5;5.7;6;;
+Centro-Oeste;Pública;;fundamental - anos iniciais;nota;3.8;4.2;4.8;5.1;5.3;5.5;5.8;;
+Centro-Oeste;Privada;;fundamental - anos iniciais;nota;5.9;5.9;6.4;6.7;6.8;7;7.2;;
+Centro-Oeste;Estadual;;fundamental - anos iniciais;nota;3.9;4.5;5;5.2;5.4;5.6;5.9;;
+Mato Grosso do Sul;Total;MS;fundamental - anos iniciais;nota;3.6;4.3;4.6;5.1;5.2;5.5;5.7;;
+Mato Grosso do Sul;Pública;MS;fundamental - anos iniciais;nota;3.4;4.1;4.5;5;5;5.3;5.5;;
+Mato Grosso do Sul;Privada;MS;fundamental - anos iniciais;nota;6.1;6.4;6.6;6.9;6.8;7;7.4;;
+Mato Grosso do Sul;Estadual;MS;fundamental - anos iniciais;nota;3.2;4;4.4;4.9;5.1;5.4;5.6;;
+Mato Grosso;Total;MT;fundamental - anos iniciais;nota;3.6;4.4;4.9;5.1;5.3;5.7;5.9;;
+Mato Grosso;Pública;MT;fundamental - anos iniciais;nota;3.5;4.3;4.8;4.9;5.2;5.5;5.7;;
+Mato Grosso;Privada;MT;fundamental - anos iniciais;nota;5.5;5.9;6.2;6.3;6.7;7.1;7.3;;
+Mato Grosso;Estadual;MT;fundamental - anos iniciais;nota;3.6;4.4;4.9;5.1;5.1;5.6;5.8;;
+Goiás;Total;GO;fundamental - anos iniciais;nota;4.1;4.3;4.9;5.3;5.7;5.8;6.1;;
+Goiás;Pública;GO;fundamental - anos iniciais;nota;3.8;4.1;4.7;5.1;5.5;5.6;5.9;;
+Goiás;Privada;GO;fundamental - anos iniciais;nota;5.7;5.7;6.3;6.7;6.8;6.9;7;;
+Goiás;Estadual;GO;fundamental - anos iniciais;nota;3.9;4.3;4.9;5.3;6;6.1;6.6;;
+Distrito Federal;Total;DF;fundamental - anos iniciais;nota;4.8;5;5.6;5.7;5.9;6;6.3;;
+Distrito Federal;Pública;DF;fundamental - anos iniciais;nota;4.4;4.8;5.4;5.4;5.6;5.6;6;;
+Distrito Federal;Privada;DF;fundamental - anos iniciais;nota;6.4;6.1;6.5;6.8;6.9;7.1;7.4;;
+Distrito Federal;Estadual;DF;fundamental - anos iniciais;nota;4.4;4.8;5.4;5.4;5.6;5.6;6;;
+Norte;Total;;fundamental - anos iniciais;meta;;3.1;3.4;3.8;4.1;4.4;4.7;5;5.3
+Norte;Pública;;fundamental - anos iniciais;meta;;3;3.3;3.7;4;4.3;4.6;4.9;5.2
+Norte;Privada;;fundamental - anos iniciais;meta;;5.6;5.9;6.2;6.4;6.7;6.9;7.1;7.3
+Norte;Estadual;;fundamental - anos iniciais;meta;;3.3;3.6;4.1;4.3;4.6;4.9;5.2;5.5
+Rondônia;Total;RO;fundamental - anos iniciais;meta;;3.7;4;4.5;4.7;5;5.3;5.6;5.9
+Rondônia;Pública;RO;fundamental - anos iniciais;meta;;3.6;3.9;4.3;4.6;4.9;5.2;5.5;5.8
+Rondônia;Privada;RO;fundamental - anos iniciais;meta;;5.8;6;6.4;6.6;6.8;7;7.2;7.4
+Rondônia;Estadual;RO;fundamental - anos iniciais;meta;;3.6;4;4.4;4.7;5;5.2;5.5;5.8
+Acre;Total;AC;fundamental - anos iniciais;meta;;3.5;3.8;4.3;4.5;4.8;5.1;5.4;5.7
+Acre;Pública;AC;fundamental - anos iniciais;meta;;3.4;3.7;4.1;4.4;4.7;5;5.3;5.6
+Acre;Privada;AC;fundamental - anos iniciais;meta;;5.7;6;6.3;6.6;6.8;7;7.2;7.4
+Acre;Estadual;AC;fundamental - anos iniciais;meta;;3.4;3.7;4.2;4.4;4.7;5;5.3;5.6
+Amazonas;Total;AM;fundamental - anos iniciais;meta;;3.1;3.5;3.9;4.2;4.5;4.8;5.1;5.4
+Amazonas;Pública;AM;fundamental - anos iniciais;meta;;3;3.3;3.8;4;4.3;4.6;4.9;5.2
+Amazonas;Privada;AM;fundamental - anos iniciais;meta;;5.6;5.9;6.2;6.5;6.7;6.9;7.1;7.3
+Amazonas;Estadual;AM;fundamental - anos iniciais;meta;;3.3;3.7;4.1;4.4;4.7;5;5.2;5.5
+Roraima;Total;RR;fundamental - anos iniciais;meta;;3.8;4.1;4.5;4.8;5.1;5.4;5.6;5.9
+Roraima;Pública;RR;fundamental - anos iniciais;meta;;3.7;4;4.4;4.7;5;5.3;5.6;5.8
+Roraima;Privada;RR;fundamental - anos iniciais;meta;;6.1;6.4;6.7;6.9;7.1;7.3;7.5;7.6
+Roraima;Estadual;RR;fundamental - anos iniciais;meta;;3.6;3.9;4.3;4.6;4.9;5.2;5.5;5.7
+Pará;Total;PA;fundamental - anos iniciais;meta;;2.8;3.1;3.5;3.8;4.1;4.4;4.7;5
+Pará;Pública;PA;fundamental - anos iniciais;meta;;2.7;3;3.4;3.7;4;4.3;4.6;4.9
+Pará;Privada;PA;fundamental - anos iniciais;meta;;5.5;5.8;6.2;6.4;6.6;6.8;7;7.2
+Pará;Estadual;PA;fundamental - anos iniciais;meta;;2.8;3.2;3.6;3.8;4.1;4.4;4.7;5.1
+Amapá;Total;AP;fundamental - anos iniciais;meta;;3.2;3.6;4;4.3;4.6;4.9;5.2;5.4
+Amapá;Pública;AP;fundamental - anos iniciais;meta;;3.1;3.4;3.8;4.1;4.4;4.7;5;5.3
+Amapá;Privada;AP;fundamental - anos iniciais;meta;;5;5.3;5.7;5.9;6.2;6.4;6.6;6.9
+Amapá;Estadual;AP;fundamental - anos iniciais;meta;;3.1;3.5;3.9;4.2;4.4;4.7;5;5.3
+Tocantins;Total;TO;fundamental - anos iniciais;meta;;3.6;3.9;4.3;4.6;4.9;5.2;5.5;5.7
+Tocantins;Pública;TO;fundamental - anos iniciais;meta;;3.5;3.8;4.2;4.5;4.8;5.1;5.4;5.7
+Tocantins;Privada;TO;fundamental - anos iniciais;meta;;5.7;5.9;6.3;6.5;6.7;6.9;7.1;7.3
+Tocantins;Estadual;TO;fundamental - anos iniciais;meta;;3.7;4;4.5;4.7;5;5.3;5.6;5.9
+Nordeste;Total;;fundamental - anos iniciais;meta;;3;3.3;3.7;4;4.3;4.6;4.9;5.2
+Nordeste;Pública;;fundamental - anos iniciais;meta;;2.7;3.1;3.5;3.7;4;4.3;4.6;4.9
+Nordeste;Privada;;fundamental - anos iniciais;meta;;5.4;5.7;6.1;6.3;6.5;6.8;7;7.2
+Nordeste;Estadual;;fundamental - anos iniciais;meta;;3;3.3;3.7;4;4.3;4.6;4.9;5.2
+Maranhão;Total;MA;fundamental - anos iniciais;meta;;2.9;3.3;3.7;4;4.2;4.5;4.8;5.2
+Maranhão;Pública;MA;fundamental - anos iniciais;meta;;2.8;3.1;3.5;3.8;4.1;4.4;4.7;5
+Maranhão;Privada;MA;fundamental - anos iniciais;meta;;5;5.3;5.7;5.9;6.2;6.4;6.6;6.9
+Maranhão;Estadual;MA;fundamental - anos iniciais;meta;;3.3;3.6;4;4.3;4.6;4.9;5.2;5.5
+Piauí;Total;PI;fundamental - anos iniciais;meta;;2.9;3.2;3.6;3.9;4.2;4.5;4.8;5.1
+Piauí;Pública;PI;fundamental - anos iniciais;meta;;2.7;3;3.4;3.7;4;4.3;4.6;4.9
+Piauí;Privada;PI;fundamental - anos iniciais;meta;;5.5;5.8;6.1;6.4;6.6;6.8;7;7.2
+Piauí;Estadual;PI;fundamental - anos iniciais;meta;;2.6;2.9;3.3;3.6;3.9;4.2;4.5;4.8
+Ceará;Total;CE;fundamental - anos iniciais;meta;;3.2;3.6;4;4.3;4.5;4.8;5.1;5.4
+Ceará;Pública;CE;fundamental - anos iniciais;meta;;2.9;3.2;3.6;3.9;4.2;4.5;4.8;5.1
+Ceará;Privada;CE;fundamental - anos iniciais;meta;;5.5;5.8;6.1;6.4;6.6;6.8;7;7.2
+Ceará;Estadual;CE;fundamental - anos iniciais;meta;;3.2;3.6;4;4.3;4.6;4.9;5.2;5.5
+Rio Grande do Norte;Total;RN;fundamental - anos iniciais;meta;;2.8;3.1;3.5;3.8;4.1;4.4;4.7;5
+Rio Grande do Norte;Pública;RN;fundamental - anos iniciais;meta;;2.5;2.8;3.2;3.5;3.8;4.1;4.4;4.7
+Rio Grande do Norte;Privada;RN;fundamental - anos iniciais;meta;;5.1;5.4;5.8;6;6.3;6.5;6.7;7
+Rio Grande do Norte;Estadual;RN;fundamental - anos iniciais;meta;;2.6;2.9;3.3;3.6;3.9;4.2;4.5;4.8
+Paraíba;Total;;fundamental - anos iniciais;meta;;3.1;3.4;3.8;4.1;4.4;4.7;5;5.3
+Paraíba;Pública;;fundamental - anos iniciais;meta;;2.8;3.1;3.5;3.8;4.1;4.4;4.7;5
+Paraíba;Privada;;fundamental - anos iniciais;meta;;5.5;5.8;6.1;6.4;6.6;6.8;7;7.2
+Paraíba;Estadual;;fundamental - anos iniciais;meta;;3.1;3.4;3.8;4.1;4.4;4.7;5;5.3
+Pernambuco;Total;PE;fundamental - anos iniciais;meta;;3.3;3.6;4;4.3;4.6;4.9;5.2;5.5
+Pernambuco;Pública;PE;fundamental - anos iniciais;meta;;2.9;3.2;3.6;3.9;4.2;4.5;4.8;5.1
+Pernambuco;Privada;PE;fundamental - anos iniciais;meta;;5.5;5.8;6.2;6.4;6.6;6.8;7;7.2
+Pernambuco;Estadual;PE;fundamental - anos iniciais;meta;;3.2;3.5;3.9;4.2;4.5;4.8;5.1;5.4
+Alagoas;Total;AL;fundamental - anos iniciais;meta;;2.6;2.9;3.3;3.6;3.9;4.2;4.5;4.8
+Alagoas;Pública;AL;fundamental - anos iniciais;meta;;2.5;2.8;3.2;3.4;3.7;4;4.3;4.6
+Alagoas;Privada;AL;fundamental - anos iniciais;meta;;5.2;5.5;5.9;6.1;6.3;6.6;6.8;7
+Alagoas;Estadual;AL;fundamental - anos iniciais;meta;;2.9;3.3;3.7;4;4.3;4.6;4.9;5.2
+Sergipe;Total;SE;fundamental - anos iniciais;meta;;3.1;3.4;3.8;4.1;4.4;4.7;5;5.3
+Sergipe;Pública;SE;fundamental - anos iniciais;meta;;2.9;3.2;3.6;3.9;4.2;4.5;4.8;5.1
+Sergipe;Privada;SE;fundamental - anos iniciais;meta;;5.3;5.6;6;6.2;6.5;6.7;6.9;7.1
+Sergipe;Estadual;SE;fundamental - anos iniciais;meta;;3.1;3.4;3.8;4.1;4.4;4.7;5;5.3
+Bahia;Total;BA;fundamental - anos iniciais;meta;;2.8;3.1;3.5;3.8;4.1;4.4;4.7;5
+Bahia;Pública;BA;fundamental - anos iniciais;meta;;2.6;2.9;3.3;3.6;3.8;4.1;4.5;4.8
+Bahia;Privada;BA;fundamental - anos iniciais;meta;;5.6;5.9;6.2;6.5;6.7;6.9;7.1;7.3
+Bahia;Estadual;BA;fundamental - anos iniciais;meta;;2.7;3;3.4;3.7;4;4.3;4.6;4.9
+Sudeste;Total;;fundamental - anos iniciais;meta;;4.6;5;5.4;5.6;5.9;6.1;6.4;6.6
+Sudeste;Pública;;fundamental - anos iniciais;meta;;4.4;4.8;5.2;5.4;5.7;6;6.2;6.5
+Sudeste;Privada;;fundamental - anos iniciais;meta;;6.3;6.6;6.9;7.1;7.3;7.4;7.6;7.8
+Sudeste;Estadual;;fundamental - anos iniciais;meta;;4.6;4.9;5.3;5.6;5.8;6.1;6.3;6.6
+Minas Gerais;Total;MG;fundamental - anos iniciais;meta;;4.8;5.1;5.5;5.7;6;6.2;6.5;6.7
+Minas Gerais;Pública;MG;fundamental - anos iniciais;meta;;4.6;4.9;5.3;5.6;5.9;6.1;6.4;6.6
+Minas Gerais;Privada;MG;fundamental - anos iniciais;meta;;7;7.2;7.4;7.6;7.7;7.9;8;8.1
+Minas Gerais;Estadual;MG;fundamental - anos iniciais;meta;;5;5.3;5.7;5.9;6.2;6.4;6.6;6.8
+Espírito Santo;Total;ES;fundamental - anos iniciais;meta;;4.3;4.6;5;5.3;5.6;5.8;6.1;6.3
+Espírito Santo;Pública;ES;fundamental - anos iniciais;meta;;4;4.4;4.8;5;5.3;5.6;5.9;6.1
+Espírito Santo;Privada;ES;fundamental - anos iniciais;meta;;6.4;6.6;6.9;7.1;7.3;7.5;7.6;7.8
+Espírito Santo;Estadual;ES;fundamental - anos iniciais;meta;;3.8;4.1;4.5;4.8;5.1;5.4;5.7;5.9
+Rio de Janeiro;Total;RJ;fundamental - anos iniciais;meta;;4.4;4.7;5.1;5.4;5.6;5.9;6.1;6.4
+Rio de Janeiro;Pública;RJ;fundamental - anos iniciais;meta;;4.1;4.4;4.8;5.1;5.4;5.6;5.9;6.2
+Rio de Janeiro;Privada;RJ;fundamental - anos iniciais;meta;;5.8;6.1;6.4;6.6;6.8;7;7.2;7.4
+Rio de Janeiro;Estadual;RJ;fundamental - anos iniciais;meta;;3.8;4.1;4.5;4.8;5.1;5.4;5.7;5.9
+São Paulo;Total;SP;fundamental - anos iniciais;meta;;4.8;5.1;5.5;5.8;6;6.3;6.5;6.7
+São Paulo;Pública;SP;fundamental - anos iniciais;meta;;4.6;4.9;5.3;5.6;5.8;6.1;6.3;6.6
+São Paulo;Privada;SP;fundamental - anos iniciais;meta;;6.6;6.8;7.1;7.3;7.5;7.6;7.8;7.9
+São Paulo;Estadual;SP;fundamental - anos iniciais;meta;;4.6;4.9;5.3;5.5;5.8;6.1;6.3;6.6
+Sul;Total;;fundamental - anos iniciais;meta;;4.5;4.8;5.2;5.5;5.8;6;6.3;6.5
+Sul;Pública;;fundamental - anos iniciais;meta;;4.3;4.7;5.1;5.4;5.6;5.9;6.1;6.4
+Sul;Privada;;fundamental - anos iniciais;meta;;6.2;6.5;6.8;7;7.2;7.4;7.5;7.7
+Sul;Estadual;;fundamental - anos iniciais;meta;;4.3;4.6;5;5.3;5.6;5.8;6.1;6.3
+Paraná;Total;PR;fundamental - anos iniciais;meta;;4.7;5;5.4;5.6;5.9;6.2;6.4;6.6
+Paraná;Pública;PR;fundamental - anos iniciais;meta;;4.5;4.8;5.2;5.5;5.8;6;6.3;6.5
+Paraná;Privada;PR;fundamental - anos iniciais;meta;;6.5;6.7;7;7.2;7.4;7.6;7.7;7.9
+Paraná;Estadual;PR;fundamental - anos iniciais;meta;;5;5.4;5.7;6;6.2;6.5;6.7;6.9
+Santa Catarina;Total;SC;fundamental - anos iniciais;meta;;4.5;4.8;5.2;5.5;5.8;6;6.3;6.5
+Santa Catarina;Pública;SC;fundamental - anos iniciais;meta;;4.4;4.7;5.1;5.4;5.6;5.9;6.2;6.4
+Santa Catarina;Privada;SC;fundamental - anos iniciais;meta;;6.5;6.7;7;7.2;7.4;7.5;7.7;7.8
+Santa Catarina;Estadual;SC;fundamental - anos iniciais;meta;;4.4;4.7;5.1;5.4;5.6;5.9;6.2;6.4
+Rio Grande do Sul;Total;RS;fundamental - anos iniciais;meta;;4.3;4.7;5.1;5.3;5.6;5.9;6.1;6.4
+Rio Grande do Sul;Pública;RS;fundamental - anos iniciais;meta;;4.2;4.5;4.9;5.2;5.5;5.7;6;6.3
+Rio Grande do Sul;Privada;RS;fundamental - anos iniciais;meta;;5.9;6.2;6.5;6.7;6.9;7.1;7.3;7.5
+Rio Grande do Sul;Estadual;RS;fundamental - anos iniciais;meta;;4.2;4.6;5;5.3;5.5;5.8;6.1;6.3
+Centro-Oeste;Total;;fundamental - anos iniciais;meta;;4.1;4.4;4.8;5.1;5.4;5.6;5.9;6.2
+Centro-Oeste;Pública;;fundamental - anos iniciais;meta;;3.8;4.2;4.6;4.9;5.1;5.4;5.7;6
+Centro-Oeste;Privada;;fundamental - anos iniciais;meta;;5.9;6.2;6.5;6.8;7;7.2;7.3;7.5
+Centro-Oeste;Estadual;;fundamental - anos iniciais;meta;;3.9;4.3;4.7;5;5.3;5.5;5.8;6.1
+Mato Grosso do Sul;Total;MS;fundamental - anos iniciais;meta;;3.6;4;4.4;4.7;5;5.2;5.5;5.8
+Mato Grosso do Sul;Pública;MS;fundamental - anos iniciais;meta;;3.4;3.8;4.2;4.5;4.8;5;5.3;5.6
+Mato Grosso do Sul;Privada;MS;fundamental - anos iniciais;meta;;6.1;6.4;6.7;6.9;7.1;7.3;7.5;7.6
+Mato Grosso do Sul;Estadual;MS;fundamental - anos iniciais;meta;;3.3;3.6;4;4.3;4.6;4.9;5.2;5.5
+Mato Grosso;Total;MT;fundamental - anos iniciais;meta;;3.7;4;4.4;4.7;5;5.3;5.6;5.9
+Mato Grosso;Pública;MT;fundamental - anos iniciais;meta;;3.6;3.9;4.3;4.6;4.9;5.2;5.5;5.7
+Mato Grosso;Privada;MT;fundamental - anos iniciais;meta;;5.5;5.8;6.2;6.4;6.6;6.8;7;7.2
+Mato Grosso;Estadual;MT;fundamental - anos iniciais;meta;;3.6;4;4.4;4.7;4.9;5.2;5.5;5.8
+Goiás;Total;GO;fundamental - anos iniciais;meta;;4.2;4.5;4.9;5.2;5.4;5.7;6;6.2
+Goiás;Pública;GO;fundamental - anos iniciais;meta;;3.9;4.2;4.7;4.9;5.2;5.5;5.8;6
+Goiás;Privada;GO;fundamental - anos iniciais;meta;;5.7;6;6.4;6.6;6.8;7;7.2;7.4
+Goiás;Estadual;GO;fundamental - anos iniciais;meta;;4;4.3;4.7;5;5.3;5.6;5.8;6.1
+Distrito Federal;Total;DF;fundamental - anos iniciais;meta;;4.9;5.2;5.6;5.8;6.1;6.3;6.6;6.8
+Distrito Federal;Pública;DF;fundamental - anos iniciais;meta;;4.5;4.8;5.2;5.5;5.8;6;6.3;6.5
+Distrito Federal;Privada;DF;fundamental - anos iniciais;meta;;6.4;6.7;7;7.2;7.3;7.5;7.7;7.8
+Distrito Federal;Estadual;DF;fundamental - anos iniciais;meta;;4.5;4.8;5.2;5.5;5.8;6;6.3;6.5
+Norte;Total;;fundamental - anos finais;nota;3.2;3.4;3.6;3.8;3.8;4;4.2;;
+Norte;Pública;;fundamental - anos finais;nota;3;3.3;3.5;3.6;3.6;3.9;4.1;;
+Norte;Privada;;fundamental - anos finais;nota;5.4;5.3;5.3;5.6;5.5;5.6;6;;
+Norte;Estadual;;fundamental - anos finais;nota;3.1;3.3;3.5;3.6;3.6;3.9;4.2;;
+Rondônia;Total;RO;fundamental - anos finais;nota;3.4;3.4;3.5;3.7;3.9;4.2;4.9;;
+Rondônia;Pública;RO;fundamental - anos finais;nota;3.1;3.3;3.5;3.6;3.8;4.1;4.8;;
+Rondônia;Privada;RO;fundamental - anos finais;nota;5.8;5.1;;5.7;5.5;5.9;6.5;;
+Rondônia;Estadual;RO;fundamental - anos finais;nota;3.2;3.3;3.4;3.5;3.7;4;4.9;;
+Acre;Total;AC;fundamental - anos finais;nota;3.5;3.8;4.1;4.2;4.4;4.5;4.7;;
+Acre;Pública;AC;fundamental - anos finais;nota;3.4;3.7;4.1;4.1;4.3;4.4;4.6;;
+Acre;Privada;AC;fundamental - anos finais;nota;5;5.3;;5.6;5.7;5.9;6.4;;
+Acre;Estadual;AC;fundamental - anos finais;nota;3.5;3.8;4.1;4.2;4.4;4.4;4.7;;
+Amazonas;Total;AM;fundamental - anos finais;nota;2.7;3.3;3.5;3.8;3.9;4.4;4.5;;
+Amazonas;Pública;AM;fundamental - anos finais;nota;2.6;3.2;3.4;3.7;3.8;4.2;4.4;;
+Amazonas;Privada;AM;fundamental - anos finais;nota;5.5;5.5;;5.8;5.6;6.1;6.1;;
+Amazonas;Estadual;AM;fundamental - anos finais;nota;2.7;3.3;3.6;3.9;3.9;4.4;4.6;;
+Roraima;Total;RR;fundamental - anos finais;nota;3.4;3.7;3.7;3.7;3.7;3.8;4.1;;
+Roraima;Pública;RR;fundamental - anos finais;nota;3.2;3.5;3.7;3.6;3.5;3.7;4;;
+Roraima;Privada;RR;fundamental - anos finais;nota;6.2;5.8;;5.8;5.9;6;6;;
+Roraima;Estadual;RR;fundamental - anos finais;nota;3.2;3.5;3.7;3.6;3.5;3.7;4;;
+Pará;Total;PA;fundamental - anos finais;nota;3.3;3.3;3.4;3.7;3.6;3.8;3.8;;
+Pará;Pública;PA;fundamental - anos finais;nota;3.2;3.1;3.4;3.5;3.4;3.6;3.6;;
+Pará;Privada;PA;fundamental - anos finais;nota;5.3;5.3;;5.5;5.3;5.3;5.8;;
+Pará;Estadual;PA;fundamental - anos finais;nota;3.1;2.9;3.1;3.1;3;3.2;3.3;;
+Amapá;Total;AP;fundamental - anos finais;nota;3.5;3.5;3.6;3.7;3.6;3.7;3.8;;
+Amapá;Pública;AP;fundamental - anos finais;nota;3.4;3.4;3.6;3.5;3.4;3.5;3.5;;
+Amapá;Privada;AP;fundamental - anos finais;nota;4.7;5.3;;5.6;5.5;5.8;6;;
+Amapá;Estadual;AP;fundamental - anos finais;nota;3.5;3.4;3.6;3.5;3.4;3.5;3.5;;
+Tocantins;Total;TO;fundamental - anos finais;nota;3.4;3.7;3.9;4.1;3.9;4.1;4.6;;
+Tocantins;Pública;TO;fundamental - anos finais;nota;3.3;3.6;3.9;4;3.8;4;4.5;;
+Tocantins;Privada;TO;fundamental - anos finais;nota;5.1;5.5;;5.8;5.9;6.1;6.4;;
+Tocantins;Estadual;TO;fundamental - anos finais;nota;3.4;3.6;3.9;3.9;3.7;3.8;4.4;;
+Nordeste;Total;;fundamental - anos finais;nota;2.9;3.1;3.4;3.5;3.7;4;4.2;;
+Nordeste;Pública;;fundamental - anos finais;nota;2.6;2.9;3.1;3.2;3.4;3.7;3.9;;
+Nordeste;Privada;;fundamental - anos finais;nota;5.3;5.4;5.5;5.6;5.6;5.7;5.9;;
+Nordeste;Estadual;;fundamental - anos finais;nota;2.6;2.8;3;3.1;3.3;3.5;3.8;;
+Maranhão;Total;MA;fundamental - anos finais;nota;3;3.3;3.6;3.6;3.6;3.8;3.9;;
+Maranhão;Pública;MA;fundamental - anos finais;nota;2.8;3.2;3.4;3.4;3.4;3.7;3.7;;
+Maranhão;Privada;MA;fundamental - anos finais;nota;5.2;5.3;5.3;5.5;5.4;5.5;5.7;;
+Maranhão;Estadual;MA;fundamental - anos finais;nota;3.2;3.4;3.6;3.6;3.8;3.8;4.2;;
+Piauí;Total;PI;fundamental - anos finais;nota;3.1;3.5;3.8;4;4;4.2;4.5;;
+Piauí;Pública;PI;fundamental - anos finais;nota;2.8;3.2;3.5;3.6;3.6;3.9;4.2;;
+Piauí;Privada;PI;fundamental - anos finais;nota;5.3;5.3;5.6;5.9;6;6;6.3;;
+Piauí;Estadual;PI;fundamental - anos finais;nota;2.6;3.1;3.4;3.6;3.5;3.8;4;;
+Ceará;Total;CE;fundamental - anos finais;nota;3.1;3.5;3.9;4.2;4.4;4.8;5.1;;
+Ceará;Pública;CE;fundamental - anos finais;nota;2.8;3.3;3.6;3.9;4.1;4.5;4.9;;
+Ceará;Privada;CE;fundamental - anos finais;nota;5.5;5.4;5.4;5.7;5.8;5.8;6;;
+Ceará;Estadual;CE;fundamental - anos finais;nota;2.8;3.4;3.6;3.7;3.9;4.2;4.5;;
+Rio Grande do Norte;Total;RN;fundamental - anos finais;nota;2.8;3.1;3.3;3.4;3.6;3.8;3.8;;
+Rio Grande do Norte;Pública;RN;fundamental - anos finais;nota;2.5;2.8;2.9;3;3.2;3.4;3.4;;
+Rio Grande do Norte;Privada;RN;fundamental - anos finais;nota;5.1;5.3;5.6;5.5;5.6;5.6;5.9;;
+Rio Grande do Norte;Estadual;RN;fundamental - anos finais;nota;2.6;2.7;2.9;2.9;3.1;3.2;3.3;;
+Paraíba;Total;;fundamental - anos finais;nota;2.7;3;3.2;3.4;3.5;3.8;3.9;;
+Paraíba;Pública;;fundamental - anos finais;nota;2.5;2.8;2.9;3.1;3.2;3.5;3.6;;
+Paraíba;Privada;;fundamental - anos finais;nota;5.1;5.2;5.7;5.5;5.5;5.7;6;;
+Paraíba;Estadual;;fundamental - anos finais;nota;2.5;2.8;2.8;2.9;3;3.3;3.4;;
+Pernambuco;Total;PE;fundamental - anos finais;nota;2.7;2.9;3.4;3.5;3.8;4.1;4.4;;
+Pernambuco;Pública;PE;fundamental - anos finais;nota;2.4;2.6;3;3.2;3.4;3.8;4.1;;
+Pernambuco;Privada;PE;fundamental - anos finais;nota;5.4;5.4;5.8;5.4;5.7;5.6;5.7;;
+Pernambuco;Estadual;PE;fundamental - anos finais;nota;2.4;2.5;3;3.3;3.6;4.1;4.5;;
+Alagoas;Total;AL;fundamental - anos finais;nota;2.4;2.7;2.9;2.9;3.1;3.5;4.2;;
+Alagoas;Pública;AL;fundamental - anos finais;nota;2.3;2.6;2.7;2.6;2.8;3.2;3.9;;
+Alagoas;Privada;AL;fundamental - anos finais;nota;4.9;4.8;5;5.3;5.2;5.4;5.9;;
+Alagoas;Estadual;AL;fundamental - anos finais;nota;2.5;2.7;2.7;2.5;2.7;3.1;4;;
+Sergipe;Total;SE;fundamental - anos finais;nota;3;3.1;3.2;3.3;3.2;3.5;3.9;;
+Sergipe;Pública;SE;fundamental - anos finais;nota;2.7;2.8;2.8;2.9;2.8;3.1;3.4;;
+Sergipe;Privada;SE;fundamental - anos finais;nota;5.7;5.2;5.3;5.2;5.3;5.4;5.8;;
+Sergipe;Estadual;SE;fundamental - anos finais;nota;2.9;2.9;2.7;2.9;2.7;2.9;3.5;;
+Bahia;Total;BA;fundamental - anos finais;nota;2.8;3;3.1;3.3;3.4;3.7;3.7;;
+Bahia;Pública;BA;fundamental - anos finais;nota;2.6;2.8;2.9;3.1;3.2;3.4;3.4;;
+Bahia;Privada;BA;fundamental - anos finais;nota;5.4;5.7;5.6;5.8;5.4;5.7;5.9;;
+Bahia;Estadual;BA;fundamental - anos finais;nota;2.6;2.7;2.8;2.9;3.1;3.2;3.2;;
+Sudeste;Total;;fundamental - anos finais;nota;3.9;4.1;4.3;4.5;4.6;4.8;5;;
+Sudeste;Pública;;fundamental - anos finais;nota;3.6;3.9;4.1;4.2;4.3;4.5;4.6;;
+Sudeste;Privada;;fundamental - anos finais;nota;6.1;6.1;6;6.2;6.1;6.2;6.6;;
+Sudeste;Estadual;;fundamental - anos finais;nota;3.6;3.8;4.1;4.2;4.4;4.5;4.6;;
+Minas Gerais;Total;MG;fundamental - anos finais;nota;3.8;4;4.3;4.6;4.8;4.8;4.7;;
+Minas Gerais;Pública;MG;fundamental - anos finais;nota;3.6;3.8;4.1;4.4;4.6;4.6;4.5;;
+Minas Gerais;Privada;MG;fundamental - anos finais;nota;6.4;6.4;6.7;6.5;6.3;6.5;7;;
+Minas Gerais;Estadual;MG;fundamental - anos finais;nota;3.6;3.7;4.1;4.4;4.7;4.5;4.4;;
+Espírito Santo;Total;ES;fundamental - anos finais;nota;3.8;4;4.1;4.2;4.2;4.4;4.7;;
+Espírito Santo;Pública;ES;fundamental - anos finais;nota;3.5;3.7;3.8;3.9;3.9;4.1;4.4;;
+Espírito Santo;Privada;ES;fundamental - anos finais;nota;5.9;6.1;6.2;6.2;6.2;6.5;6.9;;
+Espírito Santo;Estadual;ES;fundamental - anos finais;nota;3.5;3.6;3.8;3.7;4;4;4.4;;
+Rio de Janeiro;Total;RJ;fundamental - anos finais;nota;3.6;3.8;3.8;4.2;4.3;4.4;4.7;;
+Rio de Janeiro;Pública;RJ;fundamental - anos finais;nota;3.2;3.5;3.4;3.7;3.9;4;4.2;;
+Rio de Janeiro;Privada;RJ;fundamental - anos finais;nota;5.5;5.5;5.7;5.7;5.5;5.6;6.2;;
+Rio de Janeiro;Estadual;RJ;fundamental - anos finais;nota;2.9;2.9;3.1;3.2;3.6;3.7;3.7;;
+São Paulo;Total;SP;fundamental - anos finais;nota;4.2;4.3;4.5;4.7;4.7;5;5.3;;
+São Paulo;Pública;SP;fundamental - anos finais;nota;3.8;4;4.3;4.4;4.4;4.7;4.9;;
+São Paulo;Privada;SP;fundamental - anos finais;nota;6.3;6.2;6;6.4;6.3;6.5;6.8;;
+São Paulo;Estadual;SP;fundamental - anos finais;nota;3.8;4;4.3;4.3;4.4;4.7;4.8;;
+Sul;Total;;fundamental - anos finais;nota;3.8;4.1;4.3;4.3;4.3;4.6;4.9;;
+Sul;Pública;;fundamental - anos finais;nota;3.6;3.9;4.1;4.1;4.1;4.4;4.6;;
+Sul;Privada;;fundamental - anos finais;nota;6.1;6.1;6.2;6.2;6.3;6.5;6.7;;
+Sul;Estadual;;fundamental - anos finais;nota;3.5;3.9;4;4.1;4;4.3;4.6;;
+Paraná;Total;PR;fundamental - anos finais;nota;3.6;4.2;4.3;4.3;4.3;4.6;4.9;;
+Paraná;Pública;PR;fundamental - anos finais;nota;3.3;4;4.1;4.1;4.1;4.3;4.7;;
+Paraná;Privada;PR;fundamental - anos finais;nota;6.2;6.5;6.5;6.3;6.4;6.5;6.7;;
+Paraná;Estadual;PR;fundamental - anos finais;nota;3.3;4;4.1;4;4.1;4.3;4.6;;
+Santa Catarina;Total;SC;fundamental - anos finais;nota;4.3;4.3;4.5;4.9;4.5;5.1;5.2;;
+Santa Catarina;Pública;SC;fundamental - anos finais;nota;4.1;4.1;4.3;4.7;4.3;4.9;5;;
+Santa Catarina;Privada;SC;fundamental - anos finais;nota;5.9;5.9;6.3;6.4;6.4;6.6;6.6;;
+Santa Catarina;Estadual;SC;fundamental - anos finais;nota;4.1;4.1;4.2;4.7;4.1;4.7;4.8;;
+Rio Grande do Sul;Total;RS;fundamental - anos finais;nota;3.8;3.9;4.1;4.1;4.2;4.3;4.6;;
+Rio Grande do Sul;Pública;RS;fundamental - anos finais;nota;3.6;3.7;3.9;3.9;4;4.2;4.4;;
+Rio Grande do Sul;Privada;RS;fundamental - anos finais;nota;6.1;5.7;5.8;6.1;6.1;6.2;6.7;;
+Rio Grande do Sul;Estadual;RS;fundamental - anos finais;nota;3.5;3.7;3.8;3.8;3.9;4;4.3;;
+Centro-Oeste;Total;;fundamental - anos finais;nota;3.4;3.8;4.1;4.3;4.5;4.7;5;;
+Centro-Oeste;Pública;;fundamental - anos finais;nota;3.2;3.6;3.9;4;4.2;4.4;4.8;;
+Centro-Oeste;Privada;;fundamental - anos finais;nota;5.5;5.7;5.8;5.9;5.9;6.2;6.4;;
+Centro-Oeste;Estadual;;fundamental - anos finais;nota;3.1;3.5;3.8;3.9;4.2;4.4;4.8;;
+Mato Grosso do Sul;Total;MS;fundamental - anos finais;nota;3.4;3.9;4.1;4;4.1;4.5;4.8;;
+Mato Grosso do Sul;Pública;MS;fundamental - anos finais;nota;3.1;3.7;3.9;3.8;3.9;4.3;4.6;;
+Mato Grosso do Sul;Privada;MS;fundamental - anos finais;nota;5.6;5.7;6.2;6.1;6;6.4;6.5;;
+Mato Grosso do Sul;Estadual;MS;fundamental - anos finais;nota;2.9;3.5;3.6;3.5;3.7;4.1;4.6;;
+Mato Grosso;Total;MT;fundamental - anos finais;nota;3.1;3.8;4.3;4.5;4.4;4.6;4.9;;
+Mato Grosso;Pública;MT;fundamental - anos finais;nota;3;3.7;4.2;4.3;4.2;4.5;4.7;;
+Mato Grosso;Privada;MT;fundamental - anos finais;nota;5.2;5.6;5.8;5.9;5.9;6.2;6.5;;
+Mato Grosso;Estadual;MT;fundamental - anos finais;nota;2.9;3.6;4.2;4.3;4.2;4.5;4.6;;
+Goiás;Total;GO;fundamental - anos finais;nota;3.5;3.8;4;4.2;4.7;4.9;5.3;;
+Goiás;Pública;GO;fundamental - anos finais;nota;3.3;3.5;3.7;3.9;4.5;4.6;5.1;;
+Goiás;Privada;GO;fundamental - anos finais;nota;5.3;5.7;5.8;5.8;5.8;6.3;6.2;;
+Goiás;Estadual;GO;fundamental - anos finais;nota;3.3;3.4;3.6;4;4.5;4.7;5.2;;
+Distrito Federal;Total;DF;fundamental - anos finais;nota;3.8;4;4.4;4.4;4.4;4.5;4.9;;
+Distrito Federal;Pública;DF;fundamental - anos finais;nota;3.3;3.5;3.9;3.9;3.9;4;4.3;;
+Distrito Federal;Privada;DF;fundamental - anos finais;nota;6;5.9;5.8;6;6.1;6;6.5;;
+Distrito Federal;Estadual;DF;fundamental - anos finais;nota;3.3;3.5;3.9;3.9;3.8;4;4.3;;
+Norte;Total;;fundamental - anos finais;meta;;3.2;3.4;3.6;4.1;4.4;4.7;5;5.2
+Norte;Pública;;fundamental - anos finais;meta;;3.1;3.2;3.5;3.9;4.3;4.5;4.8;5.1
+Norte;Privada;;fundamental - anos finais;meta;;5.4;5.5;5.8;6.1;6.4;6.6;6.8;7
+Norte;Estadual;;fundamental - anos finais;meta;;3.1;3.3;3.5;3.9;4.3;4.6;4.9;5.1
+Rondônia;Total;RO;fundamental - anos finais;meta;;3.4;3.6;3.8;4.2;4.6;4.9;5.1;5.4
+Rondônia;Pública;RO;fundamental - anos finais;meta;;3.2;3.3;3.6;4;4.4;4.6;4.9;5.2
+Rondônia;Privada;RO;fundamental - anos finais;meta;;5.8;6;6.2;6.5;6.8;7;7.2;7.3
+Rondônia;Estadual;RO;fundamental - anos finais;meta;;3.2;3.4;3.6;4;4.4;4.7;4.9;5.2
+Acre;Total;AC;fundamental - anos finais;meta;;3.5;3.7;4;4.4;4.8;5;5.3;5.5
+Acre;Pública;AC;fundamental - anos finais;meta;;3.4;3.6;3.8;4.2;4.6;4.9;5.1;5.4
+Acre;Privada;AC;fundamental - anos finais;meta;;5;5.2;5.4;5.8;6.1;6.3;6.5;6.8
+Acre;Estadual;AC;fundamental - anos finais;meta;;3.5;3.7;4;4.4;4.7;5;5.3;5.5
+Amazonas;Total;AM;fundamental - anos finais;meta;;2.8;2.9;3.2;3.6;4;4.2;4.5;4.8
+Amazonas;Pública;AM;fundamental - anos finais;meta;;2.6;2.8;3;3.4;3.8;4.1;4.3;4.6
+Amazonas;Privada;AM;fundamental - anos finais;meta;;5.5;5.6;5.9;6.2;6.5;6.7;6.9;7.1
+Amazonas;Estadual;AM;fundamental - anos finais;meta;;2.7;2.8;3.1;3.5;3.9;4.1;4.4;4.7
+Roraima;Total;RR;fundamental - anos finais;meta;;3.5;3.6;3.9;4.3;4.7;4.9;5.2;5.4
+Roraima;Pública;RR;fundamental - anos finais;meta;;3.2;3.4;3.7;4.1;4.4;4.7;5;5.2
+Roraima;Privada;RR;fundamental - anos finais;meta;;6.2;6.3;6.5;6.8;7.1;7.2;7.4;7.6
+Roraima;Estadual;RR;fundamental - anos finais;meta;;3.2;3.4;3.7;4.1;4.4;4.7;5;5.2
+Pará;Total;PA;fundamental - anos finais;meta;;3.4;3.5;3.8;4.2;4.6;4.8;5.1;5.3
+Pará;Pública;PA;fundamental - anos finais;meta;;3.2;3.3;3.6;4;4.4;4.7;4.9;5.2
+Pará;Privada;PA;fundamental - anos finais;meta;;5.3;5.4;5.7;6;6.3;6.5;6.7;6.9
+Pará;Estadual;PA;fundamental - anos finais;meta;;3.2;3.3;3.6;4;4.4;4.6;4.9;5.2
+Amapá;Total;AP;fundamental - anos finais;meta;;3.6;3.7;4;4.4;4.8;5;5.3;5.5
+Amapá;Pública;AP;fundamental - anos finais;meta;;3.5;3.6;3.9;4.3;4.7;4.9;5.2;5.5
+Amapá;Privada;AP;fundamental - anos finais;meta;;4.7;4.9;5.1;5.5;5.8;6.1;6.3;6.5
+Amapá;Estadual;AP;fundamental - anos finais;meta;;3.5;3.7;4;4.4;4.7;5;5.2;5.5
+Tocantins;Total;TO;fundamental - anos finais;meta;;3.4;3.6;3.8;4.2;4.6;4.9;5.1;5.4
+Tocantins;Pública;TO;fundamental - anos finais;meta;;3.3;3.5;3.7;4.1;4.5;4.8;5.1;5.3
+Tocantins;Privada;TO;fundamental - anos finais;meta;;5.1;5.3;5.5;5.9;6.2;6.4;6.6;6.8
+Tocantins;Estadual;TO;fundamental - anos finais;meta;;3.4;3.5;3.8;4.2;4.6;4.8;5.1;5.4
+Nordeste;Total;;fundamental - anos finais;meta;;2.9;3;3.3;3.7;4.1;4.3;4.6;4.9
+Nordeste;Pública;;fundamental - anos finais;meta;;2.6;2.8;3;3.4;3.8;4.1;4.3;4.6
+Nordeste;Privada;;fundamental - anos finais;meta;;5.4;5.5;5.7;6.1;6.4;6.6;6.8;7
+Nordeste;Estadual;;fundamental - anos finais;meta;;2.7;2.8;3.1;3.5;3.8;4.1;4.4;4.6
+Maranhão;Total;MA;fundamental - anos finais;meta;;3;3.2;3.5;3.9;4.2;4.5;4.8;5
+Maranhão;Pública;MA;fundamental - anos finais;meta;;2.9;3;3.3;3.7;4.1;4.3;4.6;4.9
+Maranhão;Privada;MA;fundamental - anos finais;meta;;5.2;5.4;5.6;6;6.3;6.5;6.7;6.9
+Maranhão;Estadual;MA;fundamental - anos finais;meta;;3.2;3.4;3.6;4.1;4.4;4.7;5;5.2
+Piauí;Total;PI;fundamental - anos finais;meta;;3.1;3.3;3.5;3.9;4.3;4.6;4.8;5.1
+Piauí;Pública;PI;fundamental - anos finais;meta;;2.8;2.9;3.2;3.6;4;4.2;4.5;4.8
+Piauí;Privada;PI;fundamental - anos finais;meta;;5.4;5.5;5.7;6.1;6.4;6.6;6.8;7
+Piauí;Estadual;PI;fundamental - anos finais;meta;;2.7;2.8;3.1;3.5;3.8;4.1;4.4;4.7
+Ceará;Total;CE;fundamental - anos finais;meta;;3.1;3.3;3.6;4;4.3;4.6;4.9;5.1
+Ceará;Pública;CE;fundamental - anos finais;meta;;2.8;3;3.3;3.6;4;4.3;4.6;4.8
+Ceará;Privada;CE;fundamental - anos finais;meta;;5.6;5.7;5.9;6.3;6.6;6.8;6.9;7.1
+Ceará;Estadual;CE;fundamental - anos finais;meta;;2.8;2.9;3.2;3.6;4;4.3;4.5;4.8
+Rio Grande do Norte;Total;RN;fundamental - anos finais;meta;;2.9;3;3.3;3.7;4;4.3;4.6;4.9
+Rio Grande do Norte;Pública;RN;fundamental - anos finais;meta;;2.6;2.7;3;3.4;3.7;4;4.3;4.5
+Rio Grande do Norte;Privada;RN;fundamental - anos finais;meta;;5.1;5.2;5.5;5.8;6.2;6.4;6.6;6.8
+Rio Grande do Norte;Estadual;RN;fundamental - anos finais;meta;;2.6;2.7;3;3.4;3.8;4;4.3;4.6
+Paraíba;Total;;fundamental - anos finais;meta;;2.8;2.9;3.2;3.6;4;4.2;4.5;4.8
+Paraíba;Pública;;fundamental - anos finais;meta;;2.5;2.7;2.9;3.3;3.7;4;4.2;4.5
+Paraíba;Privada;;fundamental - anos finais;meta;;5.1;5.3;5.5;5.9;6.2;6.4;6.6;6.8
+Paraíba;Estadual;;fundamental - anos finais;meta;;2.6;2.7;3;3.4;3.7;4;4.3;4.5
+Pernambuco;Total;PE;fundamental - anos finais;meta;;2.8;2.9;3.2;3.6;3.9;4.2;4.5;4.7
+Pernambuco;Pública;PE;fundamental - anos finais;meta;;2.4;2.6;2.8;3.2;3.6;3.8;4.1;4.4
+Pernambuco;Privada;PE;fundamental - anos finais;meta;;5.5;5.6;5.8;6.2;6.5;6.7;6.9;7
+Pernambuco;Estadual;PE;fundamental - anos finais;meta;;2.4;2.6;2.8;3.3;3.6;3.9;4.2;4.5
+Alagoas;Total;AL;fundamental - anos finais;meta;;2.5;2.6;2.9;3.3;3.7;3.9;4.2;4.5
+Alagoas;Pública;AL;fundamental - anos finais;meta;;2.3;2.5;2.7;3.2;3.5;3.8;4.1;4.3
+Alagoas;Privada;AL;fundamental - anos finais;meta;;4.9;5.1;5.3;5.7;6;6.2;6.4;6.6
+Alagoas;Estadual;AL;fundamental - anos finais;meta;;2.5;2.7;2.9;3.3;3.7;4;4.2;4.5
+Sergipe;Total;SE;fundamental - anos finais;meta;;3.1;3.2;3.5;3.9;4.3;4.5;4.8;5.1
+Sergipe;Pública;SE;fundamental - anos finais;meta;;2.8;2.9;3.2;3.6;4;4.2;4.5;4.8
+Sergipe;Privada;SE;fundamental - anos finais;meta;;5.7;5.9;6.1;6.4;6.7;6.9;7.1;7.3
+Sergipe;Estadual;SE;fundamental - anos finais;meta;;2.9;3;3.3;3.7;4.1;4.4;4.6;4.9
+Bahia;Total;BA;fundamental - anos finais;meta;;2.8;3;3.2;3.6;4;4.3;4.5;4.8
+Bahia;Pública;BA;fundamental - anos finais;meta;;2.6;2.8;3;3.4;3.8;4.1;4.3;4.6
+Bahia;Privada;BA;fundamental - anos finais;meta;;5.4;5.5;5.8;6.1;6.4;6.6;6.8;7
+Bahia;Estadual;BA;fundamental - anos finais;meta;;2.7;2.8;3.1;3.5;3.9;4.2;4.4;4.7
+Sudeste;Total;;fundamental - anos finais;meta;;4;4.1;4.4;4.8;5.2;5.4;5.7;5.9
+Sudeste;Pública;;fundamental - anos finais;meta;;3.7;3.8;4.1;4.5;4.9;5.1;5.4;5.6
+Sudeste;Privada;;fundamental - anos finais;meta;;6.1;6.2;6.5;6.8;7;7.2;7.4;7.5
+Sudeste;Estadual;;fundamental - anos finais;meta;;3.7;3.8;4.1;4.5;4.9;5.1;5.4;5.6
+Minas Gerais;Total;MG;fundamental - anos finais;meta;;3.8;3.9;4.2;4.6;5;5.2;5.5;5.7
+Minas Gerais;Pública;MG;fundamental - anos finais;meta;;3.6;3.7;4;4.4;4.8;5;5.3;5.6
+Minas Gerais;Privada;MG;fundamental - anos finais;meta;;6.5;6.6;6.8;7;7.3;7.4;7.6;7.7
+Minas Gerais;Estadual;MG;fundamental - anos finais;meta;;3.6;3.8;4;4.4;4.8;5.1;5.3;5.6
+Espírito Santo;Total;ES;fundamental - anos finais;meta;;3.8;4;4.3;4.7;5;5.3;5.5;5.8
+Espírito Santo;Pública;ES;fundamental - anos finais;meta;;3.5;3.7;3.9;4.3;4.7;5;5.2;5.5
+Espírito Santo;Privada;ES;fundamental - anos finais;meta;;6;6.1;6.3;6.6;6.9;7.1;7.2;7.4
+Espírito Santo;Estadual;ES;fundamental - anos finais;meta;;3.6;3.7;4;4.4;4.8;5;5.3;5.5
+Rio de Janeiro;Total;RJ;fundamental - anos finais;meta;;3.6;3.8;4.1;4.5;4.9;5.1;5.4;5.6
+Rio de Janeiro;Pública;RJ;fundamental - anos finais;meta;;3.2;3.4;3.7;4.1;4.4;4.7;5;5.2
+Rio de Janeiro;Privada;RJ;fundamental - anos finais;meta;;5.5;5.6;5.9;6.2;6.5;6.7;6.9;7.1
+Rio de Janeiro;Estadual;RJ;fundamental - anos finais;meta;;2.9;3.1;3.3;3.7;4.1;4.4;4.6;4.9
+São Paulo;Total;SP;fundamental - anos finais;meta;;4.2;4.4;4.6;5;5.4;5.6;5.9;6.1
+São Paulo;Pública;SP;fundamental - anos finais;meta;;3.9;4;4.3;4.7;5.1;5.3;5.6;5.8
+São Paulo;Privada;SP;fundamental - anos finais;meta;;6.3;6.5;6.7;6.9;7.2;7.4;7.5;7.7
+São Paulo;Estadual;SP;fundamental - anos finais;meta;;3.8;4;4.2;4.6;5;5.3;5.5;5.8
+Sul;Total;;fundamental - anos finais;meta;;3.9;4;4.3;4.7;5.1;5.3;5.6;5.8
+Sul;Pública;;fundamental - anos finais;meta;;3.6;3.8;4.1;4.5;4.8;5.1;5.4;5.6
+Sul;Privada;;fundamental - anos finais;meta;;6.1;6.2;6.4;6.7;7;7.2;7.3;7.5
+Sul;Estadual;;fundamental - anos finais;meta;;3.5;3.7;4;4.4;4.8;5;5.3;5.5
+Paraná;Total;PR;fundamental - anos finais;meta;;3.6;3.7;4;4.4;4.8;5.1;5.3;5.6
+Paraná;Pública;PR;fundamental - anos finais;meta;;3.4;3.5;3.8;4.2;4.6;4.8;5.1;5.3
+Paraná;Privada;PR;fundamental - anos finais;meta;;6.2;6.3;6.5;6.8;7.1;7.2;7.4;7.6
+Paraná;Estadual;PR;fundamental - anos finais;meta;;3.3;3.5;3.8;4.2;4.5;4.8;5.1;5.3
+Santa Catarina;Total;SC;fundamental - anos finais;meta;;4.3;4.5;4.7;5.1;5.5;5.7;6;6.2
+Santa Catarina;Pública;SC;fundamental - anos finais;meta;;4.1;4.3;4.6;5;5.3;5.6;5.8;6
+Santa Catarina;Privada;SC;fundamental - anos finais;meta;;6;6.1;6.3;6.6;6.9;7.1;7.2;7.4
+Santa Catarina;Estadual;SC;fundamental - anos finais;meta;;4.1;4.3;4.5;4.9;5.3;5.5;5.8;6
+Rio Grande do Sul;Total;RS;fundamental - anos finais;meta;;3.9;4;4.3;4.7;5.1;5.3;5.6;5.8
+Rio Grande do Sul;Pública;RS;fundamental - anos finais;meta;;3.7;3.8;4.1;4.5;4.9;5.1;5.4;5.6
+Rio Grande do Sul;Privada;RS;fundamental - anos finais;meta;;6.1;6.2;6.5;6.8;7;7.2;7.3;7.5
+Rio Grande do Sul;Estadual;RS;fundamental - anos finais;meta;;3.5;3.7;4;4.4;4.8;5;5.3;5.5
+Centro-Oeste;Total;;fundamental - anos finais;meta;;3.5;3.6;3.9;4.3;4.7;4.9;5.2;5.4
+Centro-Oeste;Pública;;fundamental - anos finais;meta;;3.2;3.3;3.6;4;4.4;4.7;4.9;5.2
+Centro-Oeste;Privada;;fundamental - anos finais;meta;;5.5;5.7;5.9;6.2;6.5;6.7;6.9;7.1
+Centro-Oeste;Estadual;;fundamental - anos finais;meta;;3.2;3.3;3.6;4;4.4;4.6;4.9;5.2
+Mato Grosso do Sul;Total;MS;fundamental - anos finais;meta;;3.4;3.5;3.8;4.2;4.6;4.9;5.1;5.4
+Mato Grosso do Sul;Pública;MS;fundamental - anos finais;meta;;3.2;3.3;3.6;4;4.4;4.6;4.9;5.2
+Mato Grosso do Sul;Privada;MS;fundamental - anos finais;meta;;5.7;5.8;6;6.3;6.6;6.8;7;7.2
+Mato Grosso do Sul;Estadual;MS;fundamental - anos finais;meta;;3;3.1;3.4;3.8;4.2;4.4;4.7;5
+Mato Grosso;Total;MT;fundamental - anos finais;meta;;3.1;3.3;3.5;3.9;4.3;4.6;4.9;5.1
+Mato Grosso;Pública;MT;fundamental - anos finais;meta;;3;3.1;3.4;3.8;4.2;4.4;4.7;5
+Mato Grosso;Privada;MT;fundamental - anos finais;meta;;5.2;5.3;5.6;5.9;6.3;6.5;6.7;6.9
+Mato Grosso;Estadual;MT;fundamental - anos finais;meta;;2.9;3.1;3.3;3.7;4.1;4.4;4.6;4.9
+Goiás;Total;GO;fundamental - anos finais;meta;;3.5;3.7;4;4.4;4.7;5;5.3;5.5
+Goiás;Pública;GO;fundamental - anos finais;meta;;3.3;3.5;3.7;4.1;4.5;4.8;5;5.3
+Goiás;Privada;GO;fundamental - anos finais;meta;;5.3;5.5;5.7;6;6.4;6.6;6.8;6.9
+Goiás;Estadual;GO;fundamental - anos finais;meta;;3.3;3.5;3.7;4.1;4.5;4.8;5;5.3
+Distrito Federal;Total;DF;fundamental - anos finais;meta;;3.9;4;4.3;4.7;5.1;5.3;5.6;5.8
+Distrito Federal;Pública;DF;fundamental - anos finais;meta;;3.3;3.4;3.7;4.1;4.5;4.8;5;5.3
+Distrito Federal;Privada;DF;fundamental - anos finais;meta;;6;6.1;6.4;6.7;6.9;7.1;7.3;7.4
+Distrito Federal;Estadual;DF;fundamental - anos finais;meta;;3.3;3.4;3.7;4.1;4.5;4.8;5;5.3
+Norte;Total;;ensino medio;nota;2.9;2.9;3.3;3.2;3.1;3.3;3.3;;
+Norte;Privada;;ensino medio;nota;5;5.1;5.4;5.2;5;4.7;5.5;;
+Norte;Estadual;;ensino medio;nota;2.7;2.7;3.1;3.1;2.9;3.2;3.2;;
+Rondônia;Total;RO;ensino medio;nota;3.2;3.2;3.7;3.7;3.6;3.6;4;;
+Rondônia;Privada;RO;ensino medio;nota;5;5;;5.3;5.1;5.2;5.5;;
+Rondônia;Estadual;RO;ensino medio;nota;3;3.1;3.7;3.3;3.4;3.3;3.8;;
+Acre;Total;AC;ensino medio;nota;3.2;3.5;3.5;3.4;3.4;3.6;3.8;;
+Acre;Privada;AC;ensino medio;nota;5.6;5.1;;5;5.3;5.3;5.4;;
+Acre;Estadual;AC;ensino medio;nota;3;3.3;3.5;3.3;3.3;3.5;3.6;;
+Amazonas;Total;AM;ensino medio;nota;2.4;2.9;3.3;3.5;3.2;3.7;3.5;;
+Amazonas;Privada;AM;ensino medio;nota;5.2;4.8;;5;5;5.2;5.4;;
+Amazonas;Estadual;AM;ensino medio;nota;2.3;2.8;3.2;3.4;3;3.5;3.3;;
+Roraima;Total;RR;ensino medio;nota;3.5;3.5;3.4;3.6;3.4;3.6;3.5;;
+Roraima;Privada;RR;ensino medio;nota;4.7;5.2;;5.2;5.3;5.6;5.4;;
+Roraima;Estadual;RR;ensino medio;nota;3.2;3.1;3.5;3.5;3.2;3.4;3.3;;
+Pará;Total;PA;ensino medio;nota;2.8;2.7;3.1;2.8;2.9;3.1;3.1;;
+Pará;Privada;PA;ensino medio;nota;5;5.2;;5.3;4.9;4;5.5;;
+Pará;Estadual;PA;ensino medio;nota;2.6;2.3;3;2.8;2.7;3;2.8;;
+Amapá;Total;AP;ensino medio;nota;2.9;2.8;3.1;3.1;3;3.3;3.2;;
+Amapá;Privada;AP;ensino medio;nota;4.9;5.1;;5;4.8;5;5.4;;
+Amapá;Estadual;AP;ensino medio;nota;2.7;2.7;2.8;3;2.9;3.1;3;;
+Tocantins;Total;TO;ensino medio;nota;3.1;3.2;3.4;3.6;3.3;3.4;3.8;;
+Tocantins;Privada;TO;ensino medio;nota;5.4;5.4;;5.6;5.4;5.3;5.8;;
+Tocantins;Estadual;TO;ensino medio;nota;2.9;3.1;3.3;3.5;3.2;3.3;3.7;;
+Nordeste;Total;;ensino medio;nota;3;3.1;3.3;3.3;3.3;3.4;3.5;;
+Nordeste;Privada;;ensino medio;nota;5.2;5.1;5.2;5.4;5.2;5.1;5.5;;
+Nordeste;Estadual;;ensino medio;nota;2.7;2.8;3.1;3;3;3.2;3.2;;
+Maranhão;Total;MA;ensino medio;nota;2.7;3;3.2;3.1;3;3.3;3.5;;
+Maranhão;Privada;MA;ensino medio;nota;4.6;4.7;4.8;4.8;4.8;4.7;5.2;;
+Maranhão;Estadual;MA;ensino medio;nota;2.4;2.8;3;3;2.8;3.1;3.4;;
+Piauí;Total;PI;ensino medio;nota;2.9;2.9;3;3.2;3.3;3.4;3.6;;
+Piauí;Privada;PI;ensino medio;nota;5.4;5.1;5.7;5.6;5.5;5.1;5.9;;
+Piauí;Estadual;PI;ensino medio;nota;2.3;2.5;2.7;2.9;3;3.2;3.3;;
+Ceará;Total;CE;ensino medio;nota;3.3;3.4;3.6;3.7;3.6;3.7;4.1;;
+Ceará;Privada;CE;ensino medio;nota;5.5;5.2;5.5;5.9;5.3;5.5;5.7;;
+Ceará;Estadual;CE;ensino medio;nota;3;3.1;3.4;3.4;3.3;3.4;3.8;;
+Rio Grande do Norte;Total;RN;ensino medio;nota;2.9;2.9;3.1;3.1;3.1;3.2;3.2;;
+Rio Grande do Norte;Privada;RN;ensino medio;nota;5.1;5.3;4.4;5.1;4.8;4.9;5.2;;
+Rio Grande do Norte;Estadual;RN;ensino medio;nota;2.6;2.6;2.8;2.8;2.7;2.8;2.9;;
+Paraíba;Total;;ensino medio;nota;3;3.2;3.4;3.3;3.3;3.4;3.5;;
+Paraíba;Privada;;ensino medio;nota;5;5.1;5.4;5.3;5.1;4.9;5.2;;
+Paraíba;Estadual;;ensino medio;nota;2.6;2.9;3;2.9;3;3.1;3.1;;
+Pernambuco;Total;PE;ensino medio;nota;3;3;3.3;3.4;3.8;4;4.1;;
+Pernambuco;Privada;PE;ensino medio;nota;5.3;5.3;5.5;5.5;5.2;4.9;5.6;;
+Pernambuco;Estadual;PE;ensino medio;nota;2.7;2.7;3;3.1;3.6;3.9;4;;
+Alagoas;Total;AL;ensino medio;nota;3;2.9;3.1;2.9;3;3.1;3.5;;
+Alagoas;Privada;AL;ensino medio;nota;4.4;4.7;4.6;4.9;4.7;4.7;5;;
+Alagoas;Estadual;AL;ensino medio;nota;2.8;2.6;2.8;2.6;2.6;2.8;3.3;;
+Sergipe;Total;SE;ensino medio;nota;3.3;2.9;3.2;3.2;3.2;3.2;3.7;;
+Sergipe;Privada;SE;ensino medio;nota;5.5;5;5;4.8;4.8;4.9;5.5;;
+Sergipe;Estadual;SE;ensino medio;nota;2.8;2.6;2.9;2.9;2.8;2.6;3.1;;
+Bahia;Total;BA;ensino medio;nota;2.9;3;3.3;3.2;3;3.1;3;;
+Bahia;Privada;BA;ensino medio;nota;5.3;5.5;5.3;5.6;5.5;5.2;5.6;;
+Bahia;Estadual;BA;ensino medio;nota;2.7;2.8;3.1;3;2.8;2.9;2.7;;
+Sudeste;Total;;ensino medio;nota;3.6;3.7;3.8;3.9;3.9;3.9;4;;
+Sudeste;Privada;;ensino medio;nota;5.7;5.7;5.6;5.8;5.4;5.5;5.9;;
+Sudeste;Estadual;;ensino medio;nota;3.2;3.4;3.5;3.6;3.6;3.7;3.6;;
+Minas Gerais;Total;MG;ensino medio;nota;3.8;3.8;3.9;3.9;3.8;3.7;3.9;;
+Minas Gerais;Privada;MG;ensino medio;nota;6.2;5.7;6.1;6.1;5.8;5.6;6.3;;
+Minas Gerais;Estadual;MG;ensino medio;nota;3.4;3.5;3.6;3.7;3.6;3.5;3.6;;
+Espírito Santo;Total;ES;ensino medio;nota;3.8;3.6;3.8;3.6;3.8;4;4.4;;
+Espírito Santo;Privada;ES;ensino medio;nota;5.7;5.9;5.7;5.7;5.7;5.7;6.1;;
+Espírito Santo;Estadual;ES;ensino medio;nota;3.1;3.2;3.4;3.3;3.4;3.7;4.1;;
+Rio de Janeiro;Total;RJ;ensino medio;nota;3.3;3.2;3.3;3.7;4;4;3.9;;
+Rio de Janeiro;Privada;RJ;ensino medio;nota;5.1;5.4;5.7;5.5;4.8;5;5.6;;
+Rio de Janeiro;Estadual;RJ;ensino medio;nota;2.8;2.8;2.8;3.2;3.6;3.6;3.3;;
+São Paulo;Total;SP;ensino medio;nota;3.6;3.9;3.9;4.1;4.1;4.2;4.2;;
+São Paulo;Privada;SP;ensino medio;nota;5.8;5.8;5.3;5.9;5.6;5.6;5.9;;
+São Paulo;Estadual;SP;ensino medio;nota;3.3;3.4;3.6;3.9;3.7;3.9;3.8;;
+Sul;Total;;ensino medio;nota;3.7;3.9;4.1;4;3.9;3.8;3.9;;
+Sul;Privada;;ensino medio;nota;5.9;5.8;5.9;6;5.7;5.6;5.9;;
+Sul;Estadual;;ensino medio;nota;3.4;3.6;3.8;3.7;3.6;3.5;3.6;;
+Paraná;Total;PR;ensino medio;nota;3.6;4;4.2;4;3.8;3.9;4;;
+Paraná;Privada;PR;ensino medio;nota;5.8;6.1;6.1;6.1;5.7;5.5;5.9;;
+Paraná;Estadual;PR;ensino medio;nota;3.3;3.7;3.9;3.7;3.4;3.6;3.7;;
+Santa Catarina;Total;SC;ensino medio;nota;3.8;4;4.1;4.3;4;3.8;4.1;;
+Santa Catarina;Privada;SC;ensino medio;nota;5.7;5.5;6.1;6;5.9;5.8;6;;
+Santa Catarina;Estadual;SC;ensino medio;nota;3.5;3.8;3.7;4;3.6;3.4;3.6;;
+Rio Grande do Sul;Total;RS;ensino medio;nota;3.7;3.7;3.9;3.7;3.9;3.6;3.7;;
+Rio Grande do Sul;Privada;RS;ensino medio;nota;5.7;5.7;5.7;5.9;5.7;5.7;5.9;;
+Rio Grande do Sul;Estadual;RS;ensino medio;nota;3.4;3.4;3.6;3.4;3.7;3.3;3.4;;
+Centro-Oeste;Total;;ensino medio;nota;3.3;3.4;3.5;3.6;3.6;3.7;4;;
+Centro-Oeste;Privada;;ensino medio;nota;5.7;5.5;5.8;5.6;5.6;5.4;5.7;;
+Centro-Oeste;Estadual;;ensino medio;nota;2.9;3;3.2;3.3;3.3;3.4;3.7;;
+Mato Grosso do Sul;Total;MS;ensino medio;nota;3.3;3.8;3.8;3.8;3.6;3.7;3.8;;
+Mato Grosso do Sul;Privada;MS;ensino medio;nota;5.8;5.6;5.8;5.5;5.6;5.7;5.9;;
+Mato Grosso do Sul;Estadual;MS;ensino medio;nota;2.8;3.4;3.5;3.5;3.4;3.5;3.6;;
+Mato Grosso;Total;MT;ensino medio;nota;3.1;3.2;3.2;3.3;3;3.2;3.5;;
+Mato Grosso;Privada;MT;ensino medio;nota;5.3;5.3;5.8;5.7;5.3;5.3;5.6;;
+Mato Grosso;Estadual;MT;ensino medio;nota;2.6;3;2.9;3.1;2.7;3;3.2;;
+Goiás;Total;GO;ensino medio;nota;3.2;3.1;3.4;3.8;4;3.9;4.3;;
+Goiás;Privada;GO;ensino medio;nota;5.7;5.7;5.8;5.5;5.5;5.2;5.5;;
+Goiás;Estadual;GO;ensino medio;nota;2.9;2.8;3.1;3.6;3.8;3.8;4.3;;
+Distrito Federal;Total;DF;ensino medio;nota;3.6;4;3.8;3.8;4;4;4.1;;
+Distrito Federal;Privada;DF;ensino medio;nota;5.9;5.5;5.6;5.6;5.7;5.6;6;;
+Distrito Federal;Estadual;DF;ensino medio;nota;3;3.2;3.2;3.1;3.3;3.5;3.4;;
+Norte;Total;;ensino medio;meta;;2.9;3;3.2;3.4;3.8;4.2;4.5;4.7
+Norte;Privada;;ensino medio;meta;;5.1;5.2;5.3;5.6;5.9;6.2;6.4;6.6
+Norte;Estadual;;ensino medio;meta;;2.7;2.8;3;3.2;3.6;4;4.3;4.5
+Rondônia;Total;RO;ensino medio;meta;;3.2;3.3;3.5;3.8;4.1;4.5;4.8;5
+Rondônia;Privada;RO;ensino medio;meta;;5;5.1;5.3;5.5;5.8;6.2;6.4;6.6
+Rondônia;Estadual;RO;ensino medio;meta;;3;3.1;3.3;3.5;3.9;4.3;4.5;4.8
+Acre;Total;AC;ensino medio;meta;;3.2;3.3;3.5;3.8;4.1;4.5;4.8;5
+Acre;Privada;AC;ensino medio;meta;;5.6;5.7;5.9;6.1;6.4;6.7;6.9;7
+Acre;Estadual;AC;ensino medio;meta;;3;3.1;3.3;3.5;3.9;4.3;4.6;4.8
+Amazonas;Total;AM;ensino medio;meta;;2.4;2.5;2.7;3;3.3;3.7;4;4.2
+Amazonas;Privada;AM;ensino medio;meta;;5.2;5.3;5.5;5.7;6;6.4;6.5;6.7
+Amazonas;Estadual;AM;ensino medio;meta;;2.3;2.4;2.5;2.8;3.1;3.5;3.8;4
+Roraima;Total;RR;ensino medio;meta;;3.5;3.6;3.8;4;4.4;4.8;5.1;5.3
+Roraima;Privada;RR;ensino medio;meta;;4.7;4.8;5;5.3;5.6;6;6.2;6.4
+Roraima;Estadual;RR;ensino medio;meta;;3.3;3.4;3.5;3.8;4.2;4.6;4.8;5.1
+Pará;Total;PA;ensino medio;meta;;2.9;2.9;3.1;3.4;3.7;4.2;4.4;4.7
+Pará;Privada;PA;ensino medio;meta;;5.1;5.2;5.3;5.6;5.9;6.3;6.4;6.6
+Pará;Estadual;PA;ensino medio;meta;;2.7;2.7;2.9;3.2;3.5;4;4.2;4.4
+Amapá;Total;AP;ensino medio;meta;;2.9;3;3.2;3.5;3.8;4.3;4.5;4.8
+Amapá;Privada;AP;ensino medio;meta;;4.9;5;5.2;5.4;5.7;6.1;6.3;6.5
+Amapá;Estadual;AP;ensino medio;meta;;2.7;2.8;3;3.2;3.6;4;4.3;4.5
+Tocantins;Total;TO;ensino medio;meta;;3.1;3.2;3.4;3.6;4;4.4;4.7;4.9
+Tocantins;Privada;TO;ensino medio;meta;;5.5;5.5;5.7;5.9;6.2;6.6;6.7;6.9
+Tocantins;Estadual;TO;ensino medio;meta;;2.9;3;3.2;3.4;3.8;4.2;4.5;4.7
+Nordeste;Total;;ensino medio;meta;;3;3.1;3.3;3.6;3.9;4.4;4.6;4.9
+Nordeste;Privada;;ensino medio;meta;;5.2;5.3;5.5;5.7;6;6.4;6.5;6.7
+Nordeste;Estadual;;ensino medio;meta;;2.7;2.8;3;3.3;3.6;4;4.3;4.5
+Maranhão;Total;MA;ensino medio;meta;;2.8;2.9;3;3.3;3.6;4.1;4.3;4.6
+Maranhão;Privada;MA;ensino medio;meta;;4.7;4.8;4.9;5.2;5.5;5.9;6.1;6.3
+Maranhão;Estadual;MA;ensino medio;meta;;2.5;2.6;2.7;3;3.3;3.7;4;4.2
+Piauí;Total;PI;ensino medio;meta;;3;3.1;3.2;3.5;3.8;4.3;4.5;4.8
+Piauí;Privada;PI;ensino medio;meta;;5.5;5.6;5.7;5.9;6.2;6.6;6.8;6.9
+Piauí;Estadual;PI;ensino medio;meta;;2.3;2.4;2.6;2.8;3.2;3.6;3.8;4.1
+Ceará;Total;CE;ensino medio;meta;;3.3;3.4;3.6;3.9;4.2;4.6;4.9;5.1
+Ceará;Privada;CE;ensino medio;meta;;5.6;5.6;5.8;6;6.3;6.6;6.8;7
+Ceará;Estadual;CE;ensino medio;meta;;3;3.1;3.2;3.5;3.9;4.3;4.5;4.8
+Rio Grande do Norte;Total;RN;ensino medio;meta;;2.9;3;3.2;3.5;3.8;4.3;4.5;4.7
+Rio Grande do Norte;Privada;RN;ensino medio;meta;;5.1;5.2;5.4;5.6;5.9;6.3;6.5;6.7
+Rio Grande do Norte;Estadual;RN;ensino medio;meta;;2.6;2.7;2.9;3.2;3.5;3.9;4.2;4.4
+Paraíba;Total;;ensino medio;meta;;3;3.1;3.3;3.5;3.9;4.3;4.6;4.8
+Paraíba;Privada;;ensino medio;meta;;5;5.1;5.3;5.5;5.8;6.2;6.4;6.6
+Paraíba;Estadual;;ensino medio;meta;;2.7;2.7;2.9;3.2;3.5;4;4.2;4.4
+Pernambuco;Total;PE;ensino medio;meta;;3.1;3.2;3.3;3.6;3.9;4.4;4.6;4.9
+Pernambuco;Privada;PE;ensino medio;meta;;5.3;5.4;5.6;5.8;6.1;6.5;6.6;6.8
+Pernambuco;Estadual;PE;ensino medio;meta;;2.7;2.8;3;3.2;3.6;4;4.3;4.5
+Alagoas;Total;AL;ensino medio;meta;;3;3.1;3.3;3.6;3.9;4.4;4.6;4.9
+Alagoas;Privada;AL;ensino medio;meta;;4.4;4.5;4.7;5;5.3;5.7;5.9;6.1
+Alagoas;Estadual;AL;ensino medio;meta;;2.8;2.9;3.1;3.3;3.7;4.1;4.4;4.6
+Sergipe;Total;SE;ensino medio;meta;;3.3;3.4;3.6;3.8;4.2;4.6;4.9;5.1
+Sergipe;Privada;SE;ensino medio;meta;;5.5;5.6;5.8;6;6.3;6.6;6.8;7
+Sergipe;Estadual;SE;ensino medio;meta;;2.9;3;3.1;3.4;3.7;4.2;4.4;4.7
+Bahia;Total;BA;ensino medio;meta;;3;3.1;3.2;3.5;3.8;4.3;4.5;4.8
+Bahia;Privada;BA;ensino medio;meta;;5.3;5.4;5.6;5.8;6.1;6.5;6.7;6.8
+Bahia;Estadual;BA;ensino medio;meta;;2.7;2.8;3;3.3;3.6;4.1;4.3;4.5
+Sudeste;Total;;ensino medio;meta;;3.6;3.7;3.9;4.1;4.5;4.9;5.2;5.4
+Sudeste;Privada;;ensino medio;meta;;5.7;5.8;6;6.2;6.4;6.8;6.9;7.1
+Sudeste;Estadual;;ensino medio;meta;;3.3;3.3;3.5;3.8;4.1;4.6;4.8;5.1
+Minas Gerais;Total;MG;ensino medio;meta;;3.8;3.9;4.1;4.3;4.7;5.1;5.3;5.6
+Minas Gerais;Privada;MG;ensino medio;meta;;6.2;6.3;6.4;6.6;6.8;7.1;7.3;7.4
+Minas Gerais;Estadual;MG;ensino medio;meta;;3.5;3.6;3.7;4;4.4;4.8;5;5.3
+Espírito Santo;Total;ES;ensino medio;meta;;3.8;3.9;4.1;4.3;4.7;5.1;5.3;5.6
+Espírito Santo;Privada;ES;ensino medio;meta;;5.7;5.8;5.9;6.2;6.4;6.8;6.9;7.1
+Espírito Santo;Estadual;ES;ensino medio;meta;;3.1;3.2;3.4;3.6;4;4.4;4.7;4.9
+Rio de Janeiro;Total;RJ;ensino medio;meta;;3.3;3.4;3.6;3.8;4.2;4.6;4.9;5.1
+Rio de Janeiro;Privada;RJ;ensino medio;meta;;5.2;5.2;5.4;5.6;6;6.3;6.5;6.7
+Rio de Janeiro;Estadual;RJ;ensino medio;meta;;2.8;2.9;3.1;3.3;3.7;4.1;4.4;4.6
+São Paulo;Total;SP;ensino medio;meta;;3.6;3.7;3.9;4.2;4.5;5;5.2;5.4
+São Paulo;Privada;SP;ensino medio;meta;;5.8;5.9;6;6.2;6.5;6.8;7;7.2
+São Paulo;Estadual;SP;ensino medio;meta;;3.3;3.4;3.6;3.9;4.2;4.6;4.9;5.1
+Sul;Total;;ensino medio;meta;;3.7;3.8;4;4.3;4.6;5.1;5.3;5.5
+Sul;Privada;;ensino medio;meta;;5.9;6;6.1;6.3;6.6;6.9;7.1;7.2
+Sul;Estadual;;ensino medio;meta;;3.4;3.5;3.7;4;4.3;4.8;5;5.2
+Paraná;Total;PR;ensino medio;meta;;3.6;3.7;3.9;4.2;4.5;5;5.2;5.4
+Paraná;Privada;PR;ensino medio;meta;;5.8;5.9;6.1;6.3;6.5;6.9;7;7.2
+Paraná;Estadual;PR;ensino medio;meta;;3.3;3.4;3.6;3.9;4.2;4.6;4.9;5.1
+Santa Catarina;Total;SC;ensino medio;meta;;3.8;3.9;4.1;4.4;4.7;5.2;5.4;5.6
+Santa Catarina;Privada;SC;ensino medio;meta;;5.7;5.8;6;6.2;6.5;6.8;7;7.1
+Santa Catarina;Estadual;SC;ensino medio;meta;;3.5;3.6;3.8;4;4.4;4.8;5.1;5.3
+Rio Grande do Sul;Total;RS;ensino medio;meta;;3.8;3.9;4;4.3;4.6;5.1;5.3;5.5
+Rio Grande do Sul;Privada;RS;ensino medio;meta;;5.8;5.8;6;6.2;6.5;6.8;7;7.1
+Rio Grande do Sul;Estadual;RS;ensino medio;meta;;3.5;3.6;3.7;4;4.4;4.8;5;5.3
+Centro-Oeste;Total;;ensino medio;meta;;3.4;3.5;3.6;3.9;4.3;4.7;4.9;5.2
+Centro-Oeste;Privada;;ensino medio;meta;;5.8;5.8;6;6.2;6.5;6.8;7;7.1
+Centro-Oeste;Estadual;;ensino medio;meta;;2.9;3;3.2;3.4;3.8;4.2;4.4;4.7
+Mato Grosso do Sul;Total;MS;ensino medio;meta;;3.3;3.4;3.6;3.8;4.2;4.6;4.8;5.1
+Mato Grosso do Sul;Privada;MS;ensino medio;meta;;5.8;5.9;6;6.2;6.5;6.8;7;7.2
+Mato Grosso do Sul;Estadual;MS;ensino medio;meta;;2.9;3;3.2;3.4;3.8;4.2;4.5;4.7
+Mato Grosso;Total;MT;ensino medio;meta;;3.1;3.2;3.4;3.7;4;4.4;4.7;4.9
+Mato Grosso;Privada;MT;ensino medio;meta;;5.3;5.4;5.5;5.8;6.1;6.4;6.6;6.8
+Mato Grosso;Estadual;MT;ensino medio;meta;;2.6;2.7;2.9;3.1;3.5;3.9;4.2;4.4
+Goiás;Total;GO;ensino medio;meta;;3.3;3.4;3.5;3.8;4.2;4.6;4.8;5.1
+Goiás;Privada;GO;ensino medio;meta;;5.8;5.9;6;6.2;6.5;6.8;7;7.1
+Goiás;Estadual;GO;ensino medio;meta;;2.9;3;3.2;3.4;3.8;4.2;4.4;4.7
+Distrito Federal;Total;DF;ensino medio;meta;;3.6;3.7;3.9;4.1;4.5;4.9;5.2;5.4
+Distrito Federal;Privada;DF;ensino medio;meta;;5.9;6;6.1;6.3;6.6;6.9;7.1;7.2
+Distrito Federal;Estadual;DF;ensino medio;meta;;3;3.1;3.3;3.6;3.9;4.4;4.6;4.8

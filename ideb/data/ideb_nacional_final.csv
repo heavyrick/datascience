@@ -1,0 +1,29 @@
+﻿series;tipo;administracao;2005;2007;2009;2011;2013;2015;2017;2019;2021
+anos iniciais;ideb;total;3.8;4.2;4.6;5.0;5.2;5.5;5.8;;
+anos iniciais;ideb;estadual;3.9;4.3;4.9;5.1;5.4;5.8;6.0;;
+anos iniciais;ideb;municipal;3.4;4.0;4.4;4.7;4.9;5.3;5.6;;
+anos iniciais;ideb;privada;5.9;6.0;6.4;6.5;6.7;6.8;7.1;;
+anos iniciais;ideb;pública;3.6;4.0;4.4;4.7;4.9;5.3;5.5;;
+anos iniciais;meta;total;;3.9;4.2;4.6;4.9;5.2;5.5;5.7;6.0
+anos iniciais;meta;estadual;;4.0;4.3;4.7;5.0;5.3;5.6;5.9;6.1
+anos iniciais;meta;municipal;;3.5;3.8;4.2;4.5;4.8;5.1;5.4;5.7
+anos iniciais;meta;privada;;6.0;6.3;6.6;6.8;7.0;7.2;7.4;7.5
+anos iniciais;meta;pública;;3.6;4.0;4.4;4.7;5.0;5.2;5.5;5.8
+anos finais do ensino fundamental;ideb;total;3.5;3.8;4.0;4.1;4.2;4.5;4.7;;
+anos finais do ensino fundamental;ideb;estadual;3.3;3.6;3.8;3.9;4.0;4.2;4.5;;
+anos finais do ensino fundamental;ideb;municipal;3.1;3.4;3.6;3.8;3.8;4.1;4.3;;
+anos finais do ensino fundamental;ideb;privada;5.8;5.8;5.9;6.0;5.9;6.1;6.4;;
+anos finais do ensino fundamental;ideb;pública;3.2;3.5;3.7;3.9;4.0;4.2;4.4;;
+anos finais do ensino fundamental;meta;total;;3.5;3.7;3.9;4.4;4.7;5.0;5.2;5.5
+anos finais do ensino fundamental;meta;estadual;;3.3;3.5;3.8;4.2;4.5;4.8;5.1;5.3
+anos finais do ensino fundamental;meta;municipal;;3.1;3.3;3.5;3.9;4.3;4.6;4.9;5.1
+anos finais do ensino fundamental;meta;privada;;5.8;6.0;6.2;6.5;6.8;7.0;7.1;7.3
+anos finais do ensino fundamental;meta;pública;;3.3;3.4;3.7;4.1;4.5;4.7;5.0;5.2
+ensino médio;ideb;total;3.4;3.5;3.6;3.7;3.7;3.7;3.8;;
+ensino médio;ideb;estadual;3.0;3.2;3.4;3.4;3.4;3.5;3.5;;
+ensino médio;ideb;privada;5.6;5.6;5.6;5.7;5.4;5.3;5.8;;
+ensino médio;ideb;pública;3.1;3.2;3.4;3.4;3.4;3.5;3.5;;
+ensino médio;meta;total;;3.4;3.5;3.7;3.9;4.3;4.7;5.0;5.2
+ensino médio;meta;estadual;;3.1;3.2;3.3;3.6;3.9;4.4;4.6;4.9
+ensino médio;meta;privada;;5.6;5.7;5.8;6.0;6.3;6.7;6.8;7.0
+ensino médio;meta;pública;;3.1;3.2;3.4;3.6;4.0;4.4;4.7;4.9
