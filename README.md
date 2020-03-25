@@ -4,11 +4,22 @@ Neste repositório deixarei os projetos de data science que for elaborando. Algu
 
 ## Projetos
 
+---
+
 ### [IDEB](https://github.com/heavyrick/datascience/blob/master/ideb/ideb_nacional.ipynb)
 * Análise dos dados do IDEB nacional, para entender o desempenho do ensino fundamental e médio no Brasil (escolas públicas e privadas);
-* Textos no **Medium**: <a href="https://medium.com/@heavyrick/ad-ideb-introdu%C3%A7%C3%A3o-8c3eab6fb6d8" target="_blank">AD: Ideb — introdução</a> e <a href="https://medium.com/@heavyrick/ad-ideb-nacional-2d07ee2863dd" target="_blank">AD: ideb nacional</a>
+* Textos no **Medium**: <a href="https://medium.com/@heavyrick/ad-ideb-introdu%C3%A7%C3%A3o-8c3eab6fb6d8" target="_blank">Ideb — introdução</a> e <a href="https://medium.com/@heavyrick/ad-ideb-nacional-2d07ee2863dd" target="_blank">Ideb nacional</a>
+
+---
 
 ### [Salário Mínimo x Salário Mínimo Necessário](https://github.com/heavyrick/datascience/blob/master/salario_minimo_dieese/salario_minimo.ipynb)
 * Análise de dados do salário mínimo e do salário mínimo necessário, com dados do Dieese;
-* Texto no **Medium**: <a href="https://medium.com/@heavyrick/ad-sal%C3%A1rio-m%C3%ADnimo-e-necess%C3%A1rio-4f8bde6d1252" target="_blank">AD: Salário Mínimo e Necessário</a>
+* Texto no **Medium**: <a href="https://medium.com/@heavyrick/ad-sal%C3%A1rio-m%C3%ADnimo-e-necess%C3%A1rio-4f8bde6d1252" target="_blank">Salário Mínimo e Necessário</a>
 
+---
+
+### [Preço do Gás de Cozinha](https://github.com/heavyrick/datascience/blob/master/preco_gas_cozinha/precos_gas_cozinha.ipynb)
+* Análise de dados do preço de revenda do gás de cozinha, com dados da ANP (Agência Nacional de Petróleo);
+* Texto no **Medium**: <a href="https://medium.com/@heavyrick/pre%C3%A7o-do-g%C3%A1s-de-cozinha-400237cabd52" target="_blank">Preço do Gás de Cozinha</a>
+
+---
