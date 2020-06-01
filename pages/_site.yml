@@ -1,0 +1,13 @@
+name: "site"
+output_dir: "../docs"
+exclude: ["data", "analises"]
+navbar:
+  title: "Site"
+  left:
+  - text: "Home"
+    href: index.html
+  - text: "Frota de veiculos"
+    href: frota_veiculos.html
+output:
+  html_document:
+    theme: cosmo
