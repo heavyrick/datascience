@@ -1,0 +1,486 @@
+---
+title: "Frota de veiculos"
+---
+
+<!-- knit: (function(input_file, encoding) { -->
+<!--   out_dir <- '../docs'; -->
+<!--   rmarkdown::render(input_file, -->
+<!--  encoding=encoding, -->
+<!--  output_file=file.path(dirname(input_file), out_dir, 'frota_veiculos.html'))}) -->
+
+Os dados foram coletados do site do [Denatran](http://infraestrutura.gov.br/relatorios-estatisticos/115-portal-denatran/9484-frota-de-ve%C3%ADculos-2020.html) (Departamento Nacional de Trânsito), que os publicou em janeiro de 2020, com atualizações no final de março do mesmo ano.
+
+Os dados foram tratados e salvos num banco de dados MySQL, e para esta análise apenas exportados para o arquivo csv.
+
+Os dados das cidades foram retirados do repositório [chandez/Estados-Cidades-IBGE](https://github.com/chandez/Estados-Cidades-IBGE) também salvos num banco de dados, tratados e exportados para um arquivo csv.
+
+Os dados da população foram retirados do site do IBGE [Estimativas da População](https://www.ibge.gov.br/estatisticas/sociais/populacao/9103-estimativas-de-populacao.html?=&t=downloads).
+
+---
+
+### Preparação
+
+```{r message=FALSE, warning=FALSE, results=FALSE}
+getwd()
+setwd('C:/xampp/htdocs/repos/ds/analises/frota_veiculos')
+
+# Bibliotecas do projeto
+library(ggplot2)
+library(dplyr)
+library(Hmisc)
+library(stringr)
+library(knitr)
+library(scales)
+library(sqldf)
+library(shiny)
+library(ggthemes)
+library(RColorBrewer)
+library(highcharter)
+library(viridis) 
+
+```
+
+### Carregar dados
+```{r load data, message=FALSE, warning=FALSE}
+df_frotas <- read.csv('data/denatran_frotas.csv', sep=';')
+df_cidades <- read.csv('data/cidades.csv', sep=';')
+df_populacao <- read.csv('data/populacao.csv', sep=';')
+```
+
+---
+
+Ver as primeiras linhas do dataset.
+
+A fonte de dados do Denatran, traz além das quantidades de veículos por cidades e estados, também divide os veículos por seu tipo, desde carros, motos, caminhões, ônibus até bonde e tratores, e esses tipos são definidos pela CTB (Código de Trânsito Brasileiro).
+
+---
+
+
+```{r}
+# str(df_frotas)
+# summary(df_frotas)
+dim(df_frotas)
+```
+
+---
+
+O dataset possui 5570 linhas e 29 colunas. Cada linha corresponde a uma cidade, e temos nas colunas adjacentes as informações do nome, estado e região destas cidades (e seus ids). As colunas seguintes possuem os tipos de veículos e suas quantidades, no final temos uma coluna de total de veículos por cidade.
+
+---
+
+```{r message=TRUE, warning=FALSE}
+
+head(df_frotas, n = 5)
+
+```
+
+---
+
+### Análise
+
+A análise aqui será fluída, tentando partir do mais geral mergulhando nas especificidades.
+
+---
+
+**1. Qual a frota total de veículos do Brasil?**
+
+```{r message=FALSE, warning=FALSE}
+sum(df_frotas$total_frota) -> frota_total
+print(paste("Frota total é de ", format(frota_total, big.mark = "."), " veículos"))
+```
+
+---
+
+**2. Vamos colocar numa tabela, a quantidade total de veículos por seu tipo, ordenando do maior para o menor.**
+
+Não temos uma linha com os totais para cada tipo de veículo. Poderíamos criar uma variável para cada tipo, mas isso daria muito trabalho, porque das 29 colunas, 21 são os tipos dos veículos. Mas, podemos criar um novo dataframe com duas informações: o tipo do veículo e o seu total.
+
+---
+
+```{r message=FALSE, warning=FALSE}
+
+# Criar um novo dataframe a partir do original, com uma coluna sendo os nomes dos tipos e outra com os totais
+df_tipos_frota <- data.frame(tipo_frota = names(df_frotas[,8:28]), total = colSums(df_frotas[,8:28]))
+
+# Ordenar os registros
+df_tipos_frota <- df_tipos_frota %>% arrange(desc(total))
+
+# reiniciar o índice das colunas
+rownames(df_tipos_frota) <- NULL 
+
+# Melhorando a visualização do nome: retirar os underline e capitalizar a primeira letra
+df_tipos_frota$tipo_frota <- str_replace(df_tipos_frota$tipo_frota, '_', ' ')
+df_tipos_frota$tipo_frota <- str_replace(df_tipos_frota$tipo_frota, '_', ' ') # ???
+df_tipos_frota$tipo_frota <- capitalize(df_tipos_frota$tipo_frota)
+
+# df_tipos_frota
+
+```
+
+Podemos melhorar esse dataframe, e adicionar uma coluna com as porcentagens em relação ao total.
+
+```{r message=FALSE, warning=FALSE}
+
+df_tipos_frota$quantidade_rel <- round((df_tipos_frota$total / frota_total) * 100,4)
+
+# mostrar tabela do knitr
+kable(df_tipos_frota, caption="Total por tipo de veículo")
+
+```
+
+---
+
+Aqui podemos ver que os automóveis representam mais da metade do total de veículos, com um pouco mais do dobro do segundo colocado, as motocicletas. Inclusive, ambos os tipos dominam o mercado nacional, com praticamente 3/4 de toda a frota. Vemos que apenas os 9 primeiros veículos passam da casa de 1 milhão de unidades.
+
+
+**3. Plotar um gráfico de barras dos veículos com quantidades acima de 1 milhão de unidades.**
+
+---
+
+```{r message=FALSE, warning=FALSE}
+
+df_tipos_frota_1m <- df_tipos_frota[df_tipos_frota$total > 1000000, 1:2]
+
+# Formatar o valor da escala de y
+point <- format_format(big.mark = ".", decimal.mark = ",", scientific = FALSE)
+
+max_tipo_frota <- max(df_tipos_frota_1m$total)
+
+ggplot(df_tipos_frota_1m, aes(x= reorder(tipo_frota, -total), y=total)) + 
+  geom_bar(stat = "identity") +
+  ggtitle('Total por tipo de veículos') +
+  xlab('') + 
+  ylab('Quantidade de veículos') +
+  scale_y_continuous(labels = point, limits = c(0,max_tipo_frota), breaks = seq(0, max_tipo_frota, by=10000000)) +
+  theme(legend.position="none",
+        plot.title = element_text(size = 12, face='bold'), 
+        axis.title = element_text(size=10, color='black'))
+
+```
+
+---
+
+Podemos imaginar que destes vários tipos de veículos, nem todos eles são usados para circulação de pessoas e mercadorias, alguns têm objetivos bem definidos. Por exemplo, um caminhão trator não é bem o tipo de veículo que as pessoas usem para circulação, podemos até vê-los rodando por aí, mas normalmente ele é usado em obras ou para serviços específicos, como fazer e/ou tampar buracos. O mesmo vale para reboques, semirreboques e outros tipos de tratores.
+
+Então, daquele número total de veículos, vamos separar parte dele, considerando agora os tipos de veículos que são mais usados para circulação de pessoas e mercadorias: Automóvel, caminhão, caminhonete, camioneta, ciclomotor, micro-ônibus, motocicleta, motoneta, ônibus, quadriciclo, triciclo e utilitário.
+
+- grupo carros = Automóvel, caminhonete, camioneta, utilitário
+- grupo motos = Ciclomotor, motocicleta, motoneta, quadriciclo, triciclo
+- grupo caminhões = Caminhão
+- grupo ônibus = Micro-ônibus, ônibus
+- grupo outros = veículos-ferramenta, bonde, e outros
+
+---
+
+```{r message=FALSE, warning=FALSE}
+
+# Criando os grupos
+
+gr1 <- c("Automovel", "Caminhonete", "Camioneta", "Utilitario")
+gr2 <- c("Motocicleta", "Motoneta", "Ciclomotor", "Triciclo", "Quadriciclo")
+gr3 <- c("Caminhao")
+gr4 <- c("Micro onibus", "Onibus")
+# gr5 = outros
+
+df_tipos_frota$grupo <- ifelse(df_tipos_frota$tipo_frota %in% gr1, "Carros", 
+                        ifelse(df_tipos_frota$tipo_frota %in% gr2, "Motos",
+                        ifelse(df_tipos_frota$tipo_frota %in% gr3, "Caminhões",
+                        ifelse(df_tipos_frota$tipo_frota %in% gr4, "Ônibus", 
+                        "Outros" ))))
+
+```
+
+```{r message=FALSE, warning=FALSE}
+
+# Usando o dplyr para agrupar os dados e ordená-los
+df_frotas_grupos <- df_tipos_frota %>% group_by(grupo) %>% summarise(total = sum(total)) %>% arrange(desc(total))
+
+# Tabela com total relativo por grupo
+df_frotas_grupos$total_rel <- round((df_frotas_grupos$total / frota_total * 100),4)
+
+kable(df_frotas_grupos, caption = "Grupos de veículos")
+
+```
+
+
+**4. Plotar o gráfico com os grupos de veículos (uma barra e depois uma pizza)**
+
+
+```{r message=FALSE, warning=FALSE}
+max_tipo_frota_grupo <- max(df_frotas_grupos$total)
+
+ggplot(df_frotas_grupos, aes(x= reorder(grupo, -total), y=total)) + 
+  geom_bar(stat = "identity") +
+  ggtitle('Total por grupos de veículos') +
+  xlab('') + 
+  ylab('Quantidade de veículos') +
+  scale_y_continuous(labels = point, limits = c(0,max_tipo_frota_grupo), breaks = seq(0, max_tipo_frota_grupo, by=10000000)) +
+  theme(legend.position="none",
+        plot.title = element_text(size = 12, face='bold'), 
+        axis.title = element_text(size=10, color='black'))
+```
+
+
+
+Com o agrupamento de veículos, a diferença do grupo carros para os demais é ainda maior, com este ficando com 66% da quantidade da frota total de veículos, seguida das motos com um pouco mais de 1/4 do total nacional, e as demais categorias somam cerca de 7%.
+
+
+
+```{r message=FALSE, warning=FALSE}
+cores <- c("#EFC000", "#0073C2", "#2b6a39", "#CD534C", "#868686")
+
+ggplot(df_frotas_grupos, aes(x="", y=total, fill=grupo))+
+  geom_bar(stat="identity", width = 1, color="white")+
+  coord_polar("y", start=0) + 
+  scale_fill_manual(values = cores) +
+  theme_void()
+```
+
+---
+
+### Análise: Regiões e Estados
+
+Agora que sabemos quantos veículos e quais seus tipos são os preferidos dos brasileiros, podemos descer um nível na análise, e entender a distribuição da frota de veículos nas regiões e nos estados.
+
+
+**5. Mostrar uma tabela com as frotas por região.**
+
+---
+
+```{r message=FALSE, warning=FALSE}
+
+sql_r <- "SELECT nome_regiao, SUM(total_frota) as Total FROM df_frotas GROUP BY nome_regiao"
+df_frotas_regiao_total <- sqldf(sql_r)
+df_frotas_regiao_total$frota_rel <- round((df_frotas_regiao_total$Total / frota_total) * 100, 4)
+df_frotas_regiao_total <- df_frotas_regiao_total %>% arrange(desc(df_frotas_regiao_total$Total))
+
+kable(df_frotas_regiao_total, caption = 'Veículos por região')
+
+```
+
+
+
+```{r message=FALSE, warning=FALSE}
+
+sql <- "SELECT nome_estado, uf, SUM(total_frota) as Total, nome_regiao FROM df_frotas GROUP BY nome_estado, nome_regiao"
+df_frotas_estados_total <- sqldf(sql)
+df_frotas_estados_total$frota_rel <- round((df_frotas_estados_total$Total / frota_total) * 100, 4)
+
+
+```
+
+
+
+**6. Plotar gráfico com a distribuição da frota de veículos total, por estado. E se possível, destacando suas regiões**
+
+
+
+```{r message=FALSE, warning=FALSE}
+
+df_frotas_estados_total %>% 
+    arrange(desc(Total)) %>%
+    hchart(type="bar", hcaes(x= nome_estado, y=Total, group=nome_regiao)) %>%
+    # hchart(type="treemap", hcaes(x= tipo, value=total, color=total))
+    hc_title(text = 'Total de veículos por estado') %>%
+    hc_subtitle(text = "Fonte: Denatran (março/2020)") %>%
+    hc_yAxis(title = list(enabled = FALSE, labels = list(format ="{value: %b}"), style = list(color = '#333333', fontFamily = "Arial"))) %>%
+    hc_xAxis(title = list(text = "Estados"), style = list(color = '#333333', fontFamily = "Arial")) %>%
+    hc_add_theme(hc_theme_flat()) %>%
+    hc_size(NULL, 600)
+
+```
+
+---
+
+Com este gráfico e a tabela podemos ver que:
+
+- a maior parte da frota está concentrada na região Sudeste, com quase a metade da frota do país (48%) e São Paulo sendo o estado com a maior delas, seguido por Minas Gerais;
+- O Sul vem em seguida com 19,5%, com o Paraná, que tem a terceira maior frota do país, seguido pelo Rio Grande do Sul; 
+- No Nordeste (17,3%), a Bahia é o estado com a maior frota, seguido por Ceará e Pernambuco;
+- No Centro Oeste (10%), o estado de Goiás é que possui a maior frota;
+- A região Norte é a que possui a menor frota (4,5%), com os três estados de menor frota do país: Amapá, Roraima e Acre. 
+
+Fazendo algumas equivalências com a frota de São Paulo, que tem cerca de 30 milhões de veículos:
+
+* Ela é maior que toda a frota da região Sul somada _ que tem cerca de 21 milhões de veículos;
+* Aliás, ela é maior que a soma de qualquer uma das regiões;
+* Se somarmos as frotas das regiões Norte, Centro Oeste e Nordeste, elas possuem cerca de 31 milhões de veículos, apenas 1 milhão a mais que SP.
+
+
+**7. Analisar as frotas de automóveis e cruzar com os dados da população.**
+
+Se voltarmos no nosso primeiro gráfico desse documento, vamos ver que o tipo de veículo com mais unidades são os automóveis. Então, vamos repetir o gráfico anterior, mas dessa vez plotando apenas a frota de automóveis por estados.
+
+---
+
+```{r message=FALSE, warning=FALSE}
+
+sql <- "SELECT id_estado, nome_estado, uf, nome_regiao, SUM(automovel) as Total FROM df_frotas GROUP BY id_estado, nome_estado, nome_regiao"
+df_frotas_estados_automovel <- sqldf(sql)
+df_frotas_estados_automovel$frota_rel <- round((df_frotas_estados_automovel$Total / frota_total) * 100, 4)
+
+```
+
+```{r message=FALSE, warning=FALSE}
+df_frotas_estados_automovel %>% 
+    arrange(desc(Total)) %>%
+    hchart(type="treemap", hcaes(x= nome_estado, value=Total, color=Total)) %>%
+    hc_title(text = 'Total de automóveis por estado') %>%
+    hc_subtitle(text = "Fonte: Denatran (março/2020)") %>%
+    hc_yAxis(title = list(enabled = FALSE, labels = list(format ="{value: %b}"), style = list(color = '#333333', fontFamily = "Arial"))) %>%
+    hc_xAxis(title = list(text = "Estados"), style = list(color = '#333333', fontFamily = "Arial")) %>%
+    hc_add_theme(hc_theme_sandsignika()) %>%
+    hc_size(NULL, 600)
+```
+
+
+---
+
+Observando nosso gráfico de árvore ou `treemap`, percebemos que as coisas não mudam muito, São Paulo continua bem a frente também na quantidade de automóveis, seguido por Minas Gerais, Rio de Janeiro, Paraná e Rio Grande do Sul.
+
+Aproveitando o ensejo, entre os dados que estamos carregando, temos o da população por estado. Poderíamos cruzar estes dados, e apenas por curiosidade, verificar como seria a distribuição de carros por habitante dentro dos estados.
+
+---
+
+```{r message=FALSE, warning=FALSE}
+
+sql <- "SELECT f.*, p.populacao_estimada_2019 
+        FROM df_frotas_estados_automovel f
+        LEFT JOIN df_populacao p ON f.id_estado = p.id"
+df_frotas_estados_auto_pop <- sqldf(sql)
+df_frotas_estados_auto_pop$auto_pop <- round(df_frotas_estados_auto_pop$Total / df_frotas_estados_auto_pop$populacao_estimada_2019, 3)
+df_frotas_estados_auto_pop$pop_auto <- round(df_frotas_estados_auto_pop$populacao_estimada_2019 / df_frotas_estados_auto_pop$Total, 3)
+
+
+```
+
+```{r message=FALSE, warning=FALSE}
+
+hc_data <- df_frotas_estados_auto_pop %>% arrange(-pop_auto, -auto_pop)
+hchart(hc_data, type="treemap", hcaes(x= nome_estado, value=pop_auto, color=auto_pop)) %>%
+# hchart(type="treemap", hcaes(x= tipo, value=total, color=total))
+hc_title(text = 'Quantidade de habitantes por automóveis por estado') %>%
+hc_add_theme(hc_theme_google()) %>%
+hc_size(NULL, 600)
+
+```
+
+---
+
+O título pode soar estranho e esse gráfico pode parecer confuso numa primeira olhada _ e eu sei que estou violando regras da visualização de dados, de tornar o gráfico o mais auto-explicativo possível _ mas é que aqui temos duas informações inversas, e queria mostrá-las dessa forma.
+
+As cores mostram uma tendência, **quanto mais escuro, mais o estado tem veículos por habitante** (população estimada de 2019), então no caso, o estado que é o primeiro é o Distrito Federal, seguido por Santa Catarina, São Paulo e Paraná; Maranhão é o último e o Pará o penúltimo.
+
+Os estados com os **quadros maiores** são o inverso, ou seja, os que **têm menos carros por habitante**. Mas ao colocar o mouse no gráfico, é possível ver a informação, por exemplo, no Maranhão, `a cada 15 pessoas, temos um automóvel`, enquanto que no Distrito Federal `a cada 2 pessoas, temos um automóvel`.
+
+
+**8. Plotar gráfico com a distribuição da frota por tipo de veículos nos estados.**
+
+Para analisar as frotas por estados, temos a dificuldade de termos 27 deles e apresentar a todos. Portanto teremos que dar um jeito de passar o valor do estado que queremos analisar (no caso apenas a UF), e retornar seus dados. Para esta análise, vamos apenas mostrar o estado de São Paulo.
+
+Antes de tudo vamos criar um novo dataframe, agrupando os dados.
+
+---
+
+```{r message=FALSE, warning=FALSE}
+
+#df_frotas[, 3:28]
+#names(df_frotas)
+
+df_frotas_estados <- sqldf("SELECT 
+                            nome_estado, 
+                            uf, 
+                            SUM(automovel) as Automovel, 
+                            SUM(bonde) as Bonde,
+                            SUM(caminhao) as Caminhao,
+                            SUM(caminhao_trator) as 'Caminhao trator',
+                            SUM(caminhonete) as Caminhonete,
+                            SUM(camioneta) as Camioneta,
+                            SUM(chassi_plataforma) as 'Chassi plataforma',
+                            SUM(ciclomotor) as Ciclomotor,
+                            SUM(micro_onibus) as 'Micro-onibus',
+                            SUM(motocicleta) as Motocicleta,
+                            SUM(motoneta) as Motoneta,
+                            SUM(onibus) as Onibus,
+                            SUM(quadriciclo) as Quadriciclo,
+                            SUM(reboque) as Reboque,
+                            SUM(semirreboque) as Semirreboque,
+                            SUM(side_car) as 'Side car',
+                            SUM(outros) as Outros,
+                            SUM(trator_de_esteiras) as 'Trator de esteiras',
+                            SUM(trator_de_rodas) as 'Trator de rodas',
+                            SUM(triciclo) as Triciclo,
+                            SUM(utilitario) as Utilitario
+                           FROM df_frotas 
+                           GROUP BY nome_estado")
+
+```
+
+
+```{r message=FALSE, warning=FALSE}
+
+# Essa função recebe o dataframe com os estados, a uf do estado que queremos analisar
+# e retorna uma linha com os dados que serão usados no gráfico
+dataframeEstado <- function(df, uf = 'SP'){
+  n_cols <- dim(df)[2]
+  t_df <- as.data.frame(t(df[df$uf == uf,3:n_cols]))
+  
+  if(is.data.frame(t_df) & ncol(t_df) == 0){
+    empty_df <- data.frame(Ints=integer())
+    return(empty_df)
+  }
+  
+  colnames(t_df)[1] <- 'total' # renomear coluna
+  t_df$total <- sapply(t_df$total, as.numeric) # converte os valores em formato numérico
+  t_df <- cbind(tipo = rownames(t_df), t_df) # criar coluna com os tipos
+  rownames(t_df) <- NULL # zerar índice
+  t_df <- t_df[t_df$total > 0,] # não retornar valores zerados
+  return(t_df)
+}
+
+# Recebe a UF e retorna o nome do estado
+nomeEstado <- function(uf = ''){
+  if(!is.null(uf)){
+    sql <- sprintf('SELECT nome_estado FROM df_cidades WHERE uf = "%s" LIMIT 1', uf)
+    estado_nome <- sqldf(sql)
+    return(estado_nome)
+  } else {
+    return("")
+  }
+}
+
+# Função para gerar o gráfico
+graficoEstado <- function(df, uf = 'SP'){
+  
+  df_estado <- dataframeEstado(df, uf) # trazer o dataframe apenas com os dados que serão plotados
+  
+  # Verifica se o dataframe possui dados
+  if(is.data.frame(df_estado) & nrow(df_estado) == 0){
+    return("Erro: Nenhum dado encontrado.")
+  }
+  
+  estado_nome <- nomeEstado(uf) # Setar o nome do estado
+  
+  df_estado %>% 
+    arrange(desc(total)) %>%
+    hchart(type="bar", hcaes(x= tipo, y=total)) %>%
+    hc_title(text = paste('Total por tipo de veículos por estado:', estado_nome)) %>%
+    hc_subtitle(text = "Fonte: Denatran (março/2020)") %>%
+    hc_yAxis(title = list(enabled = FALSE, labels = list(format ="{value: %b}"), style = list(color = '#333333', fontFamily = "Arial"))) %>%
+    hc_xAxis(title = list(text = "Tipos de veículos"), style = list(color = '#333333', fontFamily = "Arial")) %>%
+    hc_add_theme(hc_theme_google())
+}
+
+
+graficoEstado(df_frotas_estados, 'SP')
+
+```
+
+---
+
+Para encerrarmos nossa análise, temos a quantidade de veículos por tipo no estado de São Paulo. Mais de 18 milhões de automóveis, seguida por motocicleta, caminhonete, camioneta, motoneta e caminhão. Devido as diferenças de proporção dos valores das barras, os veículos com menos de 100.000 unidades podem não aparecer no gráfico, apenas seus nomes _ apenas os que tinham valor zero foram dispensados.
+
+---
+
+
+
