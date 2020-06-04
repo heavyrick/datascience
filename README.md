@@ -1,6 +1,10 @@
-# Portfolio de Data Science
+# Portfólio de Data Science
 
 Neste repositório deixarei os projetos de data science que for elaborando. Alguns estarão escritos em R (R markdown) e outros em Python (Jupyter Notebook). Deixarei abaixo dos projetos também, os links para o medium, com textos explicando mais a fundo os projetos _ uma espécie de storytelling.
+
+Acesso aos projetos pelo **<a href="https://heavyrick.github.io/datascience/" target="_blank">githubpages</a>**
+
+---
 
 ## Projetos
 
