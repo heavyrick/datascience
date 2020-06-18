@@ -2,12 +2,16 @@ name: "site"
 output_dir: "../docs"
 exclude: ["data", "analises"]
 navbar:
-  title: "Site"
+  title: "CuriosiDados"
   left:
   - text: "Home"
     href: index.html
-  - text: "Frota de veiculos"
-    href: frota_veiculos.html
+  - text: "Projetos em R"
+    menu:
+      - text: "Frota de veiculos"
+        href: frota_veiculos.html
+      - text: "Focos Queimadas"
+        href: focos_queimadas.html
 output:
   html_document:
-    theme: cosmo
+    theme: flatly

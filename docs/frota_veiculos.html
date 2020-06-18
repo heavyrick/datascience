@@ -15,13 +15,15 @@
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 <script src="site_libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
 <script src="site_libs/proj4js-2.3.15/proj4.js"></script>
 <link href="site_libs/highcharts-7.0.1/css/motion.css" rel="stylesheet" />
@@ -143,33 +145,33 @@ summary {
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 51px;
+  padding-top: 60px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .dropdown-submenu {
   position: relative;
@@ -308,15 +310,27 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Site</a>
+      <a class="navbar-brand" href="index.html">CuriosiDados</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
   <a href="index.html">Home</a>
 </li>
-<li>
-  <a href="frota_veiculos.html">Frota de veiculos</a>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Projetos em R
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="frota_veiculos.html">Frota de veiculos</a>
+    </li>
+    <li>
+      <a href="focos_queimadas.html">Focos Queimadas</a>
+    </li>
+  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -335,27 +349,24 @@ $(document).ready(function () {
 </div>
 
 
-<!-- knit: (function(input_file, encoding) { -->
-<!--   out_dir <- '../docs'; -->
-<!--   rmarkdown::render(input_file, -->
-<!--  encoding=encoding, -->
-<!--  output_file=file.path(dirname(input_file), out_dir, 'frota_veiculos.html'))}) -->
-<p>Os dados foram coletados do site do <a href="http://infraestrutura.gov.br/relatorios-estatisticos/115-portal-denatran/9484-frota-de-ve%C3%ADculos-2020.html">Denatran</a> (Departamento Nacional de Trânsito), que os publicou em janeiro de 2020, com atualizações no final de março do mesmo ano.</p>
-<p>Os dados foram tratados e salvos num banco de dados MySQL, e para esta análise apenas exportados para o arquivo csv.</p>
-<p>Os dados das cidades foram retirados do repositório <a href="https://github.com/chandez/Estados-Cidades-IBGE">chandez/Estados-Cidades-IBGE</a> também salvos num banco de dados, tratados e exportados para um arquivo csv.</p>
-<p>Os dados da população foram retirados do site do IBGE <a href="https://www.ibge.gov.br/estatisticas/sociais/populacao/9103-estimativas-de-populacao.html?=&amp;t=downloads">Estimativas da População</a>.</p>
+<p><br /></p>
+<div id="introdução" class="section level2">
+<h2>Introdução</h2>
+<p>Nessa quarentena verificou-se uma diminuição bem grande na circulação de veículos pelas ruas, rodovias e estradas. Mas mesmo assim, ainda parece ter bastante veículos circulando, o que me deixou com uma pulga atrás da orelha: Quantos veículos têm em circulação no Brasil?</p>
+<p>Os dados foram coletados do site do Denatran (Departamento Nacional de Trânsito), que os publicou em março de 2020, com atualizações no final de março do mesmo ano.</p>
+<p><em>As fontes dos dados estão no final da página</em></p>
 <hr />
-<div id="preparação" class="section level3">
-<h3>Preparação</h3>
+<div id="bibliotecas" class="section level3">
+<h3>Bibliotecas</h3>
 <pre class="r"><code># Bibliotecas do projeto
 library(ggplot2)
 library(dplyr)
 library(Hmisc)
 library(stringr)
 library(knitr)
+library(rmarkdown)
 library(scales)
 library(sqldf)
-library(shiny)
 library(ggthemes)
 library(RColorBrewer)
 library(highcharter)
@@ -367,60 +378,102 @@ library(viridis) </code></pre>
 <pre class="r"><code>df_frotas &lt;- read.csv(&#39;data/denatran_frotas.csv&#39;, sep=&#39;;&#39;)
 df_cidades &lt;- read.csv(&#39;data/brasil_cidades.csv&#39;, sep=&#39;;&#39;)
 df_populacao &lt;- read.csv(&#39;data/populacao_estimada_2019.csv&#39;, sep=&#39;;&#39;)</code></pre>
-<hr />
-<p>Ver as primeiras linhas do dataset.</p>
-<p>A fonte de dados do Denatran, traz além das quantidades de veículos por cidades e estados, também divide os veículos por seu tipo, desde carros, motos, caminhões, ônibus até bonde e tratores, e esses tipos são definidos pela CTB (Código de Trânsito Brasileiro).</p>
-<hr />
-<pre class="r"><code># str(df_frotas)
-# summary(df_frotas)
-dim(df_frotas)</code></pre>
-<pre><code>## [1] 5570   29</code></pre>
-<hr />
-<p>O dataset possui 5570 linhas e 29 colunas. Cada linha corresponde a uma cidade, e temos nas colunas adjacentes as informações do nome, estado e região destas cidades (e seus ids). As colunas seguintes possuem os tipos de veículos e suas quantidades, no final temos uma coluna de total de veículos por cidade.</p>
-<hr />
-<pre class="r"><code>head(df_frotas, n = 5)</code></pre>
-<pre><code>##   id_cidade  nome_cidade id_estado uf nome_estado id_regiao nome_regiao
-## 1        79   Acrelândia         1 AC        Acre         1       Norte
-## 2        80 Assis Brasil         1 AC        Acre         1       Norte
-## 3        81    Brasiléia         1 AC        Acre         1       Norte
-## 4        82       Bujari         1 AC        Acre         1       Norte
-## 5        83     Capixaba         1 AC        Acre         1       Norte
-##   automovel bonde caminhao caminhao_trator caminhonete camioneta
-## 1      1347     0      344              27         642        49
-## 2       319     0       25               0         146        18
-## 3      2287     0      279             154        1165        80
-## 4       615     0      121              30         269        15
-## 5       607     0       88               3         227        30
-##   chassi_plataforma ciclomotor micro_onibus motocicleta motoneta onibus
-## 1                 0          2           10        3210      374     42
-## 2                 0          2            3        1118      123      3
-## 3                 0          4            6        4435      960     19
-## 4                 0          7            5         938       51     13
-## 5                 0          5            3        1054      123     17
-##   quadriciclo reboque semirreboque side_car outros trator_de_esteiras
-## 1           0      67           39        0      0                  0
-## 2           0      15            0        0      0                  0
-## 3           0     112          203        0      0                  0
-## 4           0      23           38        0      0                  0
-## 5           0      22            4        0      0                  0
-##   trator_de_rodas triciclo utilitario total_frota
-## 1               0        0         10        6163
-## 2               0        0          2        1774
-## 3               0        2         31        9737
-## 4               0        1          3        2129
-## 5               0        0          1        2184</code></pre>
-<hr />
+<p><br /></p>
 </div>
-<div id="análise" class="section level3">
-<h3>Análise</h3>
-<p>A análise aqui será fluída, tentando partir do mais geral mergulhando nas especificidades.</p>
+<div id="conhecer-os-dados" class="section level3">
+<h3>Conhecer os dados</h3>
+<p><br /></p>
+<div id="frotas" class="section level4">
+<h4>Frotas</h4>
+<p>Cada linha desse dataset refere-se aos dados de cada cidade do país. Nas primeiras colunas temos informações regionais (cidade, estado, região) e as colunas seguintes são com os tipos de veículos definidos pela CTB (Código de Trânsito Brasileiro), e suas quantidades, e no final temos o total de veículos da cidade.</p>
+<p><br /></p>
+<pre class="r"><code># summary(df_frotas)
+str(df_frotas)</code></pre>
+<pre><code>## &#39;data.frame&#39;:    5570 obs. of  29 variables:
+##  $ id_cidade         : int  79 80 81 82 83 84 85 86 87 88 ...
+##  $ nome_cidade       : chr  &quot;Acrelândia&quot; &quot;Assis Brasil&quot; &quot;Brasiléia&quot; &quot;Bujari&quot; ...
+##  $ id_estado         : int  1 1 1 1 1 1 1 1 1 1 ...
+##  $ uf                : chr  &quot;AC&quot; &quot;AC&quot; &quot;AC&quot; &quot;AC&quot; ...
+##  $ nome_estado       : chr  &quot;Acre&quot; &quot;Acre&quot; &quot;Acre&quot; &quot;Acre&quot; ...
+##  $ id_regiao         : int  1 1 1 1 1 1 1 1 1 1 ...
+##  $ nome_regiao       : chr  &quot;Norte&quot; &quot;Norte&quot; &quot;Norte&quot; &quot;Norte&quot; ...
+##  $ automovel         : int  1347 319 2287 615 607 6830 1761 570 10 615 ...
+##  $ bonde             : int  0 0 0 0 0 0 0 0 0 0 ...
+##  $ caminhao          : int  344 25 279 121 88 731 256 116 5 96 ...
+##  $ caminhao_trator   : int  27 0 154 30 3 73 118 5 0 4 ...
+##  $ caminhonete       : int  642 146 1165 269 227 2807 829 344 13 313 ...
+##  $ camioneta         : int  49 18 80 15 30 307 79 32 1 29 ...
+##  $ chassi_plataforma : int  0 0 0 0 0 1 0 0 0 0 ...
+##  $ ciclomotor        : int  2 2 4 7 5 32 4 33 0 1 ...
+##  $ micro_onibus      : int  10 3 6 5 3 59 6 3 0 4 ...
+##  $ motocicleta       : int  3210 1118 4435 938 1054 15538 2431 2077 65 2095 ...
+##  $ motoneta          : int  374 123 960 51 123 6638 709 616 28 528 ...
+##  $ onibus            : int  42 3 19 13 17 84 16 12 0 15 ...
+##  $ quadriciclo       : int  0 0 0 0 0 0 0 0 0 0 ...
+##  $ reboque           : int  67 15 112 23 22 42 98 12 0 1 ...
+##  $ semirreboque      : int  39 0 203 38 4 156 147 9 0 5 ...
+##  $ side_car          : int  0 0 0 0 0 0 0 0 0 0 ...
+##  $ outros            : int  0 0 0 0 0 1 0 0 0 0 ...
+##  $ trator_de_esteiras: int  0 0 0 0 0 0 0 0 0 0 ...
+##  $ trator_de_rodas   : int  0 0 0 0 0 0 0 0 0 0 ...
+##  $ triciclo          : int  0 0 2 1 0 10 3 4 0 0 ...
+##  $ utilitario        : int  10 2 31 3 1 107 16 12 0 7 ...
+##  $ total_frota       : int  6163 1774 9737 2129 2184 33416 6473 3845 122 3713 ...</code></pre>
+<pre class="r"><code># 5570 linhas (observações) e 29 colunas (variáveis)</code></pre>
+<pre class="r"><code>#head(df_frotas, n = 5)
+paged_table(df_frotas, options = list(rows.print = 5, max.print=20))</code></pre>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["id_cidade"],"name":[1],"type":["int"],"align":["right"]},{"label":["nome_cidade"],"name":[2],"type":["chr"],"align":["left"]},{"label":["id_estado"],"name":[3],"type":["int"],"align":["right"]},{"label":["uf"],"name":[4],"type":["chr"],"align":["left"]},{"label":["nome_estado"],"name":[5],"type":["chr"],"align":["left"]},{"label":["id_regiao"],"name":[6],"type":["int"],"align":["right"]},{"label":["nome_regiao"],"name":[7],"type":["chr"],"align":["left"]},{"label":["automovel"],"name":[8],"type":["int"],"align":["right"]},{"label":["bonde"],"name":[9],"type":["int"],"align":["right"]},{"label":["caminhao"],"name":[10],"type":["int"],"align":["right"]},{"label":["caminhao_trator"],"name":[11],"type":["int"],"align":["right"]},{"label":["caminhonete"],"name":[12],"type":["int"],"align":["right"]},{"label":["camioneta"],"name":[13],"type":["int"],"align":["right"]},{"label":["chassi_plataforma"],"name":[14],"type":["int"],"align":["right"]},{"label":["ciclomotor"],"name":[15],"type":["int"],"align":["right"]},{"label":["micro_onibus"],"name":[16],"type":["int"],"align":["right"]},{"label":["motocicleta"],"name":[17],"type":["int"],"align":["right"]},{"label":["motoneta"],"name":[18],"type":["int"],"align":["right"]},{"label":["onibus"],"name":[19],"type":["int"],"align":["right"]},{"label":["quadriciclo"],"name":[20],"type":["int"],"align":["right"]},{"label":["reboque"],"name":[21],"type":["int"],"align":["right"]},{"label":["semirreboque"],"name":[22],"type":["int"],"align":["right"]},{"label":["side_car"],"name":[23],"type":["int"],"align":["right"]},{"label":["outros"],"name":[24],"type":["int"],"align":["right"]},{"label":["trator_de_esteiras"],"name":[25],"type":["int"],"align":["right"]},{"label":["trator_de_rodas"],"name":[26],"type":["int"],"align":["right"]},{"label":["triciclo"],"name":[27],"type":["int"],"align":["right"]},{"label":["utilitario"],"name":[28],"type":["int"],"align":["right"]},{"label":["total_frota"],"name":[29],"type":["int"],"align":["right"]}],"data":[{"1":"79","2":"Acrelândia","3":"1","4":"AC","5":"Acre","6":"1","7":"Norte","8":"1347","9":"0","10":"344","11":"27","12":"642","13":"49","14":"0","15":"2","16":"10","17":"3210","18":"374","19":"42","20":"0","21":"67","22":"39","23":"0","24":"0","25":"0","26":"0","27":"0","28":"10","29":"6163"},{"1":"80","2":"Assis Brasil","3":"1","4":"AC","5":"Acre","6":"1","7":"Norte","8":"319","9":"0","10":"25","11":"0","12":"146","13":"18","14":"0","15":"2","16":"3","17":"1118","18":"123","19":"3","20":"0","21":"15","22":"0","23":"0","24":"0","25":"0","26":"0","27":"0","28":"2","29":"1774"},{"1":"81","2":"Brasiléia","3":"1","4":"AC","5":"Acre","6":"1","7":"Norte","8":"2287","9":"0","10":"279","11":"154","12":"1165","13":"80","14":"0","15":"4","16":"6","17":"4435","18":"960","19":"19","20":"0","21":"112","22":"203","23":"0","24":"0","25":"0","26":"0","27":"2","28":"31","29":"9737"},{"1":"82","2":"Bujari","3":"1","4":"AC","5":"Acre","6":"1","7":"Norte","8":"615","9":"0","10":"121","11":"30","12":"269","13":"15","14":"0","15":"7","16":"5","17":"938","18":"51","19":"13","20":"0","21":"23","22":"38","23":"0","24":"0","25":"0","26":"0","27":"1","28":"3","29":"2129"},{"1":"83","2":"Capixaba","3":"1","4":"AC","5":"Acre","6":"1","7":"Norte","8":"607","9":"0","10":"88","11":"3","12":"227","13":"30","14":"0","15":"5","16":"3","17":"1054","18":"123","19":"17","20":"0","21":"22","22":"4","23":"0","24":"0","25":"0","26":"0","27":"0","28":"1","29":"2184"},{"1":"84","2":"Cruzeiro do Sul","3":"1","4":"AC","5":"Acre","6":"1","7":"Norte","8":"6830","9":"0","10":"731","11":"73","12":"2807","13":"307","14":"1","15":"32","16":"59","17":"15538","18":"6638","19":"84","20":"0","21":"42","22":"156","23":"0","24":"1","25":"0","26":"0","27":"10","28":"107","29":"33416"},{"1":"85","2":"Epitaciolândia","3":"1","4":"AC","5":"Acre","6":"1","7":"Norte","8":"1761","9":"0","10":"256","11":"118","12":"829","13":"79","14":"0","15":"4","16":"6","17":"2431","18":"709","19":"16","20":"0","21":"98","22":"147","23":"0","24":"0","25":"0","26":"0","27":"3","28":"16","29":"6473"},{"1":"86","2":"Feijó","3":"1","4":"AC","5":"Acre","6":"1","7":"Norte","8":"570","9":"0","10":"116","11":"5","12":"344","13":"32","14":"0","15":"33","16":"3","17":"2077","18":"616","19":"12","20":"0","21":"12","22":"9","23":"0","24":"0","25":"0","26":"0","27":"4","28":"12","29":"3845"},{"1":"87","2":"Jordão","3":"1","4":"AC","5":"Acre","6":"1","7":"Norte","8":"10","9":"0","10":"5","11":"0","12":"13","13":"1","14":"0","15":"0","16":"0","17":"65","18":"28","19":"0","20":"0","21":"0","22":"0","23":"0","24":"0","25":"0","26":"0","27":"0","28":"0","29":"122"},{"1":"88","2":"Mâncio Lima","3":"1","4":"AC","5":"Acre","6":"1","7":"Norte","8":"615","9":"0","10":"96","11":"4","12":"313","13":"29","14":"0","15":"1","16":"4","17":"2095","18":"528","19":"15","20":"0","21":"1","22":"5","23":"0","24":"0","25":"0","26":"0","27":"0","28":"7","29":"3713"},{"1":"89","2":"Manoel Urbano","3":"1","4":"AC","5":"Acre","6":"1","7":"Norte","8":"219","9":"0","10":"56","11":"5","12":"147","13":"6","14":"0","15":"2","16":"0","17":"566","18":"102","19":"6","20":"0","21":"25","22":"7","23":"0","24":"0","25":"0","26":"0","27":"0","28":"2","29":"1143"},{"1":"90","2":"Marechal Thaumaturgo","3":"1","4":"AC","5":"Acre","6":"1","7":"Norte","8":"9","9":"0","10":"13","11":"0","12":"34","13":"0","14":"0","15":"0","16":"0","17":"255","18":"34","19":"9","20":"0","21":"0","22":"0","23":"0","24":"0","25":"0","26":"0","27":"0","28":"0","29":"354"},{"1":"91","2":"Plácido de Castro","3":"1","4":"AC","5":"Acre","6":"1","7":"Norte","8":"1297","9":"0","10":"151","11":"15","12":"521","13":"44","14":"0","15":"7","16":"5","17":"2223","18":"380","19":"30","20":"0","21":"63","22":"17","23":"3","24":"0","25":"0","26":"0","27":"6","28":"5","29":"4767"},{"1":"92","2":"Porto Acre","3":"1","4":"AC","5":"Acre","6":"1","7":"Norte","8":"788","9":"0","10":"174","11":"5","12":"404","13":"41","14":"0","15":"6","16":"3","17":"2042","18":"143","19":"48","20":"0","21":"31","22":"10","23":"0","24":"2","25":"0","26":"0","27":"0","28":"4","29":"3701"},{"1":"93","2":"Porto Walter","3":"1","4":"AC","5":"Acre","6":"1","7":"Norte","8":"4","9":"0","10":"9","11":"0","12":"28","13":"0","14":"0","15":"0","16":"0","17":"215","18":"47","19":"5","20":"0","21":"0","22":"0","23":"0","24":"0","25":"0","26":"0","27":"0","28":"1","29":"309"},{"1":"94","2":"Rio Branco","3":"1","4":"AC","5":"Acre","6":"1","7":"Norte","8":"69794","9":"0","10":"4262","11":"500","12":"17781","13":"3530","14":"8","15":"480","16":"237","17":"72720","18":"13534","19":"841","20":"0","21":"2855","22":"863","23":"55","24":"24","25":"0","26":"3","27":"130","28":"1139","29":"188756"},{"1":"95","2":"Rodrigues Alves","3":"1","4":"AC","5":"Acre","6":"1","7":"Norte","8":"183","9":"0","10":"18","11":"2","12":"114","13":"3","14":"0","15":"1","16":"1","17":"969","18":"269","19":"9","20":"0","21":"0","22":"1","23":"0","24":"0","25":"0","26":"0","27":"0","28":"2","29":"1572"},{"1":"96","2":"Santa Rosa do Purus","3":"1","4":"AC","5":"Acre","6":"1","7":"Norte","8":"16","9":"0","10":"5","11":"0","12":"24","13":"0","14":"0","15":"0","16":"0","17":"117","18":"16","19":"3","20":"0","21":"3","22":"0","23":"0","24":"0","25":"0","26":"0","27":"0","28":"0","29":"184"},{"1":"97","2":"Sena Madureira","3":"1","4":"AC","5":"Acre","6":"1","7":"Norte","8":"1489","9":"0","10":"119","11":"8","12":"880","13":"49","14":"0","15":"21","16":"4","17":"4404","18":"1533","19":"10","20":"0","21":"63","22":"11","23":"0","24":"0","25":"0","26":"0","27":"2","28":"15","29":"8608"},{"1":"98","2":"Senador Guiomard","3":"1","4":"AC","5":"Acre","6":"1","7":"Norte","8":"2132","9":"0","10":"351","11":"66","12":"756","13":"65","14":"0","15":"17","16":"8","17":"2834","18":"418","19":"35","20":"0","21":"126","22":"73","23":"1","24":"0","25":"0","26":"0","27":"3","28":"15","29":"6900"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[5],"max":[5]},"pages":{}}}
+  </script>
+</div>
+<p><br /></p>
+</div>
+<div id="cidades" class="section level4">
+<h4>Cidades</h4>
+<p>Neste dataframe temos os dados relativos as cidades do Brasil, como o nome, estado, região e código do ibge.</p>
+<p><br /></p>
+<pre class="r"><code>str(df_cidades)</code></pre>
+<pre><code>## &#39;data.frame&#39;:    5601 obs. of  9 variables:
+##  $ id_cidade  : int  1 2 3 4 5 6 7 8 9 10 ...
+##  $ nome_cidade: chr  &quot;Afonso Cláudio&quot; &quot;Água Doce do Norte&quot; &quot;Águia Branca&quot; &quot;Alegre&quot; ...
+##  $ ibge_cidade: int  3200102 3200169 3200136 3200201 3200300 3200359 3200409 3200508 3200607 3200706 ...
+##  $ id_estado  : int  8 8 8 8 8 8 8 8 8 8 ...
+##  $ nome_estado: chr  &quot;Espírito Santo&quot; &quot;Espírito Santo&quot; &quot;Espírito Santo&quot; &quot;Espírito Santo&quot; ...
+##  $ uf         : chr  &quot;ES&quot; &quot;ES&quot; &quot;ES&quot; &quot;ES&quot; ...
+##  $ ibge_estado: int  32 32 32 32 32 32 32 32 32 32 ...
+##  $ id_regiao  : int  3 3 3 3 3 3 3 3 3 3 ...
+##  $ nome_regiao: chr  &quot;Sudeste&quot; &quot;Sudeste&quot; &quot;Sudeste&quot; &quot;Sudeste&quot; ...</code></pre>
+<pre class="r"><code># 5601 linhas (observações) e 9 colunas (variáveis)</code></pre>
+<p><br /></p>
+</div>
+<div id="população" class="section level4">
+<h4>População</h4>
+<p>E no dataframe da população temos a quantidade de pessoas (população estimada pelo PNAD em 2019) em cada estado do país.</p>
+<p><br /></p>
+<pre class="r"><code>str(df_populacao)</code></pre>
+<pre><code>## &#39;data.frame&#39;:    27 obs. of  4 variables:
+##  $ id                     : int  1 2 3 4 5 6 7 8 9 10 ...
+##  $ nome_estado            : chr  &quot;Acre&quot; &quot;Alagoas&quot; &quot;Amazonas&quot; &quot;Amapá&quot; ...
+##  $ uf                     : chr  &quot;AC&quot; &quot;AL&quot; &quot;AM&quot; &quot;AP&quot; ...
+##  $ populacao_estimada_2019: int  881935 3337357 4144597 845731 14873064 9132078 3015268 4018650 7018354 7075181 ...</code></pre>
+<pre class="r"><code># 27 linhas (observações) e 4 colunas (variáveis)</code></pre>
+<p><br /></p>
+</div>
+</div>
+<div id="analisar-os-dados" class="section level3">
+<h3>Analisar os dados</h3>
+<p>Vamos começar analisar aspectos mais gerais, depois partimos para os detalhes.</p>
 <hr />
-<p><strong>1. Qual a frota total de veículos do Brasil?</strong></p>
+<div style="color:#006400; font-size:16px; margin: 24px 0px;">
+<b> 1. Qual a frota total de veículos do Brasil? </b>
+</div>
 <pre class="r"><code>sum(df_frotas$total_frota) -&gt; frota_total
 print(paste(&quot;Frota total é de &quot;, format(frota_total, big.mark = &quot;.&quot;), &quot; veículos&quot;))</code></pre>
 <pre><code>## [1] &quot;Frota total é de  105.376.352  veículos&quot;</code></pre>
-<hr />
-<p><br /> <strong>2. Vamos colocar numa tabela, a quantidade total de veículos por seu tipo, ordenando do maior para o menor.</strong></p>
+<div style="color:#006400; font-size:16px; margin: 24px 0px;">
+<b> 2. Vamos colocar numa tabela, a quantidade total de veículos por seu tipo, ordenando do maior para o menor. </b>
+</div>
 <p>Não temos uma linha com os totais para cada tipo de veículo. Poderíamos criar uma variável para cada tipo, mas isso daria muito trabalho, porque das 29 colunas, 21 são os tipos dos veículos. Mas, podemos criar um novo dataframe com duas informações: o tipo do veículo e o seu total.</p>
 <hr />
 <pre class="r"><code># Criar um novo dataframe a partir do original, com uma coluna sendo os nomes dos tipos e outra com os totais
@@ -438,132 +491,24 @@ df_tipos_frota$tipo_frota &lt;- str_replace(df_tipos_frota$tipo_frota, &#39;_&#3
 df_tipos_frota$tipo_frota &lt;- capitalize(df_tipos_frota$tipo_frota)
 
 # df_tipos_frota</code></pre>
+<p><br /></p>
 <p>Podemos melhorar esse dataframe, e adicionar uma coluna com as porcentagens em relação ao total.</p>
+<p><br /></p>
 <pre class="r"><code>df_tipos_frota$quantidade_rel &lt;- round((df_tipos_frota$total / frota_total) * 100,4)
 
 # mostrar tabela do knitr
-kable(df_tipos_frota, caption=&quot;Total por tipo de veículo&quot;)</code></pre>
-<table>
-<caption>Total por tipo de veículo</caption>
-<thead>
-<tr class="header">
-<th align="left">tipo_frota</th>
-<th align="right">total</th>
-<th align="right">quantidade_rel</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Automovel</td>
-<td align="right">56927307</td>
-<td align="right">54.0228</td>
-</tr>
-<tr class="even">
-<td align="left">Motocicleta</td>
-<td align="right">23295373</td>
-<td align="right">22.1068</td>
-</tr>
-<tr class="odd">
-<td align="left">Caminhonete</td>
-<td align="right">8023970</td>
-<td align="right">7.6146</td>
-</tr>
-<tr class="even">
-<td align="left">Motoneta</td>
-<td align="right">4611464</td>
-<td align="right">4.3762</td>
-</tr>
-<tr class="odd">
-<td align="left">Camioneta</td>
-<td align="right">3623060</td>
-<td align="right">3.4382</td>
-</tr>
-<tr class="even">
-<td align="left">Caminhao</td>
-<td align="right">2834488</td>
-<td align="right">2.6899</td>
-</tr>
-<tr class="odd">
-<td align="left">Reboque</td>
-<td align="right">1740740</td>
-<td align="right">1.6519</td>
-</tr>
-<tr class="even">
-<td align="left">Semirreboque</td>
-<td align="right">1024352</td>
-<td align="right">0.9721</td>
-</tr>
-<tr class="odd">
-<td align="left">Utilitario</td>
-<td align="right">1022862</td>
-<td align="right">0.9707</td>
-</tr>
-<tr class="even">
-<td align="left">Caminhao trator</td>
-<td align="right">703661</td>
-<td align="right">0.6678</td>
-</tr>
-<tr class="odd">
-<td align="left">Onibus</td>
-<td align="right">650075</td>
-<td align="right">0.6169</td>
-</tr>
-<tr class="even">
-<td align="left">Micro onibus</td>
-<td align="right">414384</td>
-<td align="right">0.3932</td>
-</tr>
-<tr class="odd">
-<td align="left">Ciclomotor</td>
-<td align="right">406411</td>
-<td align="right">0.3857</td>
-</tr>
-<tr class="even">
-<td align="left">Triciclo</td>
-<td align="right">37152</td>
-<td align="right">0.0353</td>
-</tr>
-<tr class="odd">
-<td align="left">Trator de rodas</td>
-<td align="right">33095</td>
-<td align="right">0.0314</td>
-</tr>
-<tr class="even">
-<td align="left">Outros</td>
-<td align="right">17207</td>
-<td align="right">0.0163</td>
-</tr>
-<tr class="odd">
-<td align="left">Side car</td>
-<td align="right">8527</td>
-<td align="right">0.0081</td>
-</tr>
-<tr class="even">
-<td align="left">Chassi plataforma</td>
-<td align="right">1716</td>
-<td align="right">0.0016</td>
-</tr>
-<tr class="odd">
-<td align="left">Quadriciclo</td>
-<td align="right">255</td>
-<td align="right">0.0002</td>
-</tr>
-<tr class="even">
-<td align="left">Trator de esteiras</td>
-<td align="right">211</td>
-<td align="right">0.0002</td>
-</tr>
-<tr class="odd">
-<td align="left">Bonde</td>
-<td align="right">42</td>
-<td align="right">0.0000</td>
-</tr>
-</tbody>
-</table>
-<hr />
+#kable(df_tipos_frota, caption=&quot;Total por tipo de veículo&quot;)
+paged_table(df_tipos_frota, options = list(rows.print = 5))</code></pre>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["tipo_frota"],"name":[1],"type":["chr"],"align":["left"]},{"label":["total"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["quantidade_rel"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"Automovel","2":"56927307","3":"54.0228"},{"1":"Motocicleta","2":"23295373","3":"22.1068"},{"1":"Caminhonete","2":"8023970","3":"7.6146"},{"1":"Motoneta","2":"4611464","3":"4.3762"},{"1":"Camioneta","2":"3623060","3":"3.4382"},{"1":"Caminhao","2":"2834488","3":"2.6899"},{"1":"Reboque","2":"1740740","3":"1.6519"},{"1":"Semirreboque","2":"1024352","3":"0.9721"},{"1":"Utilitario","2":"1022862","3":"0.9707"},{"1":"Caminhao trator","2":"703661","3":"0.6678"},{"1":"Onibus","2":"650075","3":"0.6169"},{"1":"Micro onibus","2":"414384","3":"0.3932"},{"1":"Ciclomotor","2":"406411","3":"0.3857"},{"1":"Triciclo","2":"37152","3":"0.0353"},{"1":"Trator de rodas","2":"33095","3":"0.0314"},{"1":"Outros","2":"17207","3":"0.0163"},{"1":"Side car","2":"8527","3":"0.0081"},{"1":"Chassi plataforma","2":"1716","3":"0.0016"},{"1":"Quadriciclo","2":"255","3":"0.0002"},{"1":"Trator de esteiras","2":"211","3":"0.0002"},{"1":"Bonde","2":"42","3":"0.0000"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[5],"max":[5]},"pages":{}}}
+  </script>
+</div>
+<p><br /></p>
 <p>Aqui podemos ver que os automóveis representam mais da metade do total de veículos, com um pouco mais do dobro do segundo colocado, as motocicletas. Inclusive, ambos os tipos dominam o mercado nacional, com praticamente 3/4 de toda a frota. Vemos que apenas os 9 primeiros veículos passam da casa de 1 milhão de unidades.</p>
-<p><br /><br /> <strong>3. Plotar um gráfico de barras dos veículos com quantidades acima de 1 milhão de unidades.</strong> <br /></p>
-<hr />
+<div style="color:#006400; font-size:16px; margin: 24px 0px;">
+<b> 3. Plotar um gráfico de barras dos veículos com quantidades acima de 1 milhão de unidades. </b>
+</div>
 <pre class="r"><code>df_tipos_frota_1m &lt;- df_tipos_frota[df_tipos_frota$total &gt; 1000000, 1:2]
 
 # Formatar o valor da escala de y
@@ -580,8 +525,8 @@ ggplot(df_tipos_frota_1m, aes(x= reorder(tipo_frota, -total), y=total)) +
   theme(legend.position=&quot;none&quot;,
         plot.title = element_text(size = 12, face=&#39;bold&#39;), 
         axis.title = element_text(size=10, color=&#39;black&#39;))</code></pre>
-<p><img src="frota_veiculos_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
-<hr />
+<p><img src="frota_veiculos_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p><br /></p>
 <p>Podemos imaginar que destes vários tipos de veículos, nem todos eles são usados para circulação de pessoas e mercadorias, alguns têm objetivos bem definidos. Por exemplo, um caminhão trator não é bem o tipo de veículo que as pessoas usem para circulação, podemos até vê-los rodando por aí, mas normalmente ele é usado em obras ou para serviços específicos, como fazer e/ou tampar buracos. O mesmo vale para reboques, semirreboques e outros tipos de tratores.</p>
 <p>Então, daquele número total de veículos, vamos separar parte dele, considerando agora os tipos de veículos que são mais usados para circulação de pessoas e mercadorias: Automóvel, caminhão, caminhonete, camioneta, ciclomotor, micro-ônibus, motocicleta, motoneta, ônibus, quadriciclo, triciclo e utilitário.</p>
 <ul>
@@ -591,7 +536,7 @@ ggplot(df_tipos_frota_1m, aes(x= reorder(tipo_frota, -total), y=total)) +
 <li>grupo ônibus = Micro-ônibus, ônibus</li>
 <li>grupo outros = veículos-ferramenta, bonde, e outros</li>
 </ul>
-<hr />
+<p><br /></p>
 <pre class="r"><code># Criando os grupos
 gr1 &lt;- c(&quot;Automovel&quot;, &quot;Caminhonete&quot;, &quot;Camioneta&quot;, &quot;Utilitario&quot;)
 gr2 &lt;- c(&quot;Motocicleta&quot;, &quot;Motoneta&quot;, &quot;Ciclomotor&quot;, &quot;Triciclo&quot;, &quot;Quadriciclo&quot;)
@@ -648,7 +593,9 @@ kable(df_frotas_grupos, caption = &quot;Grupos de veículos&quot;)</code></pre>
 </tr>
 </tbody>
 </table>
-<p><br /> <strong>4. Plotar o gráfico com os grupos de veículos (uma barra e depois uma pizza)</strong> <br /><br /></p>
+<div style="color:#006400; font-size:16px; margin: 24px 0px;">
+<b> 4. Plotar o gráfico com os grupos de veículos (uma barra e depois uma pizza) </b>
+</div>
 <pre class="r"><code>max_tipo_frota_grupo &lt;- max(df_frotas_grupos$total)
 
 ggplot(df_frotas_grupos, aes(x= reorder(grupo, -total), y=total)) + 
@@ -660,8 +607,10 @@ ggplot(df_frotas_grupos, aes(x= reorder(grupo, -total), y=total)) +
   theme(legend.position=&quot;none&quot;,
         plot.title = element_text(size = 12, face=&#39;bold&#39;), 
         axis.title = element_text(size=10, color=&#39;black&#39;))</code></pre>
-<p><img src="frota_veiculos_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
-<p><br /> Com o agrupamento de veículos, a diferença do grupo carros para os demais é ainda maior, com este ficando com 66% da quantidade da frota total de veículos, seguida das motos com um pouco mais de 1/4 do total nacional, e as demais categorias somam cerca de 7%. <br /></p>
+<p><img src="frota_veiculos_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p><br /></p>
+<p>Com o agrupamento de veículos, a diferença do grupo carros para os demais é ainda maior, com este ficando com 66% da quantidade da frota total de veículos, seguida das motos com um pouco mais de 1/4 do total nacional, e as demais categorias somam cerca de 7%.</p>
+<p><br /></p>
 <pre class="r"><code>cores &lt;- c(&quot;#EFC000&quot;, &quot;#0073C2&quot;, &quot;#2b6a39&quot;, &quot;#CD534C&quot;, &quot;#868686&quot;)
 
 ggplot(df_frotas_grupos, aes(x=&quot;&quot;, y=total, fill=grupo))+
@@ -669,14 +618,15 @@ ggplot(df_frotas_grupos, aes(x=&quot;&quot;, y=total, fill=grupo))+
   coord_polar(&quot;y&quot;, start=0) + 
   scale_fill_manual(values = cores) +
   theme_void()</code></pre>
-<p><img src="frota_veiculos_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p><img src="frota_veiculos_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 <hr />
-</div>
-<div id="análise-regiões-e-estados" class="section level3">
-<h3>Análise: Regiões e Estados</h3>
+<div id="regiões-e-estados" class="section level4">
+<h4>Regiões e Estados</h4>
 <p>Agora que sabemos quantos veículos e quais seus tipos são os preferidos dos brasileiros, podemos descer um nível na análise, e entender a distribuição da frota de veículos nas regiões e nos estados.</p>
-<p><br /><br /> <strong>5. Mostrar uma tabela com as frotas por região e também seu valores percentuais.</strong> <br /></p>
-<hr />
+<div style="color:#006400; font-size:16px; margin: 24px 0px;">
+<b> 5. Mostrar uma tabela com as frotas por região e também seu valores percentuais. </b>
+</div>
+<p>Na tabela abaixo temos uma coluna com o total de veículos por região, e uma outra coluna com os percentuais de veículos por região, em relação ao total nacional. Podemos destacar a região Sudeste com quase metade toda a frota nacional.</p>
 <pre class="r"><code>sql_r &lt;- &quot;SELECT nome_regiao, SUM(total_frota) as Total FROM df_frotas GROUP BY nome_regiao&quot;
 df_frotas_regiao_total &lt;- sqldf(sql_r)
 df_frotas_regiao_total$frota_rel &lt;- round((df_frotas_regiao_total$Total / frota_total) * 100, 4)
@@ -723,9 +673,9 @@ kable(df_frotas_regiao_total, caption = &#39;Veículos por região&#39;)</code><
 <pre class="r"><code>sql &lt;- &quot;SELECT nome_estado, uf, SUM(total_frota) as Total, nome_regiao FROM df_frotas GROUP BY nome_estado, nome_regiao&quot;
 df_frotas_estados_total &lt;- sqldf(sql)
 df_frotas_estados_total$frota_rel &lt;- round((df_frotas_estados_total$Total / frota_total) * 100, 4)</code></pre>
-<hr />
-<p><br /> <strong>6. Plotar gráfico com a distribuição da frota de veículos total, por estado. E se possível, destacando suas regiões</strong> <br /><br /></p>
-<hr />
+<div style="color:#006400; font-size:16px; margin: 24px 0px;">
+<b> 6. Plotar gráfico com a distribuição da frota de veículos total, por estado. E se possível, destacando suas regiões </b>
+</div>
 <pre class="r"><code># usando a biblioteca highcharter
 df_frotas_estados_total %&gt;% 
     arrange(desc(Total)) %&gt;%
@@ -736,9 +686,9 @@ df_frotas_estados_total %&gt;%
     hc_xAxis(title = list(text = &quot;Estados&quot;), style = list(color = &#39;#333333&#39;, fontFamily = &quot;Arial&quot;)) %&gt;%
     hc_add_theme(hc_theme_flat()) %&gt;%
     hc_size(NULL, 600)</code></pre>
-<div id="htmlwidget-bc61cc59e06ddd048f48" style="width:100%;height:600px;" class="highchart html-widget"></div>
-<script type="application/json" data-for="htmlwidget-bc61cc59e06ddd048f48">{"x":{"hc_opts":{"title":{"text":"Total de veículos por estado"},"yAxis":{"title":{"text":"Total","enabled":false,"labels":{"format":"{value: %b}"},"style":{"color":"#333333","fontFamily":"Arial"}},"type":"linear"},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":true},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}}},"series":[{"name":"Centro-Oeste","data":[{"nome_estado":"Goiás","uf":"GO","Total":4081462,"nome_regiao":"Centro-Oeste","frota_rel":3.8732,"y":4081462,"name":"Goiás"},{"nome_estado":"Mato Grosso","uf":"MT","Total":2227734,"nome_regiao":"Centro-Oeste","frota_rel":2.1141,"y":2227734,"name":"Mato Grosso"},{"nome_estado":"Distrito Federal","uf":"DF","Total":1896577,"nome_regiao":"Centro-Oeste","frota_rel":1.7998,"y":1896577,"name":"Distrito Federal"},{"nome_estado":"Mato Grosso do Sul","uf":"MS","Total":1659179,"nome_regiao":"Centro-Oeste","frota_rel":1.5745,"y":1659179,"name":"Mato Grosso do Sul"},{"nome_estado":"Tocantins","uf":"TO","Total":726708,"nome_regiao":"Centro-Oeste","frota_rel":0.6896,"y":726708,"name":"Tocantins"}],"type":"bar"},{"name":"Nordeste","data":[{"nome_estado":"Bahia","uf":"BA","Total":4362618,"nome_regiao":"Nordeste","frota_rel":4.14,"y":4362618,"name":"Bahia"},{"nome_estado":"Ceará","uf":"CE","Total":3303590,"nome_regiao":"Nordeste","frota_rel":3.135,"y":3303590,"name":"Ceará"},{"nome_estado":"Pernambuco","uf":"PE","Total":3145723,"nome_regiao":"Nordeste","frota_rel":2.9852,"y":3145723,"name":"Pernambuco"},{"nome_estado":"Maranhão","uf":"MA","Total":1790163,"nome_regiao":"Nordeste","frota_rel":1.6988,"y":1790163,"name":"Maranhão"},{"nome_estado":"Paraíba","uf":"PB","Total":1363639,"nome_regiao":"Nordeste","frota_rel":1.2941,"y":1363639,"name":"Paraíba"},{"nome_estado":"Rio Grande do Norte","uf":"RN","Total":1355662,"nome_regiao":"Nordeste","frota_rel":1.2865,"y":1355662,"name":"Rio Grande do Norte"},{"nome_estado":"Piauí","uf":"PI","Total":1258702,"nome_regiao":"Nordeste","frota_rel":1.1945,"y":1258702,"name":"Piauí"},{"nome_estado":"Alagoas","uf":"AL","Total":897191,"nome_regiao":"Nordeste","frota_rel":0.8514,"y":897191,"name":"Alagoas"},{"nome_estado":"Sergipe","uf":"SE","Total":811275,"nome_regiao":"Nordeste","frota_rel":0.7699,"y":811275,"name":"Sergipe"}],"type":"bar"},{"name":"Norte","data":[{"nome_estado":"Pará","uf":"PA","Total":2133455,"nome_regiao":"Norte","frota_rel":2.0246,"y":2133455,"name":"Pará"},{"nome_estado":"Rondônia","uf":"RO","Total":1037762,"nome_regiao":"Norte","frota_rel":0.9848,"y":1037762,"name":"Rondônia"},{"nome_estado":"Amazonas","uf":"AM","Total":935104,"nome_regiao":"Norte","frota_rel":0.8874,"y":935104,"name":"Amazonas"},{"nome_estado":"Acre","uf":"AC","Total":295056,"nome_regiao":"Norte","frota_rel":0.28,"y":295056,"name":"Acre"},{"nome_estado":"Roraima","uf":"RR","Total":230691,"nome_regiao":"Norte","frota_rel":0.2189,"y":230691,"name":"Roraima"},{"nome_estado":"Amapá","uf":"AP","Total":207156,"nome_regiao":"Norte","frota_rel":0.1966,"y":207156,"name":"Amapá"}],"type":"bar"},{"name":"Sudeste","data":[{"nome_estado":"São Paulo","uf":"SP","Total":30221400,"nome_regiao":"Sudeste","frota_rel":28.6795,"y":30221400,"name":"São Paulo"},{"nome_estado":"Minas Gerais","uf":"MG","Total":11779441,"nome_regiao":"Sudeste","frota_rel":11.1784,"y":11779441,"name":"Minas Gerais"},{"nome_estado":"Rio de Janeiro","uf":"RJ","Total":6986864,"nome_regiao":"Sudeste","frota_rel":6.6304,"y":6986864,"name":"Rio de Janeiro"},{"nome_estado":"Espírito Santo","uf":"ES","Total":2021476,"nome_regiao":"Sudeste","frota_rel":1.9183,"y":2021476,"name":"Espírito Santo"}],"type":"bar"},{"name":"Sul","data":[{"nome_estado":"Paraná","uf":"PR","Total":7888075,"nome_regiao":"Sul","frota_rel":7.4856,"y":7888075,"name":"Paraná"},{"nome_estado":"Rio Grande do Sul","uf":"RS","Total":7342614,"nome_regiao":"Sul","frota_rel":6.968,"y":7342614,"name":"Rio Grande do Sul"},{"nome_estado":"Santa Catarina","uf":"SC","Total":5417035,"nome_regiao":"Sul","frota_rel":5.1407,"y":5417035,"name":"Santa Catarina"}],"type":"bar"}],"xAxis":{"type":"category","title":{"text":"Estados"},"style":{"color":"#333333","fontFamily":"Arial"}},"subtitle":{"text":"Fonte: Denatran (março/2020)"}},"theme":{"colors":["#f1c40f","#2ecc71","#9b59b6","#e74c3c","#34495e","#3498db","#1abc9c","#f39c12","#d35400"],"chart":{"backgroundColor":"#ECF0F1"},"xAxis":{"gridLineDashStyle":"Dash","gridLineWidth":1,"gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"yAxis":{"gridLineDashStyle":"Dash","gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#34495e","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Arial","debug":false},"evals":[],"jsHooks":[]}</script>
-<hr />
+<div id="htmlwidget-a4e5519a9ffd39d06704" style="width:100%;height:600px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a4e5519a9ffd39d06704">{"x":{"hc_opts":{"title":{"text":"Total de veículos por estado"},"yAxis":{"title":{"text":"Total","enabled":false,"labels":{"format":"{value: %b}"},"style":{"color":"#333333","fontFamily":"Arial"}},"type":"linear"},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":true},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}}},"series":[{"name":"Centro-Oeste","data":[{"nome_estado":"Goiás","uf":"GO","Total":4081462,"nome_regiao":"Centro-Oeste","frota_rel":3.8732,"y":4081462,"name":"Goiás"},{"nome_estado":"Mato Grosso","uf":"MT","Total":2227734,"nome_regiao":"Centro-Oeste","frota_rel":2.1141,"y":2227734,"name":"Mato Grosso"},{"nome_estado":"Distrito Federal","uf":"DF","Total":1896577,"nome_regiao":"Centro-Oeste","frota_rel":1.7998,"y":1896577,"name":"Distrito Federal"},{"nome_estado":"Mato Grosso do Sul","uf":"MS","Total":1659179,"nome_regiao":"Centro-Oeste","frota_rel":1.5745,"y":1659179,"name":"Mato Grosso do Sul"},{"nome_estado":"Tocantins","uf":"TO","Total":726708,"nome_regiao":"Centro-Oeste","frota_rel":0.6896,"y":726708,"name":"Tocantins"}],"type":"bar"},{"name":"Nordeste","data":[{"nome_estado":"Bahia","uf":"BA","Total":4362618,"nome_regiao":"Nordeste","frota_rel":4.14,"y":4362618,"name":"Bahia"},{"nome_estado":"Ceará","uf":"CE","Total":3303590,"nome_regiao":"Nordeste","frota_rel":3.135,"y":3303590,"name":"Ceará"},{"nome_estado":"Pernambuco","uf":"PE","Total":3145723,"nome_regiao":"Nordeste","frota_rel":2.9852,"y":3145723,"name":"Pernambuco"},{"nome_estado":"Maranhão","uf":"MA","Total":1790163,"nome_regiao":"Nordeste","frota_rel":1.6988,"y":1790163,"name":"Maranhão"},{"nome_estado":"Paraíba","uf":"PB","Total":1363639,"nome_regiao":"Nordeste","frota_rel":1.2941,"y":1363639,"name":"Paraíba"},{"nome_estado":"Rio Grande do Norte","uf":"RN","Total":1355662,"nome_regiao":"Nordeste","frota_rel":1.2865,"y":1355662,"name":"Rio Grande do Norte"},{"nome_estado":"Piauí","uf":"PI","Total":1258702,"nome_regiao":"Nordeste","frota_rel":1.1945,"y":1258702,"name":"Piauí"},{"nome_estado":"Alagoas","uf":"AL","Total":897191,"nome_regiao":"Nordeste","frota_rel":0.8514,"y":897191,"name":"Alagoas"},{"nome_estado":"Sergipe","uf":"SE","Total":811275,"nome_regiao":"Nordeste","frota_rel":0.7699,"y":811275,"name":"Sergipe"}],"type":"bar"},{"name":"Norte","data":[{"nome_estado":"Pará","uf":"PA","Total":2133455,"nome_regiao":"Norte","frota_rel":2.0246,"y":2133455,"name":"Pará"},{"nome_estado":"Rondônia","uf":"RO","Total":1037762,"nome_regiao":"Norte","frota_rel":0.9848,"y":1037762,"name":"Rondônia"},{"nome_estado":"Amazonas","uf":"AM","Total":935104,"nome_regiao":"Norte","frota_rel":0.8874,"y":935104,"name":"Amazonas"},{"nome_estado":"Acre","uf":"AC","Total":295056,"nome_regiao":"Norte","frota_rel":0.28,"y":295056,"name":"Acre"},{"nome_estado":"Roraima","uf":"RR","Total":230691,"nome_regiao":"Norte","frota_rel":0.2189,"y":230691,"name":"Roraima"},{"nome_estado":"Amapá","uf":"AP","Total":207156,"nome_regiao":"Norte","frota_rel":0.1966,"y":207156,"name":"Amapá"}],"type":"bar"},{"name":"Sudeste","data":[{"nome_estado":"São Paulo","uf":"SP","Total":30221400,"nome_regiao":"Sudeste","frota_rel":28.6795,"y":30221400,"name":"São Paulo"},{"nome_estado":"Minas Gerais","uf":"MG","Total":11779441,"nome_regiao":"Sudeste","frota_rel":11.1784,"y":11779441,"name":"Minas Gerais"},{"nome_estado":"Rio de Janeiro","uf":"RJ","Total":6986864,"nome_regiao":"Sudeste","frota_rel":6.6304,"y":6986864,"name":"Rio de Janeiro"},{"nome_estado":"Espírito Santo","uf":"ES","Total":2021476,"nome_regiao":"Sudeste","frota_rel":1.9183,"y":2021476,"name":"Espírito Santo"}],"type":"bar"},{"name":"Sul","data":[{"nome_estado":"Paraná","uf":"PR","Total":7888075,"nome_regiao":"Sul","frota_rel":7.4856,"y":7888075,"name":"Paraná"},{"nome_estado":"Rio Grande do Sul","uf":"RS","Total":7342614,"nome_regiao":"Sul","frota_rel":6.968,"y":7342614,"name":"Rio Grande do Sul"},{"nome_estado":"Santa Catarina","uf":"SC","Total":5417035,"nome_regiao":"Sul","frota_rel":5.1407,"y":5417035,"name":"Santa Catarina"}],"type":"bar"}],"xAxis":{"type":"category","title":{"text":"Estados"},"style":{"color":"#333333","fontFamily":"Arial"}},"subtitle":{"text":"Fonte: Denatran (março/2020)"}},"theme":{"colors":["#f1c40f","#2ecc71","#9b59b6","#e74c3c","#34495e","#3498db","#1abc9c","#f39c12","#d35400"],"chart":{"backgroundColor":"#ECF0F1"},"xAxis":{"gridLineDashStyle":"Dash","gridLineWidth":1,"gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"yAxis":{"gridLineDashStyle":"Dash","gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#34495e","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Arial","debug":false},"evals":[],"jsHooks":[]}</script>
+<p><br /></p>
 <p>Com este gráfico e a tabela podemos ver que:</p>
 <ul>
 <li>a maior parte da frota está concentrada na região Sudeste, com quase a metade da frota do país (48%) e São Paulo sendo o estado com a maior delas, seguido por Minas Gerais;</li>
@@ -753,9 +703,11 @@ df_frotas_estados_total %&gt;%
 <li>Aliás, ela é maior que a soma de qualquer uma das regiões;</li>
 <li>Se somarmos as frotas das regiões Norte, Centro Oeste e Nordeste, elas possuem cerca de 31 milhões de veículos, apenas 1 milhão a mais que SP.</li>
 </ul>
-<p><br /><br /> <strong>7. Analisar as frotas de automóveis e cruzar com os dados da população.</strong></p>
-<p>Se voltarmos no nosso primeiro gráfico desse documento, vamos ver que o tipo de veículo com mais unidades são os automóveis. Então, vamos repetir o gráfico anterior, mas dessa vez plotando apenas a frota de automóveis por estados. <br /></p>
-<hr />
+<div style="color:#006400; font-size:16px; margin: 24px 0px;">
+<b> 7. Analisar as frotas de <i>automóveis</i> e cruzar com os dados da população. </b>
+</div>
+<p>Se voltarmos no nosso primeiro gráfico desse documento, vamos ver que o tipo de veículo com mais unidades são os automóveis. Então, vamos repetir o gráfico anterior, mas dessa vez plotando apenas a frota de automóveis por estados.</p>
+<p><br /></p>
 <pre class="r"><code>sql &lt;- &quot;SELECT id_estado, nome_estado, uf, nome_regiao, SUM(automovel) as Total FROM df_frotas GROUP BY id_estado, nome_estado, nome_regiao&quot;
 df_frotas_estados_automovel &lt;- sqldf(sql)
 df_frotas_estados_automovel$frota_rel &lt;- round((df_frotas_estados_automovel$Total / frota_total) * 100, 4)</code></pre>
@@ -768,12 +720,12 @@ df_frotas_estados_automovel$frota_rel &lt;- round((df_frotas_estados_automovel$T
     hc_xAxis(title = list(text = &quot;Estados&quot;), style = list(color = &#39;#333333&#39;, fontFamily = &quot;Arial&quot;)) %&gt;%
     hc_add_theme(hc_theme_sandsignika()) %&gt;%
     hc_size(NULL, 600)</code></pre>
-<div id="htmlwidget-970e0bf725749a25a215" style="width:100%;height:600px;" class="highchart html-widget"></div>
-<script type="application/json" data-for="htmlwidget-970e0bf725749a25a215">{"x":{"hc_opts":{"title":{"text":"Total de automóveis por estado"},"yAxis":{"title":{"text":[],"enabled":false,"labels":{"format":"{value: %b}"},"style":{"color":"#333333","fontFamily":"Arial"}},"type":"linear"},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}}},"colorAxis":{"auxpar":null},"series":[{"group":"group","data":[{"id_estado":26,"nome_estado":"São Paulo","uf":"SP","nome_regiao":"Sudeste","Total":18837507,"frota_rel":17.8764,"value":18837507,"colorValue":18837507,"name":"São Paulo"},{"id_estado":11,"nome_estado":"Minas Gerais","uf":"MG","nome_regiao":"Sudeste","Total":6491804,"frota_rel":6.1606,"value":6491804,"colorValue":6491804,"name":"Minas Gerais"},{"id_estado":19,"nome_estado":"Rio de Janeiro","uf":"RJ","nome_regiao":"Sudeste","Total":4659293,"frota_rel":4.4216,"value":4659293,"colorValue":4659293,"name":"Rio de Janeiro"},{"id_estado":18,"nome_estado":"Paraná","uf":"PR","nome_regiao":"Sul","Total":4596143,"frota_rel":4.3616,"value":4596143,"colorValue":4596143,"name":"Paraná"},{"id_estado":23,"nome_estado":"Rio Grande do Sul","uf":"RS","nome_regiao":"Sul","Total":4450175,"frota_rel":4.2231,"value":4450175,"colorValue":4450175,"name":"Rio Grande do Sul"},{"id_estado":24,"nome_estado":"Santa Catarina","uf":"SC","nome_regiao":"Sul","Total":3069336,"frota_rel":2.9127,"value":3069336,"colorValue":3069336,"name":"Santa Catarina"},{"id_estado":9,"nome_estado":"Goiás","uf":"GO","nome_regiao":"Centro-Oeste","Total":1921952,"frota_rel":1.8239,"value":1921952,"colorValue":1921952,"name":"Goiás"},{"id_estado":5,"nome_estado":"Bahia","uf":"BA","nome_regiao":"Nordeste","Total":1919392,"frota_rel":1.8215,"value":1919392,"colorValue":1919392,"name":"Bahia"},{"id_estado":16,"nome_estado":"Pernambuco","uf":"PE","nome_regiao":"Nordeste","Total":1376259,"frota_rel":1.306,"value":1376259,"colorValue":1376259,"name":"Pernambuco"},{"id_estado":7,"nome_estado":"Distrito Federal","uf":"DF","nome_regiao":"Centro-Oeste","Total":1335722,"frota_rel":1.2676,"value":1335722,"colorValue":1335722,"name":"Distrito Federal"},{"id_estado":6,"nome_estado":"Ceará","uf":"CE","nome_regiao":"Nordeste","Total":1199972,"frota_rel":1.1387,"value":1199972,"colorValue":1199972,"name":"Ceará"},{"id_estado":8,"nome_estado":"Espírito Santo","uf":"ES","nome_regiao":"Sudeste","Total":994543,"frota_rel":0.9438,"value":994543,"colorValue":994543,"name":"Espírito Santo"},{"id_estado":13,"nome_estado":"Mato Grosso","uf":"MT","nome_regiao":"Centro-Oeste","Total":771113,"frota_rel":0.7318,"value":771113,"colorValue":771113,"name":"Mato Grosso"},{"id_estado":12,"nome_estado":"Mato Grosso do Sul","uf":"MS","nome_regiao":"Centro-Oeste","Total":767328,"frota_rel":0.7282,"value":767328,"colorValue":767328,"name":"Mato Grosso do Sul"},{"id_estado":14,"nome_estado":"Pará","uf":"PA","nome_regiao":"Norte","Total":635618,"frota_rel":0.6032,"value":635618,"colorValue":635618,"name":"Pará"},{"id_estado":20,"nome_estado":"Rio Grande do Norte","uf":"RN","nome_regiao":"Nordeste","Total":582857,"frota_rel":0.5531,"value":582857,"colorValue":582857,"name":"Rio Grande do Norte"},{"id_estado":15,"nome_estado":"Paraíba","uf":"PB","nome_regiao":"Nordeste","Total":556701,"frota_rel":0.5283,"value":556701,"colorValue":556701,"name":"Paraíba"},{"id_estado":10,"nome_estado":"Maranhão","uf":"MA","nome_regiao":"Nordeste","Total":460667,"frota_rel":0.4372,"value":460667,"colorValue":460667,"name":"Maranhão"},{"id_estado":3,"nome_estado":"Amazonas","uf":"AM","nome_regiao":"Norte","Total":414442,"frota_rel":0.3933,"value":414442,"colorValue":414442,"name":"Amazonas"},{"id_estado":17,"nome_estado":"Piauí","uf":"PI","nome_regiao":"Nordeste","Total":382658,"frota_rel":0.3631,"value":382658,"colorValue":382658,"name":"Piauí"},{"id_estado":2,"nome_estado":"Alagoas","uf":"AL","nome_regiao":"Nordeste","Total":376726,"frota_rel":0.3575,"value":376726,"colorValue":376726,"name":"Alagoas"},{"id_estado":25,"nome_estado":"Sergipe","uf":"SE","nome_regiao":"Nordeste","Total":343535,"frota_rel":0.326,"value":343535,"colorValue":343535,"name":"Sergipe"},{"id_estado":21,"nome_estado":"Rondônia","uf":"RO","nome_regiao":"Norte","Total":300261,"frota_rel":0.2849,"value":300261,"colorValue":300261,"name":"Rondônia"},{"id_estado":27,"nome_estado":"Tocantins","uf":"TO","nome_regiao":"Centro-Oeste","Total":225555,"frota_rel":0.214,"value":225555,"colorValue":225555,"name":"Tocantins"},{"id_estado":1,"nome_estado":"Acre","uf":"AC","nome_regiao":"Norte","Total":92296,"frota_rel":0.0876,"value":92296,"colorValue":92296,"name":"Acre"},{"id_estado":4,"nome_estado":"Amapá","uf":"AP","nome_regiao":"Norte","Total":86361,"frota_rel":0.082,"value":86361,"colorValue":86361,"name":"Amapá"},{"id_estado":22,"nome_estado":"Roraima","uf":"RR","nome_regiao":"Norte","Total":79091,"frota_rel":0.0751,"value":79091,"colorValue":79091,"name":"Roraima"}],"type":"treemap"}],"xAxis":{"type":"category","title":{"text":"Estados"},"style":{"color":"#333333","fontFamily":"Arial"}},"subtitle":{"text":"Fonte: Denatran (março/2020)"}},"theme":{"colors":["#F45B5B","#8085E9","#8D4654","#7798BF","#AAEEEE","#FF0066","#EEAAEE","#55BF3B","#DF5353"],"chart":{"backgroundColor":null,"divBackgroundImage":"http://www.highcharts.com/samples/graphics/sand.png","style":{"fontFamily":"Signika, serif"}},"title":{"style":{"color":"black","fontSize":"16px","fontWeight":"bold"}},"subtitle":{"style":{"color":"black"}},"tooltip":{"borderWidth":0},"legend":{"itemStyle":{"fontWeight":"bold","fontSize":"13px"}},"xAxis":{"labels":{"style":{"color":"#6e6e70"}}},"yAxis":{"labels":{"style":{"color":"#6e6e70"}}},"plotOptions":{"series":{"shadow":false},"candlestick":{"lineColor":"#404048"},"map":{"shadow":false}},"navigator":{"xAxis":{"gridLineColor":"#D0D0D8"}},"rangeSelector":{"buttonTheme":{"fill":"white","stroke":"#C0C0C8","stroke-width":1,"states":{"select":{"fill":"#D0D0D8"}}}},"scrollbar":{"trackBorderColor":"#C0C0C8"},"background2":"#E0E0E8"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Arial","Signika"],"debug":false},"evals":[],"jsHooks":[]}</script>
-<hr />
+<div id="htmlwidget-b67752db2d8c321aa0b2" style="width:100%;height:600px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b67752db2d8c321aa0b2">{"x":{"hc_opts":{"title":{"text":"Total de automóveis por estado"},"yAxis":{"title":{"text":[],"enabled":false,"labels":{"format":"{value: %b}"},"style":{"color":"#333333","fontFamily":"Arial"}},"type":"linear"},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}}},"colorAxis":{"auxpar":null},"series":[{"group":"group","data":[{"id_estado":26,"nome_estado":"São Paulo","uf":"SP","nome_regiao":"Sudeste","Total":18837507,"frota_rel":17.8764,"value":18837507,"colorValue":18837507,"name":"São Paulo"},{"id_estado":11,"nome_estado":"Minas Gerais","uf":"MG","nome_regiao":"Sudeste","Total":6491804,"frota_rel":6.1606,"value":6491804,"colorValue":6491804,"name":"Minas Gerais"},{"id_estado":19,"nome_estado":"Rio de Janeiro","uf":"RJ","nome_regiao":"Sudeste","Total":4659293,"frota_rel":4.4216,"value":4659293,"colorValue":4659293,"name":"Rio de Janeiro"},{"id_estado":18,"nome_estado":"Paraná","uf":"PR","nome_regiao":"Sul","Total":4596143,"frota_rel":4.3616,"value":4596143,"colorValue":4596143,"name":"Paraná"},{"id_estado":23,"nome_estado":"Rio Grande do Sul","uf":"RS","nome_regiao":"Sul","Total":4450175,"frota_rel":4.2231,"value":4450175,"colorValue":4450175,"name":"Rio Grande do Sul"},{"id_estado":24,"nome_estado":"Santa Catarina","uf":"SC","nome_regiao":"Sul","Total":3069336,"frota_rel":2.9127,"value":3069336,"colorValue":3069336,"name":"Santa Catarina"},{"id_estado":9,"nome_estado":"Goiás","uf":"GO","nome_regiao":"Centro-Oeste","Total":1921952,"frota_rel":1.8239,"value":1921952,"colorValue":1921952,"name":"Goiás"},{"id_estado":5,"nome_estado":"Bahia","uf":"BA","nome_regiao":"Nordeste","Total":1919392,"frota_rel":1.8215,"value":1919392,"colorValue":1919392,"name":"Bahia"},{"id_estado":16,"nome_estado":"Pernambuco","uf":"PE","nome_regiao":"Nordeste","Total":1376259,"frota_rel":1.306,"value":1376259,"colorValue":1376259,"name":"Pernambuco"},{"id_estado":7,"nome_estado":"Distrito Federal","uf":"DF","nome_regiao":"Centro-Oeste","Total":1335722,"frota_rel":1.2676,"value":1335722,"colorValue":1335722,"name":"Distrito Federal"},{"id_estado":6,"nome_estado":"Ceará","uf":"CE","nome_regiao":"Nordeste","Total":1199972,"frota_rel":1.1387,"value":1199972,"colorValue":1199972,"name":"Ceará"},{"id_estado":8,"nome_estado":"Espírito Santo","uf":"ES","nome_regiao":"Sudeste","Total":994543,"frota_rel":0.9438,"value":994543,"colorValue":994543,"name":"Espírito Santo"},{"id_estado":13,"nome_estado":"Mato Grosso","uf":"MT","nome_regiao":"Centro-Oeste","Total":771113,"frota_rel":0.7318,"value":771113,"colorValue":771113,"name":"Mato Grosso"},{"id_estado":12,"nome_estado":"Mato Grosso do Sul","uf":"MS","nome_regiao":"Centro-Oeste","Total":767328,"frota_rel":0.7282,"value":767328,"colorValue":767328,"name":"Mato Grosso do Sul"},{"id_estado":14,"nome_estado":"Pará","uf":"PA","nome_regiao":"Norte","Total":635618,"frota_rel":0.6032,"value":635618,"colorValue":635618,"name":"Pará"},{"id_estado":20,"nome_estado":"Rio Grande do Norte","uf":"RN","nome_regiao":"Nordeste","Total":582857,"frota_rel":0.5531,"value":582857,"colorValue":582857,"name":"Rio Grande do Norte"},{"id_estado":15,"nome_estado":"Paraíba","uf":"PB","nome_regiao":"Nordeste","Total":556701,"frota_rel":0.5283,"value":556701,"colorValue":556701,"name":"Paraíba"},{"id_estado":10,"nome_estado":"Maranhão","uf":"MA","nome_regiao":"Nordeste","Total":460667,"frota_rel":0.4372,"value":460667,"colorValue":460667,"name":"Maranhão"},{"id_estado":3,"nome_estado":"Amazonas","uf":"AM","nome_regiao":"Norte","Total":414442,"frota_rel":0.3933,"value":414442,"colorValue":414442,"name":"Amazonas"},{"id_estado":17,"nome_estado":"Piauí","uf":"PI","nome_regiao":"Nordeste","Total":382658,"frota_rel":0.3631,"value":382658,"colorValue":382658,"name":"Piauí"},{"id_estado":2,"nome_estado":"Alagoas","uf":"AL","nome_regiao":"Nordeste","Total":376726,"frota_rel":0.3575,"value":376726,"colorValue":376726,"name":"Alagoas"},{"id_estado":25,"nome_estado":"Sergipe","uf":"SE","nome_regiao":"Nordeste","Total":343535,"frota_rel":0.326,"value":343535,"colorValue":343535,"name":"Sergipe"},{"id_estado":21,"nome_estado":"Rondônia","uf":"RO","nome_regiao":"Norte","Total":300261,"frota_rel":0.2849,"value":300261,"colorValue":300261,"name":"Rondônia"},{"id_estado":27,"nome_estado":"Tocantins","uf":"TO","nome_regiao":"Centro-Oeste","Total":225555,"frota_rel":0.214,"value":225555,"colorValue":225555,"name":"Tocantins"},{"id_estado":1,"nome_estado":"Acre","uf":"AC","nome_regiao":"Norte","Total":92296,"frota_rel":0.0876,"value":92296,"colorValue":92296,"name":"Acre"},{"id_estado":4,"nome_estado":"Amapá","uf":"AP","nome_regiao":"Norte","Total":86361,"frota_rel":0.082,"value":86361,"colorValue":86361,"name":"Amapá"},{"id_estado":22,"nome_estado":"Roraima","uf":"RR","nome_regiao":"Norte","Total":79091,"frota_rel":0.0751,"value":79091,"colorValue":79091,"name":"Roraima"}],"type":"treemap"}],"xAxis":{"type":"category","title":{"text":"Estados"},"style":{"color":"#333333","fontFamily":"Arial"}},"subtitle":{"text":"Fonte: Denatran (março/2020)"}},"theme":{"colors":["#F45B5B","#8085E9","#8D4654","#7798BF","#AAEEEE","#FF0066","#EEAAEE","#55BF3B","#DF5353"],"chart":{"backgroundColor":null,"divBackgroundImage":"http://www.highcharts.com/samples/graphics/sand.png","style":{"fontFamily":"Signika, serif"}},"title":{"style":{"color":"black","fontSize":"16px","fontWeight":"bold"}},"subtitle":{"style":{"color":"black"}},"tooltip":{"borderWidth":0},"legend":{"itemStyle":{"fontWeight":"bold","fontSize":"13px"}},"xAxis":{"labels":{"style":{"color":"#6e6e70"}}},"yAxis":{"labels":{"style":{"color":"#6e6e70"}}},"plotOptions":{"series":{"shadow":false},"candlestick":{"lineColor":"#404048"},"map":{"shadow":false}},"navigator":{"xAxis":{"gridLineColor":"#D0D0D8"}},"rangeSelector":{"buttonTheme":{"fill":"white","stroke":"#C0C0C8","stroke-width":1,"states":{"select":{"fill":"#D0D0D8"}}}},"scrollbar":{"trackBorderColor":"#C0C0C8"},"background2":"#E0E0E8"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Arial","Signika"],"debug":false},"evals":[],"jsHooks":[]}</script>
+<p><br /></p>
 <p>Observando nosso gráfico de árvore ou <code>treemap</code>, percebemos que as coisas não mudam muito, São Paulo continua bem a frente também na quantidade de automóveis, seguido por Minas Gerais, Rio de Janeiro, Paraná e Rio Grande do Sul.</p>
-<p>Aproveitando o ensejo, entre os dados que estamos carregando, temos o da população por estado. Poderíamos cruzar estes dados, e apenas por curiosidade, verificar como seria a distribuição de carros por habitante dentro dos estados.</p>
-<hr />
+<p>Aproveitando o ensejo, entre os dados que estamos carregando, temos o da população por estado. Poderíamos cruzar estes dados, e apenas por curiosidade, <strong>verificar como seria a distribuição de carros por habitante dentro dos estados</strong>.</p>
+<p><br /></p>
 <pre class="r"><code>sql &lt;- &quot;SELECT f.*, p.populacao_estimada_2019 
         FROM df_frotas_estados_automovel f
         LEFT JOIN df_populacao p ON f.id_estado = p.id&quot;
@@ -786,16 +738,18 @@ hchart(hc_data, type=&quot;treemap&quot;, hcaes(x= nome_estado, value=pop_auto, 
 hc_title(text = &#39;Quantidade de habitantes por automóveis por estado&#39;) %&gt;%
 hc_add_theme(hc_theme_google()) %&gt;%
 hc_size(NULL, 600)</code></pre>
-<div id="htmlwidget-41512b26603d315a4338" style="width:100%;height:600px;" class="highchart html-widget"></div>
-<script type="application/json" data-for="htmlwidget-41512b26603d315a4338">{"x":{"hc_opts":{"title":{"text":"Quantidade de habitantes por automóveis por estado"},"yAxis":{"title":{"text":[]},"type":"linear"},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}}},"colorAxis":{"auxpar":null},"series":[{"group":"group","data":[{"id_estado":10,"nome_estado":"Maranhão","uf":"MA","nome_regiao":"Nordeste","Total":460667,"frota_rel":0.4372,"populacao_estimada_2019":7075181,"auto_pop":0.065,"pop_auto":15.359,"value":15.359,"colorValue":0.065,"name":"Maranhão"},{"id_estado":14,"nome_estado":"Pará","uf":"PA","nome_regiao":"Norte","Total":635618,"frota_rel":0.6032,"populacao_estimada_2019":8602865,"auto_pop":0.074,"pop_auto":13.535,"value":13.535,"colorValue":0.074,"name":"Pará"},{"id_estado":3,"nome_estado":"Amazonas","uf":"AM","nome_regiao":"Norte","Total":414442,"frota_rel":0.3933,"populacao_estimada_2019":4144597,"auto_pop":0.1,"pop_auto":10,"value":10,"colorValue":0.1,"name":"Amazonas"},{"id_estado":4,"nome_estado":"Amapá","uf":"AP","nome_regiao":"Norte","Total":86361,"frota_rel":0.082,"populacao_estimada_2019":845731,"auto_pop":0.102,"pop_auto":9.793,"value":9.793,"colorValue":0.102,"name":"Amapá"},{"id_estado":1,"nome_estado":"Acre","uf":"AC","nome_regiao":"Norte","Total":92296,"frota_rel":0.0876,"populacao_estimada_2019":881935,"auto_pop":0.105,"pop_auto":9.556,"value":9.556,"colorValue":0.105,"name":"Acre"},{"id_estado":2,"nome_estado":"Alagoas","uf":"AL","nome_regiao":"Nordeste","Total":376726,"frota_rel":0.3575,"populacao_estimada_2019":3337357,"auto_pop":0.113,"pop_auto":8.859,"value":8.859,"colorValue":0.113,"name":"Alagoas"},{"id_estado":17,"nome_estado":"Piauí","uf":"PI","nome_regiao":"Nordeste","Total":382658,"frota_rel":0.3631,"populacao_estimada_2019":3273227,"auto_pop":0.117,"pop_auto":8.554,"value":8.554,"colorValue":0.117,"name":"Piauí"},{"id_estado":5,"nome_estado":"Bahia","uf":"BA","nome_regiao":"Nordeste","Total":1919392,"frota_rel":1.8215,"populacao_estimada_2019":14873064,"auto_pop":0.129,"pop_auto":7.749,"value":7.749,"colorValue":0.129,"name":"Bahia"},{"id_estado":22,"nome_estado":"Roraima","uf":"RR","nome_regiao":"Norte","Total":79091,"frota_rel":0.0751,"populacao_estimada_2019":605761,"auto_pop":0.131,"pop_auto":7.659,"value":7.659,"colorValue":0.131,"name":"Roraima"},{"id_estado":6,"nome_estado":"Ceará","uf":"CE","nome_regiao":"Nordeste","Total":1199972,"frota_rel":1.1387,"populacao_estimada_2019":9132078,"auto_pop":0.131,"pop_auto":7.61,"value":7.61,"colorValue":0.131,"name":"Ceará"},{"id_estado":15,"nome_estado":"Paraíba","uf":"PB","nome_regiao":"Nordeste","Total":556701,"frota_rel":0.5283,"populacao_estimada_2019":4018127,"auto_pop":0.139,"pop_auto":7.218,"value":7.218,"colorValue":0.139,"name":"Paraíba"},{"id_estado":27,"nome_estado":"Tocantins","uf":"TO","nome_regiao":"Centro-Oeste","Total":225555,"frota_rel":0.214,"populacao_estimada_2019":1572866,"auto_pop":0.143,"pop_auto":6.973,"value":6.973,"colorValue":0.143,"name":"Tocantins"},{"id_estado":16,"nome_estado":"Pernambuco","uf":"PE","nome_regiao":"Nordeste","Total":1376259,"frota_rel":1.306,"populacao_estimada_2019":9557071,"auto_pop":0.144,"pop_auto":6.944,"value":6.944,"colorValue":0.144,"name":"Pernambuco"},{"id_estado":25,"nome_estado":"Sergipe","uf":"SE","nome_regiao":"Nordeste","Total":343535,"frota_rel":0.326,"populacao_estimada_2019":2298696,"auto_pop":0.149,"pop_auto":6.691,"value":6.691,"colorValue":0.149,"name":"Sergipe"},{"id_estado":20,"nome_estado":"Rio Grande do Norte","uf":"RN","nome_regiao":"Nordeste","Total":582857,"frota_rel":0.5531,"populacao_estimada_2019":3506853,"auto_pop":0.166,"pop_auto":6.017,"value":6.017,"colorValue":0.166,"name":"Rio Grande do Norte"},{"id_estado":21,"nome_estado":"Rondônia","uf":"RO","nome_regiao":"Norte","Total":300261,"frota_rel":0.2849,"populacao_estimada_2019":1777225,"auto_pop":0.169,"pop_auto":5.919,"value":5.919,"colorValue":0.169,"name":"Rondônia"},{"id_estado":13,"nome_estado":"Mato Grosso","uf":"MT","nome_regiao":"Centro-Oeste","Total":771113,"frota_rel":0.7318,"populacao_estimada_2019":3484466,"auto_pop":0.221,"pop_auto":4.519,"value":4.519,"colorValue":0.221,"name":"Mato Grosso"},{"id_estado":8,"nome_estado":"Espírito Santo","uf":"ES","nome_regiao":"Sudeste","Total":994543,"frota_rel":0.9438,"populacao_estimada_2019":4018650,"auto_pop":0.247,"pop_auto":4.041,"value":4.041,"colorValue":0.247,"name":"Espírito Santo"},{"id_estado":19,"nome_estado":"Rio de Janeiro","uf":"RJ","nome_regiao":"Sudeste","Total":4659293,"frota_rel":4.4216,"populacao_estimada_2019":17264943,"auto_pop":0.27,"pop_auto":3.705,"value":3.705,"colorValue":0.27,"name":"Rio de Janeiro"},{"id_estado":9,"nome_estado":"Goiás","uf":"GO","nome_regiao":"Centro-Oeste","Total":1921952,"frota_rel":1.8239,"populacao_estimada_2019":7018354,"auto_pop":0.274,"pop_auto":3.652,"value":3.652,"colorValue":0.274,"name":"Goiás"},{"id_estado":12,"nome_estado":"Mato Grosso do Sul","uf":"MS","nome_regiao":"Centro-Oeste","Total":767328,"frota_rel":0.7282,"populacao_estimada_2019":2778986,"auto_pop":0.276,"pop_auto":3.622,"value":3.622,"colorValue":0.276,"name":"Mato Grosso do Sul"},{"id_estado":11,"nome_estado":"Minas Gerais","uf":"MG","nome_regiao":"Sudeste","Total":6491804,"frota_rel":6.1606,"populacao_estimada_2019":21168791,"auto_pop":0.307,"pop_auto":3.261,"value":3.261,"colorValue":0.307,"name":"Minas Gerais"},{"id_estado":23,"nome_estado":"Rio Grande do Sul","uf":"RS","nome_regiao":"Sul","Total":4450175,"frota_rel":4.2231,"populacao_estimada_2019":11377239,"auto_pop":0.391,"pop_auto":2.557,"value":2.557,"colorValue":0.391,"name":"Rio Grande do Sul"},{"id_estado":18,"nome_estado":"Paraná","uf":"PR","nome_regiao":"Sul","Total":4596143,"frota_rel":4.3616,"populacao_estimada_2019":11433957,"auto_pop":0.402,"pop_auto":2.488,"value":2.488,"colorValue":0.402,"name":"Paraná"},{"id_estado":26,"nome_estado":"São Paulo","uf":"SP","nome_regiao":"Sudeste","Total":18837507,"frota_rel":17.8764,"populacao_estimada_2019":45919049,"auto_pop":0.41,"pop_auto":2.438,"value":2.438,"colorValue":0.41,"name":"São Paulo"},{"id_estado":24,"nome_estado":"Santa Catarina","uf":"SC","nome_regiao":"Sul","Total":3069336,"frota_rel":2.9127,"populacao_estimada_2019":7164788,"auto_pop":0.428,"pop_auto":2.334,"value":2.334,"colorValue":0.428,"name":"Santa Catarina"},{"id_estado":7,"nome_estado":"Distrito Federal","uf":"DF","nome_regiao":"Centro-Oeste","Total":1335722,"frota_rel":1.2676,"populacao_estimada_2019":3015268,"auto_pop":0.443,"pop_auto":2.257,"value":2.257,"colorValue":0.443,"name":"Distrito Federal"}],"type":"treemap"}],"xAxis":{"type":"category","title":{"text":"nome_estado"},"categories":null}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
-<hr />
+<div id="htmlwidget-ed363fbf710d3fee7b53" style="width:100%;height:600px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ed363fbf710d3fee7b53">{"x":{"hc_opts":{"title":{"text":"Quantidade de habitantes por automóveis por estado"},"yAxis":{"title":{"text":[]},"type":"linear"},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}}},"colorAxis":{"auxpar":null},"series":[{"group":"group","data":[{"id_estado":10,"nome_estado":"Maranhão","uf":"MA","nome_regiao":"Nordeste","Total":460667,"frota_rel":0.4372,"populacao_estimada_2019":7075181,"auto_pop":0.065,"pop_auto":15.359,"value":15.359,"colorValue":0.065,"name":"Maranhão"},{"id_estado":14,"nome_estado":"Pará","uf":"PA","nome_regiao":"Norte","Total":635618,"frota_rel":0.6032,"populacao_estimada_2019":8602865,"auto_pop":0.074,"pop_auto":13.535,"value":13.535,"colorValue":0.074,"name":"Pará"},{"id_estado":3,"nome_estado":"Amazonas","uf":"AM","nome_regiao":"Norte","Total":414442,"frota_rel":0.3933,"populacao_estimada_2019":4144597,"auto_pop":0.1,"pop_auto":10,"value":10,"colorValue":0.1,"name":"Amazonas"},{"id_estado":4,"nome_estado":"Amapá","uf":"AP","nome_regiao":"Norte","Total":86361,"frota_rel":0.082,"populacao_estimada_2019":845731,"auto_pop":0.102,"pop_auto":9.793,"value":9.793,"colorValue":0.102,"name":"Amapá"},{"id_estado":1,"nome_estado":"Acre","uf":"AC","nome_regiao":"Norte","Total":92296,"frota_rel":0.0876,"populacao_estimada_2019":881935,"auto_pop":0.105,"pop_auto":9.556,"value":9.556,"colorValue":0.105,"name":"Acre"},{"id_estado":2,"nome_estado":"Alagoas","uf":"AL","nome_regiao":"Nordeste","Total":376726,"frota_rel":0.3575,"populacao_estimada_2019":3337357,"auto_pop":0.113,"pop_auto":8.859,"value":8.859,"colorValue":0.113,"name":"Alagoas"},{"id_estado":17,"nome_estado":"Piauí","uf":"PI","nome_regiao":"Nordeste","Total":382658,"frota_rel":0.3631,"populacao_estimada_2019":3273227,"auto_pop":0.117,"pop_auto":8.554,"value":8.554,"colorValue":0.117,"name":"Piauí"},{"id_estado":5,"nome_estado":"Bahia","uf":"BA","nome_regiao":"Nordeste","Total":1919392,"frota_rel":1.8215,"populacao_estimada_2019":14873064,"auto_pop":0.129,"pop_auto":7.749,"value":7.749,"colorValue":0.129,"name":"Bahia"},{"id_estado":22,"nome_estado":"Roraima","uf":"RR","nome_regiao":"Norte","Total":79091,"frota_rel":0.0751,"populacao_estimada_2019":605761,"auto_pop":0.131,"pop_auto":7.659,"value":7.659,"colorValue":0.131,"name":"Roraima"},{"id_estado":6,"nome_estado":"Ceará","uf":"CE","nome_regiao":"Nordeste","Total":1199972,"frota_rel":1.1387,"populacao_estimada_2019":9132078,"auto_pop":0.131,"pop_auto":7.61,"value":7.61,"colorValue":0.131,"name":"Ceará"},{"id_estado":15,"nome_estado":"Paraíba","uf":"PB","nome_regiao":"Nordeste","Total":556701,"frota_rel":0.5283,"populacao_estimada_2019":4018127,"auto_pop":0.139,"pop_auto":7.218,"value":7.218,"colorValue":0.139,"name":"Paraíba"},{"id_estado":27,"nome_estado":"Tocantins","uf":"TO","nome_regiao":"Centro-Oeste","Total":225555,"frota_rel":0.214,"populacao_estimada_2019":1572866,"auto_pop":0.143,"pop_auto":6.973,"value":6.973,"colorValue":0.143,"name":"Tocantins"},{"id_estado":16,"nome_estado":"Pernambuco","uf":"PE","nome_regiao":"Nordeste","Total":1376259,"frota_rel":1.306,"populacao_estimada_2019":9557071,"auto_pop":0.144,"pop_auto":6.944,"value":6.944,"colorValue":0.144,"name":"Pernambuco"},{"id_estado":25,"nome_estado":"Sergipe","uf":"SE","nome_regiao":"Nordeste","Total":343535,"frota_rel":0.326,"populacao_estimada_2019":2298696,"auto_pop":0.149,"pop_auto":6.691,"value":6.691,"colorValue":0.149,"name":"Sergipe"},{"id_estado":20,"nome_estado":"Rio Grande do Norte","uf":"RN","nome_regiao":"Nordeste","Total":582857,"frota_rel":0.5531,"populacao_estimada_2019":3506853,"auto_pop":0.166,"pop_auto":6.017,"value":6.017,"colorValue":0.166,"name":"Rio Grande do Norte"},{"id_estado":21,"nome_estado":"Rondônia","uf":"RO","nome_regiao":"Norte","Total":300261,"frota_rel":0.2849,"populacao_estimada_2019":1777225,"auto_pop":0.169,"pop_auto":5.919,"value":5.919,"colorValue":0.169,"name":"Rondônia"},{"id_estado":13,"nome_estado":"Mato Grosso","uf":"MT","nome_regiao":"Centro-Oeste","Total":771113,"frota_rel":0.7318,"populacao_estimada_2019":3484466,"auto_pop":0.221,"pop_auto":4.519,"value":4.519,"colorValue":0.221,"name":"Mato Grosso"},{"id_estado":8,"nome_estado":"Espírito Santo","uf":"ES","nome_regiao":"Sudeste","Total":994543,"frota_rel":0.9438,"populacao_estimada_2019":4018650,"auto_pop":0.247,"pop_auto":4.041,"value":4.041,"colorValue":0.247,"name":"Espírito Santo"},{"id_estado":19,"nome_estado":"Rio de Janeiro","uf":"RJ","nome_regiao":"Sudeste","Total":4659293,"frota_rel":4.4216,"populacao_estimada_2019":17264943,"auto_pop":0.27,"pop_auto":3.705,"value":3.705,"colorValue":0.27,"name":"Rio de Janeiro"},{"id_estado":9,"nome_estado":"Goiás","uf":"GO","nome_regiao":"Centro-Oeste","Total":1921952,"frota_rel":1.8239,"populacao_estimada_2019":7018354,"auto_pop":0.274,"pop_auto":3.652,"value":3.652,"colorValue":0.274,"name":"Goiás"},{"id_estado":12,"nome_estado":"Mato Grosso do Sul","uf":"MS","nome_regiao":"Centro-Oeste","Total":767328,"frota_rel":0.7282,"populacao_estimada_2019":2778986,"auto_pop":0.276,"pop_auto":3.622,"value":3.622,"colorValue":0.276,"name":"Mato Grosso do Sul"},{"id_estado":11,"nome_estado":"Minas Gerais","uf":"MG","nome_regiao":"Sudeste","Total":6491804,"frota_rel":6.1606,"populacao_estimada_2019":21168791,"auto_pop":0.307,"pop_auto":3.261,"value":3.261,"colorValue":0.307,"name":"Minas Gerais"},{"id_estado":23,"nome_estado":"Rio Grande do Sul","uf":"RS","nome_regiao":"Sul","Total":4450175,"frota_rel":4.2231,"populacao_estimada_2019":11377239,"auto_pop":0.391,"pop_auto":2.557,"value":2.557,"colorValue":0.391,"name":"Rio Grande do Sul"},{"id_estado":18,"nome_estado":"Paraná","uf":"PR","nome_regiao":"Sul","Total":4596143,"frota_rel":4.3616,"populacao_estimada_2019":11433957,"auto_pop":0.402,"pop_auto":2.488,"value":2.488,"colorValue":0.402,"name":"Paraná"},{"id_estado":26,"nome_estado":"São Paulo","uf":"SP","nome_regiao":"Sudeste","Total":18837507,"frota_rel":17.8764,"populacao_estimada_2019":45919049,"auto_pop":0.41,"pop_auto":2.438,"value":2.438,"colorValue":0.41,"name":"São Paulo"},{"id_estado":24,"nome_estado":"Santa Catarina","uf":"SC","nome_regiao":"Sul","Total":3069336,"frota_rel":2.9127,"populacao_estimada_2019":7164788,"auto_pop":0.428,"pop_auto":2.334,"value":2.334,"colorValue":0.428,"name":"Santa Catarina"},{"id_estado":7,"nome_estado":"Distrito Federal","uf":"DF","nome_regiao":"Centro-Oeste","Total":1335722,"frota_rel":1.2676,"populacao_estimada_2019":3015268,"auto_pop":0.443,"pop_auto":2.257,"value":2.257,"colorValue":0.443,"name":"Distrito Federal"}],"type":"treemap"}],"xAxis":{"type":"category","title":{"text":"nome_estado"},"categories":null}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+<p><br /></p>
 <p>O título pode soar estranho e esse gráfico pode parecer confuso numa primeira olhada _ e eu sei que estou violando regras da visualização de dados, de tornar o gráfico o mais auto-explicativo possível _ mas é que aqui temos duas informações inversas, e queria mostrá-las dessa forma.</p>
-<p>As cores mostram uma tendência, <strong>quanto mais escuro, mais o estado tem veículos por habitante</strong> (população estimada de 2019), então no caso, o estado que é o primeiro é o Distrito Federal, seguido por Santa Catarina, São Paulo e Paraná; Maranhão é o último e o Pará o penúltimo.</p>
+<p>As cores mostram uma tendência: <strong>quanto mais escuro, mais o estado tem veículos por habitante</strong> (população estimada de 2019), então no caso, o estado que é o primeiro é o Distrito Federal, seguido por Santa Catarina, São Paulo e Paraná; Maranhão é o último e o Pará o penúltimo.</p>
 <p>Os estados com os <strong>quadros maiores</strong> são o inverso, ou seja, os que <strong>têm menos carros por habitante</strong>. Mas ao colocar o mouse no gráfico, é possível ver a informação, por exemplo, no Maranhão, <code>temos um automóvel para cada 15 pessoas</code>, enquanto que no Distrito Federal <code>temos um automóvel para cada 2 pessoas</code>.</p>
-<p><br /> <strong>8. Plotar gráfico com a distribuição da frota por tipo de veículos nos estados.</strong></p>
+<div style="color:#006400; font-size:16px; margin: 24px 0px;">
+<b> 8. Plotar gráfico com a distribuição da frota por tipo de veículos nos estados. </b>
+</div>
 <p>Para analisar as frotas por estados, temos a dificuldade de termos 27 deles e apresentar a todos. Portanto teremos que dar um jeito de passar o valor do estado que queremos analisar (no caso apenas a UF), e retornar seus dados. Para esta análise, vamos apenas mostrar o estado de São Paulo.</p>
 <p>Antes de tudo vamos criar um novo dataframe, agrupando os dados.</p>
-<hr />
+<p><br /></p>
 <pre class="r"><code>#df_frotas[, 3:28]
 #names(df_frotas)
 
@@ -840,7 +794,7 @@ dataframeEstado &lt;- function(df, uf = &#39;SP&#39;){
   t_df$total &lt;- sapply(t_df$total, as.numeric) # converte os valores em formato numérico
   t_df &lt;- cbind(tipo = rownames(t_df), t_df) # criar coluna com os tipos
   rownames(t_df) &lt;- NULL # zerar índice
-  t_df &lt;- t_df[t_df$total &gt; 0,] # não retornar valores zerados
+  t_df &lt;- t_df[t_df$total &gt; 50000,] # não retornar valores zerados
   return(t_df)
 }
 
@@ -879,11 +833,23 @@ graficoEstado &lt;- function(df, uf = &#39;SP&#39;){
 
 
 graficoEstado(df_frotas_estados, &#39;SP&#39;)</code></pre>
-<div id="htmlwidget-30015f5bb092b47805d0" style="width:100%;height:500px;" class="highchart html-widget"></div>
-<script type="application/json" data-for="htmlwidget-30015f5bb092b47805d0">{"x":{"hc_opts":{"title":{"text":"Total por tipo de veículos por estado: São Paulo"},"yAxis":{"title":{"text":"total","enabled":false,"labels":{"format":"{value: %b}"},"style":{"color":"#333333","fontFamily":"Arial"}},"type":"linear"},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}}},"series":[{"group":"group","data":[{"tipo":"Automovel","total":18837507,"y":18837507,"name":"Automovel"},{"tipo":"Motocicleta","total":4837946,"y":4837946,"name":"Motocicleta"},{"tipo":"Caminhonete","total":2062611,"y":2062611,"name":"Caminhonete"},{"tipo":"Camioneta","total":1299210,"y":1299210,"name":"Camioneta"},{"tipo":"Motoneta","total":971076,"y":971076,"name":"Motoneta"},{"tipo":"Caminhao","total":689710,"y":689710,"name":"Caminhao"},{"tipo":"Reboque","total":377140,"y":377140,"name":"Reboque"},{"tipo":"Utilitario","total":329382,"y":329382,"name":"Utilitario"},{"tipo":"Semirreboque","total":263104,"y":263104,"name":"Semirreboque"},{"tipo":"Caminhao trator","total":184170,"y":184170,"name":"Caminhao trator"},{"tipo":"Onibus","total":165279,"y":165279,"name":"Onibus"},{"tipo":"Micro-onibus","total":124755,"y":124755,"name":"Micro-onibus"},{"tipo":"Ciclomotor","total":57109,"y":57109,"name":"Ciclomotor"},{"tipo":"Trator de rodas","total":11408,"y":11408,"name":"Trator de rodas"},{"tipo":"Triciclo","total":5719,"y":5719,"name":"Triciclo"},{"tipo":"Outros","total":2634,"y":2634,"name":"Outros"},{"tipo":"Side car","total":1911,"y":1911,"name":"Side car"},{"tipo":"Chassi plataforma","total":567,"y":567,"name":"Chassi plataforma"},{"tipo":"Quadriciclo","total":81,"y":81,"name":"Quadriciclo"},{"tipo":"Trator de esteiras","total":57,"y":57,"name":"Trator de esteiras"},{"tipo":"Bonde","total":24,"y":24,"name":"Bonde"}],"type":"bar"}],"xAxis":{"type":"category","title":{"text":"Tipos de veículos"},"style":{"color":"#333333","fontFamily":"Arial"}},"subtitle":{"text":"Fonte: Denatran (março/2020)"}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Arial","Roboto"],"debug":false},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-ae3faf9e5a37bb68b0a6" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ae3faf9e5a37bb68b0a6">{"x":{"hc_opts":{"title":{"text":"Total por tipo de veículos por estado: São Paulo"},"yAxis":{"title":{"text":"total","enabled":false,"labels":{"format":"{value: %b}"},"style":{"color":"#333333","fontFamily":"Arial"}},"type":"linear"},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}}},"series":[{"group":"group","data":[{"tipo":"Automovel","total":18837507,"y":18837507,"name":"Automovel"},{"tipo":"Motocicleta","total":4837946,"y":4837946,"name":"Motocicleta"},{"tipo":"Caminhonete","total":2062611,"y":2062611,"name":"Caminhonete"},{"tipo":"Camioneta","total":1299210,"y":1299210,"name":"Camioneta"},{"tipo":"Motoneta","total":971076,"y":971076,"name":"Motoneta"},{"tipo":"Caminhao","total":689710,"y":689710,"name":"Caminhao"},{"tipo":"Reboque","total":377140,"y":377140,"name":"Reboque"},{"tipo":"Utilitario","total":329382,"y":329382,"name":"Utilitario"},{"tipo":"Semirreboque","total":263104,"y":263104,"name":"Semirreboque"},{"tipo":"Caminhao trator","total":184170,"y":184170,"name":"Caminhao trator"},{"tipo":"Onibus","total":165279,"y":165279,"name":"Onibus"},{"tipo":"Micro-onibus","total":124755,"y":124755,"name":"Micro-onibus"},{"tipo":"Ciclomotor","total":57109,"y":57109,"name":"Ciclomotor"}],"type":"bar"}],"xAxis":{"type":"category","title":{"text":"Tipos de veículos"},"style":{"color":"#333333","fontFamily":"Arial"}},"subtitle":{"text":"Fonte: Denatran (março/2020)"}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Arial","Roboto"],"debug":false},"evals":[],"jsHooks":[]}</script>
+<p><br /></p>
+<p>Para encerrarmos nossa análise, temos a quantidade de veículos por tipo no estado de São Paulo. Mais de <strong>18 milhões de automóveis</strong>, seguida por motocicleta, caminhonete, camioneta, motoneta e caminhão. Apenas estão plotados no gráfico os veículos cujos valores foram maiores do que 50.000 unidades.</p>
 <hr />
-<p><br /> Para encerrarmos nossa análise, temos a quantidade de veículos por tipo no estado de São Paulo. Mais de <strong>18 milhões de automóveis</strong>, seguida por motocicleta, caminhonete, camioneta, motoneta e caminhão. Devido as diferenças de proporção dos valores das barras, os veículos com menos de 100.000 unidades podem não aparecer no gráfico, apenas seus nomes _ apenas os que tinham valor zero foram dispensados.</p>
-<hr />
+</div>
+</div>
+</div>
+<div id="fontes-de-dados-e-referências" class="section level2">
+<h2>Fontes de dados e referências</h2>
+<p><br /></p>
+<ul>
+<li>Os dados foram coletados do site do - <a href="http://infraestrutura.gov.br/relatorios-estatisticos/115-portal-denatran/9484-frota-de-ve%C3%ADculos-2020.html">Denatran</a> (Departamento Nacional de Trânsito), que os publicou em janeiro de 2020, com atualizações no final de março do mesmo ano;</li>
+<li>Os dados das cidades foram coletados do repositório <a href="https://github.com/chandez/Estados-Cidades-IBGE">chandez/Estados-Cidades-IBGE</a></li>
+<li>Os dados da população foram retirados do site do IBGE <a href="https://www.ibge.gov.br/estatisticas/sociais/populacao/9103-estimativas-de-populacao.html?=&amp;t=downloads">Estimativas da População</a>.</li>
+</ul>
+<p><br /></p>
 </div>
 
 
