@@ -1,0 +1,270 @@
+---
+title: "Eleições Gerais 2018 - Dep Estadual - Americana / SP"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+    
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+#Bibliotecas
+library(data.table)
+library(sqldf)
+library(highcharter)
+library(dplyr)
+library(knitr)
+library(rmarkdown)
+library(DT)
+library(leaflet)
+library(leaflet.extras)
+```
+
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+# Carregar Dados
+df_locais_votacao <- read.csv('data/eleicoes_2018/base_locais_votacao.csv', sep=';')
+df_candidaturas <- read.csv('data/eleicoes_2018/base_candidatura_eleicao_geral_2018_dep_estadual.csv', sep=';')
+df_partidos <- read.csv('data/eleicoes_2018/base_partidos.csv', sep = ';')
+df_votacao <- read.csv('data/eleicoes_2018/base_votacao_eleicao_geral_t1_2018_dep_estadual.csv', sep = ';')
+df_zona_secao_locais <- read.csv('data/eleicoes_2018/base_zona_secao_locais.csv', sep=';')
+```
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+#str(df_locais_votacao)
+head(df_locais_votacao, n=5)
+```
+
+---
+
+## Análise dos partidos
+
+Aqui teremos uma tabela mostrando a quantidade de votos que cada partido (e seus espectros políticos) recebeu na cidade, bem como os votos brancos e nulos.
+
+<br />
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+
+### Análise dos bairros
+### Análise das candidaturas
+```
+
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+
+sql <- "SELECT SUM(v.qt_votos) as Votos, p.nr_legenda as Legenda, p.sigla as Sigla, p.espectro as EspectroAbrev, p.espectro_completo as Espectro
+        FROM df_partidos p
+        LEFT JOIN df_votacao v ON v.nr_legenda = p.nr_legenda
+        GROUP BY p.nr_legenda, p.sigla, p.espectro, p.espectro_completo
+        ORDER BY Votos DESC"
+df_gr_votos_partido_espectro <- sqldf(sql)
+
+df_gr_votos_partido <- df_gr_votos_partido_espectro %>% group_by(Sigla) %>% summarise(total = sum(Votos)) %>% arrange(desc(total))
+
+#paged_table(df_gr_votos_partido, options = list(rows.print = 10))
+
+datatable(df_gr_votos_partido_espectro[,c("Sigla", "Espectro", "Votos")], options = list(pageLength = 7, dom = 'tip', autoWidth = TRUE)) 
+
+```
+
+
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+# Gráfico
+df_gr_votos_partido %>% 
+  hchart(type="column", hcaes(x= Sigla, y=total), name="Votos") %>%
+  hc_title(text = 'Votos para deputado estadual por partido') %>%
+  hc_subtitle(text = "Fonte: TSE ") %>%
+  hc_yAxis(title = list(text = "Votos")) %>%
+  hc_xAxis(title = list(text = "Partidos"), style = list(color = '#333333', fontFamily = "Arial")) %>%
+  hc_add_theme(hc_theme_ffx()) %>%
+  hc_size(NULL, 500)
+```
+
+<br />
+
+---
+
+## Análise por espectro político
+
+Vamos agora ampliar a visão dos votos, demonstrando como os habitantes de Americana votaram em termos de espectro político.
+
+<br />
+
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+
+sql <- "SELECT 
+          SUM(v.qt_votos) as Votos, p.nr_legenda as Legenda, p.sigla as Sigla, p.cd_espectro, p.espectro as EspectroAbrev, p.espectro_completo as Espectro
+        FROM df_partidos p 
+        LEFT JOIN df_votacao v ON v.nr_legenda = p.nr_legenda
+        WHERE p.espectro <> ''
+        GROUP BY p.nr_legenda, p.sigla, p.cd_espectro, p.espectro, p.espectro_completo
+        ORDER BY p.cd_espectro ASC, Votos DESC"
+sqldf(sql) -> df_gr_votos_partido_espectro
+
+```
+
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+
+df_gr_votos_espectro <- df_gr_votos_partido_espectro %>% 
+  group_by(Espectro) %>% 
+  summarise(Total = sum(Votos)) %>% 
+  arrange(desc(Total))
+
+df_gr_votos_espectro
+
+```
+
+
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+datatable(df_gr_votos_espectro, options = list(autoWidth = TRUE))
+```
+
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+
+#colors <- c("#a13942", "#b57076", "#c9a6a9", "#717171", "#7b9cab", "#4b8dab", "#1c7fac")
+colors <- c("#717171", "#7b9cab", "#c9a6a9", "#4b8dab", "#b57076", "#1c7fac", "#a13942")
+
+df_gr_votos_partido_espectro %>% 
+  arrange(cd_espectro, desc(Votos)) %>%
+  hchart(type="column", hcaes(x=Sigla, y=Votos, name=Espectro, group=Espectro)) %>%
+  hc_plotOptions(column = list(grouping = FALSE)) %>%
+  hc_tooltip(pointFormat = "Votos: {point.Votos:,.0f} <br /> Espectro: <b>{point.Espectro}</b>", sort = FALSE, table = FALSE) %>% 
+  hc_legend(align = "center", verticalAlign = "bottom", format = "{point.Espectro}") %>% 
+  hc_title(text = 'Votos para deputado estadual por partido e por espectro político') %>%
+  hc_subtitle(text = "Fonte: TSE ") %>%
+  hc_yAxis(title = list(text = "Votos")) %>%
+  hc_xAxis(title = list(enabled=FALSE)) %>%
+  hc_add_theme(hc_theme_google()) %>%
+  hc_colors(colors) %>%
+  hc_size(NULL, 600) %>%
+  hc_credits(enabled = TRUE, text = "CuriosiDados", href = "https://heavyrick.github.io/datascience/")
+
+```
+
+<br />
+
+---
+
+## Análise geral por bairros
+
+Agora vamos para uma análise territorial, tentando entender como os votos foram distribuídos pela cidade. Americana possui duas zonas eleitorais, e dentro de cada zona dezenas de seções, distribuídas em 58 escolas (dentre algumas faculdades) da cidade.
+
+<br />
+
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+
+sql <- "SELECT SUM(v.qt_votos) as Votos, l.cd_bairro, l.nm_bairro, l.area_planejamento as AP
+        FROM df_votacao v
+        LEFT JOIN df_zona_secao_locais z ON v.nr_zona = z.nr_zona AND v.nr_secao = z.nr_secao
+        LEFT JOIN df_locais_votacao l ON l.id = z.id_local_votacao
+        GROUP BY l.cd_bairro, l.nm_bairro, l.area_planejamento
+        ORDER BY Votos DESC"
+df_gr_bairro <- sqldf(sql)
+
+datatable(df_gr_bairro[,c("nm_bairro", "AP", "Votos")], 
+          colnames = c('Bairro' = 'nm_bairro'), 
+          options = list(autoWidth = TRUE))
+
+```
+
+
+<br />
+
+---
+
+## Análise de votos do PSOL por bairros
+
+Agora vamos verificar as localidades onde o PSOL recebeu votos para deputado estadual.
+
+<br />
+
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+
+sql <- "SELECT SUM(v.qt_votos) as Votos, l.cd_bairro, l.nm_bairro, l.area_planejamento as AP
+        FROM df_votacao v
+        LEFT JOIN df_zona_secao_locais z ON v.nr_zona = z.nr_zona AND v.nr_secao = z.nr_secao
+        LEFT JOIN df_locais_votacao l ON l.id = z.id_local_votacao
+        WHERE v.nr_legenda = 50
+        GROUP BY l.cd_bairro, l.nm_bairro, l.area_planejamento
+        ORDER BY Votos DESC"
+
+df_gr_bairro_psol <- sqldf(sql)
+
+datatable(df_gr_bairro_psol[,c("nm_bairro", "AP", "Votos")], 
+          colnames = c('Bairro' = 'nm_bairro'), 
+          options = list(autoWidth = TRUE))
+
+```
+
+
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+
+df_gr_bairro_psol %>% 
+  arrange(desc(Votos)) %>%
+  hchart(type="column", hcaes(x=nm_bairro, y=Votos, group=AP)) %>%
+  hc_plotOptions(column = list(grouping = FALSE)) %>%
+  #hc_tooltip(pointFormat = "Votos: {point.Votos:,.0f} <br /> Espectro: <b>{point.Espectro}</b>", sort = FALSE, table = FALSE) %>% 
+  #hc_legend(align = "center", verticalAlign = "bottom", format = "{point.Espectro}") %>% 
+  hc_title(text = 'Votos para deputado estadual do PSOL por bairro e APs') %>%
+  hc_subtitle(text = "Fonte: TSE ") %>%
+  hc_yAxis(title = list(text = "Votos")) %>%
+  hc_xAxis(title = list(enabled=FALSE)) %>%
+  hc_add_theme(hc_theme_economist()) %>%
+  #hc_colors(colors) %>%
+  hc_size(NULL, 600) %>%
+  hc_credits(enabled = TRUE, text = "CuriosiDados", href = "https://heavyrick.github.io/datascience/")
+
+```
+
+
+
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+
+sql <- "SELECT 
+          SUM(v.qt_votos) as Votos, l.ds_local, l.latitude as lat, l.longitude as lng, l.nm_bairro, v.nr_legenda 
+        FROM df_votacao v
+        LEFT JOIN df_zona_secao_locais z ON v.nr_zona = z.nr_zona AND v.nr_secao = z.nr_secao
+        LEFT JOIN df_locais_votacao l ON l.id = z.id_local_votacao
+        WHERE v.nr_legenda = 50
+        GROUP BY 
+          l.ds_local, l.latitude, l.longitude, l.nm_bairro, v.nr_legenda
+        ORDER BY Votos DESC"
+df_gr_locais_psol <- sqldf(sql)
+
+```
+
+<br />
+
+O mapa a seguir é para dar uma dimensão mais visual dessa distribuição, basta clicar em cada ícone no mapa para visualizar as informações.
+
+<br />
+
+```{r message=FALSE, warning=FALSE, echo=FALSE, out.width = '100%'}
+mapa_votos <- function(df) {
+leaflet(data = df, width ='100%') %>% addTiles() %>%
+  addMarkers(~lng, ~lat, 
+             popup = paste(
+                "<p><b>", as.character(df$ds_local), "</b> <br />",
+                "Bairro: ", as.character(df$nm_bairro), " </p>",
+                "<p><b>", as.character(df$Votos), " Votos</b> <br /> </p>"
+             ), 
+             label = paste("Votos: ", as.character(df$Votos)),
+             labelOptions = labelOptions(noHide = F, direction = "bottom",
+                                         style = list(
+                                           "color" = "red",
+                                           "font-family" = "serif",
+                                           "font-style" = "bold",
+                                           "box-shadow" = "3px 3px rgba(0,0,0,0.25)",
+                                           "font-size" = "12px",
+                                           "border-color" = "rgba(0,0,0,0.5)"
+                                         )))
+}
+
+mapa_votos(df_gr_locais_psol)
+```
+
+
+
+---
+
+## Análise de votos do espectro à esquerda por bairros
+
+
