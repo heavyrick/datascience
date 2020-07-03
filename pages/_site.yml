@@ -12,6 +12,11 @@ navbar:
         href: frota_veiculos.html
       - text: "Focos Queimadas"
         href: focos_queimadas.html
+  right:
+  - text: "Eleições"
+    menu:
+      - text: "Gerais - 2018"
+        href: eleicoes_2018_americana.html
 output:
   html_document:
     theme: flatly
