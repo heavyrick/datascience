@@ -17,6 +17,8 @@ navbar:
     menu:
       - text: "Gerais - 2018"
         href: eleicoes_2018_americana.html
+      - text: "Municipais - 2016"
+        href: eleicoes_2016_americana.html
 output:
   html_document:
     theme: flatly

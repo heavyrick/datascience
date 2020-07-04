@@ -1,11 +1,11 @@
 ---
-title: "Eleições Gerais 2018 - Dep Estadual - Americana / SP"
+title: "Eleições Municipais 2016 - Vereadores - Americana / SP"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-    
+
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 #Bibliotecas
 library(data.table)
@@ -21,21 +21,20 @@ library(leaflet.extras)
 
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 # Carregar Dados
+df_votacao <- read.csv('data/eleicoes_2016/base_votacao_eleicao_municipal_t1_2016_vereador.csv', sep = ';')
 df_locais_votacao <- read.csv('data/eleicoes_2018/base_locais_votacao.csv', sep=';')
-df_candidaturas <- read.csv('data/eleicoes_2018/base_candidatura_eleicao_geral_2018_dep_estadual.csv', sep=';')
 df_partidos <- read.csv('data/eleicoes_2018/base_partidos.csv', sep = ';')
-df_votacao <- read.csv('data/eleicoes_2018/base_votacao_eleicao_geral_t1_2018_dep_estadual.csv', sep = ';')
 df_zona_secao_locais <- read.csv('data/eleicoes_2018/base_zona_secao_locais.csv', sep=';')
 ```
 
 ```{r message=FALSE, warning=FALSE, include=FALSE}
 #str(df_locais_votacao)
-head(df_locais_votacao, n=5)
+head(df_votacao, n=5)
 ```
 
 ## Introdução
 
-Nesta página estão contidas a visualização das informações das *Eleições gerais de 2018, para o cargo de deputado estadual cujos votos foram dados por eleitores e eleitoras da cidade de Americana / SP*. O objetivo é conferir aos interessados a possibilidade de análise de desempenho dos partidos no geral, e de forma mais direcionada do PSOL e do campo da Esquerda. 
+Nesta página estão contidas a visualização das informações das *Eleições municipais de 2016, para o cargo de vereador cujos votos foram dados por eleitores e eleitoras da cidade de Americana / SP*. O objetivo é conferir aos interessados a possibilidade de análise de desempenho dos partidos no geral, e de forma mais direcionada ao campo da Esquerda. 
 
 Os dados são públicos e foram retirados do portal do TSE, tratados e organizados de forma cuidadosa por mim, e espero que atendam as necessidades da militância. Dúvidas e sugestões só entrar em contato, obrigado!
 
@@ -51,39 +50,31 @@ Aqui teremos uma tabela mostrando a quantidade de votos que cada partido (e seus
 
 <br />
 
-```{r message=FALSE, warning=FALSE, include=FALSE}
-
-### Análise dos bairros
-### Análise das candidaturas
-```
-
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 
 sql <- "SELECT SUM(v.qt_votos) as Votos, p.nr_legenda as Legenda, p.sigla as Sigla, p.espectro as EspectroAbrev, p.espectro_completo as Espectro
         FROM df_partidos p
         LEFT JOIN df_votacao v ON v.nr_legenda = p.nr_legenda
         GROUP BY p.nr_legenda, p.sigla, p.espectro, p.espectro_completo
+        HAVING Votos > 0
         ORDER BY Votos DESC"
 df_gr_votos_partido_espectro <- sqldf(sql)
 
 df_gr_votos_partido <- df_gr_votos_partido_espectro %>% group_by(Sigla) %>% summarise(total = sum(Votos)) %>% arrange(desc(total))
 
-#paged_table(df_gr_votos_partido, options = list(rows.print = 10))
-
 datatable(df_gr_votos_partido_espectro[,c("Sigla", "Espectro", "Votos")], options = list(pageLength = 7, dom = 'tip', autoWidth = TRUE)) 
 
 ```
-
 
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 # Gráfico
 df_gr_votos_partido %>% 
   hchart(type="column", hcaes(x= Sigla, y=total), name="Votos") %>%
-  hc_title(text = 'Votos para deputado estadual por partido') %>%
+  hc_title(text = 'Votos para vereador por partido') %>%
   hc_subtitle(text = "Fonte: TSE ") %>%
   hc_yAxis(title = list(text = "Votos")) %>%
   hc_xAxis(title = list(enabled=FALSE)) %>%
-  hc_add_theme(hc_theme_ffx()) %>%
+  hc_add_theme(hc_theme_google()) %>%
   hc_size(NULL, 500)
 ```
 
@@ -111,7 +102,6 @@ sqldf(sql) -> df_gr_votos_partido_espectro
 
 ```
 
-
 ```{r message=FALSE, warning=FALSE, include=FALSE}
 
 df_gr_votos_espectro <- df_gr_votos_partido_espectro %>% 
@@ -120,7 +110,6 @@ df_gr_votos_espectro <- df_gr_votos_partido_espectro %>%
   arrange(desc(Total))
 
 df_gr_votos_espectro
-
 ```
 
 
@@ -139,7 +128,7 @@ df_gr_votos_partido_espectro %>%
   hc_plotOptions(column = list(grouping = FALSE)) %>%
   hc_tooltip(pointFormat = "Votos: {point.Votos:,.0f} <br /> Espectro: <b>{point.Espectro}</b>", sort = FALSE, table = FALSE) %>% 
   hc_legend(align = "center", verticalAlign = "bottom", format = "{point.Espectro}") %>% 
-  hc_title(text = 'Votos para deputado estadual por partido e por espectro político') %>%
+  hc_title(text = 'Votos para vereador por partido e por espectro político') %>%
   hc_subtitle(text = "Fonte: TSE ") %>%
   hc_yAxis(title = list(text = "Votos")) %>%
   hc_xAxis(title = list(enabled=FALSE)) %>%
@@ -205,31 +194,34 @@ datatable(df_gr_bairro_partido[,c("nm_bairro", "sigla", "Espectro", "AP", "Votos
 
 ```
 
+
 <br />
 
 ---
 
-## Análise de votos do PSOL por bairros
+## Análise de votos do espectro à esquerda por bairros
 
-Agora vamos verificar as localidades onde o PSOL recebeu votos para deputado estadual.
+Nestas visualizações a seguir, vamos somar os votos dos espectros à esquerda: **Extrema Esquerda, Esquerda e Centro Esquerda**.
 
 <br />
 
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 
-sql <- "SELECT SUM(v.qt_votos) as Votos, l.cd_bairro, l.nm_bairro, l.area_planejamento as AP
+sql <- "SELECT 
+          SUM(v.qt_votos) as Votos, l.cd_bairro, l.nm_bairro, l.area_planejamento as AP
         FROM df_votacao v
+        LEFT JOIN df_partidos p ON p.nr_legenda = v.nr_legenda
         LEFT JOIN df_zona_secao_locais z ON v.nr_zona = z.nr_zona AND v.nr_secao = z.nr_secao
         LEFT JOIN df_locais_votacao l ON l.id = z.id_local_votacao
-        WHERE v.nr_legenda = 50
+        WHERE p.espectro IN ('EE', 'CE', 'E')
         GROUP BY l.cd_bairro, l.nm_bairro, l.area_planejamento
         HAVING Votos > 10
         ORDER BY Votos DESC"
 
-df_gr_bairro_psol <- sqldf(sql)
+df_gr_bairro_esquerda <- sqldf(sql)
 
-datatable(df_gr_bairro_psol[,c("nm_bairro", "AP", "Votos")], 
-          colnames = c('Bairro' = 'nm_bairro'), 
+datatable(df_gr_bairro_esquerda[,c("nm_bairro", "AP", "Votos")], 
+          colnames = c('Bairro' = 'nm_bairro'),
           options = list(autoWidth = TRUE))
 
 ```
@@ -237,13 +229,13 @@ datatable(df_gr_bairro_psol[,c("nm_bairro", "AP", "Votos")],
 
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 
-df_gr_bairro_psol %>% 
+df_gr_bairro_esquerda %>% 
   arrange(desc(Votos)) %>%
   hchart(type="column", hcaes(x=nm_bairro, y=Votos, group=AP)) %>%
   hc_plotOptions(column = list(grouping = FALSE)) %>%
   #hc_tooltip(pointFormat = "Votos: {point.Votos:,.0f} <br /> Espectro: <b>{point.Espectro}</b>", sort = FALSE, table = FALSE) %>% 
   hc_legend(align = "center", verticalAlign = "bottom", format = "{point.AP}") %>% 
-  hc_title(text = 'Votos para deputado estadual do PSOL por bairro e APs') %>%
+  hc_title(text = 'Votos para vereadores dos partidos à esquerda nos bairros e APs') %>%
   hc_subtitle(text = "Fonte: TSE ") %>%
   hc_yAxis(title = list(text = "Votos")) %>%
   hc_xAxis(title = list(enabled=FALSE)) %>%
@@ -254,22 +246,22 @@ df_gr_bairro_psol %>%
 
 ```
 
-
-
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 
 sql <- "SELECT 
-          SUM(v.qt_votos) as Votos, l.ds_local, l.latitude as lat, l.longitude as lng, l.nm_bairro, v.nr_legenda 
+          SUM(v.qt_votos) as Votos, l.ds_local, l.latitude as lat, l.longitude as lng, l.nm_bairro, l.area_planejamento as AP
         FROM df_votacao v
+        LEFT JOIN df_partidos p ON p.nr_legenda = v.nr_legenda
         LEFT JOIN df_zona_secao_locais z ON v.nr_zona = z.nr_zona AND v.nr_secao = z.nr_secao
         LEFT JOIN df_locais_votacao l ON l.id = z.id_local_votacao
-        WHERE v.nr_legenda = 50
+        WHERE p.espectro IN ('EE', 'CE', 'E')
         GROUP BY 
-          l.ds_local, l.latitude, l.longitude, l.nm_bairro, v.nr_legenda
+          l.ds_local, l.latitude, l.longitude, l.nm_bairro, l.area_planejamento
         ORDER BY Votos DESC"
-df_gr_locais_psol <- sqldf(sql)
+df_gr_locais_esquerda <- sqldf(sql)
 
 ```
+
 
 <br />
 
@@ -298,91 +290,10 @@ leaflet(data = df, width ='100%') %>% addTiles() %>%
                                          )))
 }
 
-mapa_votos(df_gr_locais_psol)
-```
-
-<br />
-
----
-
-## Análise de votos do espectro à esquerda por bairros
-
-<br />
-
-```{r message=FALSE, warning=FALSE, echo=FALSE}
-
-sql <- "SELECT SUM(v.qt_votos) as Votos, l.cd_bairro, l.nm_bairro, l.area_planejamento as AP, p.espectro as EspectroAbrev, p.espectro_completo as Espectro
-        FROM df_votacao v
-        LEFT JOIN df_partidos p ON p.nr_legenda = v.nr_legenda
-        LEFT JOIN df_zona_secao_locais z ON v.nr_zona = z.nr_zona AND v.nr_secao = z.nr_secao
-        LEFT JOIN df_locais_votacao l ON l.id = z.id_local_votacao
-        WHERE p.espectro IN ('EE', 'CE', 'E')
-        GROUP BY l.cd_bairro, l.nm_bairro, l.area_planejamento, p.espectro, p.espectro_completo
-        HAVING Votos > 10
-        ORDER BY Votos DESC"
-
-df_gr_bairro_esquerda <- sqldf(sql)
-
-df_gr_bairro_esquerda_ee <- df_gr_bairro_esquerda[df_gr_bairro_esquerda$EspectroAbrev == 'EE', ]
-df_gr_bairro_esquerda_ce <- df_gr_bairro_esquerda[df_gr_bairro_esquerda$EspectroAbrev == 'CE', ]
-df_gr_bairro_esquerda_e <- df_gr_bairro_esquerda[df_gr_bairro_esquerda$EspectroAbrev == 'E', ]
-
-datatable(df_gr_bairro_esquerda[,c("nm_bairro", "Espectro", "AP", "Votos")], 
-          colnames = c('Bairro' = 'nm_bairro'), 
-          options = list(autoWidth = TRUE))
-
+mapa_votos(df_gr_locais_esquerda)
 ```
 
 
-```{r message=FALSE, warning=FALSE, echo=FALSE}
-
-highchart() %>%
-  hc_chart(type = "column") %>% 
-  hc_yAxis(title = list(text = "Votos")) %>%
-  hc_xAxis(title = list(enabled=FALSE), categories = unique(df_gr_bairro_esquerda$nm_bairro)) %>%
-  hc_add_series(name="Extrema Esquerda", df_gr_bairro_esquerda_ee$Votos, color='#670606')%>%
-  hc_add_series(name="Esquerda", df_gr_bairro_esquerda_e$Votos, color='#f21818')%>%
-  hc_add_series(name="Centro Esquerda", df_gr_bairro_esquerda_ce$Votos, color='#f66060')%>%
-  hc_title(text = 'Votos para deputado estadual do espectro à Esquerda') %>%
-  hc_subtitle(text = "Fonte: TSE ") %>%
-  hc_plotOptions(series=list(stacking='normal')) %>%
-  hc_add_theme(hc_theme_ffx()) %>%
-  hc_size(NULL, 600) %>%
-  hc_credits(enabled = TRUE, text = "CuriosiDados", href = "https://heavyrick.github.io/datascience/")
-
-```
-
-<br />
-
-E agora uma visualização mostrando apenas os votos dos espectros à esquerda por AP.
-
-<br />
-
-```{r message=FALSE, warning=FALSE, echo=FALSE}
-
-df_gr_ap_esquerda <- df_gr_bairro_esquerda %>% group_by(AP, Espectro, EspectroAbrev) %>% summarise(Votos = sum(Votos))
-
-df_gr_ap_esquerda_ee <- df_gr_ap_esquerda[df_gr_ap_esquerda$EspectroAbrev == 'EE', ]
-df_gr_ap_esquerda_ce <- df_gr_ap_esquerda[df_gr_ap_esquerda$EspectroAbrev == 'CE', ]
-df_gr_ap_esquerda_e <- df_gr_ap_esquerda[df_gr_ap_esquerda$EspectroAbrev == 'E', ]
-
-highchart() %>%
-  hc_chart(type = "column") %>%
-  hc_xAxis(categories = unique(df_gr_ap_esquerda$AP)) %>%
-  hc_yAxis(title = list(text = "Votos")) %>%
-  hc_add_series(name="Extrema Esquerda", df_gr_ap_esquerda_ee$Votos, color='#670606')%>%
-  hc_add_series(name="Esquerda", df_gr_ap_esquerda_e$Votos, color='#f21818')%>%
-  hc_add_series(name="Centro Esquerda", df_gr_ap_esquerda_ce$Votos, color='#f66060')%>%
-  hc_title(text = 'Votos para deputado estadual do espectro à Esquerda por AP') %>%
-  hc_subtitle(text = "Fonte: TSE ") %>%
-  hc_plotOptions(series=list(stacking='normal')) %>%
-  hc_add_theme(hc_theme_ffx()) %>%
-  hc_size(NULL, 550) %>%
-  hc_credits(enabled = TRUE, text = "CuriosiDados", href = "https://heavyrick.github.io/datascience/")
-
-```
-
----
 
 ```{r message=FALSE, warning=FALSE, include=FALSE}
 
@@ -406,27 +317,26 @@ df_gr_ap_partido_esquerda_pdt <- df_gr_ap_partido_esquerda[df_gr_ap_partido_esqu
 df_gr_ap_partido_esquerda_psb <- df_gr_ap_partido_esquerda[df_gr_ap_partido_esquerda$sigla == 'PSB', ]
 df_gr_ap_partido_esquerda_psol <- df_gr_ap_partido_esquerda[df_gr_ap_partido_esquerda$sigla == 'PSOL', ]
 df_gr_ap_partido_esquerda_pt <- df_gr_ap_partido_esquerda[df_gr_ap_partido_esquerda$sigla == 'PT', ]
+df_gr_ap_partido_esquerda_rede <- df_gr_ap_partido_esquerda[df_gr_ap_partido_esquerda$sigla == 'REDE', ]
+df_gr_ap_partido_esquerda_ppl <- df_gr_ap_partido_esquerda[df_gr_ap_partido_esquerda$sigla == 'PPL', ]
 
 ```
 
-<br />
-
-(*) No gráfico abaixo foram retirados os partidos com votação baixa (Rede, PMN e PPL)
-
-<br />
 
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 
 highchart() %>%
   hc_chart(type = "column") %>%
-  hc_xAxis(categories = unique(df_gr_ap_esquerda$AP)) %>%
-  hc_yAxis(title = list(text = "Votos")) %>%
+  hc_add_series(name="PPL", df_gr_ap_partido_esquerda_ppl$Votos, color="#99aa33")%>%
+  hc_add_series(name="REDE", df_gr_ap_partido_esquerda_rede$Votos, color="#445599")%>%
   hc_add_series(name="PSB", df_gr_ap_partido_esquerda_psb$Votos, color="#cc6600")%>%
   hc_add_series(name="PSOL", df_gr_ap_partido_esquerda_psol$Votos, color="#ffcc00")%>%
   hc_add_series(name="PDT", df_gr_ap_partido_esquerda_pdt$Votos, color="#cc66cc")%>%
   hc_add_series(name="PT", df_gr_ap_partido_esquerda_pt$Votos, color="#f21818")%>%
   hc_add_series(name="PCdoB", df_gr_ap_partido_esquerda_pcdob$Votos, color="#990033")%>%
-  hc_title(text = 'Votos para deputado estadual dos partidos do espectro à Esquerda por AP *') %>%
+  hc_xAxis(categories = unique(df_gr_ap_partido_esquerda$AP)) %>%
+  hc_yAxis(title = list(text = "Votos")) %>%  
+  hc_title(text = 'Votos para vereador dos partidos do espectro à Esquerda por AP') %>%
   hc_subtitle(text = "Fonte: TSE ") %>%
   hc_plotOptions(series=list(stacking='normal')) %>%
   hc_add_theme(hc_theme_google()) %>%
@@ -446,6 +356,18 @@ highchart() %>%
 ```{r echo=FALSE, out.width="100%", fig.align='center'}
 knitr::include_graphics("assets/mapa_das_aps.jpg")
 ```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
