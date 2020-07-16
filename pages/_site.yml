@@ -13,12 +13,14 @@ navbar:
       - text: "Focos Queimadas"
         href: focos_queimadas.html
   right:
-  - text: "Eleições"
+  - text: "Americana"
     menu:
-      - text: "Gerais - 2018"
+      - text: "Eleições Gerais - 2018"
         href: eleicoes_2018_americana.html
-      - text: "Municipais - 2016"
+      - text: "Eleiões Municipais - 2016"
         href: eleicoes_2016_americana.html
+      - text: "IDH-M"
+        href: idhm_americana.html
 output:
   html_document:
     theme: flatly
