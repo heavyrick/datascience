@@ -1,0 +1,19 @@
+blockquote {
+  font-style: italic
+}
+
+.code-folding-btn {
+    margin-right: -15px !important;
+}
+
+div.sourceCode {
+	overflow: hidden;
+}
+
+.tocify-extend-page{
+  height:10px !important;
+}
+
+.page-footer{
+  margin:16px 0px;
+}

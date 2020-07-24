@@ -14,4 +14,14 @@ navbar:
         href: focos_queimadas.html
 output:
   html_document:
-    theme: flatly
+    include:
+      after_body: assets/footer.html
+    css: assets/styles.css
+    theme: united
+    highlight: tango
+    df_print: paged
+    code_folding: hide
+    toc: true
+    toc_float:
+      collapsed: true
+      smooth_scroll: true

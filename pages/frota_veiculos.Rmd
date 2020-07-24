@@ -14,13 +14,20 @@ Nessa quarentena verificou-se uma diminuição bem grande na circulação de ve�
 
 Os dados foram coletados do site do Denatran (Departamento Nacional de Trânsito), que os publicou em março de 2020, com atualizações no final de março do mesmo ano.
 
-*As fontes dos dados estão no final da página*
+*As referências e fontes dos dados estão no final da página*
 
 ---
 
-## Bibliotecas
+## Preparação
 
-```{r message=FALSE, warning=FALSE, results=FALSE}
+Esta parte da análise é mais técnica e terão alguns códigos que, para quem não é da área de programação não faz muito sentido. São os códigos utilizados para tratar os dados antes de mostrá-los de forma legível. Se te interessar, pode clicar nos botões `code` que aparecerem ao longo da página, que estes vão mostrar o que está sendo feito, se não interessar, pode pular para a parte de *Análise de Dados*.
+
+<br />
+
+### Bibliotecas
+
+
+```{r message=FALSE, warning=FALSE, results=FALSE, class.source = 'fold-show'}
 
 # Bibliotecas do projeto
 library(ggplot2)
@@ -34,15 +41,17 @@ library(sqldf)
 library(ggthemes)
 library(RColorBrewer)
 library(highcharter)
-library(viridis) 
+library(viridis)
+library(DT)
 
+datatable_idioma <- "https://cdn.datatables.net/plug-ins/1.10.11/i18n/Portuguese-Brasil.json"
 ```
 
 <br />
 
-## Carregar dados
+### Carregar dados
 
-```{r load data, message=FALSE, warning=FALSE}
+```{r load data, message=FALSE, warning=FALSE, class.source = 'fold-show'}
 df_frotas <- read.csv('data/denatran_frotas.csv', sep=';')
 df_cidades <- read.csv('data/brasil_cidades.csv', sep=';')
 df_populacao <- read.csv('data/populacao_estimada_2019.csv', sep=';')
@@ -50,64 +59,78 @@ df_populacao <- read.csv('data/populacao_estimada_2019.csv', sep=';')
 
 <br />
 
-## Conhecer os dados
+### Conhecer os dados {.tabset .tabset-fade}
 
 <br />
 
-### Frotas
+#### Frotas
 
-Cada linha desse dataset refere-se aos dados de cada cidade do país. Nas primeiras colunas temos informações regionais (cidade, estado, região) e as colunas seguintes são com os tipos de veículos definidos pela CTB (Código de Trânsito Brasileiro), e suas quantidades, e no final temos o total de veículos da cidade.
+Cada linha desse dataset refere-se aos dados de cada cidade do país. Nas primeiras colunas temos informações regionais (cidade, estado, região) e as colunas seguintes são com os tipos de veículos definidos pela CTB (Código de Trânsito Brasileiro), e suas quantidades, e no final temos o total de veículos da cidade. *Abaixo está a tabela para a exploração dos dados.*
 
 <br />
 
 ```{r message=FALSE, warning=FALSE}
 # summary(df_frotas)
-str(df_frotas)
 # 5570 linhas (observações) e 29 colunas (variáveis)
+str(df_frotas)
 ```
 
 ```{r message=TRUE, warning=FALSE, layout="l-body-outset"}
 #head(df_frotas, n = 5)
-paged_table(df_frotas, options = list(rows.print = 5, max.print=20))
+datatable(df_frotas[, c(2, 4, 29, 8:28)], caption='Frota de veículos',
+          options = list(scrollX = TRUE, autoWidth = TRUE, pageLength = 10, language = list(url = datatable_idioma)))
 ```
 
 <br />
 
-### Cidades
+#### Cidades
 
 Neste dataframe temos os dados relativos as cidades do Brasil, como o nome, estado, região e código do ibge.
 
 <br />
 
 ```{r message=FALSE, warning=FALSE}
-str(df_cidades)
 # 5601 linhas (observações) e 9 colunas (variáveis)
+#summary(df_cidades)
+str(df_cidades)
+```
+
+```{r message=TRUE, warning=FALSE, layout="l-body-outset"}
+datatable(df_cidades[, c(2,6,9)], caption='Cidades', 
+          options = list(pageLength = 5, dom = 'tip', language = list(url = datatable_idioma)))
 ```
 
 <br />
 
-### População
+#### População
 
 E no dataframe da população temos a quantidade de pessoas (população estimada pelo PNAD em 2019) em cada estado do país.
 
 <br />
 
 ```{r message=FALSE, warning=FALSE}
-str(df_populacao)
 # 27 linhas (observações) e 4 colunas (variáveis)
+str(df_populacao)
+```
+
+```{r message=TRUE, warning=FALSE, layout="l-body-outset"}
+datatable(df_populacao, caption='População estimada (PNAD 2019)', 
+          options = list(pageLength = 5, dom = 'tip', language = list(url = datatable_idioma)))
 ```
 
 <br />
 
 ---
 
-## Tratar dados
+### Tratar dados
 
 O tratamento dos dados foi antes de gerar as planilhas, estes já estavam salvos em bancos de dados, de forma que não será necessário um tratamento por aqui.
 
 <br />
 
-## Analisar os dados
+## Análise de dados
+
+### Geral
 
 Vamos começar analisar aspectos mais gerais, depois partimos para os detalhes.
 
@@ -150,20 +173,14 @@ df_tipos_frota$tipo_frota <- capitalize(df_tipos_frota$tipo_frota)
 
 ```
 
-<br />
 
-Podemos melhorar esse dataframe, e adicionar uma coluna com as porcentagens em relação ao total.
-
-<br />
-
-```{r message=FALSE, warning=FALSE}
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+# Podemos melhorar esse dataframe, e adicionar uma coluna com as porcentagens em relação ao total.
 
 df_tipos_frota$quantidade_rel <- round((df_tipos_frota$total / frota_total) * 100,4)
 
-# mostrar tabela do knitr
-#kable(df_tipos_frota, caption="Total por tipo de veículo")
-paged_table(df_tipos_frota, options = list(rows.print = 5))
-
+datatable(df_tipos_frota[,], caption='Tipo de frota',
+          options = list(scrollX = TRUE, pageLength = 10, language = list(url = datatable_idioma)))
 ```
 
 <br />
@@ -223,10 +240,6 @@ df_tipos_frota$grupo <- ifelse(df_tipos_frota$tipo_frota %in% gr1, "Carros",
                         ifelse(df_tipos_frota$tipo_frota %in% gr3, "Caminhões",
                         ifelse(df_tipos_frota$tipo_frota %in% gr4, "Ônibus", 
                         "Outros" ))))
-
-```
-
-```{r message=FALSE, warning=FALSE}
 
 # Usando o dplyr para agrupar os dados e ordená-los
 df_frotas_grupos <- df_tipos_frota %>% group_by(grupo) %>% summarise(total = sum(total)) %>% arrange(desc(total))
@@ -296,23 +309,16 @@ kable(df_frotas_regiao_total, caption = 'Veículos por região')
 
 ```
 
-
-```{r message=FALSE, warning=FALSE}
-
-sql <- "SELECT nome_estado, uf, SUM(total_frota) as Total, nome_regiao FROM df_frotas GROUP BY nome_estado, nome_regiao"
-df_frotas_estados_total <- sqldf(sql)
-df_frotas_estados_total$frota_rel <- round((df_frotas_estados_total$Total / frota_total) * 100, 4)
-
-
-```
-
-
 <div style="color:#006400; font-size:16px; margin: 24px 0px;"><b>
   6. Plotar gráfico com a distribuição da frota de veículos total, por estado. E se possível, destacando suas regiões
 </b></div>
 
 
 ```{r message=FALSE, warning=FALSE}
+
+sql <- "SELECT nome_estado, uf, SUM(total_frota) as Total, nome_regiao FROM df_frotas GROUP BY nome_estado, nome_regiao"
+df_frotas_estados_total <- sqldf(sql)
+df_frotas_estados_total$frota_rel <- round((df_frotas_estados_total$Total / frota_total) * 100, 4)
 
 # usando a biblioteca highcharter
 df_frotas_estados_total %>% 
@@ -357,9 +363,7 @@ sql <- "SELECT id_estado, nome_estado, uf, nome_regiao, SUM(automovel) as Total 
 df_frotas_estados_automovel <- sqldf(sql)
 df_frotas_estados_automovel$frota_rel <- round((df_frotas_estados_automovel$Total / frota_total) * 100, 4)
 
-```
 
-```{r message=FALSE, warning=FALSE}
 df_frotas_estados_automovel %>% 
     arrange(desc(Total)) %>%
     hchart(type="treemap", hcaes(x= nome_estado, value=Total, color=Total)) %>%
@@ -389,17 +393,12 @@ df_frotas_estados_auto_pop <- sqldf(sql)
 df_frotas_estados_auto_pop$auto_pop <- round(df_frotas_estados_auto_pop$Total / df_frotas_estados_auto_pop$populacao_estimada_2019, 3)
 df_frotas_estados_auto_pop$pop_auto <- round(df_frotas_estados_auto_pop$populacao_estimada_2019 / df_frotas_estados_auto_pop$Total, 3)
 
-
-```
-
-```{r message=FALSE, warning=FALSE}
-
 hc_data <- df_frotas_estados_auto_pop %>% arrange(-pop_auto, -auto_pop)
 
 hchart(hc_data, type="treemap", hcaes(x= nome_estado, value=pop_auto, color=auto_pop)) %>%
-hc_title(text = 'Quantidade de habitantes por automóveis por estado') %>%
-hc_add_theme(hc_theme_google()) %>%
-hc_size(NULL, 600)
+  hc_title(text = 'Quantidade de habitantes por automóveis por estado') %>%
+  hc_add_theme(hc_theme_google()) %>%
+  hc_size(NULL, 600)
 
 ```
 
@@ -420,6 +419,7 @@ Para analisar as frotas por estados, temos a dificuldade de termos 27 deles e ap
 Antes de tudo vamos criar um novo dataframe, agrupando os dados.
 
 <br />
+
 
 ```{r message=FALSE, warning=FALSE}
 
@@ -452,11 +452,6 @@ df_frotas_estados <- sqldf("SELECT
                             SUM(utilitario) as Utilitario
                            FROM df_frotas 
                            GROUP BY nome_estado")
-
-```
-
-
-```{r message=FALSE, warning=FALSE}
 
 # Essa função recebe o dataframe com os estados, a uf do estado que queremos analisar
 # e retorna uma linha com os dados que serão usados no gráfico
@@ -519,13 +514,15 @@ graficoEstado(df_frotas_estados, 'SP')
 
 Para encerrarmos nossa análise, temos a quantidade de veículos por tipo no estado de São Paulo. Mais de **18 milhões de automóveis**, seguida por motocicleta, caminhonete, camioneta, motoneta e caminhão. Apenas estão plotados no gráfico os veículos cujos valores foram maiores do que 50.000 unidades.
 
+<br />
+
 ---
 
 ## Referências e fontes de dados
 
 <br />
 
-- Os dados foram coletados do site do - [Denatran](http://infraestrutura.gov.br/relatorios-estatisticos/115-portal-denatran/9484-frota-de-ve%C3%ADculos-2020.html) (Departamento Nacional de Trânsito), que os publicou em janeiro de 2020, com atualizações no final de março do mesmo ano;
+- Os dados foram coletados do site do [Denatran](http://infraestrutura.gov.br/relatorios-estatisticos/115-portal-denatran/9484-frota-de-ve%C3%ADculos-2020.html) (Departamento Nacional de Trânsito), que os publicou em janeiro de 2020, com atualizações no final de março do mesmo ano;
 - Os dados das cidades foram coletados do repositório [chandez/Estados-Cidades-IBGE](https://github.com/chandez/Estados-Cidades-IBGE)
 - Os dados da população foram retirados do site do IBGE [Estimativas da População](https://www.ibge.gov.br/estatisticas/sociais/populacao/9103-estimativas-de-populacao.html?=&t=downloads).
 

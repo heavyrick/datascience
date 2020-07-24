@@ -1,5 +1,6 @@
 ---
-title: "Focos Queimadas - Estado de São Paulo (2019)"
+title: "Focos Queimadas"
+subtitle: "Estado de São Paulo (2019)"
 ---
 
 ```{r setup, include=FALSE}
@@ -20,7 +21,13 @@ Graças ao INPE (Instituto Nacional de Pesquisas Espaciais) possuímos um monito
 
 ---
 
-## Bibliotecas
+## Preparação
+
+Esta parte da análise é mais técnica e terão alguns códigos que, para quem não é da área de programação não faz muito sentido. São os códigos utilizados para tratar os dados antes de mostrá-los de forma legível. Se te interessar, pode clicar nos botões `code` que aparecerem ao longo da página, que estes vão mostrar o que está sendo feito, se não interessar, pode pular para a parte de *Análise de Dados*.
+
+<br />
+
+### Bibliotecas
 
 ```{r message=FALSE, warning=FALSE}
 # Bibliotecas do projeto
@@ -38,19 +45,15 @@ library(caret)
 
 <br />
 
-## Carregar dados
-```{r load_data, message=FALSE, warning=FALSE}
-df_foco_queimadas19 <- read.csv('data/queimadas_focos_2019-01-01_2019-12-31.csv', sep = ',')
-```
+### Carregar dados
 
 ```{r message=FALSE, warning=FALSE}
-str(df_foco_queimadas19)
+df_foco_queimadas19 <- read.csv('data/queimadas_focos_2019-01-01_2019-12-31.csv', sep = ',')
 # 54970 linhas (observações) e 12 colunas (variáveis)
+str(df_foco_queimadas19)
 ```
 
 <br />
-
-## Conhecer os dados
 
 Das colunas que temos, vamos trabalhar com as seguintes:
 
@@ -69,7 +72,7 @@ Das colunas que temos, vamos trabalhar com as seguintes:
 
 ---
 
-## Tratar dados
+### Tratar dados
 
 Excluir colunas indesejadas e procurar por valores nulos e faltantes.
 
@@ -80,26 +83,25 @@ Excluir colunas indesejadas e procurar por valores nulos e faltantes.
 df_foco_queimadas19$pais <- NULL
 df_foco_queimadas19$estado <- NULL
 
-summary(df_foco_queimadas19)
 # Encontrado vazios (NA) nas colunas riscofogo (649) e frp (28372)
-
+summary(df_foco_queimadas19)
 ```
 
 <br />
 
 No caso da coluna `riscofogo` como são poucos valores, vou zerar essas linhas (o processo vai ficar comentado). No caso do campo `frp` tem milhares de linhas vazias, mas, pelo que entendi desse campo, ele nem sempre consegue ser medido pelo satélite, porque pode ter sido uma queimada de baixa intensidade, portanto vamos mantê-lo tal como está.
 
-<br />
-
 ```{r message=FALSE, warning=FALSE}
 
 #head(df_foco_queimadas19)
 #df_foco_queimadas19[is.na(df_foco_queimadas19$riscofogo), ]
-df_foco_queimadas19[is.na(df_foco_queimadas19$riscofogo), 7] <- 0
-summary(df_foco_queimadas19)
+
 #df_foco_queimadas19[is.na(df_foco_queimadas19$frp), ]
 #head(df_foco_queimadas19)
 
+df_foco_queimadas19[is.na(df_foco_queimadas19$riscofogo), 7] <- 0
+#summary(df_foco_queimadas19)
+str(df_foco_queimadas19)
 ```
 
 <br >
@@ -145,7 +147,7 @@ df_foco_queimadas19$riscofogo_nivel <-
 
 <br />
 
-## Analisar os dados
+## Análise de dados
 
 <div style="color:#006400; font-size:16px; margin: 24px 0px;"><b>
   1. O Estado de São Paulo possui 645 municípios (informação de 2020), vamos verificar quantos municípios tiveram focos de queimadas.
@@ -196,6 +198,10 @@ print(paste("Desvio padrão:", sd(df_foco_por_cidade$total_focos))) # Desvio pad
 <br />
 
 Quanto maior o afastamento do desvio da padrão da média, sugere uma alta variabilidade dos dados e até a presença dos chamados `outliers`, ou seja, valores muito fora do padrão. A mediana menor que a média também sugere a presença dos outliers, e um gráfico com a "cauda" maior para a direita.  Vamos fazer um histograma, para vermos se isso confere.
+
+<br />
+
+### Por região
 
 <div style="color:#006400; font-size:16px; margin: 24px 0px;"><b>
   3. Plotar um histograma para termos uma noção da distribuição da quantidade de focos de queimadas por cidade 
@@ -272,18 +278,21 @@ Mais notícias:
 - <a href="https://g1.globo.com/sp/ribeirao-preto-franca/noticia/2019/09/20/barretos-e-colombia-estao-entre-as-3-com-mais-focos-de-queimadas-em-2019-no-estado-de-sp-diz-inpe.ghtml" target="_blank">G1 - Barretos e Colômbia estão entre as 3 com mais focos de queimadas em 2019 no estado de SP, diz Inpe</a>
 - <a href="https://www.odiarioonline.com.br/noticia/87519/CORPO-DE-BOMBEIROS-CONFIRMA-CONTROLE-DE-INCENDIO-EM-COLOMBIA-" target="_blank">O Diário - Corpo de bombeiros confirma controle de incêndio em Colômbia</a>
 
+<br />
+
+### Por período
+
 <div style="color:#006400; font-size:16px; margin: 24px 0px;"><b>
   6. Focos de queimadas por períodos do dia 
 </b></div>
 
 ```{r message=FALSE, warning=FALSE}
+
 df_foco_queimadas19$dia_nome_semana <- weekdays(as.Date(df_foco_queimadas19$data)) # Obter o dia da semana (nome)
 df_foco_queimadas19$dia_semana <- wday(as.Date(df_foco_queimadas19$data)) # Obter o dia da semana (número)
 df_foco_queimadas19$nome_mes <- months(as.Date(df_foco_queimadas19$data)) # Obter o nome do mês
 df_foco_queimadas19$mes <- month(as.Date(df_foco_queimadas19$data)) # Obter o mês
-```
 
-```{r}
 df_foco_por_periodo_dia <- df_foco_queimadas19 %>% group_by(periodo_dia) %>% tally(name="total") %>% arrange(desc(total))
 highchart() %>% 
   hc_add_series(df_foco_por_periodo_dia, "column", hcaes(x = periodo_dia, y = total, color=c("#995533")), name = "Período do dia") %>%
@@ -376,7 +385,7 @@ df_foco_queimadas_n$nome_mes <- NULL
 df_foco_queimadas_n$hora <- NULL
 ```
 
-```{r}
+```{r message=FALSE, warning=FALSE, echo=FALSE}
 #unique(df_foco_queimadas_n$periodo_dia)
 #df_foco_queimadas_n$periodo_dia_ord <- encode_ordinal(df_foco_queimadas_n[,9, drop = FALSE], order = c('Madrugada', 'Manhã', 'Tarde', 'Noite'), out.int=TRUE
 #)
@@ -387,49 +396,10 @@ df_foco_queimadas_n$hora <- NULL
 ```
 
 <div style="color:#006400; font-size:16px; margin: 24px 0px;"><b>
-  9. Mostrar a índice pluviométrico por meses do ano, com base nos dados do dataframe que temos.
+  9. Analisar o Risco fogo nível `crítico` por meses do ano.
 </b></div>
-
-Como apontamos um pouco antes, cada linha do dataframe contém as medições dos satélites, e se houve uma queimada de larga escala, podemos ter vários lançamentos de dados para uma única grande queimada. Se somarmos todos os valores da coluna `precipitacao`, podemos acabar criando uma grande distorção se o valor da precipitação for grande em várias linhas "repetidas".
-
-Podemos minimizar isso fazendo o seguinte: tiramos a média diária de precipitação por cidade, e depois sim agrupamos os valores mensalmente, somando as precipitações.
-
-<br />
 
 ```{r message=FALSE, warning=FALSE}
-
-# Agrupar os dados por dia e por cidade, fazendo a média
-df_foco_queimadas19 %>% group_by(data, municipio, nome_mes, mes) %>% summarise(m_precipitacao = mean(precipitacao)) -> df_precipitacao_media_dia_cidade
-
-# Agrupar os dados por mes, somando as médias
-df_precipitacao_media_dia_cidade %>% group_by(nome_mes, mes) %>% summarise(total = sum(m_precipitacao)) %>% arrange(mes) -> df_precipitacao_media_mes
-
-```
-
-
-```{r}
-# Mudar cores do gráfico
-cols <- viridis(5, option = 'E')
-thm <- hc_theme(colors = cols, chart = list(backgroundColor = NULL))
-
-highchart() %>% 
-  hc_add_series(df_precipitacao_media_mes, "column", hcaes(x = nome_mes, y = total), name = "Mês") %>%
-  hc_xAxis(categories = df_foco_por_mes$nome_mes) %>%
-  hc_title(text = 'Precipitação em ml por meses do ano no estado de SP (2019)') %>%
-  hc_subtitle(text = "Fonte: INPE (Queimadas)") %>%
-  hc_add_theme(thm) %>%
-  hc_size(NULL, 450)
-```
-
-<br />
-
-O gráfico acima não tem os dados exatos do índice pluviométrico, mas nos ajudam a entender o comportamento das chuvas no momento das medições dos satélites. Como temos mais de 56 mil medições, temos uma noção boa desse comportamento. O ano começa com bastante chuvas em janeiro, que foi o mês com mais chuvas por sinal, depois há uma queda para um terço em feveiro, subindo novamente em março, e mantendo-se baixa até julho; cai novamente em agosto para voltar a subir nos dois meses seguintes; para ter uma queda no bimestre final do ano.
-
-<div style="color:#006400; font-size:16px; margin: 24px 0px;"><b>
-  10. Analisar o Risco fogo nível `crítico` por meses do ano.
-</b></div>
-
-```{r}
 #unique(df_foco_queimadas19$riscofogo_nivel)
 df_foco_queimadas19[df_foco_queimadas19$riscofogo_nivel == 'Crítico', ] %>% 
   group_by(nome_mes, mes) %>% 
@@ -451,27 +421,51 @@ Não sou nenhum especialista na área de climatologia, mas percebemos pelo gráf
 
 <br />
 
-```{r}
+### Chuvas
 
+<div style="color:#006400; font-size:16px; margin: 24px 0px;"><b>
+  10. Mostrar a índice pluviométrico por meses do ano, com base nos dados do dataframe que temos.
+</b></div>
+
+Como apontamos um pouco antes, cada linha do dataframe contém as medições dos satélites, e se houve uma queimada de larga escala, podemos ter vários lançamentos de dados para uma única grande queimada. Se somarmos todos os valores da coluna `precipitacao`, podemos acabar criando uma grande distorção se o valor da precipitação for grande em várias linhas "repetidas".
+
+Podemos minimizar isso fazendo o seguinte: tiramos a média diária de precipitação por cidade, e depois sim agrupamos os valores mensalmente, somando as precipitações.
+
+<br />
+
+```{r message=FALSE, warning=FALSE}
+
+# Agrupar os dados por dia e por cidade, fazendo a média
+df_foco_queimadas19 %>% group_by(data, municipio, nome_mes, mes) %>% summarise(m_precipitacao = mean(precipitacao)) -> df_precipitacao_media_dia_cidade
+
+# Agrupar os dados por mes, somando as médias
+df_precipitacao_media_dia_cidade %>% group_by(nome_mes, mes) %>% summarise(total = sum(m_precipitacao)) %>% arrange(mes) -> df_precipitacao_media_mes
+
+# Mudar cores do gráfico
+cols <- viridis(5, option = 'E')
+thm <- hc_theme(colors = cols, chart = list(backgroundColor = NULL))
+
+highchart() %>% 
+  hc_add_series(df_precipitacao_media_mes, "column", hcaes(x = nome_mes, y = total), name = "Mês") %>%
+  hc_xAxis(categories = df_foco_por_mes$nome_mes) %>%
+  hc_title(text = 'Precipitação em ml por meses do ano no estado de SP (2019)') %>%
+  hc_subtitle(text = "Fonte: INPE (Queimadas)") %>%
+  hc_add_theme(thm) %>%
+  hc_size(NULL, 450)
 ```
 
+<br />
 
-
-
-
-
-
-
-
-
-
+O gráfico acima não tem os dados exatos do índice pluviométrico, mas nos ajudam a entender o comportamento das chuvas no momento das medições dos satélites. Como temos mais de 56 mil medições, temos uma noção boa desse comportamento. O ano começa com bastante chuvas em janeiro, que foi o mês com mais chuvas por sinal, depois há uma queda para um terço em feveiro, subindo novamente em março, e mantendo-se baixa até julho; cai novamente em agosto para voltar a subir nos dois meses seguintes; para ter uma queda no bimestre final do ano.
 
 
 ---
 
-### Algumas dúvidas (retiradas do site)
+## Dúvidas
 
-#### Que tamanho de queimada os satélites detectam?
+Retiradas do site do INPE algumas informações complementares sobre o assunto.
+
+### Que tamanho de queimada os satélites detectam?
 
 Para os satélites de órbita polar (NOAAs a 800 km acima da superfície, e TERRA e AQUA a 710 km), trabalhos de validação de campo indicam que uma frente de fogo com cerca de **30m de extensão por 1m de largura**, ou maior, será detectada.
 
