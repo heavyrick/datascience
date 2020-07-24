@@ -354,38 +354,37 @@ Os meses com mais queimadas são claramente os meses que costumam ser os mais se
 
 <br />
 
-- medir a correlação do risco fogo com as queimadas
-- Verificar o risco fogo por época do ano
-- Buscar relação com os dias sem chuva
-- verificar total de chuvas por mês
-- Verificar se é possível usar os dados de 2019 para treino e baixar a base de 2018 para teste usando algum algoritmo de ML
+```{r message=FALSE, warning=FALSE, echo=FALSE}
 
-<br />
+# - medir a correlação do risco fogo com as queimadas
+# - Verificar o risco fogo por época do ano
+# - Buscar relação com os dias sem chuva
+# - verificar total de chuvas por mês
+# - Verificar se é possível usar os dados de 2019 para treino e baixar a base de 2018 para teste usando algum algoritmo de ML
+
+```
 
 ```{r message=FALSE, warning=FALSE}
 glimpse(df_foco_queimadas19)
 ```
 
-<br />
 
-Vamos criar uma cópia do nosso dataframe principal, limpar algumas colunas.
+```{r message=FALSE, warning=FALSE, include=FALSE}
 
-<br />
+# Vamos criar uma cópia do nosso dataframe principal, limpar algumas colunas.
 
-```{r message=FALSE, warning=FALSE}
 # Copiar dataframe
-df_foco_queimadas_n <- copy(df_foco_queimadas19)
+# df_foco_queimadas_n <- copy(df_foco_queimadas19)
 
 # Excluir colunas
-df_foco_queimadas_n$datahora <- NULL
-df_foco_queimadas_n$latitude <- NULL
-df_foco_queimadas_n$longitude <- NULL
-df_foco_queimadas_n$dia_nome_semana <- NULL
-df_foco_queimadas_n$nome_mes <- NULL
-df_foco_queimadas_n$hora <- NULL
-```
+# df_foco_queimadas_n$datahora <- NULL
+# df_foco_queimadas_n$latitude <- NULL
+# df_foco_queimadas_n$longitude <- NULL
+# df_foco_queimadas_n$dia_nome_semana <- NULL
+# df_foco_queimadas_n$nome_mes <- NULL
+# df_foco_queimadas_n$hora <- NULL
 
-```{r message=FALSE, warning=FALSE, echo=FALSE}
+
 #unique(df_foco_queimadas_n$periodo_dia)
 #df_foco_queimadas_n$periodo_dia_ord <- encode_ordinal(df_foco_queimadas_n[,9, drop = FALSE], order = c('Madrugada', 'Manhã', 'Tarde', 'Noite'), out.int=TRUE
 #)
