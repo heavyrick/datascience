@@ -158,8 +158,12 @@ df_foco_queimadas19$riscofogo_nivel <-
 #length(unique(df_foco_queimadas19$municipio))
 cidades_focos <- n_distinct(df_foco_queimadas19$municipio)
 
-print(paste("No ano de 2019, ", cidades_focos, " cidades do Estado de SP tiveram focos de queimadas, isso equivale a ", round(cidades_focos/645*100,2), "% do total de cidades." ))
-
+print(paste("No ano de 2019, ", 
+            cidades_focos, 
+            " cidades do Estado de SP tiveram focos de queimadas, isso equivale a ", 
+            round(cidades_focos/645*100,2), 
+            "% do total de cidades." )
+      )
 ```
 
 <br />
@@ -210,12 +214,12 @@ Quanto maior o afastamento do desvio da padrão da média, sugere uma alta varia
 ```{r message=FALSE, warning=FALSE}
 
 hchart(hist(df_foco_por_cidade$total_focos, breaks = 40, plot = FALSE)) %>%
-hc_title(text = 'Focos de queimadas por cidades do estado de SP (2019)') %>%
-hc_subtitle(text = "Fonte: INPE") %>%
-hc_yAxis(title = list(text = "Quantidade de cidades", labels = list(format ="{value: %b}"), style = list(color = '#333333', fontFamily = "Arial"))) %>%
-hc_xAxis(title = list(text = "Focos de queimadas"), style = list(color = '#333333', fontFamily = "Arial")) %>%
-hc_add_theme(hc_theme_flat()) %>%
-hc_size(NULL, 600)
+  hc_title(text = 'Focos de queimadas por cidades do estado de SP (2019)') %>%
+  hc_subtitle(text = "Fonte: INPE") %>%
+  hc_yAxis(title = list(text = "Quantidade de cidades", labels = list(format ="{value: %b}"), style = list(color = '#333333', fontFamily = "Arial"))) %>%
+  hc_xAxis(title = list(text = "Focos de queimadas"), style = list(color = '#333333', fontFamily = "Arial")) %>%
+  hc_add_theme(hc_theme_flat()) %>%
+  hc_size(NULL, 600)
 
 ```
 
@@ -261,8 +265,10 @@ Os focos das queimadas por biomas não estão tão distantes, com cerca de 56% n
 ```{r message=FALSE, warning=FALSE}
 
 df_foco_queimadas19_fpr <- head(df_foco_queimadas19[!is.na(df_foco_queimadas19$frp), ] %>% arrange(desc(frp)), n=10)
+
 sql <- "SELECT datahora, municipio, bioma, frp, riscofogo_nivel FROM df_foco_queimadas19_fpr"
 df_foco_queimadas19_fpr_sel <- sqldf(sql)
+
 paged_table(df_foco_queimadas19_fpr_sel, options = list(rows.print = 10))
 
 ```
@@ -293,7 +299,11 @@ df_foco_queimadas19$dia_semana <- wday(as.Date(df_foco_queimadas19$data)) # Obte
 df_foco_queimadas19$nome_mes <- months(as.Date(df_foco_queimadas19$data)) # Obter o nome do mês
 df_foco_queimadas19$mes <- month(as.Date(df_foco_queimadas19$data)) # Obter o mês
 
-df_foco_por_periodo_dia <- df_foco_queimadas19 %>% group_by(periodo_dia) %>% tally(name="total") %>% arrange(desc(total))
+df_foco_por_periodo_dia <- df_foco_queimadas19 %>% 
+  group_by(periodo_dia) %>% 
+  tally(name="total") %>% 
+  arrange(desc(total))
+
 highchart() %>% 
   hc_add_series(df_foco_por_periodo_dia, "column", hcaes(x = periodo_dia, y = total, color=c("#995533")), name = "Período do dia") %>%
   hc_xAxis(categories = df_foco_por_periodo_dia$periodo_dia) %>%
@@ -312,7 +322,10 @@ Como podemos acompanhar nesse gráfico, as queimadas ocorrem mais no período da
 </b></div>
 
 ```{r message=FALSE, warning=FALSE}
-df_foco_por_dia <- df_foco_queimadas19 %>% group_by(dia_nome_semana, dia_semana) %>% tally(name="total") %>% arrange(dia_semana)
+df_foco_por_dia <- df_foco_queimadas19 %>% 
+  group_by(dia_nome_semana, dia_semana) %>% 
+  tally(name="total") %>% 
+  arrange(dia_semana)
 
 highchart() %>% 
   hc_add_series(df_foco_por_dia, "column", hcaes(x = dia_nome_semana, y = total), name = "Dia da semana") %>%
@@ -333,7 +346,10 @@ O padrão das queimadas cai do domingo para segunda, vai crescendo até atingir 
 </b></div>
 
 ```{r message=FALSE, warning=FALSE}
-df_foco_por_mes <- df_foco_queimadas19 %>% group_by(nome_mes, mes) %>% tally(name="total") %>% arrange(mes)
+df_foco_por_mes <- df_foco_queimadas19 %>% 
+  group_by(nome_mes, mes) %>% 
+  tally(name="total") %>% 
+  arrange(mes)
 
 # Mudar cores do gráfico
 cols <- viridis(5, option = 'D')
@@ -435,10 +451,15 @@ Podemos minimizar isso fazendo o seguinte: tiramos a média diária de precipita
 ```{r message=FALSE, warning=FALSE}
 
 # Agrupar os dados por dia e por cidade, fazendo a média
-df_foco_queimadas19 %>% group_by(data, municipio, nome_mes, mes) %>% summarise(m_precipitacao = mean(precipitacao)) -> df_precipitacao_media_dia_cidade
+df_foco_queimadas19 %>% 
+  group_by(data, municipio, nome_mes, mes) %>% 
+  summarise(m_precipitacao = mean(precipitacao)) -> df_precipitacao_media_dia_cidade
 
 # Agrupar os dados por mes, somando as médias
-df_precipitacao_media_dia_cidade %>% group_by(nome_mes, mes) %>% summarise(total = sum(m_precipitacao)) %>% arrange(mes) -> df_precipitacao_media_mes
+df_precipitacao_media_dia_cidade %>% 
+  group_by(nome_mes, mes) %>% 
+  summarise(total = sum(m_precipitacao)) %>% 
+  arrange(mes) -> df_precipitacao_media_mes
 
 # Mudar cores do gráfico
 cols <- viridis(5, option = 'E')
