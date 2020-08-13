@@ -38,6 +38,8 @@ Neste repositório deixarei os projetos de data science que for elaborando. Algu
 
 ---
 
+### Pink Floyd Wordcloud
+
 - Wordcloud com as palavras mais usadas em suas letras pela banda inglesa Pink Floyd
 - <a href="https://github.com/heavyrick/datascience/blob/master/analises/pink_floyd_wordcloud/pink_floyd_wordcloud.ipynb" target="_blank">Pink Floyd Wordcloud (Link do notebook)</a>
 
