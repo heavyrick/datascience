@@ -27,3 +27,7 @@ Acesso aos projetos pelo **<a href="https://heavyrick.github.io/datascience/" ta
 * Texto no **Medium**: <a href="https://medium.com/@heavyrick/pre%C3%A7o-do-g%C3%A1s-de-cozinha-400237cabd52" target="_blank">Preço do Gás de Cozinha</a>
 
 ---
+
+### [Pink Floyd - Wordcloud](https://github.com/heavyrick/datascience/blob/master/pink_floyd_wordcloud/pink_floyd_wordcloud.ipynb)
+
+---

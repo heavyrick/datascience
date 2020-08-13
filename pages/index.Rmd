@@ -38,6 +38,11 @@ Neste repositório deixarei os projetos de data science que for elaborando. Algu
 
 ---
 
+- Wordcloud com as palavras mais usadas em suas letras pela banda inglesa Pink Floyd
+- <a href="https://github.com/heavyrick/datascience/blob/master/analises/pink_floyd_wordcloud/pink_floyd_wordcloud.ipynb" target="_blank">Pink Floyd Wordcloud (Link do notebook)</a>
+
+---
+
 ## Sobre mim
 
 Entrei muito por acaso no antigo curso de Processamento de Dados da Fatec de Americana/SP, com praticamente nenhum conhecimento da área _ sabia baixar músicas no emule e no ares, crackear jogo e editar código CSS dentro do Orkut, no máximo. E lá dentro aprendi mais o que eu não queria fazer, do que eu queria fazer. E mexer no Delphi e criar páginas em HTML foram as coisas mais legais do curso todo. 

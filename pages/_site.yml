@@ -10,7 +10,7 @@ navbar:
     menu:
       - text: "Frota de veiculos"
         href: frota_veiculos.html
-      - text: "Focos Queimadas"
+      - text: "Focos queimadas"
         href: focos_queimadas.html
 output:
   html_document:

@@ -328,6 +328,7 @@ df_frotas_estados_total %>%
     hc_subtitle(text = "Fonte: Denatran (março/2020)") %>%
     hc_yAxis(title = list(enabled = FALSE, labels = list(format ="{value: %b}"), style = list(color = '#333333', fontFamily = "Arial"))) %>%
     hc_xAxis(title = list(text = "Estados"), style = list(color = '#333333', fontFamily = "Arial")) %>%
+    hc_plotOptions(column = list(grouping = FALSE)) %>%
     hc_add_theme(hc_theme_flat()) %>%
     hc_size(NULL, 600)
 

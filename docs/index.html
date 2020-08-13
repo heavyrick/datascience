@@ -24,6 +24,7 @@
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script src="site_libs/navigation-1.1/codefolding.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 
@@ -351,7 +352,7 @@ div.tocify {
       <a href="frota_veiculos.html">Frota de veiculos</a>
     </li>
     <li>
-      <a href="focos_queimadas.html">Focos Queimadas</a>
+      <a href="focos_queimadas.html">Focos queimadas</a>
     </li>
   </ul>
 </li>
@@ -415,6 +416,11 @@ div.tocify {
 <li>Análise de dados do preço de revenda do gás de cozinha, com dados da ANP (Agência Nacional de Petróleo);</li>
 <li><a href="https://github.com/heavyrick/datascience/blob/master/analises/preco_gas_cozinha/precos_gas_cozinha.ipynb" target="_blank">Preço do Gás de Cozinha (Link do notebook)</a></li>
 <li>Texto no <strong>Medium</strong>: <a href="https://medium.com/@heavyrick/pre%C3%A7o-do-g%C3%A1s-de-cozinha-400237cabd52" target="_blank">Preço do Gás de Cozinha</a></li>
+</ul>
+<hr />
+<ul>
+<li>Wordcloud com as palavras mais usadas em suas letras pela banda inglesa Pink Floyd</li>
+<li><a href="https://github.com/heavyrick/datascience/blob/master/analises/pink_floyd_wordcloud/pink_floyd_wordcloud.ipynb" target="_blank">Pink Floyd Wordcloud (Link do notebook)</a></li>
 </ul>
 <hr />
 </div>
@@ -491,7 +497,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
