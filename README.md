@@ -28,6 +28,8 @@ Acesso aos projetos pelo **<a href="https://heavyrick.github.io/datascience/" ta
 
 ---
 
-### [Pink Floyd - Wordcloud](https://github.com/heavyrick/datascience/blob/master/pink_floyd_wordcloud/pink_floyd_wordcloud.ipynb)
+### [Pink Floyd - Wordcloud](https://github.com/heavyrick/datascience/blob/master/analises/pink_floyd_wordcloud/pink_floyd_wordcloud.ipynb)
+
+
 
 ---
