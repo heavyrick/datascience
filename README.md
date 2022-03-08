@@ -1,20 +1,37 @@
 # Portfólio de Data Science
 
-Neste repositório deixarei os projetos de data science que for elaborando. Alguns estarão escritos em R (R markdown) e outros em Python (Jupyter Notebook). Deixarei abaixo dos projetos também, os links para o medium, com textos explicando mais a fundo os projetos _ uma espécie de storytelling.
+Neste repositório deixarei os projetos de data science e áreas relacionadas. 
 
-Acesso aos projetos pelo **<a href="https://heavyrick.github.io/datascience/" target="_blank">githubpages</a>**
+- <a href='#l1'>Programação</a>
+- <a href='#l2'>Estatística</a>
+- Machine Learning
+- <a href='#l4'>Análises</a>
+
+<a id='l1'></a>
+
+---
+
+<h2 style="color:red">Programação</h2>
+
+
+### Python básico
+
+Um pequeno guia de [Python básico](https://github.com/heavyrick/datascience/blob/master/programacao/python/python_basico/python_basico.ipynb)
+
+<a id='l2'></a>
 
 ---
 
-## Python básico
+<h2 style="color:red">Estatística</h2>
 
-Um pequeno guia de [Python básico](https://github.com/heavyrick/datascience/blob/master/python/python_basico.ipynb)
+- [Média, mediana, moda](https://github.com/heavyrick/datascience/blob/master/estatistica/medidas_tendencia_central.ipynb)
 
----
-
-## Projetos
+<a id='l4'></a>
 
 ---
+
+<h2 style="color:red">Análises</h2>
+
 
 ### [IDEB](https://github.com/heavyrick/datascience/blob/master/analises/ideb/ideb_nacional.ipynb)
 * Análise dos dados do IDEB nacional, para entender o desempenho do ensino fundamental e médio no Brasil (escolas públicas e privadas);
@@ -35,7 +52,7 @@ Um pequeno guia de [Python básico](https://github.com/heavyrick/datascience/blo
 ---
 
 ### [Pink Floyd - Wordcloud](https://github.com/heavyrick/datascience/blob/master/analises/pink_floyd_wordcloud/pink_floyd_wordcloud.ipynb)
-
+* Nuvem de palavras com as palavras mais utilizadas nas letras da banda. 
 
 
 ---
