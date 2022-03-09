@@ -16,7 +16,7 @@ Neste repositório deixarei os projetos de data science e áreas relacionadas.
 
 - [Python básico](https://github.com/heavyrick/datascience/blob/master/programacao/python/python_basico/python_basico.ipynb)
 - [Numpy](https://github.com/heavyrick/datascience/blob/master/programacao/python/numpy/numpy_basico.ipynb)
-- [Pandas](https://github.com/heavyrick/datascience/blob/master/programacao/python/pandas/pandas_basico.ipynb)
+- [Pandas](https://github.com/heavyrick/datascience/blob/master/programacao/python/pandas/pandas_intro.ipynb)
 
 
 <a id='l2'></a>
