@@ -34,7 +34,7 @@ Neste repositório deixarei os projetos de data science e áreas relacionadas.
 
 <h2 style="color:red">Machine Learning</h2>
 
-- [Knn](https://github.com/heavyrick/datascience/blob/master/machine_learning/aprendizado_supervisionado/knn)
+- [Knn](https://github.com/heavyrick/datascience/blob/master/machine_learning/supervisionado/knn)
 
 
 <a id='l4'></a>
