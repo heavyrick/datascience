@@ -4,7 +4,7 @@ Neste repositório deixarei os projetos de data science e áreas relacionadas.
 
 - <a href='#l1'>Programação</a>
 - <a href='#l2'>Estatística</a>
-- Machine Learning
+- <a href='#l3'>Machine Learning</a>
 - <a href='#l4'>Análises</a>
 
 <a id='l1'></a>
@@ -17,6 +17,7 @@ Neste repositório deixarei os projetos de data science e áreas relacionadas.
 - [Python básico](https://github.com/heavyrick/datascience/blob/master/programacao/python/python_basico/python_basico.ipynb)
 - [Numpy](https://github.com/heavyrick/datascience/blob/master/programacao/python/numpy/numpy_basico.ipynb)
 - [Pandas](https://github.com/heavyrick/datascience/blob/master/programacao/python/pandas/pandas_intro.ipynb)
+- [Matplotlib](https://github.com/heavyrick/datascience/blob/master/programacao/python/matplotlib/matplotlib_intro.ipynb)
 
 
 <a id='l2'></a>
@@ -26,6 +27,15 @@ Neste repositório deixarei os projetos de data science e áreas relacionadas.
 <h2 style="color:red">Estatística</h2>
 
 - [Média, mediana, moda](https://github.com/heavyrick/datascience/blob/master/estatistica/medidas_tendencia_central.ipynb)
+
+<a id='l3'></a>
+
+---
+
+<h2 style="color:red">Machine Learning</h2>
+
+- [Knn](https://github.com/heavyrick/datascience/blob/master/machine_learning/aprendizado_supervisionado/knn)
+
 
 <a id='l4'></a>
 
