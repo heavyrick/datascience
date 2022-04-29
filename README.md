@@ -34,8 +34,14 @@ Neste repositório deixarei os projetos de data science e áreas relacionadas.
 
 <h2 style="color:red">Machine Learning</h2>
 
-- [Knn](https://github.com/heavyrick/datascience/blob/master/machine_learning/supervisionado/knn)
-- [NLP](https://github.com/heavyrick/datascience/blob/master/machine_learning/nlp)
+* [Knn](https://github.com/heavyrick/datascience/blob/master/machine_learning/supervisionado/knn)
+    - [Iris dataset com KNN](https://github.com/heavyrick/datascience/blob/master/machine_learning/supervisionado/knn/knn_iris.ipynb)
+    - [Encontrando anomalias com Knn](https://github.com/heavyrick/datascience/blob/master/machine_learning/supervisionado/knn/knn_outliers.ipynb) 
+
+
+* [NLP](https://github.com/heavyrick/datascience/blob/master/machine_learning/nlp)
+    - [Análise de sentimento com Spacy and Scikit-Learn](https://github.com/heavyrick/datascience/blob/master/machine_learning/nlp/analise_sentimento_spacy.ipynb) 
+     - [NLP Básico](https://github.com/heavyrick/datascience/blob/master/machine_learning/nlp/nlp_basico.ipynb)
 
 
 <a id='l4'></a>
