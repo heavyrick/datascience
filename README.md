@@ -27,6 +27,7 @@ Neste repositório deixarei os projetos de data science e áreas relacionadas.
 <h2 style="color:red">Estatística</h2>
 
 - [Média, mediana, moda](https://github.com/heavyrick/datascience/blob/master/estatistica/medidas_tendencia_central.ipynb)
+- [Amplitude, variância e desvio padrão](https://github.com/heavyrick/datascience/blob/master/estatistica/medidas_tendencia_central.ipynb)
 
 <a id='l3'></a>
 
