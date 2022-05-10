@@ -1,0 +1,545 @@
+---
+title: "Focos Queimadas"
+subtitle: "Estado de São Paulo (2019)"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<br />
+
+## Introdução
+
+O tema da preservação da natureza é um tema que há muitos anos está presente no nosso dia a dia, e é um tema cada vez mais importante, dada a constante exploração da natureza e suas consequências que ameaçam a sobrevivência da própria espécie humana. Entre as inúmeras discussões sobre o tema, uma delas é a das queimadas, que pelo menos no Brasil, (ainda) são consideradas crimes contra a natureza, se não feitas com licença do orgão ambiental competente.
+
+Quem mora no interior do Estado de São Paulo, percebe em determinadas épocas do ano, um aumento constante das cinzas de cana de açucar, que invadem as casas, além de nuvens enormes de fumaça que deixam a luz do sol até de outra cor, e o cheiro de fumaça que parece tomar conta de uma cidade toda.
+
+Graças ao INPE (Instituto Nacional de Pesquisas Espaciais) possuímos um monitoramento via satélite desses focos de queimadas em todo o Brasil, e podemos compreender melhor seu funcionamento. Nesta análise teremos um recorte desses dados, tentando entender como foi a questão das queimadas no Estado de São Paulo no ano de 2019.
+
+*As fontes dos dados estão no final da página*
+
+---
+
+## Preparação
+
+Esta parte da análise é mais técnica e terão alguns códigos que, para quem não é da área de programação não faz muito sentido. São os códigos utilizados para tratar os dados antes de mostrá-los de forma legível. Se te interessar, pode clicar nos botões `code` que aparecerem ao longo da página, que estes vão mostrar o que está sendo feito, se não interessar, pode pular para a parte de *Análise de Dados*.
+
+<br />
+
+### Bibliotecas
+
+```{r message=FALSE, warning=FALSE}
+# Bibliotecas do projeto
+library(dplyr)
+library(knitr)
+library(sqldf)
+library(hms)
+library(rmarkdown)
+library(highcharter)
+library(lubridate)
+library(viridisLite)
+library(data.table)
+library(caret)
+```
+
+<br />
+
+### Carregar dados
+
+```{r message=FALSE, warning=FALSE}
+df_foco_queimadas19 <- read.csv('data/queimadas_focos_2019-01-01_2019-12-31.csv', sep = ',')
+# 54970 linhas (observações) e 12 colunas (variáveis)
+str(df_foco_queimadas19)
+```
+
+<br />
+
+Das colunas que temos, vamos trabalhar com as seguintes:
+
+- **datahora**: Horário de referência da passagem do satélite segundo o fuso horário de Greenwich (GMT)
+- **satelite**: Nome do algorítmo utilizado e referencia ao satélite provedor da imagem
+- **municipio**: Nome do município. Para o Brasil foi utilizado como referência o dado do IBGE 2000
+- **bioma** (Bioma: uma unidade biológica ou espaço geográfico cujas características específicas são definidas pelo macroclima, o solo, a altitude, dentre outros critérios)
+- **diasemchuva**: Número de dias sem chuva até a detecção do foco
+- **precipitacao**: Valor da precipitação acumulada no dia até o momento da detecção do foco
+- **riscofogo**: Valor do Risco de Fogo previsto para o dia da detecção do foco (Vai de 0 até 1, e o valor 777.7 significa que é valor inválido)
+- **frp**: Fire Radiative Power (Energia Radiativa do Fogo, intensidade da queimada), valor em MW (megawatts)
+
+<br />
+
+*Para mais informações sobre o dataset, vá ao final deste documento (lá explica melhor o que é o Risco Fogo e o FRP)*
+
+---
+
+### Tratar dados
+
+Excluir colunas indesejadas e procurar por valores nulos e faltantes.
+
+<br />
+
+```{r message=FALSE, warning=FALSE}
+# Excluir colunas
+df_foco_queimadas19$pais <- NULL
+df_foco_queimadas19$estado <- NULL
+
+# Encontrado vazios (NA) nas colunas riscofogo (649) e frp (28372)
+summary(df_foco_queimadas19)
+```
+
+<br />
+
+No caso da coluna `riscofogo` como são poucos valores, vou zerar essas linhas (o processo vai ficar comentado). No caso do campo `frp` tem milhares de linhas vazias, mas, pelo que entendi desse campo, ele nem sempre consegue ser medido pelo satélite, porque pode ter sido uma queimada de baixa intensidade, portanto vamos mantê-lo tal como está.
+
+```{r message=FALSE, warning=FALSE}
+
+#head(df_foco_queimadas19)
+#df_foco_queimadas19[is.na(df_foco_queimadas19$riscofogo), ]
+
+#df_foco_queimadas19[is.na(df_foco_queimadas19$frp), ]
+#head(df_foco_queimadas19)
+
+df_foco_queimadas19[is.na(df_foco_queimadas19$riscofogo), 7] <- 0
+#summary(df_foco_queimadas19)
+str(df_foco_queimadas19)
+```
+
+<br >
+
+Vamos separar a data da hora em duas colunas `data` e `hora`.
+
+E em seguida criar a coluna `periodo_dia` para classificarmos os períodos do dia, baseados nas horas: *manhã* (6:00 às 11:59), *tarde* (12:00 às 17:59), *noite* (18:00 às 23:59) e *madrugada* (00:00 às 05:59).
+
+<br />
+
+```{r message=FALSE, warning=FALSE}
+df_foco_queimadas19$data <- as.Date(df_foco_queimadas19$datahora)
+df_foco_queimadas19$hora <- format(as.POSIXct(df_foco_queimadas19$datahora, tz = "America/Sao_Paulo"), format = "%H:%M:%S")
+
+# df_foco_queimadas19[as_hms(df_foco_queimadas19$hora) >= as_hms("06:00:00") & as_hms(df_foco_queimadas19$hora) < as_hms("12:00:00"), ]
+
+df_foco_queimadas19$periodo_dia <- 
+  ifelse(as_hms(df_foco_queimadas19$hora) >= as_hms("06:00:00") & as_hms(df_foco_queimadas19$hora) < as_hms("12:00:00"), "Manhã",
+  ifelse(as_hms(df_foco_queimadas19$hora) >= as_hms("12:00:00") & as_hms(df_foco_queimadas19$hora) < as_hms("18:00:00"), "Tarde",
+  ifelse(as_hms(df_foco_queimadas19$hora) >= as_hms("18:00:00") & as_hms(df_foco_queimadas19$hora) <= as_hms("23:59:59"), "Noite",
+  ifelse(as_hms(df_foco_queimadas19$hora) >= as_hms("00:00:00") & as_hms(df_foco_queimadas19$hora) < as_hms("06:00:00"), "Madrugada", "NA" ))))
+
+head(df_foco_queimadas19)     
+```
+
+<br />
+
+Vamos adicionar a coluna `riscofogo_nivel` para classificar os níveis do risco de fogo, que o próprio instituto utiliza: Mínimo, abaixo de 0,15; Baixo, de 0,15 a 0,4; Médio, de 0,4 a 0,7; Alto, de 0,7 a 0,95 e; Crítico, acima de 0.95 _ até 1.
+
+<br />
+
+```{r message=FALSE, warning=FALSE}
+
+df_foco_queimadas19$riscofogo_nivel <-
+  ifelse(df_foco_queimadas19$riscofogo >= 0 & df_foco_queimadas19$riscofogo < 0.15, "Mínimo",
+  ifelse(df_foco_queimadas19$riscofogo >= 0.15 & df_foco_queimadas19$riscofogo < 0.4, "Baixo",
+  ifelse(df_foco_queimadas19$riscofogo >= 0.4 & df_foco_queimadas19$riscofogo < 0.7, "Médio",
+  ifelse(df_foco_queimadas19$riscofogo >= 0.7 & df_foco_queimadas19$riscofogo < 0.95, "Alto",
+  ifelse(df_foco_queimadas19$riscofogo >= 0.95 & df_foco_queimadas19$riscofogo <= 1, "Crítico", "NA")))))
+
+```
+
+
+<br />
+
+## Análise de dados
+
+<div style="color:#006400; font-size:16px; margin: 24px 0px;"><b>
+  1. O Estado de São Paulo possui 645 municípios (informação de 2020), vamos verificar quantos municípios tiveram focos de queimadas.
+</b></div>
+
+```{r message=FALSE, warning=FALSE}
+
+#length(unique(df_foco_queimadas19$municipio))
+cidades_focos <- n_distinct(df_foco_queimadas19$municipio)
+
+print(paste("No ano de 2019, ", 
+            cidades_focos, 
+            " cidades do Estado de SP tiveram focos de queimadas, isso equivale a ", 
+            round(cidades_focos/645*100,2), 
+            "% do total de cidades." )
+      )
+```
+
+<br />
+
+Antes de prosseguirmos, é necessário entendermos algo antes: os satélites indicam focos de queimadas, e isso quer dizer que uma mesma queimada pode ter vários focos em regiões próximas. Pense no seguinte caso: Num sábadão fim de tarde um tiozinho da vida intencionalmente colocou fogo num monte de capim perto de um pasto, e o fogo se alastrou pela área. O satélite monitora a área, e identifica 3 focos de queimadas nessa região, e todos estes focos são originários do local onde o tiozinho tacou fogo _ mas isso não tem como o satélite saber, só pessoalmente para a equipe de bombeiros traçar o caminho do fogo, e dizer que todos os focos são digamos de uma só origem.
+
+E porque estou explicando isso? 
+
+Digamos que na sua cidade tenha tido um alto número de focos, mas isso não quer dizer necessariamente que são "queimadas diferentes", mas talvez que uma mesma queimada originou vários focos. Claro que do ponto de vista da preservação da natureza, isso não faz a menor diferença, pois quanto mais focos, mais grave é o problema.
+
+<div style="color:#006400; font-size:16px; margin: 24px 0px;"><b>
+  2. Quais as quantidades de focos de queimadas por cidade? (Tabela ordenada por quantidade)
+</b></div>
+
+```{r message=FALSE, warning=FALSE}
+
+df_foco_por_cidade <- df_foco_queimadas19 %>% count(municipio, sort=TRUE, name="total_focos")
+paged_table(df_foco_por_cidade, options = list(rows.print = 10))
+
+```
+
+<br />
+
+Vamos aproveitar e obtermos a média, a mediana e o desvio padrão de focos de queimadas por cidade.
+
+<br />
+
+```{r message=FALSE, warning=FALSE}
+
+print(paste("Média:", mean(df_foco_por_cidade$total_focos))) # Média
+print(paste("Mediana:", median(df_foco_por_cidade$total_focos))) # Mediana
+print(paste("Desvio padrão:", sd(df_foco_por_cidade$total_focos))) # Desvio padrão
+
+```
+
+<br />
+
+Quanto maior o afastamento do desvio da padrão da média, sugere uma alta variabilidade dos dados e até a presença dos chamados `outliers`, ou seja, valores muito fora do padrão. A mediana menor que a média também sugere a presença dos outliers, e um gráfico com a "cauda" maior para a direita.  Vamos fazer um histograma, para vermos se isso confere.
+
+<br />
+
+### Por região
+
+<div style="color:#006400; font-size:16px; margin: 24px 0px;"><b>
+  3. Plotar um histograma para termos uma noção da distribuição da quantidade de focos de queimadas por cidade 
+</b></div>
+
+```{r message=FALSE, warning=FALSE}
+
+hchart(hist(df_foco_por_cidade$total_focos, breaks = 40, plot = FALSE)) %>%
+  hc_title(text = 'Focos de queimadas por cidades do estado de SP (2019)') %>%
+  hc_subtitle(text = "Fonte: INPE") %>%
+  hc_yAxis(title = list(text = "Quantidade de cidades", labels = list(format ="{value: %b}"), style = list(color = '#333333', fontFamily = "Arial"))) %>%
+  hc_xAxis(title = list(text = "Focos de queimadas"), style = list(color = '#333333', fontFamily = "Arial")) %>%
+  hc_add_theme(hc_theme_flat()) %>%
+  hc_size(NULL, 600)
+
+```
+
+<br />
+
+A maior parte dos dados se concentra de **0 até 200 focos de queimadas**. O que pensamos sobre o desvio padrão foi correto, temos alguns valores que estão muito fora da média, como os que vem depois de 300 focos de queimadas, no eixo horizontal `x`. 
+
+<div style="color:#006400; font-size:16px; margin: 24px 0px;"><b>
+  4. Biomas mais atingidos
+</b></div>
+
+```{r message=FALSE, warning=FALSE}
+df_foco_por_bioma <- df_foco_queimadas19 %>% count(bioma, sort = TRUE, name = "total_focos")
+df_foco_por_bioma$total_porcento <- round(df_foco_por_bioma$total_focos / sum(df_foco_por_bioma$total_focos) * 100, 2)
+#paged_table(df_foco_por_bioma, options = list(rows.print = 10))
+
+colors <- c("#2ecc71", "#d35400")
+highchart() %>% 
+  hc_add_series(df_foco_por_bioma, "pie", hcaes(name = bioma, y = total_focos, color=colors), name = "Bioma")  %>%
+  hc_plotOptions(
+    pie = list(
+      colorByPoint = TRUE, center = c('50%', '50%'),
+      size = 200, dataLabels = list(enabled = TRUE)
+    )) %>%
+hc_title(text = 'Focos de queimadas por biomas no estado de SP (2019)') %>%
+hc_subtitle(text = "Fonte: INPE") %>%
+hc_size(NULL, 350)
+
+```
+
+<br />
+
+O estado de São Paulo possui apenas dois biomas: cerrado e mata atlântica. Aqui é importante salientar, o que sobrou da `mata atlântica` no estado é cerca de apenas 8% da área total (e já foi mais de 80% da mata original), e apenas 1% do bioma `cerrado` (que já cobriu mais de 12% da área total).
+
+Os focos das queimadas por biomas não estão tão distantes, com cerca de 56% na mata atlântica e 44% no cerrado.
+
+<br />
+
+<div style="color:#006400; font-size:16px; margin: 24px 0px;"><b>
+  5. Os 10 focos mais intensos de acordo com o FPR (fire radiative power). Mostrar em uma tabela, contendo a data do ocorrido, a cidade, o bioma além do FRP e do nível do risco fogo. 
+</b></div>
+
+```{r message=FALSE, warning=FALSE}
+
+df_foco_queimadas19_fpr <- head(df_foco_queimadas19[!is.na(df_foco_queimadas19$frp), ] %>% arrange(desc(frp)), n=10)
+
+sql <- "SELECT datahora, municipio, bioma, frp, riscofogo_nivel FROM df_foco_queimadas19_fpr"
+df_foco_queimadas19_fpr_sel <- sqldf(sql)
+
+paged_table(df_foco_queimadas19_fpr_sel, options = list(rows.print = 10))
+
+```
+
+<br />
+
+Perceba que alguns destes níveis do FRP têm a mesma data hora e cidade, provavelmente foram locais próximos monitorados pelos satélites. Vale a pena em alguns casos buscar por notícias, imagens do ocorrido para termos noção do que os números acima representam na realidade, a fim de nos colocar mais próximos dela.
+
+Procurei nos sites de notícias algumas informações sobre a queimada em Teodoro Sampaio por volta da data de 12 de outubro de 2019, e o que encontrei foi essa matéria de 10 dias depois do ocorrido: <a href="https://g1.globo.com/sp/presidente-prudente-regiao/noticia/2019/10/22/danos-ambientais-provocados-por-queimadas-em-canaviais-resultam-em-multas-de-quase-r-1-milhao-a-usinas-sucroalcooleiras.ghtml" target="_blank">G1 - Danos ambientais provocados por queimadas em canaviais resultam em multas de quase R$ 1 milhão a usinas sucroalcooleiras</a>. 
+
+Mais notícias:
+
+- <a href="https://g1.globo.com/sp/ribeirao-preto-franca/noticia/2019/09/20/barretos-e-colombia-estao-entre-as-3-com-mais-focos-de-queimadas-em-2019-no-estado-de-sp-diz-inpe.ghtml" target="_blank">G1 - Barretos e Colômbia estão entre as 3 com mais focos de queimadas em 2019 no estado de SP, diz Inpe</a>
+- <a href="https://www.odiarioonline.com.br/noticia/87519/CORPO-DE-BOMBEIROS-CONFIRMA-CONTROLE-DE-INCENDIO-EM-COLOMBIA-" target="_blank">O Diário - Corpo de bombeiros confirma controle de incêndio em Colômbia</a>
+
+<br />
+
+### Por período
+
+<div style="color:#006400; font-size:16px; margin: 24px 0px;"><b>
+  6. Focos de queimadas por períodos do dia 
+</b></div>
+
+```{r message=FALSE, warning=FALSE}
+
+df_foco_queimadas19$dia_nome_semana <- weekdays(as.Date(df_foco_queimadas19$data)) # Obter o dia da semana (nome)
+df_foco_queimadas19$dia_semana <- wday(as.Date(df_foco_queimadas19$data)) # Obter o dia da semana (número)
+df_foco_queimadas19$nome_mes <- months(as.Date(df_foco_queimadas19$data)) # Obter o nome do mês
+df_foco_queimadas19$mes <- month(as.Date(df_foco_queimadas19$data)) # Obter o mês
+
+df_foco_por_periodo_dia <- df_foco_queimadas19 %>% 
+  group_by(periodo_dia) %>% 
+  tally(name="total") %>% 
+  arrange(desc(total))
+
+highchart() %>% 
+  hc_add_series(df_foco_por_periodo_dia, "column", hcaes(x = periodo_dia, y = total, color=c("#995533")), name = "Período do dia") %>%
+  hc_xAxis(categories = df_foco_por_periodo_dia$periodo_dia) %>%
+  hc_title(text = 'Focos de queimadas por período do dia no estado de SP (2019)') %>%
+  hc_subtitle(text = "Fonte: INPE") %>%
+  hc_add_theme(hc_theme_google()) %>%
+  hc_size(NULL, 450)
+```
+
+<br />
+
+Como podemos acompanhar nesse gráfico, as queimadas ocorrem mais no período da tarde (mais da metade do total) e da madrugada, com bem poucas a noite e quase não ocorrem pela manhã.
+
+<div style="color:#006400; font-size:16px; margin: 24px 0px;"><b>
+  7. Focos de queimadas por dias da semana 
+</b></div>
+
+```{r message=FALSE, warning=FALSE}
+df_foco_por_dia <- df_foco_queimadas19 %>% 
+  group_by(dia_nome_semana, dia_semana) %>% 
+  tally(name="total") %>% 
+  arrange(dia_semana)
+
+highchart() %>% 
+  hc_add_series(df_foco_por_dia, "column", hcaes(x = dia_nome_semana, y = total), name = "Dia da semana") %>%
+  hc_xAxis(categories = df_foco_por_dia$dia_nome_semana) %>%
+  hc_title(text = 'Focos de queimadas por dias da semana no estado de SP (2019)') %>%
+  hc_subtitle(text = "Fonte: INPE") %>%
+  hc_add_theme(hc_theme_google()) %>%
+  hc_size(NULL, 450)
+
+```
+
+<br />
+
+O padrão das queimadas cai do domingo para segunda, vai crescendo até atingir o pico na quarta feira, cai novamente nos dias seguintes para aumentar no sábado, e domingo cai novamente. Mas as diferenças de focos de queimadas entre os dias não são relativamente altas.
+
+<div style="color:#006400; font-size:16px; margin: 24px 0px;"><b>
+  8. Focos de queimadas por meses do ano 
+</b></div>
+
+```{r message=FALSE, warning=FALSE}
+df_foco_por_mes <- df_foco_queimadas19 %>% 
+  group_by(nome_mes, mes) %>% 
+  tally(name="total") %>% 
+  arrange(mes)
+
+# Mudar cores do gráfico
+cols <- viridis(5, option = 'D')
+thm <- hc_theme(colors = cols, chart = list(backgroundColor = NULL))
+
+highchart() %>% 
+  hc_add_series(df_foco_por_mes, "column", hcaes(x = nome_mes, y = total), name = "Mês") %>%
+  hc_xAxis(categories = df_foco_por_mes$nome_mes) %>%
+  hc_title(text = 'Focos de queimadas por meses do ano no estado de SP (2019)') %>%
+  hc_subtitle(text = "Fonte: INPE") %>%
+  hc_add_theme(thm) %>%
+  hc_size(NULL, 450)
+```
+
+<br />
+
+Os meses com mais queimadas são claramente os meses que costumam ser os mais secos do ano em SP, e que começam no meio do ano e vão até novembro, onde o calor começa a causar as chamadas chuvas de verão. Apenas no `terceiro trimestre` de 2019, temos mais focos que todo o restante do ano. A amplitude dos dados é bem grande, com mais de **13 mil focos em setembro**, contra pouco mais de **mil focos de queimadas em fevereiro**.
+
+<br />
+
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+
+# - medir a correlação do risco fogo com as queimadas
+# - Verificar o risco fogo por época do ano
+# - Buscar relação com os dias sem chuva
+# - verificar total de chuvas por mês
+# - Verificar se é possível usar os dados de 2019 para treino e baixar a base de 2018 para teste usando algum algoritmo de ML
+
+```
+
+```{r message=FALSE, warning=FALSE}
+glimpse(df_foco_queimadas19)
+```
+
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+
+# Vamos criar uma cópia do nosso dataframe principal, limpar algumas colunas.
+
+# Copiar dataframe
+# df_foco_queimadas_n <- copy(df_foco_queimadas19)
+
+# Excluir colunas
+# df_foco_queimadas_n$datahora <- NULL
+# df_foco_queimadas_n$latitude <- NULL
+# df_foco_queimadas_n$longitude <- NULL
+# df_foco_queimadas_n$dia_nome_semana <- NULL
+# df_foco_queimadas_n$nome_mes <- NULL
+# df_foco_queimadas_n$hora <- NULL
+
+
+#unique(df_foco_queimadas_n$periodo_dia)
+#df_foco_queimadas_n$periodo_dia_ord <- encode_ordinal(df_foco_queimadas_n[,9, drop = FALSE], order = c('Madrugada', 'Manhã', 'Tarde', 'Noite'), out.int=TRUE
+#)
+#df_foco_queimadas_n[,9]
+#dmy <- dummyVars(" ~ .", data = df_foco_queimadas_n, fullRank = T)
+#dat_transformed <- data.frame(predict(dmy, newdata = df_foco_queimadas_n))
+#glimpse(dat_transformed)
+```
+
+<div style="color:#006400; font-size:16px; margin: 24px 0px;"><b>
+  9. Analisar o Risco fogo nível `crítico` por meses do ano.
+</b></div>
+
+```{r message=FALSE, warning=FALSE}
+#unique(df_foco_queimadas19$riscofogo_nivel)
+df_foco_queimadas19[df_foco_queimadas19$riscofogo_nivel == 'Crítico', ] %>% 
+  group_by(nome_mes, mes) %>% 
+  tally(name="total") %>% 
+  arrange(mes) -> df_foco_ncritico
+
+highchart() %>% 
+  hc_add_series(df_foco_ncritico, "column", hcaes(x = nome_mes, y = total), name = "Mês") %>%
+  hc_xAxis(categories = df_foco_por_mes$nome_mes) %>%
+  hc_title(text = 'Total de focos com níveis críticos por meses do ano no estado de SP (2019)') %>%
+  hc_subtitle(text = "Fonte: INPE (Queimadas)") %>%
+  hc_add_theme(hc_theme_flat()) %>%
+  hc_size(NULL, 450)
+```
+
+<br />
+
+Não sou nenhum especialista na área de climatologia, mas percebemos pelo gráfico, que o período onde os focos de níveis **críticos** são maiores (agosto, setembro, outubro) _ que coincidem com os períodos com mais focos de queimadas _ são períodos que sucedem os meses com menores níveis de chuvas (abril, maio, junho, julho, agosto).
+
+<br />
+
+### Chuvas
+
+<div style="color:#006400; font-size:16px; margin: 24px 0px;"><b>
+  10. Mostrar a índice pluviométrico por meses do ano, com base nos dados do dataframe que temos.
+</b></div>
+
+Como apontamos um pouco antes, cada linha do dataframe contém as medições dos satélites, e se houve uma queimada de larga escala, podemos ter vários lançamentos de dados para uma única grande queimada. Se somarmos todos os valores da coluna `precipitacao`, podemos acabar criando uma grande distorção se o valor da precipitação for grande em várias linhas "repetidas".
+
+Podemos minimizar isso fazendo o seguinte: tiramos a média diária de precipitação por cidade, e depois sim agrupamos os valores mensalmente, somando as precipitações.
+
+<br />
+
+```{r message=FALSE, warning=FALSE}
+
+# Agrupar os dados por dia e por cidade, fazendo a média
+df_foco_queimadas19 %>% 
+  group_by(data, municipio, nome_mes, mes) %>% 
+  summarise(m_precipitacao = mean(precipitacao)) -> df_precipitacao_media_dia_cidade
+
+# Agrupar os dados por mes, somando as médias
+df_precipitacao_media_dia_cidade %>% 
+  group_by(nome_mes, mes) %>% 
+  summarise(total = sum(m_precipitacao)) %>% 
+  arrange(mes) -> df_precipitacao_media_mes
+
+# Mudar cores do gráfico
+cols <- viridis(5, option = 'E')
+thm <- hc_theme(colors = cols, chart = list(backgroundColor = NULL))
+
+highchart() %>% 
+  hc_add_series(df_precipitacao_media_mes, "column", hcaes(x = nome_mes, y = total), name = "Mês") %>%
+  hc_xAxis(categories = df_foco_por_mes$nome_mes) %>%
+  hc_title(text = 'Precipitação em ml por meses do ano no estado de SP (2019)') %>%
+  hc_subtitle(text = "Fonte: INPE (Queimadas)") %>%
+  hc_add_theme(thm) %>%
+  hc_size(NULL, 450)
+```
+
+<br />
+
+O gráfico acima não tem os dados exatos do índice pluviométrico, mas nos ajudam a entender o comportamento das chuvas no momento das medições dos satélites. Como temos mais de 56 mil medições, temos uma noção boa desse comportamento. O ano começa com bastante chuvas em janeiro, que foi o mês com mais chuvas por sinal, depois há uma queda para um terço em feveiro, subindo novamente em março, e mantendo-se baixa até julho; cai novamente em agosto para voltar a subir nos dois meses seguintes; para ter uma queda no bimestre final do ano.
+
+
+---
+
+## Dúvidas
+
+Retiradas do site do INPE algumas informações complementares sobre o assunto.
+
+### Que tamanho de queimada os satélites detectam?
+
+Para os satélites de órbita polar (NOAAs a 800 km acima da superfície, e TERRA e AQUA a 710 km), trabalhos de validação de campo indicam que uma frente de fogo com cerca de **30m de extensão por 1m de largura**, ou maior, será detectada.
+
+Um foco de calor tão pequeno quanto uma frente de queimada de 30 metros de extensão por 1 m de largura pode ser registrado pelos instrumentos de observação instalados nos satélites. Atualmente, são usadas três gerações de sensores para essa finalidade: o AVHRR, mais antigo; o Modis, de tecnologia intermediária; e o VIIRS, mais moderno. Um instrumento desse último tipo – presente nos satélites Suomi NPP e NOAA-20, da National Oceanic and Atmospheric Administration (NOAA), dos Estados Unidos – detecta 10 vezes mais focos que um Modis a bordo dos satélites Aqua e Terra, ambos da Nasa. Nuvens de chuvas são obstáculos para o bom funcionamento dos sensores, mas não as nuvens de fumaça das queimadas.
+
+#### Quais queimadas não são detectadas ? (Por que a queimada que eu vi não foi detectada ?)
+As seguintes condições impedem ou prejudicam muito a detecção das queimadas:
+
+Frentes de fogo com menos de 30 m;
+Fogo apenas no chão de uma floresta densa, sem afetar a copa das árvores;
+Nuvens cobrindo a região (atenção - nuvens de fumaça não atrapalham!);
+Queimada de pequena duração, ocorrendo entre o horário das imagens disponíveis;
+Fogo em uma encosta de montanha, enquanto que o satélite só observou o outro lado;
+Imprecisão na localização do foco de queima, que no melhor caso é de cerca de 375 m, mas chegando a 6 km.
+
+#### Desde quando o INPE faz este trabalho de detecção de queimadas? 
+
+Este sistema teve início em meados de 1985 durante um experimento de campo conjunto entre pesquisadores do INPE e da NASA, e vem evoluindo continuamente desde 1987 quando passou a operar rotineiramente. Ele foi particularmente aperfeiçoado a partir de 1998 mediante apoio do programa nacional Proarco no Ibama, criado para controlar as queimadas e o desmatamento no arco do desmatamento da Amazônia, com recursos do Ministério do Meio Ambiente.
+
+---
+
+### Bioma
+
+O bioma pode ser definido, segundo o IBGE, como "um conjunto de vida vegetal e animal, constituído pelo agrupamento de tipos de vegetação contíguos e que podem ser identificados a nível regional, com condições de geologia e clima semelhantes e que, historicamente, sofreram os mesmos processos de formação da paisagem, resultando em uma diversidade de flora e fauna própria." Esse termo provém do grego Bio = vida e Oma = grupo ou massa e foi utilizado pela primeira vez, segundo alguns autores, por Shelford. Para outros, o termo foi criado por Clements.
+
+### Risco Fogo
+
+O cálculo do `risco fogo` é um tanto complexo, e leva em consideração fatores como dias sem chuva, tipo da vegetação, elevação topográfica, umidade relativa do ar, temperatura máxima e presença de fogo na região. Sua escala vai de 0 até 1, e se divide nas seguintes categorias: Mínimo, abaixo de 0,15; Baixo, de 0,15 a 0,4; Médio, de 0,4 a 0,7; Alto, de 0,7 a 0,95 e; Crítico, acima de 0.95.
+
+O número 777,7 representa *valor inválido*, normalmente relacionado como **área urbana ou corpos d'água**, onde não faz sentido calcular o Risco de Fogo.
+
+### FRP
+
+A Energia Radiativa do Fogo (FRP) é uma técnica para quantificar a biomassa queimada usando dados de sensoriamento remoto. A FRP mede a energia radiante emitida por unidade de tempo pela vegetação queimada.
+
+Da revista FAPESP (link no fim da página):
+
+Além de monitorar a localização dos focos de calor, os satélites registram a **intensidade da queimada**. Medida como FRP (sigla em inglês para potência radiativa do fogo) (...) "A potência radiativa do fogo é uma medida instantânea da energia emitida", (...) "O fogo de desmatamento costuma ter emissões mais energéticas porque é proveniente de madeira acumulada com grande concentração de biomassa. É diferente do que ocorre com o fogo em capim, que tem uma carga combustível menor."
+
+### Megawatt
+
+Um megawatt é de 1 milhão de watts (W) de potência. Os geradores de eletricidade são frequentemente medidos em megawatts de capacidade de geração de energia de pico. Então, um megawatt (MW) é equivalente a 1.000 quilowatts ou 1.000.000 watts. Para colocar isso em perspectiva, uma lâmpada doméstica costuma ter 100 watts, portanto, um megawatt equivale a muitas lâmpadas.
+
+---
+
+## Referências e fontes de dados
+
+- <a href="http://queimadas.dgi.inpe.br/queimadas/portal/informacoes/perguntas-frequentes" target="_blank">Programa Queimadas, do Instituto Nacional de Pesquisas Espaciais (Inpe)</a>
+- <a href="https://revistapesquisa.fapesp.br/como-monitorar-o-fogo/" target="_blank">Pesquisa FAPESP - Como monitorar o fogo</a>
+- <a href="https://www.scielo.br/scielo.php?pid=S0102-77862017000200255&script=sci_abstract&tlng=pt" target="_blank">Scielo - Revista Brasileira de Meteorologia</a>
+- <a href="http://queimadas.cptec.inpe.br/~rqueimadas/documentos/RiscoFogo_Sucinto.pdf" target="_blank">INPE - MÉTODO DO CÁLCULO DO RISCO DE FOGO DO PROGRAMA DO INPE - VERSÃO 11, JUNHO/2019</a>
+- <a href="https://brasilescola.uol.com.br/o-que-e/biologia/o-que-e-bioma.htm" target="_blank">Brasil Escola - O que é bioma?</a>
+- <a href="https://brasilescola.uol.com.br/brasil/biomas-brasileiros.htm" target="_blank">Brasil Escola - Biomas brasileiros</a>
+- <a href="https://www.portalsaofrancisco.com.br/fisica/megawatt" target="_blank">Portal São Francisco - Megawatt</a>
+- <a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo_(estado)" target="_blank">Wikipedia - São Paulo (estado)</a>
+
+<br />
