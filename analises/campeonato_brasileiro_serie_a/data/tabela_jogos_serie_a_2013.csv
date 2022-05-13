@@ -1,0 +1,381 @@
+Rodada;Data;Time casa;Gols time casa;Time visitante;Gols time visitante
+1;25/05/2013;Vasco da Gama - RJ;1;Portuguesa - SP;0
+1;25/05/2013;Vitória - BA;2;Internacional - RS;2
+1;25/05/2013;Corinthians - SP;1;Botafogo - RJ;1
+1;26/05/2013;Grêmio - RS;2;Náutico - PE;0
+1;26/05/2013;Ponte Preta - SP;0;São Paulo - SP;2
+1;26/05/2013;Criciuma - SC;3;Bahia - BA;1
+1;26/05/2013;Santos - SP;0;Flamengo - RJ;0
+1;26/05/2013;Fluminense - RJ;2;Atlético Paranaense - PR;1
+1;26/05/2013;Cruzeiro - MG;5;Goiás - GO;0
+1;26/05/2013;Coritiba - PR;2;Atlético - MG;1
+2;29/05/2013;Atlético Paranaense - PR;2;Cruzeiro - MG;2
+2;29/05/2013;Botafogo - RJ;2;Santos - SP;1
+2;29/05/2013;São Paulo - SP;5;Vasco da Gama - RJ;1
+2;29/05/2013;Flamengo - RJ;0;Ponte Preta - SP;2
+2;29/05/2013;Bahia - BA;0;Coritiba - PR;0
+2;29/05/2013;Náutico - PE;0;Vitória - BA;3
+2;29/05/2013;Goiás - GO;1;Corinthians - SP;1
+2;30/05/2013;Internacional - RS;2;Criciuma - SC;0
+2;09/06/2013;Atlético - MG;2;Grêmio - RS;0
+2;12/06/2013;Portuguesa - SP;2;Fluminense - RJ;1
+3;01/06/2013;Atlético Paranaense - PR;2;Flamengo - RJ;2
+3;01/06/2013;Santos - SP;1;Grêmio - RS;1
+3;01/06/2013;Botafogo - RJ;2;Cruzeiro - MG;1
+3;01/06/2013;Goiás - GO;1;Coritiba - PR;1
+3;01/06/2013;Vitória - BA;2;Vasco da Gama - RJ;0
+3;01/06/2013;Corinthians - SP;1;Ponte Preta - SP;0
+3;02/06/2013;Fluminense - RJ;3;Criciuma - SC;0
+3;02/06/2013;Internacional - RS;1;Bahia - BA;2
+3;02/06/2013;Náutico - PE;2;Portuguesa - SP;2
+3;02/06/2013;Atlético - MG;0;São Paulo - SP;0
+4;05/06/2013;Portuguesa - SP;1;Internacional - RS;1
+4;05/06/2013;São Paulo - SP;0;Goiás - GO;1
+4;05/06/2013;Criciuma - SC;3;Santos - SP;1
+4;05/06/2013;Ponte Preta - SP;3;Atlético Paranaense - PR;4
+4;05/06/2013;Grêmio - RS;1;Vitória - BA;0
+4;05/06/2013;Vasco da Gama - RJ;2;Atlético - MG;0
+4;05/06/2013;Flamengo - RJ;0;Náutico - PE;1
+4;05/06/2013;Bahia - BA;2;Botafogo - RJ;1
+4;05/06/2013;Cruzeiro - MG;1;Corinthians - SP;0
+4;06/06/2013;Coritiba - PR;2;Fluminense - RJ;1
+5;08/06/2013;Cruzeiro - MG;2;Internacional - RS;2
+5;08/06/2013;Criciuma - SC;0;Flamengo - RJ;3
+5;08/06/2013;Vasco da Gama - RJ;1;Bahia - BA;1
+5;08/06/2013;Corinthians - SP;0;Portuguesa - SP;0
+5;08/06/2013;Ponte Preta - SP;0;Botafogo - RJ;2
+5;09/06/2013;Vitória - BA;3;Atlético Paranaense - PR;2
+5;09/06/2013;Coritiba - PR;1;Náutico - PE;0
+5;09/06/2013;Fluminense - RJ;2;Goiás - GO;1
+5;12/06/2013;Santos - SP;1;Atlético - MG;0
+5;12/06/2013;Grêmio - RS;1;São Paulo - SP;1
+6;06/07/2013;Flamengo - RJ;2;Coritiba - PR;2
+6;06/07/2013;Náutico - PE;1;Ponte Preta - SP;3
+6;06/07/2013;Atlético Paranaense - PR;1;Grêmio - RS;1
+6;06/07/2013;Portuguesa - SP;1;Cruzeiro - MG;1
+6;07/07/2013;Goiás - GO;1;Vitória - BA;0
+6;07/07/2013;Internacional - RS;5;Vasco da Gama - RJ;3
+6;07/07/2013;São Paulo - SP;0;Santos - SP;2
+6;07/07/2013;Bahia - BA;0;Corinthians - SP;2
+6;07/07/2013;Botafogo - RJ;1;Fluminense - RJ;0
+6;07/07/2013;Atlético - MG;3;Criciuma - SC;2
+7;13/07/2013;Fluminense - RJ;2;Internacional - RS;3
+7;13/07/2013;Santos - SP;4;Portuguesa - SP;1
+7;13/07/2013;Ponte Preta - SP;0;Bahia - BA;0
+7;14/07/2013;Vitória - BA;3;São Paulo - SP;2
+7;14/07/2013;Grêmio - RS;2;Botafogo - RJ;1
+7;14/07/2013;Corinthians - SP;0;Atlético - MG;1
+7;14/07/2013;Coritiba - PR;1;Atlético Paranaense - PR;0
+7;14/07/2013;Criciuma - SC;0;Goiás - GO;0
+7;14/07/2013;Cruzeiro - MG;3;Náutico - PE;0
+7;14/07/2013;Vasco da Gama - RJ;0;Flamengo - RJ;1
+8;20/07/2013;Botafogo - RJ;2;Náutico - PE;0
+8;20/07/2013;São Paulo - SP;0;Cruzeiro - MG;3
+8;20/07/2013;Criciuma - SC;2;Grêmio - RS;1
+8;21/07/2013;Vitória - BA;0;Bahia - BA;0
+8;21/07/2013;Internacional - RS;1;Flamengo - RJ;0
+8;21/07/2013;Atlético Paranaense - PR;1;Corinthians - SP;1
+8;21/07/2013;Santos - SP;2;Coritiba - PR;2
+8;21/07/2013;Fluminense - RJ;1;Vasco da Gama - RJ;3
+8;21/07/2013;Goiás - GO;2;Portuguesa - SP;1
+8;03/10/2013;Atlético - MG;4;Ponte Preta - SP;0
+9;27/07/2013;Vasco da Gama - RJ;3;Criciuma - SC;2
+9;27/07/2013;Portuguesa - SP;2;Atlético Paranaense - PR;3
+9;27/07/2013;Ponte Preta - SP;1;Santos - SP;0
+9;28/07/2013;Grêmio - RS;2;Fluminense - RJ;0
+9;28/07/2013;Náutico - PE;3;Internacional - RS;0
+9;28/07/2013;Corinthians - SP;0;São Paulo - SP;0
+9;28/07/2013;Cruzeiro - MG;4;Atlético - MG;1
+9;28/07/2013;Flamengo - RJ;1;Botafogo - RJ;1
+9;28/07/2013;Coritiba - PR;1;Vitória - BA;1
+9;28/07/2013;Bahia - BA;2;Goiás - GO;1
+10;31/07/2013;Fluminense - RJ;1;Cruzeiro - MG;0
+10;31/07/2013;Atlético - MG;1;Atlético Paranaense - PR;2
+10;31/07/2013;Portuguesa - SP;1;Criciuma - SC;1
+10;31/07/2013;Coritiba - PR;5;Ponte Preta - SP;3
+10;31/07/2013;Corinthians - SP;2;Grêmio - RS;0
+10;31/07/2013;Bahia - BA;3;Flamengo - RJ;0
+10;01/08/2013;Botafogo - RJ;2;Vitória - BA;0
+10;01/08/2013;Goiás - GO;1;Vasco da Gama - RJ;1
+10;03/09/2013;Náutico - PE;0;São Paulo - SP;1
+10;10/09/2013;Internacional - RS;1;Santos - SP;2
+11;10/07/2013;São Paulo - SP;1;Bahia - BA;2
+11;03/08/2013;Cruzeiro - MG;1;Coritiba - PR;0
+11;04/08/2013;Atlético Paranaense - PR;2;Goiás - GO;0
+11;04/08/2013;Ponte Preta - SP;1;Fluminense - RJ;1
+11;04/08/2013;Criciuma - SC;0;Corinthians - SP;2
+11;04/08/2013;Grêmio - RS;1;Internacional - RS;1
+11;04/08/2013;Flamengo - RJ;3;Atlético - MG;0
+11;04/08/2013;Vasco da Gama - RJ;2;Botafogo - RJ;3
+11;04/08/2013;Vitória - BA;2;Portuguesa - SP;1
+11;25/09/2013;Santos - SP;1;Náutico - PE;1
+12;24/07/2013;São Paulo - SP;0;Internacional - RS;1
+12;07/08/2013;Vitória - BA;1;Fluminense - RJ;1
+12;07/08/2013;Criciuma - SC;1;Cruzeiro - MG;2
+12;07/08/2013;Flamengo - RJ;1;Portuguesa - SP;1
+12;07/08/2013;Atlético Paranaense - PR;1;Bahia - BA;0
+12;07/08/2013;Atlético - MG;2;Botafogo - RJ;2
+12;07/08/2013;Santos - SP;1;Corinthians - SP;1
+12;07/08/2013;Goiás - GO;2;Náutico - PE;1
+12;08/08/2013;Grêmio - RS;0;Coritiba - PR;1
+12;08/08/2013;Vasco da Gama - RJ;1;Ponte Preta - SP;1
+13;10/08/2013;Náutico - PE;0;Atlético - MG;0
+13;10/08/2013;Botafogo - RJ;1;Goiás - GO;1
+13;11/08/2013;Fluminense - RJ;2;Flamengo - RJ;3
+13;11/08/2013;Corinthians - SP;2;Vitória - BA;0
+13;11/08/2013;Cruzeiro - MG;0;Santos - SP;0
+13;11/08/2013;Coritiba - PR;0;Vasco da Gama - RJ;1
+13;11/08/2013;Ponte Preta - SP;3;Criciuma - SC;1
+13;11/08/2013;Bahia - BA;0;Grêmio - RS;3
+13;11/08/2013;Internacional - RS;2;Atlético Paranaense - PR;2
+13;11/08/2013;Portuguesa - SP;2;São Paulo - SP;1
+14;14/08/2013;Atlético - MG;2;Bahia - BA;0
+14;14/08/2013;Santos - SP;1;Vasco da Gama - RJ;1
+14;14/08/2013;Criciuma - SC;3;Náutico - PE;0
+14;14/08/2013;Vitória - BA;3;Ponte Preta - SP;1
+14;14/08/2013;Coritiba - PR;1;Portuguesa - SP;1
+14;14/08/2013;Goiás - GO;1;Flamengo - RJ;1
+14;14/08/2013;Fluminense - RJ;0;Corinthians - SP;0
+14;14/08/2013;Grêmio - RS;3;Cruzeiro - MG;1
+14;15/08/2013;São Paulo - SP;1;Atlético Paranaense - PR;1
+14;15/08/2013;Botafogo - RJ;3;Internacional - RS;3
+15;17/08/2013;Náutico - PE;0;Fluminense - RJ;1
+15;17/08/2013;Cruzeiro - MG;5;Vitória - BA;1
+15;17/08/2013;Vasco da Gama - RJ;2;Grêmio - RS;3
+15;18/08/2013;Ponte Preta - SP;0;Goiás - GO;1
+15;18/08/2013;Portuguesa - SP;1;Botafogo - RJ;3
+15;18/08/2013;Corinthians - SP;1;Coritiba - PR;0
+15;18/08/2013;Flamengo - RJ;0;São Paulo - SP;0
+15;18/08/2013;Bahia - BA;0;Santos - SP;0
+15;18/08/2013;Internacional - RS;0;Atlético - MG;0
+15;18/08/2013;Atlético Paranaense - PR;2;Criciuma - SC;1
+16;24/08/2013;Flamengo - RJ;0;Grêmio - RS;1
+16;24/08/2013;Ponte Preta - SP;0;Cruzeiro - MG;2
+16;24/08/2013;Santos - SP;2;Vitória - BA;0
+16;24/08/2013;Criciuma - SC;2;Coritiba - PR;1
+16;25/08/2013;Atlético - MG;2;Portuguesa - SP;1
+16;25/08/2013;Bahia - BA;2;Náutico - PE;0
+16;25/08/2013;Vasco da Gama - RJ;1;Corinthians - SP;1
+16;25/08/2013;São Paulo - SP;2;Fluminense - RJ;1
+16;25/08/2013;Internacional - RS;3;Goiás - GO;3
+16;25/08/2013;Atlético Paranaense - PR;2;Botafogo - RJ;0
+17;31/08/2013;Náutico - PE;1;Atlético Paranaense - PR;4
+17;31/08/2013;Portuguesa - SP;4;Bahia - BA;2
+17;31/08/2013;Grêmio - RS;1;Ponte Preta - SP;0
+17;31/08/2013;Goiás - GO;0;Atlético - MG;0
+17;31/08/2013;Fluminense - RJ;0;Santos - SP;2
+17;01/09/2013;Coritiba - PR;0;Internacional - RS;0
+17;01/09/2013;Vitória - BA;0;Criciuma - SC;1
+17;01/09/2013;Botafogo - RJ;0;São Paulo - SP;0
+17;01/09/2013;Corinthians - SP;4;Flamengo - RJ;0
+17;01/09/2013;Cruzeiro - MG;5;Vasco da Gama - RJ;3
+18;03/09/2013;Goiás - GO;2;Grêmio - RS;0
+18;04/09/2013;Flamengo - RJ;2;Vitória - BA;1
+18;04/09/2013;Atlético Paranaense - PR;2;Santos - SP;1
+18;04/09/2013;Portuguesa - SP;2;Ponte Preta - SP;1
+18;04/09/2013;Internacional - RS;1;Corinthians - SP;0
+18;04/09/2013;Atlético - MG;2;Fluminense - RJ;2
+18;04/09/2013;Bahia - BA;1;Cruzeiro - MG;3
+18;05/09/2013;Botafogo - RJ;3;Coritiba - PR;1
+18;05/09/2013;São Paulo - SP;1;Criciuma - SC;2
+18;05/09/2013;Náutico - PE;0;Vasco da Gama - RJ;3
+19;07/09/2013;Santos - SP;1;Goiás - GO;0
+19;07/09/2013;Fluminense - RJ;1;Bahia - BA;0
+19;07/09/2013;Vitória - BA;1;Atlético - MG;1
+19;07/09/2013;Ponte Preta - SP;1;Internacional - RS;3
+19;07/09/2013;Grêmio - RS;3;Portuguesa - SP;2
+19;08/09/2013;Coritiba - PR;2;São Paulo - SP;0
+19;08/09/2013;Cruzeiro - MG;1;Flamengo - RJ;0
+19;08/09/2013;Corinthians - SP;0;Náutico - PE;0
+19;08/09/2013;Vasco da Gama - RJ;0;Atlético Paranaense - PR;0
+19;08/09/2013;Criciuma - SC;1;Botafogo - RJ;2
+20;11/09/2013;Atlético Paranaense - PR;1;Fluminense - RJ;1
+20;11/09/2013;Bahia - BA;2;Criciuma - SC;2
+20;11/09/2013;Goiás - GO;1;Cruzeiro - MG;2
+20;11/09/2013;Botafogo - RJ;1;Corinthians - SP;0
+20;11/09/2013;Náutico - PE;0;Grêmio - RS;2
+20;11/09/2013;Portuguesa - SP;2;Vasco da Gama - RJ;0
+20;12/09/2013;Internacional - RS;2;Vitória - BA;2
+20;12/09/2013;São Paulo - SP;1;Ponte Preta - SP;0
+20;12/09/2013;Atlético - MG;3;Coritiba - PR;0
+20;12/09/2013;Flamengo - RJ;2;Santos - SP;1
+21;14/09/2013;Cruzeiro - MG;1;Atlético Paranaense - PR;0
+21;14/09/2013;Fluminense - RJ;2;Portuguesa - SP;1
+21;15/09/2013;Vasco da Gama - RJ;0;São Paulo - SP;2
+21;15/09/2013;Corinthians - SP;1;Goiás - GO;2
+21;15/09/2013;Ponte Preta - SP;1;Flamengo - RJ;1
+21;15/09/2013;Criciuma - SC;0;Internacional - RS;1
+21;15/09/2013;Coritiba - PR;2;Bahia - BA;2
+21;15/09/2013;Santos - SP;1;Botafogo - RJ;2
+21;15/09/2013;Vitória - BA;2;Náutico - PE;1
+21;15/09/2013;Grêmio - RS;0;Atlético - MG;1
+22;18/09/2013;Vasco da Gama - RJ;1;Vitória - BA;2
+22;18/09/2013;Grêmio - RS;1;Santos - SP;1
+22;18/09/2013;Criciuma - SC;1;Fluminense - RJ;2
+22;18/09/2013;Coritiba - PR;2;Goiás - GO;2
+22;18/09/2013;São Paulo - SP;1;Atlético - MG;0
+22;18/09/2013;Ponte Preta - SP;2;Corinthians - SP;0
+22;18/09/2013;Cruzeiro - MG;3;Botafogo - RJ;0
+22;19/09/2013;Flamengo - RJ;2;Atlético Paranaense - PR;4
+22;19/09/2013;Portuguesa - SP;3;Náutico - PE;0
+22;19/09/2013;Bahia - BA;2;Internacional - RS;0
+23;21/09/2013;Fluminense - RJ;1;Coritiba - PR;1
+23;21/09/2013;Vitória - BA;0;Grêmio - RS;0
+23;22/09/2013;Internacional - RS;0;Portuguesa - SP;1
+23;22/09/2013;Náutico - PE;0;Flamengo - RJ;0
+23;22/09/2013;Goiás - GO;1;São Paulo - SP;0
+23;22/09/2013;Botafogo - RJ;1;Bahia - BA;2
+23;22/09/2013;Corinthians - SP;0;Cruzeiro - MG;0
+23;22/09/2013;Santos - SP;2;Criciuma - SC;1
+23;22/09/2013;Atlético - MG;2;Vasco da Gama - RJ;1
+23;22/09/2013;Atlético Paranaense - PR;1;Ponte Preta - SP;0
+24;28/09/2013;Náutico - PE;3;Coritiba - PR;0
+24;28/09/2013;Goiás - GO;1;Fluminense - RJ;2
+24;28/09/2013;Botafogo - RJ;0;Ponte Preta - SP;1
+24;29/09/2013;Bahia - BA;0;Vasco da Gama - RJ;0
+24;29/09/2013;Portuguesa - SP;4;Corinthians - SP;0
+24;29/09/2013;São Paulo - SP;0;Grêmio - RS;1
+24;29/09/2013;Flamengo - RJ;4;Criciuma - SC;1
+24;29/09/2013;Internacional - RS;1;Cruzeiro - MG;2
+24;29/09/2013;Atlético - MG;3;Santos - SP;1
+24;29/09/2013;Atlético Paranaense - PR;3;Vitória - BA;5
+25;25/09/2013;Criciuma - SC;1;Atlético - MG;1
+25;01/10/2013;Ponte Preta - SP;1;Náutico - PE;2
+25;02/10/2013;Grêmio - RS;1;Atlético Paranaense - PR;0
+25;02/10/2013;Cruzeiro - MG;4;Portuguesa - SP;0
+25;02/10/2013;Fluminense - RJ;1;Botafogo - RJ;1
+25;02/10/2013;Vitória - BA;2;Goiás - GO;1
+25;02/10/2013;Santos - SP;3;São Paulo - SP;0
+25;02/10/2013;Corinthians - SP;2;Bahia - BA;0
+25;02/10/2013;Coritiba - PR;0;Flamengo - RJ;2
+25;03/10/2013;Vasco da Gama - RJ;3;Internacional - RS;1
+26;05/10/2013;Botafogo - RJ;0;Grêmio - RS;1
+26;05/10/2013;São Paulo - SP;3;Vitória - BA;2
+26;06/10/2013;Flamengo - RJ;1;Vasco da Gama - RJ;1
+26;06/10/2013;Internacional - RS;1;Fluminense - RJ;0
+26;06/10/2013;Náutico - PE;1;Cruzeiro - MG;4
+26;06/10/2013;Atlético - MG;0;Corinthians - SP;0
+26;06/10/2013;Atlético Paranaense - PR;2;Coritiba - PR;1
+26;06/10/2013;Bahia - BA;1;Ponte Preta - SP;1
+26;06/10/2013;Goiás - GO;1;Criciuma - SC;1
+26;06/10/2013;Portuguesa - SP;3;Santos - SP;0
+27;09/10/2013;Grêmio - RS;1;Criciuma - SC;2
+27;09/10/2013;Coritiba - PR;1;Santos - SP;0
+27;09/10/2013;Ponte Preta - SP;2;Atlético - MG;0
+27;09/10/2013;Bahia - BA;2;Vitória - BA;0
+27;09/10/2013;Náutico - PE;1;Botafogo - RJ;3
+27;09/10/2013;Cruzeiro - MG;0;São Paulo - SP;2
+27;09/10/2013;Corinthians - SP;0;Atlético Paranaense - PR;0
+27;09/10/2013;Vasco da Gama - RJ;1;Fluminense - RJ;0
+27;10/10/2013;Portuguesa - SP;1;Goiás - GO;2
+27;10/10/2013;Flamengo - RJ;2;Internacional - RS;1
+28;12/10/2013;Fluminense - RJ;1;Grêmio - RS;1
+28;12/10/2013;Vitória - BA;2;Coritiba - PR;1
+28;12/10/2013;Santos - SP;2;Ponte Preta - SP;1
+28;13/10/2013;Atlético - MG;1;Cruzeiro - MG;0
+28;13/10/2013;Criciuma - SC;3;Vasco da Gama - RJ;2
+28;13/10/2013;Internacional - RS;4;Náutico - PE;1
+28;13/10/2013;São Paulo - SP;0;Corinthians - SP;0
+28;13/10/2013;Botafogo - RJ;2;Flamengo - RJ;1
+28;13/10/2013;Goiás - GO;3;Bahia - BA;1
+28;13/10/2013;Atlético Paranaense - PR;1;Portuguesa - SP;0
+29;16/10/2013;Cruzeiro - MG;1;Fluminense - RJ;0
+29;16/10/2013;Santos - SP;0;Internacional - RS;0
+29;16/10/2013;Criciuma - SC;1;Portuguesa - SP;3
+29;16/10/2013;São Paulo - SP;3;Náutico - PE;0
+29;16/10/2013;Ponte Preta - SP;1;Coritiba - PR;0
+29;16/10/2013;Flamengo - RJ;2;Bahia - BA;1
+29;16/10/2013;Grêmio - RS;1;Corinthians - SP;0
+29;16/10/2013;Atlético Paranaense - PR;1;Atlético - MG;0
+29;17/10/2013;Vasco da Gama - RJ;0;Goiás - GO;2
+29;17/10/2013;Vitória - BA;1;Botafogo - RJ;0
+30;19/10/2013;Fluminense - RJ;1;Ponte Preta - SP;1
+30;19/10/2013;Náutico - PE;1;Santos - SP;5
+30;19/10/2013;Corinthians - SP;1;Criciuma - SC;0
+30;20/10/2013;Goiás - GO;3;Atlético Paranaense - PR;0
+30;20/10/2013;Atlético - MG;1;Flamengo - RJ;0
+30;20/10/2013;Internacional - RS;2;Grêmio - RS;2
+30;20/10/2013;Bahia - BA;0;São Paulo - SP;1
+30;20/10/2013;Botafogo - RJ;2;Vasco da Gama - RJ;2
+30;20/10/2013;Coritiba - PR;2;Cruzeiro - MG;1
+30;20/10/2013;Portuguesa - SP;1;Vitória - BA;1
+31;26/10/2013;Botafogo - RJ;1;Atlético - MG;0
+31;26/10/2013;Cruzeiro - MG;5;Criciuma - SC;3
+31;27/10/2013;Corinthians - SP;1;Santos - SP;1
+31;27/10/2013;Bahia - BA;1;Atlético Paranaense - PR;1
+31;27/10/2013;Internacional - RS;2;São Paulo - SP;3
+31;27/10/2013;Ponte Preta - SP;2;Vasco da Gama - RJ;1
+31;27/10/2013;Portuguesa - SP;0;Flamengo - RJ;0
+31;27/10/2013;Coritiba - PR;4;Grêmio - RS;0
+31;27/10/2013;Náutico - PE;0;Goiás - GO;2
+31;27/10/2013;Fluminense - RJ;2;Vitória - BA;3
+32;02/11/2013;Vasco da Gama - RJ;2;Coritiba - PR;1
+32;02/11/2013;São Paulo - SP;2;Portuguesa - SP;1
+32;02/11/2013;Atlético - MG;5;Náutico - PE;0
+32;03/11/2013;Vitória - BA;1;Corinthians - SP;1
+32;03/11/2013;Grêmio - RS;0;Bahia - BA;0
+32;03/11/2013;Goiás - GO;1;Botafogo - RJ;0
+32;03/11/2013;Santos - SP;0;Cruzeiro - MG;1
+32;03/11/2013;Flamengo - RJ;1;Fluminense - RJ;0
+32;03/11/2013;Criciuma - SC;1;Ponte Preta - SP;1
+32;03/11/2013;Atlético Paranaense - PR;1;Internacional - RS;0
+33;09/11/2013;Bahia - BA;0;Atlético - MG;0
+33;09/11/2013;Portuguesa - SP;0;Coritiba - PR;0
+33;09/11/2013;Flamengo - RJ;1;Goiás - GO;1
+33;10/11/2013;Internacional - RS;2;Botafogo - RJ;1
+33;10/11/2013;Ponte Preta - SP;0;Vitória - BA;3
+33;10/11/2013;Cruzeiro - MG;3;Grêmio - RS;0
+33;10/11/2013;Atlético Paranaense - PR;3;São Paulo - SP;0
+33;10/11/2013;Vasco da Gama - RJ;2;Santos - SP;2
+33;10/11/2013;Corinthians - SP;1;Fluminense - RJ;0
+33;10/11/2013;Náutico - PE;0;Criciuma - SC;1
+34;13/11/2013;Grêmio - RS;1;Vasco da Gama - RJ;0
+34;13/11/2013;Goiás - GO;2;Ponte Preta - SP;0
+34;13/11/2013;Criciuma - SC;2;Atlético Paranaense - PR;1
+34;13/11/2013;Botafogo - RJ;0;Portuguesa - SP;0
+34;13/11/2013;Coritiba - PR;0;Corinthians - SP;1
+34;13/11/2013;São Paulo - SP;2;Flamengo - RJ;0
+34;13/11/2013;Vitória - BA;1;Cruzeiro - MG;3
+34;14/11/2013;Santos - SP;3;Bahia - BA;0
+34;14/11/2013;Fluminense - RJ;2;Náutico - PE;0
+34;14/11/2013;Atlético - MG;2;Internacional - RS;1
+35;16/11/2013;Botafogo - RJ;4;Atlético Paranaense - PR;0
+35;16/11/2013;Coritiba - PR;1;Criciuma - SC;2
+35;17/11/2013;Vitória - BA;2;Santos - SP;0
+35;17/11/2013;Cruzeiro - MG;2;Ponte Preta - SP;2
+35;17/11/2013;Fluminense - RJ;2;São Paulo - SP;1
+35;17/11/2013;Corinthians - SP;0;Vasco da Gama - RJ;0
+35;17/11/2013;Grêmio - RS;2;Flamengo - RJ;1
+35;17/11/2013;Goiás - GO;3;Internacional - RS;1
+35;17/11/2013;Náutico - PE;0;Bahia - BA;1
+35;17/11/2013;Portuguesa - SP;2;Atlético - MG;0
+36;23/11/2013;Vasco da Gama - RJ;2;Cruzeiro - MG;1
+36;23/11/2013;Criciuma - SC;1;Vitória - BA;1
+36;23/11/2013;Atlético - MG;4;Goiás - GO;1
+36;24/11/2013;Atlético Paranaense - PR;6;Náutico - PE;1
+36;24/11/2013;Santos - SP;1;Fluminense - RJ;0
+36;24/11/2013;Ponte Preta - SP;1;Grêmio - RS;1
+36;24/11/2013;Flamengo - RJ;1;Corinthians - SP;0
+36;24/11/2013;São Paulo - SP;1;Botafogo - RJ;1
+36;24/11/2013;Bahia - BA;1;Portuguesa - SP;0
+36;24/11/2013;Internacional - RS;0;Coritiba - PR;0
+37;30/11/2013;Fluminense - RJ;2;Atlético - MG;2
+37;30/11/2013;Corinthians - SP;0;Internacional - RS;0
+37;01/12/2013;Criciuma - SC;1;São Paulo - SP;0
+37;01/12/2013;Cruzeiro - MG;1;Bahia - BA;2
+37;01/12/2013;Coritiba - PR;2;Botafogo - RJ;1
+37;01/12/2013;Ponte Preta - SP;0;Portuguesa - SP;2
+37;01/12/2013;Vitória - BA;4;Flamengo - RJ;2
+37;01/12/2013;Vasco da Gama - RJ;2;Náutico - PE;0
+37;01/12/2013;Grêmio - RS;1;Goiás - GO;0
+37;01/12/2013;Santos - SP;2;Atlético Paranaense - PR;1
+38;07/12/2013;Flamengo - RJ;1;Cruzeiro - MG;1
+38;07/12/2013;Náutico - PE;1;Corinthians - SP;0
+38;08/12/2013;Botafogo - RJ;3;Criciuma - SC;0
+38;08/12/2013;São Paulo - SP;0;Coritiba - PR;1
+38;08/12/2013;Bahia - BA;1;Fluminense - RJ;2
+38;08/12/2013;Internacional - RS;0;Ponte Preta - SP;0
+38;08/12/2013;Goiás - GO;0;Santos - SP;3
+38;08/12/2013;Atlético - MG;2;Vitória - BA;2
+38;08/12/2013;Atlético Paranaense - PR;5;Vasco da Gama - RJ;1
+38;08/12/2013;Portuguesa - SP;0;Grêmio - RS;0

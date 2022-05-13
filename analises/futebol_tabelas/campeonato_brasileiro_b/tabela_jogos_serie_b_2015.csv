@@ -1,0 +1,381 @@
+Rodada;Data;Time casa;Gols time casa;Time visitante;Gols time visitante
+1;08/05/2015;Atlético - GO;1;Boa - MG;0
+1;08/05/2015;Abc - RN;0;Oeste - SP;1
+1;08/05/2015;Paraná - PR;1;Ceará - CE;0
+1;08/05/2015;Mogi Mirim - SP;1;Criciúma - SC;2
+1;09/05/2015;Macaé - RJ;2;Santa Cruz - PE;0
+1;09/05/2015;América - MG;1;Bahia - BA;1
+1;09/05/2015;Náutico - PE;1;Luverdense - MT;0
+1;09/05/2015;Vitória - BA;0;Sampaio Correa - MA;2
+1;09/05/2015;Paysandu - PA;0;Botafogo - RJ;1
+1;09/05/2015;Crb - AL;2;Bragantino - SP;0
+2;15/05/2015;Bahia - BA;4;Mogi Mirim - SP;1
+2;15/05/2015;Sampaio Correa - MA;3;Macaé - RJ;1
+2;15/05/2015;Santa Cruz - PE;4;Paraná - PR;1
+2;15/05/2015;Criciúma - SC;0;Abc - RN;2
+2;16/05/2015;Oeste - SP;1;Vitória - BA;2
+2;16/05/2015;Bragantino - SP;1;Paysandu - PA;0
+2;16/05/2015;Botafogo - RJ;4;Crb - AL;1
+2;16/05/2015;Boa - MG;0;Náutico - PE;1
+2;16/05/2015;Ceará - CE;2;Atlético - GO;0
+2;16/05/2015;Luverdense - MT;1;América - MG;0
+3;19/05/2015;Macaé - RJ;4;Oeste - SP;2
+3;19/05/2015;Náutico - PE;2;Criciúma - SC;0
+3;22/05/2015;Vitória - BA;4;Bragantino - SP;1
+3;22/05/2015;Mogi Mirim - SP;1;Sampaio Correa - MA;1
+3;23/05/2015;América - MG;4;Santa Cruz - PE;1
+3;23/05/2015;Paysandu - PA;2;Ceará - CE;1
+3;23/05/2015;Atlético - GO;0;Botafogo - RJ;0
+3;23/05/2015;Paraná - PR;1;Boa - MG;1
+3;23/05/2015;Abc - RN;1;Luverdense - MT;1
+3;23/05/2015;Crb - AL;0;Bahia - BA;3
+4;26/05/2015;Ceará - CE;1;Crb - AL;1
+4;29/05/2015;Santa Cruz - PE;0;Abc - RN;1
+4;29/05/2015;Bragantino - SP;0;América - MG;1
+4;29/05/2015;Bahia - BA;1;Paraná - PR;0
+4;30/05/2015;Botafogo - RJ;2;Vitória - BA;0
+4;30/05/2015;Boa - MG;0;Paysandu - PA;1
+4;30/05/2015;Sampaio Correa - MA;1;Náutico - PE;1
+4;30/05/2015;Criciúma - SC;1;Atlético - GO;0
+4;30/05/2015;Luverdense - MT;1;Macaé - RJ;2
+4;30/05/2015;Oeste - SP;0;Mogi Mirim - SP;0
+5;02/06/2015;Paysandu - PA;2;Santa Cruz - PE;1
+5;02/06/2015;Abc - RN;1;Bragantino - SP;1
+5;02/06/2015;Náutico - PE;2;Ceará - CE;0
+5;02/06/2015;América - MG;1;Sampaio Correa - MA;0
+5;02/06/2015;Mogi Mirim - SP;0;Boa - MG;2
+5;02/06/2015;Vitória - BA;2;Criciúma - SC;1
+5;02/06/2015;Atlético - GO;0;Luverdense - MT;1
+5;02/06/2015;Crb - AL;3;Oeste - SP;0
+5;02/06/2015;Paraná - PR;1;Botafogo - RJ;2
+5;02/06/2015;Macaé - RJ;0;Bahia - BA;0
+6;05/06/2015;Vitória - BA;3;Atlético - GO;1
+6;05/06/2015;Náutico - PE;2;América - MG;1
+6;05/06/2015;Botafogo - RJ;3;Mogi Mirim - SP;0
+6;06/06/2015;Bragantino - SP;2;Bahia - BA;0
+6;06/06/2015;Criciúma - SC;0;Macaé - RJ;3
+6;06/06/2015;Ceará - CE;1;Sampaio Correa - MA;3
+6;06/06/2015;Luverdense - MT;2;Santa Cruz - PE;2
+6;06/06/2015;Crb - AL;0;Abc - RN;1
+6;06/06/2015;Boa - MG;1;Oeste - SP;2
+6;06/06/2015;Paysandu - PA;2;Paraná - PR;1
+7;09/06/2015;Paraná - PR;1;Luverdense - MT;0
+7;09/06/2015;Oeste - SP;0;Botafogo - RJ;1
+7;12/06/2015;Abc - RN;0;Paysandu - PA;2
+7;12/06/2015;Sampaio Correa - MA;3;Criciúma - SC;1
+7;12/06/2015;Santa Cruz - PE;0;Boa - MG;0
+7;13/06/2015;Bahia - BA;1;Ceará - CE;0
+7;13/06/2015;Mogi Mirim - SP;1;Vitória - BA;1
+7;13/06/2015;Atlético - GO;2;Náutico - PE;0
+7;13/06/2015;Macaé - RJ;2;Bragantino - SP;5
+7;13/06/2015;América - MG;1;Crb - AL;0
+8;16/06/2015;Náutico - PE;1;Paysandu - PA;1
+8;16/06/2015;Luverdense - MT;0;Criciúma - SC;1
+8;19/06/2015;Sampaio Correa - MA;0;Bahia - BA;0
+8;19/06/2015;Paraná - PR;3;Mogi Mirim - SP;1
+8;19/06/2015;Botafogo - RJ;1;Boa - MG;1
+8;20/06/2015;Vitória - BA;2;Abc - RN;0
+8;20/06/2015;América - MG;1;Atlético - GO;0
+8;20/06/2015;Ceará - CE;3;Santa Cruz - PE;3
+8;20/06/2015;Bragantino - SP;3;Oeste - SP;1
+8;20/06/2015;Crb - AL;3;Macaé - RJ;1
+9;23/06/2015;Criciúma - SC;2;América - MG;2
+9;23/06/2015;Paysandu - PA;1;Vitória - BA;0
+9;26/06/2015;Oeste - SP;2;Ceará - CE;0
+9;26/06/2015;Atlético - GO;1;Paraná - PR;1
+9;27/06/2015;Santa Cruz - PE;1;Sampaio Correa - MA;0
+9;27/06/2015;Bahia - BA;1;Luverdense - MT;0
+9;27/06/2015;Abc - RN;3;Náutico - PE;3
+9;27/06/2015;Mogi Mirim - SP;0;Crb - AL;1
+9;27/06/2015;Macaé - RJ;4;Botafogo - RJ;2
+9;27/06/2015;Boa - MG;3;Bragantino - SP;0
+10;30/06/2015;Paysandu - PA;2;Atlético - GO;0
+10;30/06/2015;Luverdense - MT;3;Ceará - CE;0
+10;03/07/2015;Paraná - PR;0;Criciúma - SC;0
+10;03/07/2015;Botafogo - RJ;5;Sampaio Correa - MA;0
+10;04/07/2015;Abc - RN;1;Macaé - RJ;1
+10;04/07/2015;Náutico - PE;2;Oeste - SP;1
+10;04/07/2015;Bragantino - SP;1;Santa Cruz - PE;2
+10;04/07/2015;Vitória - BA;4;Bahia - BA;1
+10;04/07/2015;América - MG;3;Mogi Mirim - SP;1
+10;04/07/2015;Crb - AL;1;Boa - MG;1
+11;07/07/2015;Criciúma - SC;1;Bragantino - SP;0
+11;07/07/2015;Atlético - GO;1;Abc - RN;2
+11;07/07/2015;Sampaio Correa - MA;3;Luverdense - MT;1
+11;07/07/2015;Oeste - SP;1;Paraná - PR;0
+11;07/07/2015;Boa - MG;0;Vitória - BA;0
+11;07/07/2015;Mogi Mirim - SP;2;Náutico - PE;1
+11;07/07/2015;Macaé - RJ;1;América - MG;1
+11;07/07/2015;Bahia - BA;2;Paysandu - PA;0
+11;07/07/2015;Santa Cruz - PE;2;Crb - AL;1
+11;07/07/2015;Ceará - CE;0;Botafogo - RJ;0
+12;10/07/2015;Macaé - RJ;2;Paysandu - PA;1
+12;10/07/2015;Ceará - CE;1;Criciúma - SC;1
+12;10/07/2015;Atlético - GO;1;Mogi Mirim - SP;1
+12;10/07/2015;Bragantino - SP;1;Botafogo - RJ;0
+12;11/07/2015;América - MG;2;Abc - RN;1
+12;11/07/2015;Paraná - PR;0;Vitória - BA;1
+12;11/07/2015;Sampaio Correa - MA;3;Boa - MG;0
+12;11/07/2015;Náutico - PE;2;Santa Cruz - PE;1
+12;11/07/2015;Crb - AL;0;Luverdense - MT;0
+12;11/07/2015;Bahia - BA;1;Oeste - SP;0
+13;14/07/2015;Abc - RN;1;Paraná - PR;4
+13;14/07/2015;Mogi Mirim - SP;3;Macaé - RJ;1
+13;17/07/2015;Vitória - BA;3;Crb - AL;1
+13;17/07/2015;Luverdense - MT;2;Bragantino - SP;1
+13;18/07/2015;Botafogo - RJ;1;Náutico - PE;0
+13;18/07/2015;Criciúma - SC;2;Bahia - BA;1
+13;18/07/2015;Paysandu - PA;1;Sampaio Correa - MA;1
+13;18/07/2015;Santa Cruz - PE;3;Atlético - GO;0
+13;18/07/2015;Oeste - SP;3;América - MG;1
+13;18/07/2015;Boa - MG;0;Ceará - CE;0
+14;21/07/2015;Macaé - RJ;0;Paraná - PR;0
+14;24/07/2015;América - MG;2;Boa - MG;0
+14;24/07/2015;Bragantino - SP;0;Atlético - GO;1
+14;25/07/2015;Náutico - PE;2;Vitória - BA;1
+14;25/07/2015;Crb - AL;3;Paysandu - PA;0
+14;25/07/2015;Sampaio Correa - MA;3;Abc - RN;2
+14;25/07/2015;Criciúma - SC;0;Santa Cruz - PE;0
+14;25/07/2015;Bahia - BA;1;Botafogo - RJ;1
+14;25/07/2015;Ceará - CE;2;Mogi Mirim - SP;3
+14;25/07/2015;Luverdense - MT;1;Oeste - SP;1
+15;28/07/2015;Santa Cruz - PE;3;Bahia - BA;1
+15;28/07/2015;Paysandu - PA;2;América - MG;0
+15;28/07/2015;Oeste - SP;1;Sampaio Correa - MA;0
+15;28/07/2015;Abc - RN;0;Ceará - CE;1
+15;28/07/2015;Paraná - PR;2;Náutico - PE;0
+15;28/07/2015;Vitória - BA;0;Macaé - RJ;0
+15;28/07/2015;Boa - MG;2;Luverdense - MT;1
+15;28/07/2015;Mogi Mirim - SP;2;Bragantino - SP;3
+15;28/07/2015;Atlético - GO;1;Crb - AL;0
+15;28/07/2015;Botafogo - RJ;0;Criciúma - SC;0
+16;31/07/2015;Boa - MG;1;Criciúma - SC;1
+16;31/07/2015;Paysandu - PA;1;Mogi Mirim - SP;1
+16;31/07/2015;Abc - RN;0;Bahia - BA;3
+16;01/08/2015;Atlético - GO;3;Sampaio Correa - MA;1
+16;01/08/2015;Oeste - SP;1;Santa Cruz - PE;0
+16;01/08/2015;Vitória - BA;1;América - MG;1
+16;01/08/2015;Paraná - PR;0;Crb - AL;0
+16;01/08/2015;Botafogo - RJ;0;Luverdense - MT;0
+16;01/08/2015;Náutico - PE;1;Macaé - RJ;1
+16;01/08/2015;Bragantino - SP;3;Ceará - CE;0
+17;04/08/2015;América - MG;2;Paraná - PR;0
+17;04/08/2015;Sampaio Correa - MA;2;Bragantino - SP;0
+17;07/08/2015;Criciúma - SC;3;Oeste - SP;2
+17;07/08/2015;Luverdense - MT;1;Paysandu - PA;0
+17;07/08/2015;Bahia - BA;4;Boa - MG;1
+17;08/08/2015;Santa Cruz - PE;1;Botafogo - RJ;0
+17;08/08/2015;Ceará - CE;1;Vitória - BA;2
+17;08/08/2015;Crb - AL;1;Náutico - PE;0
+17;08/08/2015;Macaé - RJ;0;Atlético - GO;1
+17;08/08/2015;Mogi Mirim - SP;2;Abc - RN;2
+18;11/08/2015;Ceará - CE;0;América - MG;2
+18;11/08/2015;Oeste - SP;0;Atlético - GO;0
+18;11/08/2015;Criciúma - SC;1;Paysandu - PA;0
+18;11/08/2015;Santa Cruz - PE;2;Mogi Mirim - SP;1
+18;11/08/2015;Sampaio Correa - MA;1;Crb - AL;0
+18;11/08/2015;Bahia - BA;1;Náutico - PE;1
+18;11/08/2015;Luverdense - MT;0;Vitória - BA;2
+18;11/08/2015;Botafogo - RJ;3;Abc - RN;1
+18;11/08/2015;Boa - MG;2;Macaé - RJ;1
+18;11/08/2015;Bragantino - SP;2;Paraná - PR;1
+19;14/08/2015;Paraná - PR;1;Sampaio Correa - MA;0
+19;14/08/2015;Vitória - BA;2;Santa Cruz - PE;1
+19;14/08/2015;Atlético - GO;1;Bahia - BA;1
+19;15/08/2015;Náutico - PE;3;Bragantino - SP;1
+19;15/08/2015;Abc - RN;0;Boa - MG;1
+19;15/08/2015;Paysandu - PA;3;Oeste - SP;1
+19;15/08/2015;América - MG;1;Botafogo - RJ;2
+19;15/08/2015;Crb - AL;3;Criciúma - SC;1
+19;15/08/2015;Mogi Mirim - SP;1;Luverdense - MT;1
+19;15/08/2015;Macaé - RJ;1;Ceará - CE;2
+20;21/08/2015;Criciúma - SC;0;Mogi Mirim - SP;0
+20;21/08/2015;Santa Cruz - PE;1;Macaé - RJ;0
+20;22/08/2015;Oeste - SP;1;Abc - RN;1
+20;22/08/2015;Bahia - BA;1;América - MG;1
+20;22/08/2015;Bragantino - SP;2;Crb - AL;1
+20;22/08/2015;Sampaio Correa - MA;1;Vitória - BA;0
+20;22/08/2015;Luverdense - MT;5;Náutico - PE;1
+20;22/08/2015;Boa - MG;2;Atlético - GO;2
+20;23/08/2015;Botafogo - RJ;2;Paysandu - PA;3
+20;23/08/2015;Ceará - CE;4;Paraná - PR;3
+21;25/08/2015;Vitória - BA;1;Oeste - SP;1
+21;25/08/2015;Abc - RN;2;Criciúma - SC;2
+21;28/08/2015;América - MG;1;Luverdense - MT;2
+21;28/08/2015;Crb - AL;2;Botafogo - RJ;1
+21;29/08/2015;Macaé - RJ;1;Sampaio Correa - MA;1
+21;29/08/2015;Paraná - PR;3;Santa Cruz - PE;2
+21;29/08/2015;Paysandu - PA;2;Bragantino - SP;0
+21;29/08/2015;Náutico - PE;1;Boa - MG;0
+21;29/08/2015;Atlético - GO;3;Ceará - CE;2
+21;29/08/2015;Mogi Mirim - SP;1;Bahia - BA;1
+22;01/09/2015;Criciúma - SC;1;Náutico - PE;0
+22;01/09/2015;Ceará - CE;0;Paysandu - PA;0
+22;01/09/2015;Bahia - BA;3;Crb - AL;2
+22;01/09/2015;Bragantino - SP;2;Vitória - BA;1
+22;01/09/2015;Boa - MG;1;Paraná - PR;2
+22;01/09/2015;Sampaio Correa - MA;3;Mogi Mirim - SP;1
+22;01/09/2015;Santa Cruz - PE;2;América - MG;1
+22;01/09/2015;Luverdense - MT;1;Abc - RN;1
+22;01/09/2015;Botafogo - RJ;4;Atlético - GO;0
+22;01/09/2015;Oeste - SP;1;Macaé - RJ;2
+23;04/09/2015;Mogi Mirim - SP;0;Oeste - SP;0
+23;04/09/2015;Crb - AL;1;Ceará - CE;3
+23;04/09/2015;Náutico - PE;1;Sampaio Correa - MA;1
+23;04/09/2015;Abc - RN;1;Santa Cruz - PE;1
+23;04/09/2015;Macaé - RJ;1;Luverdense - MT;3
+23;04/09/2015;Paraná - PR;1;Bahia - BA;0
+23;05/09/2015;Vitória - BA;1;Botafogo - RJ;2
+23;05/09/2015;América - MG;1;Bragantino - SP;2
+23;05/09/2015;Paysandu - PA;3;Boa - MG;0
+23;22/09/2015;Atlético - GO;0;Criciúma - SC;0
+24;07/09/2015;Oeste - SP;0;Crb - AL;0
+24;07/09/2015;Ceará - CE;1;Náutico - PE;0
+24;08/09/2015;Sampaio Correa - MA;0;América - MG;2
+24;08/09/2015;Bahia - BA;1;Macaé - RJ;0
+24;08/09/2015;Santa Cruz - PE;1;Paysandu - PA;2
+24;08/09/2015;Botafogo - RJ;2;Paraná - PR;1
+24;08/09/2015;Bragantino - SP;3;Abc - RN;1
+24;08/09/2015;Boa - MG;0;Mogi Mirim - SP;1
+24;08/09/2015;Criciúma - SC;2;Vitória - BA;3
+24;08/09/2015;Luverdense - MT;1;Atlético - GO;1
+25;11/09/2015;Bahia - BA;3;Bragantino - SP;2
+25;11/09/2015;Paraná - PR;1;Paysandu - PA;1
+25;11/09/2015;Oeste - SP;2;Boa - MG;1
+25;11/09/2015;Mogi Mirim - SP;0;Botafogo - RJ;3
+25;12/09/2015;Santa Cruz - PE;2;Luverdense - MT;0
+25;12/09/2015;Abc - RN;0;Crb - AL;0
+25;12/09/2015;Atlético - GO;0;Vitória - BA;0
+25;12/09/2015;Sampaio Correa - MA;1;Ceará - CE;0
+25;12/09/2015;América - MG;2;Náutico - PE;1
+25;12/09/2015;Macaé - RJ;1;Criciúma - SC;1
+26;15/09/2015;Bragantino - SP;2;Macaé - RJ;2
+26;15/09/2015;Ceará - CE;2;Bahia - BA;2
+26;15/09/2015;Criciúma - SC;1;Sampaio Correa - MA;1
+26;15/09/2015;Paysandu - PA;3;Abc - RN;2
+26;15/09/2015;Náutico - PE;1;Atlético - GO;1
+26;15/09/2015;Luverdense - MT;2;Paraná - PR;0
+26;15/09/2015;Crb - AL;1;América - MG;0
+26;15/09/2015;Vitória - BA;4;Mogi Mirim - SP;1
+26;15/09/2015;Botafogo - RJ;1;Oeste - SP;1
+26;15/09/2015;Boa - MG;1;Santa Cruz - PE;3
+27;18/09/2015;Abc - RN;0;Vitória - BA;0
+27;18/09/2015;Atlético - GO;1;América - MG;1
+27;18/09/2015;Boa - MG;0;Botafogo - RJ;1
+27;19/09/2015;Bahia - BA;1;Sampaio Correa - MA;1
+27;19/09/2015;Mogi Mirim - SP;1;Paraná - PR;2
+27;19/09/2015;Paysandu - PA;0;Náutico - PE;1
+27;19/09/2015;Santa Cruz - PE;2;Ceará - CE;1
+27;19/09/2015;Oeste - SP;1;Bragantino - SP;1
+27;19/09/2015;Criciúma - SC;0;Luverdense - MT;1
+27;19/09/2015;Macaé - RJ;0;Crb - AL;0
+28;22/09/2015;Botafogo - RJ;2;Macaé - RJ;1
+28;22/09/2015;Bragantino - SP;2;Boa - MG;1
+28;25/09/2015;América - MG;2;Criciúma - SC;1
+28;26/09/2015;Crb - AL;2;Mogi Mirim - SP;1
+28;26/09/2015;Sampaio Correa - MA;0;Santa Cruz - PE;0
+28;26/09/2015;Náutico - PE;3;Abc - RN;0
+28;26/09/2015;Ceará - CE;1;Oeste - SP;1
+28;26/09/2015;Vitória - BA;3;Paysandu - PA;1
+28;26/09/2015;Paraná - PR;1;Atlético - GO;2
+28;26/09/2015;Luverdense - MT;2;Bahia - BA;2
+29;29/09/2015;Ceará - CE;0;Luverdense - MT;1
+29;29/09/2015;Santa Cruz - PE;3;Bragantino - SP;1
+29;02/10/2015;Criciúma - SC;0;Paraná - PR;0
+29;02/10/2015;Sampaio Correa - MA;2;Botafogo - RJ;2
+29;03/10/2015;Atlético - GO;2;Paysandu - PA;1
+29;03/10/2015;Oeste - SP;2;Náutico - PE;0
+29;03/10/2015;Bahia - BA;1;Vitória - BA;3
+29;03/10/2015;Boa - MG;1;Crb - AL;3
+29;03/10/2015;Macaé - RJ;3;Abc - RN;1
+29;03/10/2015;Mogi Mirim - SP;1;América - MG;2
+30;06/10/2015;Bragantino - SP;2;Criciúma - SC;0
+30;06/10/2015;Crb - AL;3;Santa Cruz - PE;2
+30;06/10/2015;América - MG;1;Macaé - RJ;0
+30;06/10/2015;Paraná - PR;1;Oeste - SP;1
+30;06/10/2015;Náutico - PE;1;Mogi Mirim - SP;0
+30;06/10/2015;Abc - RN;1;Atlético - GO;1
+30;06/10/2015;Luverdense - MT;2;Sampaio Correa - MA;1
+30;06/10/2015;Paysandu - PA;0;Bahia - BA;0
+30;10/10/2015;Vitória - BA;2;Boa - MG;1
+30;20/10/2015;Botafogo - RJ;0;Ceará - CE;1
+31;16/10/2015;Boa - MG;2;Sampaio Correa - MA;2
+31;16/10/2015;Vitória - BA;1;Paraná - PR;1
+31;17/10/2015;Botafogo - RJ;4;Bragantino - SP;0
+31;17/10/2015;Mogi Mirim - SP;0;Atlético - GO;2
+31;17/10/2015;Criciúma - SC;3;Ceará - CE;0
+31;17/10/2015;Santa Cruz - PE;1;Náutico - PE;3
+31;17/10/2015;Abc - RN;4;América - MG;2
+31;17/10/2015;Oeste - SP;0;Bahia - BA;1
+31;17/10/2015;Luverdense - MT;2;Crb - AL;0
+31;17/10/2015;Paysandu - PA;1;Macaé - RJ;1
+32;20/10/2015;Bahia - BA;1;Criciúma - SC;0
+32;23/10/2015;América - MG;2;Oeste - SP;1
+32;23/10/2015;Macaé - RJ;1;Mogi Mirim - SP;0
+32;24/10/2015;Sampaio Correa - MA;2;Paysandu - PA;0
+32;24/10/2015;Náutico - PE;1;Botafogo - RJ;4
+32;24/10/2015;Atlético - GO;0;Santa Cruz - PE;0
+32;24/10/2015;Crb - AL;0;Vitória - BA;0
+32;24/10/2015;Bragantino - SP;3;Luverdense - MT;2
+32;24/10/2015;Ceará - CE;2;Boa - MG;1
+32;27/10/2015;Paraná - PR;0;Abc - RN;0
+33;27/10/2015;Boa - MG;1;América - MG;2
+33;27/10/2015;Oeste - SP;1;Luverdense - MT;0
+33;27/10/2015;Santa Cruz - PE;2;Criciúma - SC;0
+33;30/10/2015;Paraná - PR;3;Macaé - RJ;0
+33;30/10/2015;Atlético - GO;0;Bragantino - SP;1
+33;31/10/2015;Vitória - BA;2;Náutico - PE;3
+33;31/10/2015;Botafogo - RJ;1;Bahia - BA;0
+33;31/10/2015;Mogi Mirim - SP;0;Ceará - CE;2
+33;31/10/2015;Paysandu - PA;5;Crb - AL;1
+33;31/10/2015;Abc - RN;2;Sampaio Correa - MA;3
+34;03/11/2015;Bragantino - SP;3;Mogi Mirim - SP;1
+34;03/11/2015;América - MG;3;Paysandu - PA;1
+34;06/11/2015;Ceará - CE;3;Abc - RN;0
+34;06/11/2015;Luverdense - MT;2;Boa - MG;0
+34;07/11/2015;Criciúma - SC;1;Botafogo - RJ;0
+34;07/11/2015;Macaé - RJ;0;Vitória - BA;2
+34;07/11/2015;Bahia - BA;1;Santa Cruz - PE;2
+34;07/11/2015;Náutico - PE;2;Paraná - PR;0
+34;07/11/2015;Sampaio Correa - MA;1;Oeste - SP;1
+34;07/11/2015;Crb - AL;4;Atlético - GO;1
+35;10/11/2015;Mogi Mirim - SP;1;Paysandu - PA;1
+35;10/11/2015;América - MG;4;Vitória - BA;0
+35;10/11/2015;Criciúma - SC;3;Boa - MG;0
+35;10/11/2015;Macaé - RJ;1;Náutico - PE;1
+35;10/11/2015;Ceará - CE;3;Bragantino - SP;0
+35;10/11/2015;Crb - AL;2;Paraná - PR;0
+35;10/11/2015;Luverdense - MT;0;Botafogo - RJ;1
+35;10/11/2015;Santa Cruz - PE;3;Oeste - SP;1
+35;10/11/2015;Sampaio Correa - MA;2;Atlético - GO;0
+35;10/11/2015;Bahia - BA;2;Abc - RN;2
+36;13/11/2015;Paysandu - PA;3;Luverdense - MT;2
+36;13/11/2015;Abc - RN;3;Mogi Mirim - SP;1
+36;13/11/2015;Oeste - SP;1;Criciúma - SC;1
+36;14/11/2015;Vitória - BA;1;Ceará - CE;0
+36;14/11/2015;Botafogo - RJ;0;Santa Cruz - PE;3
+36;14/11/2015;Bragantino - SP;3;Sampaio Correa - MA;0
+36;14/11/2015;Boa - MG;3;Bahia - BA;0
+36;14/11/2015;Náutico - PE;1;Crb - AL;1
+36;14/11/2015;Atlético - GO;3;Macaé - RJ;4
+36;14/11/2015;Paraná - PR;1;América - MG;0
+37;20/11/2015;Atlético - GO;3;Oeste - SP;1
+37;20/11/2015;Macaé - RJ;1;Boa - MG;1
+37;20/11/2015;Abc - RN;1;Botafogo - RJ;2
+37;21/11/2015;Náutico - PE;1;Bahia - BA;0
+37;21/11/2015;Paraná - PR;0;Bragantino - SP;2
+37;21/11/2015;Crb - AL;2;Sampaio Correa - MA;1
+37;21/11/2015;América - MG;1;Ceará - CE;1
+37;21/11/2015;Mogi Mirim - SP;0;Santa Cruz - PE;3
+37;21/11/2015;Vitória - BA;3;Luverdense - MT;0
+37;21/11/2015;Paysandu - PA;1;Criciúma - SC;0
+38;24/11/2015;Boa - MG;2;Abc - RN;0
+38;27/11/2015;Criciúma - SC;2;Crb - AL;1
+38;27/11/2015;Luverdense - MT;2;Mogi Mirim - SP;0
+38;28/11/2015;Bahia - BA;1;Atlético - GO;0
+38;28/11/2015;Botafogo - RJ;0;América - MG;0
+38;28/11/2015;Bragantino - SP;0;Náutico - PE;2
+38;28/11/2015;Sampaio Correa - MA;1;Paraná - PR;1
+38;28/11/2015;Santa Cruz - PE;3;Vitória - BA;1
+38;28/11/2015;Ceará - CE;1;Macaé - RJ;0
+38;28/11/2015;Oeste - SP;0;Paysandu - PA;0

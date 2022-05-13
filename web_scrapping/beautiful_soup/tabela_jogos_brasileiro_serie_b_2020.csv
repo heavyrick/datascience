@@ -1,0 +1,381 @@
+Ano;Rodada;Data;Time casa;Gols time casa;Time visitante;Gols time visitante
+2020;1;07/08/2020;Cuiabá - MT;0;Brasil - RS;0
+2020;1;07/08/2020;Confiança - SE;2;Paraná - PR;2
+2020;1;08/08/2020;Juventude - RS;2;Crb - AL;1
+2020;1;08/08/2020;Operário - PR;3;Figueirense - SC;1
+2020;1;08/08/2020;Avaí - SC;3;Náutico - PE;1
+2020;1;08/08/2020;Vitória - BA;1;Sampaio Correa - MA;0
+2020;1;08/08/2020;Cruzeiro - MG;2;Botafogo - SP;1
+2020;1;08/08/2020;Ponte Preta - SP;0;America - MG;1
+2020;1;08/08/2020;Csa - AL;1;Guarani - SP;0
+2020;1;09/08/2020;Oeste - SP;0;Chapecoense - SC;0
+2020;2;11/08/2020;Botafogo - SP;2;Confiança - SE;0
+2020;2;11/08/2020;Brasil - RS;1;Ponte Preta - SP;1
+2020;2;11/08/2020;Sampaio Correa - MA;0;Juventude - RS;1
+2020;2;11/08/2020;Guarani - SP;2;Cruzeiro - MG;3
+2020;2;11/08/2020;Paraná - PR;1;Avaí - SC;0
+2020;2;11/08/2020;America - MG;0;Cuiabá - MT;1
+2020;2;11/08/2020;Figueirense - SC;0;Vitória - BA;0
+2020;2;11/08/2020;Náutico - PE;0;Operário - PR;0
+2020;2;12/08/2020;Crb - AL;1;Oeste - SP;0
+2020;2;27/10/2020;Chapecoense - SC;0;Csa - AL;0
+2020;3;14/08/2020;America - MG;1;Operário - PR;1
+2020;3;14/08/2020;Ponte Preta - SP;3;Vitória - BA;3
+2020;3;14/08/2020;Paraná - PR;3;Juventude - RS;1
+2020;3;15/08/2020;Botafogo - SP;0;Guarani - SP;1
+2020;3;15/08/2020;Brasil - RS;1;Oeste - SP;1
+2020;3;15/08/2020;Náutico - PE;1;Crb - AL;1
+2020;3;16/08/2020;Chapecoense - SC;1;Sampaio Correa - MA;0
+2020;3;16/08/2020;Figueirense - SC;0;Cruzeiro - MG;1
+2020;3;15/09/2020;Confiança - SE;2;Avaí - SC;2
+2020;3;16/09/2020;Csa - AL;1;Cuiabá - MT;2
+2020;4;17/08/2020;Juventude - RS;0;America - MG;0
+2020;4;18/08/2020;Operário - PR;3;Csa - AL;0
+2020;4;18/08/2020;Avaí - SC;0;Botafogo - SP;1
+2020;4;18/08/2020;Oeste - SP;1;Ponte Preta - SP;3
+2020;4;18/08/2020;Cuiabá - MT;1;Confiança - SE;0
+2020;4;18/08/2020;Crb - AL;1;Brasil - RS;0
+2020;4;18/08/2020;Guarani - SP;1;Paraná - PR;2
+2020;4;19/08/2020;Vitória - BA;0;Náutico - PE;0
+2020;4;20/08/2020;Cruzeiro - MG;0;Chapecoense - SC;1
+2020;4;14/10/2020;Sampaio Correa - MA;3;Figueirense - SC;0
+2020;5;21/08/2020;America - MG;2;Oeste - SP;1
+2020;5;21/08/2020;Ponte Preta - SP;2;Csa - AL;1
+2020;5;22/08/2020;Avaí - SC;0;Cuiabá - MT;2
+2020;5;22/08/2020;Náutico - PE;3;Juventude - RS;3
+2020;5;22/08/2020;Botafogo - SP;0;Figueirense - SC;1
+2020;5;22/08/2020;Crb - AL;2;Vitória - BA;2
+2020;5;23/08/2020;Paraná - PR;0;Operário - PR;0
+2020;5;23/08/2020;Confiança - SE;1;Cruzeiro - MG;1
+2020;5;24/08/2020;Chapecoense - SC;2;Guarani - SP;0
+2020;5;03/11/2020;Brasil - RS;0;Sampaio Correa - MA;0
+2020;6;28/08/2020;Oeste - SP;0;Avaí - SC;2
+2020;6;28/08/2020;Cuiabá - MT;2;Chapecoense - SC;1
+2020;6;28/08/2020;Guarani - SP;1;Náutico - PE;2
+2020;6;29/08/2020;Juventude - RS;0;Botafogo - SP;0
+2020;6;29/08/2020;Vitória - BA;1;Paraná - PR;0
+2020;6;29/08/2020;Figueirense - SC;0;Confiança - SE;0
+2020;6;29/08/2020;Cruzeiro - MG;1;America - MG;2
+2020;6;29/08/2020;Sampaio Correa - MA;1;Ponte Preta - SP;2
+2020;6;30/08/2020;Csa - AL;0;Crb - AL;2
+2020;6;30/08/2020;Operário - PR;2;Brasil - RS;1
+2020;7;31/08/2020;Guarani - SP;1;Oeste - SP;1
+2020;7;01/09/2020;Botafogo - SP;1;Cuiabá - MT;1
+2020;7;01/09/2020;Paraná - PR;2;Ponte Preta - SP;1
+2020;7;01/09/2020;Chapecoense - SC;1;Juventude - RS;0
+2020;7;01/09/2020;Náutico - PE;1;Figueirense - SC;0
+2020;7;01/09/2020;Confiança - SE;1;Vitória - BA;0
+2020;7;02/09/2020;Avaí - SC;2;Operário - PR;0
+2020;7;02/09/2020;America - MG;2;Csa - AL;1
+2020;7;02/09/2020;Crb - AL;2;Sampaio Correa - MA;2
+2020;7;02/09/2020;Brasil - RS;1;Cruzeiro - MG;0
+2020;8;04/09/2020;Figueirense - SC;0;Paraná - PR;1
+2020;8;04/09/2020;Ponte Preta - SP;1;Botafogo - SP;0
+2020;8;05/09/2020;Oeste - SP;1;Juventude - RS;3
+2020;8;05/09/2020;Csa - AL;1;Confiança - SE;1
+2020;8;05/09/2020;Vitória - BA;4;Cuiabá - MT;2
+2020;8;05/09/2020;Operário - PR;1;Guarani - SP;2
+2020;8;05/09/2020;Sampaio Correa - MA;1;America - MG;0
+2020;8;05/09/2020;Brasil - RS;2;Náutico - PE;1
+2020;8;06/09/2020;Chapecoense - SC;1;Avaí - SC;0
+2020;8;07/09/2020;Cruzeiro - MG;1;Crb - AL;1
+2020;9;08/09/2020;Juventude - RS;3;Confiança - SE;1
+2020;9;08/09/2020;Cuiabá - MT;0;Figueirense - SC;0
+2020;9;09/09/2020;Paraná - PR;0;America - MG;1
+2020;9;11/09/2020;Avaí - SC;0;Ponte Preta - SP;1
+2020;9;11/09/2020;Cruzeiro - MG;1;Vitória - BA;0
+2020;9;12/09/2020;Guarani - SP;0;Brasil - RS;0
+2020;9;12/09/2020;Sampaio Correa - MA;0;Operário - PR;1
+2020;9;12/09/2020;Náutico - PE;3;Botafogo - SP;1
+2020;9;13/09/2020;Oeste - SP;2;Csa - AL;1
+2020;9;14/10/2020;Crb - AL;0;Chapecoense - SC;1
+2020;10;14/09/2020;Paraná - PR;2;Crb - AL;0
+2020;10;14/09/2020;Juventude - RS;1;Vitória - BA;1
+2020;10;18/09/2020;Confiança - SE;1;Guarani - SP;0
+2020;10;18/09/2020;Náutico - PE;1;Chapecoense - SC;1
+2020;10;19/09/2020;America - MG;0;Figueirense - SC;1
+2020;10;19/09/2020;Ponte Preta - SP;1;Operário - PR;1
+2020;10;19/09/2020;Cuiabá - MT;3;Oeste - SP;0
+2020;10;19/09/2020;Csa - AL;3;Cruzeiro - MG;1
+2020;10;20/09/2020;Avaí - SC;2;Sampaio Correa - MA;5
+2020;10;21/09/2020;Botafogo - SP;0;Brasil - RS;1
+2020;11;22/09/2020;Operário - PR;1;Cuiabá - MT;1
+2020;11;25/09/2020;Chapecoense - SC;0;America - MG;0
+2020;11;25/09/2020;Botafogo - SP;1;Crb - AL;2
+2020;11;25/09/2020;Cruzeiro - MG;0;Avaí - SC;1
+2020;11;26/09/2020;Figueirense - SC;2;Guarani - SP;2
+2020;11;26/09/2020;Csa - AL;3;Juventude - RS;2
+2020;11;26/09/2020;Vitória - BA;3;Oeste - SP;1
+2020;11;26/09/2020;Brasil - RS;1;Paraná - PR;1
+2020;11;27/09/2020;Ponte Preta - SP;2;Confiança - SE;1
+2020;11;17/11/2020;Sampaio Correa - MA;2;Náutico - PE;1
+2020;12;28/09/2020;Crb - AL;0;America - MG;0
+2020;12;29/09/2020;Vitória - BA;0;Csa - AL;1
+2020;12;29/09/2020;Avaí - SC;1;Figueirense - SC;0
+2020;12;29/09/2020;Juventude - RS;1;Operário - PR;0
+2020;12;29/09/2020;Oeste - SP;0;Botafogo - SP;1
+2020;12;29/09/2020;Guarani - SP;1;Sampaio Correa - MA;1
+2020;12;29/09/2020;Paraná - PR;1;Chapecoense - SC;1
+2020;12;29/09/2020;Cuiabá - MT;1;Náutico - PE;0
+2020;12;30/09/2020;Confiança - SE;1;Brasil - RS;1
+2020;12;30/09/2020;Cruzeiro - MG;3;Ponte Preta - SP;0
+2020;13;02/10/2020;Figueirense - SC;4;Oeste - SP;1
+2020;13;02/10/2020;Operário - PR;1;Vitória - BA;1
+2020;13;02/10/2020;Crb - AL;3;Avaí - SC;1
+2020;13;02/10/2020;Botafogo - SP;1;Paraná - PR;0
+2020;13;03/10/2020;America - MG;0;Guarani - SP;0
+2020;13;03/10/2020;Náutico - PE;0;Confiança - SE;1
+2020;13;03/10/2020;Brasil - RS;0;Chapecoense - SC;1
+2020;13;03/10/2020;Sampaio Correa - MA;1;Csa - AL;0
+2020;13;03/10/2020;Ponte Preta - SP;1;Juventude - RS;3
+2020;13;03/10/2020;Cuiabá - MT;1;Cruzeiro - MG;0
+2020;14;05/10/2020;Oeste - SP;0;Operário - PR;1
+2020;14;06/10/2020;Chapecoense - SC;1;Botafogo - SP;0
+2020;14;06/10/2020;Confiança - SE;1;Crb - AL;0
+2020;14;06/10/2020;Vitória - BA;1;America - MG;2
+2020;14;06/10/2020;Paraná - PR;0;Náutico - PE;0
+2020;14;06/10/2020;Avaí - SC;2;Brasil - RS;1
+2020;14;06/10/2020;Csa - AL;3;Figueirense - SC;0
+2020;14;06/10/2020;Juventude - RS;1;Cuiabá - MT;1
+2020;14;06/10/2020;Ponte Preta - SP;2;Guarani - SP;0
+2020;14;08/10/2020;Cruzeiro - MG;1;Sampaio Correa - MA;2
+2020;15;09/10/2020;Figueirense - SC;0;Chapecoense - SC;0
+2020;15;09/10/2020;Operário - PR;1;Confiança - SE;1
+2020;15;09/10/2020;Cuiabá - MT;2;Ponte Preta - SP;1
+2020;15;09/10/2020;America - MG;2;Náutico - PE;0
+2020;15;10/10/2020;Juventude - RS;1;Brasil - RS;2
+2020;15;10/10/2020;Vitória - BA;1;Avaí - SC;2
+2020;15;10/10/2020;Guarani - SP;3;Crb - AL;1
+2020;15;10/10/2020;Csa - AL;4;Paraná - PR;0
+2020;15;11/10/2020;Oeste - SP;0;Cruzeiro - MG;0
+2020;15;11/10/2020;Sampaio Correa - MA;2;Botafogo - SP;0
+2020;16;12/10/2020;Náutico - PE;0;Ponte Preta - SP;2
+2020;16;13/10/2020;Avaí - SC;1;Csa - AL;1
+2020;16;13/10/2020;Guarani - SP;1;Cuiabá - MT;0
+2020;16;16/10/2020;Botafogo - SP;1;America - MG;2
+2020;16;16/10/2020;Cruzeiro - MG;0;Juventude - RS;0
+2020;16;17/10/2020;Chapecoense - SC;1;Vitória - BA;1
+2020;16;17/10/2020;Confiança - SE;3;Oeste - SP;1
+2020;16;17/10/2020;Crb - AL;4;Operário - PR;1
+2020;16;17/10/2020;Brasil - RS;0;Figueirense - SC;0
+2020;16;18/10/2020;Paraná - PR;0;Sampaio Correa - MA;0
+2020;17;20/10/2020;America - MG;3;Brasil - RS;1
+2020;17;20/10/2020;Csa - AL;1;Botafogo - SP;0
+2020;17;20/10/2020;Juventude - RS;3;Avaí - SC;0
+2020;17;20/10/2020;Oeste - SP;0;Náutico - PE;1
+2020;17;20/10/2020;Operário - PR;0;Cruzeiro - MG;1
+2020;17;20/10/2020;Ponte Preta - SP;0;Chapecoense - SC;5
+2020;17;21/10/2020;Figueirense - SC;2;Crb - AL;0
+2020;17;21/10/2020;Sampaio Correa - MA;1;Confiança - SE;3
+2020;17;21/10/2020;Cuiabá - MT;3;Paraná - PR;3
+2020;17;22/10/2020;Vitória - BA;1;Guarani - SP;1
+2020;18;23/10/2020;Brasil - RS;1;Csa - AL;1
+2020;18;23/10/2020;Chapecoense - SC;1;Operário - PR;0
+2020;18;24/10/2020;Crb - AL;1;Ponte Preta - SP;0
+2020;18;24/10/2020;Sampaio Correa - MA;3;Cuiabá - MT;0
+2020;18;24/10/2020;America - MG;2;Confiança - SE;1
+2020;18;25/10/2020;Náutico - PE;1;Cruzeiro - MG;1
+2020;18;25/10/2020;Figueirense - SC;1;Juventude - RS;1
+2020;18;25/10/2020;Guarani - SP;2;Avaí - SC;1
+2020;18;25/10/2020;Botafogo - SP;2;Vitória - BA;1
+2020;18;26/10/2020;Paraná - PR;4;Oeste - SP;0
+2020;19;30/10/2020;Vitória - BA;0;Brasil - RS;0
+2020;19;30/10/2020;Cruzeiro - MG;2;Paraná - PR;0
+2020;19;31/10/2020;Oeste - SP;0;Sampaio Correa - MA;3
+2020;19;31/10/2020;Confiança - SE;0;Chapecoense - SC;2
+2020;19;31/10/2020;Avaí - SC;1;America - MG;0
+2020;19;31/10/2020;Operário - PR;0;Botafogo - SP;0
+2020;19;31/10/2020;Csa - AL;3;Náutico - PE;1
+2020;19;31/10/2020;Cuiabá - MT;3;Crb - AL;0
+2020;19;01/11/2020;Juventude - RS;1;Guarani - SP;0
+2020;19;02/11/2020;Ponte Preta - SP;2;Figueirense - SC;1
+2020;20;06/11/2020;Guarani - SP;2;Csa - AL;1
+2020;20;06/11/2020;Náutico - PE;2;Avaí - SC;2
+2020;20;06/11/2020;Botafogo - SP;0;Cruzeiro - MG;1
+2020;20;06/11/2020;Paraná - PR;1;Confiança - SE;1
+2020;20;07/11/2020;Brasil - RS;3;Cuiabá - MT;0
+2020;20;07/11/2020;Figueirense - SC;0;Operário - PR;1
+2020;20;07/11/2020;America - MG;1;Ponte Preta - SP;1
+2020;20;07/11/2020;Chapecoense - SC;0;Oeste - SP;0
+2020;20;08/11/2020;Sampaio Correa - MA;2;Vitória - BA;1
+2020;20;08/11/2020;Crb - AL;0;Juventude - RS;1
+2020;21;09/11/2020;Cruzeiro - MG;3;Guarani - SP;3
+2020;21;10/11/2020;Csa - AL;0;Chapecoense - SC;1
+2020;21;10/11/2020;Confiança - SE;1;Botafogo - SP;0
+2020;21;12/11/2020;Vitória - BA;3;Figueirense - SC;0
+2020;21;13/11/2020;Ponte Preta - SP;1;Brasil - RS;1
+2020;21;13/11/2020;Operário - PR;3;Náutico - PE;1
+2020;21;13/11/2020;Avaí - SC;2;Paraná - PR;1
+2020;21;13/11/2020;Oeste - SP;1;Crb - AL;2
+2020;21;14/11/2020;Juventude - RS;2;Sampaio Correa - MA;3
+2020;21;14/11/2020;Cuiabá - MT;0;America - MG;0
+2020;22;20/11/2020;Avaí - SC;1;Confiança - SE;0
+2020;22;20/11/2020;Vitória - BA;0;Ponte Preta - SP;0
+2020;22;20/11/2020;Juventude - RS;5;Paraná - PR;0
+2020;22;20/11/2020;Guarani - SP;2;Botafogo - SP;1
+2020;22;20/11/2020;Sampaio Correa - MA;1;Chapecoense - SC;3
+2020;22;20/11/2020;Cruzeiro - MG;1;Figueirense - SC;1
+2020;22;21/11/2020;Operário - PR;0;America - MG;1
+2020;22;21/11/2020;Oeste - SP;2;Brasil - RS;1
+2020;22;21/11/2020;Crb - AL;2;Náutico - PE;1
+2020;22;21/11/2020;Cuiabá - MT;0;Csa - AL;1
+2020;23;23/11/2020;Figueirense - SC;1;Sampaio Correa - MA;2
+2020;23;23/11/2020;Botafogo - SP;0;Avaí - SC;1
+2020;23;24/11/2020;Paraná - PR;1;Guarani - SP;2
+2020;23;24/11/2020;Csa - AL;1;Operário - PR;0
+2020;23;24/11/2020;Ponte Preta - SP;1;Oeste - SP;0
+2020;23;24/11/2020;Confiança - SE;2;Cuiabá - MT;0
+2020;23;24/11/2020;Brasil - RS;2;Crb - AL;1
+2020;23;24/11/2020;America - MG;2;Juventude - RS;1
+2020;23;24/11/2020;Chapecoense - SC;0;Cruzeiro - MG;1
+2020;23;25/11/2020;Náutico - PE;0;Vitória - BA;0
+2020;24;26/11/2020;Figueirense - SC;0;Botafogo - SP;0
+2020;24;27/11/2020;Sampaio Correa - MA;0;Brasil - RS;1
+2020;24;27/11/2020;Operário - PR;1;Paraná - PR;0
+2020;24;27/11/2020;Oeste - SP;1;America - MG;1
+2020;24;27/11/2020;Cruzeiro - MG;1;Confiança - SE;2
+2020;24;27/11/2020;Cuiabá - MT;2;Avaí - SC;1
+2020;24;28/11/2020;Csa - AL;2;Ponte Preta - SP;1
+2020;24;28/11/2020;Vitória - BA;2;Crb - AL;1
+2020;24;28/11/2020;Juventude - RS;1;Náutico - PE;0
+2020;24;28/11/2020;Guarani - SP;2;Chapecoense - SC;0
+2020;25;30/11/2020;Brasil - RS;0;Operário - PR;0
+2020;25;30/11/2020;Avaí - SC;0;Oeste - SP;3
+2020;25;01/12/2020;Chapecoense - SC;1;Cuiabá - MT;0
+2020;25;01/12/2020;Confiança - SE;1;Figueirense - SC;1
+2020;25;01/12/2020;Náutico - PE;2;Guarani - SP;0
+2020;25;01/12/2020;Crb - AL;0;Csa - AL;0
+2020;25;01/12/2020;Paraná - PR;1;Vitória - BA;4
+2020;25;01/12/2020;Ponte Preta - SP;1;Sampaio Correa - MA;1
+2020;25;02/12/2020;Botafogo - SP;1;Juventude - RS;1
+2020;25;02/12/2020;America - MG;1;Cruzeiro - MG;2
+2020;26;03/12/2020;Operário - PR;1;Avaí - SC;1
+2020;26;04/12/2020;Oeste - SP;0;Guarani - SP;1
+2020;26;04/12/2020;Vitória - BA;2;Confiança - SE;3
+2020;26;04/12/2020;Ponte Preta - SP;2;Paraná - PR;1
+2020;26;05/12/2020;Juventude - RS;1;Chapecoense - SC;1
+2020;26;05/12/2020;Csa - AL;0;America - MG;1
+2020;26;05/12/2020;Sampaio Correa - MA;3;Crb - AL;0
+2020;26;05/12/2020;Cruzeiro - MG;4;Brasil - RS;1
+2020;26;05/12/2020;Cuiabá - MT;2;Botafogo - SP;0
+2020;26;06/12/2020;Figueirense - SC;2;Náutico - PE;0
+2020;27;08/12/2020;Juventude - RS;2;Oeste - SP;2
+2020;27;08/12/2020;Guarani - SP;3;Operário - PR;0
+2020;27;08/12/2020;Botafogo - SP;2;Ponte Preta - SP;1
+2020;27;08/12/2020;America - MG;2;Sampaio Correa - MA;1
+2020;27;08/12/2020;Avaí - SC;0;Chapecoense - SC;2
+2020;27;08/12/2020;Crb - AL;0;Cruzeiro - MG;0
+2020;27;08/12/2020;Confiança - SE;1;Csa - AL;5
+2020;27;08/12/2020;Cuiabá - MT;3;Vitória - BA;3
+2020;27;09/12/2020;Paraná - PR;0;Figueirense - SC;2
+2020;27;10/12/2020;Náutico - PE;1;Brasil - RS;0
+2020;28;11/12/2020;Operário - PR;1;Sampaio Correa - MA;1
+2020;28;11/12/2020;Csa - AL;2;Oeste - SP;1
+2020;28;11/12/2020;Ponte Preta - SP;1;Avaí - SC;2
+2020;28;11/12/2020;Vitória - BA;0;Cruzeiro - MG;1
+2020;28;12/12/2020;Figueirense - SC;1;Cuiabá - MT;0
+2020;28;12/12/2020;America - MG;1;Paraná - PR;0
+2020;28;12/12/2020;Confiança - SE;0;Juventude - RS;1
+2020;28;12/12/2020;Chapecoense - SC;3;Crb - AL;2
+2020;28;13/12/2020;Botafogo - SP;1;Náutico - PE;1
+2020;28;13/12/2020;Brasil - RS;3;Guarani - SP;1
+2020;29;14/12/2020;Operário - PR;1;Ponte Preta - SP;0
+2020;29;15/12/2020;Oeste - SP;0;Cuiabá - MT;2
+2020;29;15/12/2020;Sampaio Correa - MA;0;Avaí - SC;1
+2020;29;15/12/2020;Vitória - BA;1;Juventude - RS;0
+2020;29;15/12/2020;Cruzeiro - MG;1;Csa - AL;1
+2020;29;16/12/2020;Brasil - RS;0;Botafogo - SP;0
+2020;29;16/12/2020;Guarani - SP;1;Confiança - SE;0
+2020;29;16/12/2020;Chapecoense - SC;0;Náutico - PE;0
+2020;29;17/12/2020;Figueirense - SC;1;America - MG;2
+2020;29;17/12/2020;Crb - AL;0;Paraná - PR;2
+2020;30;18/12/2020;Oeste - SP;2;Vitória - BA;1
+2020;30;18/12/2020;Juventude - RS;1;Csa - AL;0
+2020;30;18/12/2020;Avaí - SC;1;Cruzeiro - MG;1
+2020;30;18/12/2020;Cuiabá - MT;2;Operário - PR;0
+2020;30;19/12/2020;Náutico - PE;1;Sampaio Correa - MA;0
+2020;30;19/12/2020;Confiança - SE;1;Ponte Preta - SP;2
+2020;30;20/12/2020;America - MG;2;Chapecoense - SC;2
+2020;30;20/12/2020;Guarani - SP;2;Figueirense - SC;2
+2020;30;20/12/2020;Crb - AL;1;Botafogo - SP;0
+2020;30;21/12/2020;Paraná - PR;0;Brasil - RS;1
+2020;31;22/12/2020;Operário - PR;3;Juventude - RS;0
+2020;31;22/12/2020;Csa - AL;3;Vitória - BA;0
+2020;31;22/12/2020;Ponte Preta - SP;2;Cruzeiro - MG;1
+2020;31;22/12/2020;Náutico - PE;2;Cuiabá - MT;0
+2020;31;23/12/2020;Sampaio Correa - MA;0;Guarani - SP;1
+2020;31;23/12/2020;Botafogo - SP;1;Oeste - SP;1
+2020;31;26/12/2020;Figueirense - SC;2;Avaí - SC;0
+2020;31;26/12/2020;America - MG;1;Crb - AL;0
+2020;31;28/12/2020;Brasil - RS;1;Confiança - SE;0
+2020;31;28/12/2020;Chapecoense - SC;2;Paraná - PR;0
+2020;32;29/12/2020;Avaí - SC;0;Crb - AL;1
+2020;32;29/12/2020;Cruzeiro - MG;0;Cuiabá - MT;0
+2020;32;30/12/2020;Juventude - RS;2;Ponte Preta - SP;1
+2020;32;02/01/2021;Csa - AL;2;Sampaio Correa - MA;1
+2020;32;02/01/2021;Oeste - SP;2;Figueirense - SC;1
+2020;32;02/01/2021;Guarani - SP;0;America - MG;1
+2020;32;03/01/2021;Chapecoense - SC;0;Brasil - RS;0
+2020;32;03/01/2021;Vitória - BA;1;Operário - PR;1
+2020;32;04/01/2021;Paraná - PR;1;Botafogo - SP;1
+2020;32;04/01/2021;Confiança - SE;2;Náutico - PE;0
+2020;33;05/01/2021;Guarani - SP;1;Ponte Preta - SP;1
+2020;33;05/01/2021;Cuiabá - MT;1;Juventude - RS;0
+2020;33;08/01/2021;Brasil - RS;0;Avaí - SC;1
+2020;33;08/01/2021;Náutico - PE;2;Paraná - PR;1
+2020;33;08/01/2021;Operário - PR;2;Oeste - SP;0
+2020;33;08/01/2021;Crb - AL;2;Confiança - SE;0
+2020;33;08/01/2021;Figueirense - SC;0;Csa - AL;0
+2020;33;08/01/2021;Sampaio Correa - MA;0;Cruzeiro - MG;1
+2020;33;09/01/2021;America - MG;4;Vitória - BA;0
+2020;33;09/01/2021;Botafogo - SP;3;Chapecoense - SC;0
+2020;34;11/01/2021;Ponte Preta - SP;2;Cuiabá - MT;2
+2020;34;11/01/2021;Confiança - SE;1;Operário - PR;2
+2020;34;11/01/2021;Crb - AL;2;Guarani - SP;0
+2020;34;12/01/2021;Botafogo - SP;2;Sampaio Correa - MA;1
+2020;34;12/01/2021;Paraná - PR;2;Csa - AL;0
+2020;34;12/01/2021;Brasil - RS;2;Juventude - RS;1
+2020;34;12/01/2021;Náutico - PE;0;America - MG;0
+2020;34;12/01/2021;Chapecoense - SC;2;Figueirense - SC;1
+2020;34;13/01/2021;Avaí - SC;2;Vitória - BA;2
+2020;34;13/01/2021;Cruzeiro - MG;0;Oeste - SP;1
+2020;35;14/01/2021;Operário - PR;3;Crb - AL;2
+2020;35;14/01/2021;Cuiabá - MT;4;Guarani - SP;0
+2020;35;15/01/2021;Figueirense - SC;3;Brasil - RS;0
+2020;35;15/01/2021;Sampaio Correa - MA;2;Paraná - PR;1
+2020;35;15/01/2021;America - MG;1;Botafogo - SP;1
+2020;35;16/01/2021;Csa - AL;1;Avaí - SC;1
+2020;35;16/01/2021;Juventude - RS;1;Cruzeiro - MG;0
+2020;35;16/01/2021;Oeste - SP;0;Confiança - SE;1
+2020;35;17/01/2021;Vitória - BA;0;Chapecoense - SC;0
+2020;35;17/01/2021;Ponte Preta - SP;2;Náutico - PE;0
+2020;36;19/01/2021;Brasil - RS;0;America - MG;0
+2020;36;19/01/2021;Botafogo - SP;1;Csa - AL;3
+2020;36;19/01/2021;Confiança - SE;0;Sampaio Correa - MA;1
+2020;36;19/01/2021;Crb - AL;5;Figueirense - SC;1
+2020;36;19/01/2021;Avaí - SC;5;Juventude - RS;2
+2020;36;19/01/2021;Paraná - PR;0;Cuiabá - MT;2
+2020;36;20/01/2021;Guarani - SP;1;Vitória - BA;2
+2020;36;20/01/2021;Náutico - PE;4;Oeste - SP;1
+2020;36;20/01/2021;Cruzeiro - MG;2;Operário - PR;1
+2020;36;21/01/2021;Chapecoense - SC;1;Ponte Preta - SP;0
+2020;37;22/01/2021;Juventude - RS;2;Figueirense - SC;1
+2020;37;22/01/2021;Csa - AL;1;Brasil - RS;1
+2020;37;22/01/2021;Cuiabá - MT;1;Sampaio Correa - MA;3
+2020;37;23/01/2021;Confiança - SE;0;America - MG;0
+2020;37;23/01/2021;Avaí - SC;2;Guarani - SP;1
+2020;37;24/01/2021;Cruzeiro - MG;0;Náutico - PE;0
+2020;37;24/01/2021;Ponte Preta - SP;3;Crb - AL;1
+2020;37;25/01/2021;Operário - PR;2;Chapecoense - SC;0
+2020;37;26/01/2021;Oeste - SP;1;Paraná - PR;0
+2020;37;26/01/2021;Vitória - BA;1;Botafogo - SP;0
+2020;38;29/01/2021;Figueirense - SC;2;Ponte Preta - SP;7
+2020;38;29/01/2021;Sampaio Correa - MA;1;Oeste - SP;0
+2020;38;29/01/2021;Crb - AL;4;Cuiabá - MT;1
+2020;38;29/01/2021;Botafogo - SP;0;Operário - PR;1
+2020;38;29/01/2021;Náutico - PE;1;Csa - AL;1
+2020;38;29/01/2021;America - MG;2;Avaí - SC;1
+2020;38;29/01/2021;Brasil - RS;0;Vitória - BA;1
+2020;38;29/01/2021;Paraná - PR;0;Cruzeiro - MG;0
+2020;38;29/01/2021;Guarani - SP;0;Juventude - RS;1
+2020;38;29/01/2021;Chapecoense - SC;3;Confiança - SE;1

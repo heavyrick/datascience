@@ -1,0 +1,381 @@
+Rodada;Data;Time casa;Gols time casa;Time visitante;Gols time visitante
+1;08/08/2020;Fortaleza - CE;0 ;Athletico Paranaense - PR; 2
+1;08/08/2020;Coritiba - PR;0 ;Internacional - RS; 1
+1;08/08/2020;Sport - PE;3 ;Ceará - CE; 2
+1;09/08/2020;Flamengo - RJ;0 ;Atlético - MG; 1
+1;09/08/2020;Santos - SP;1 ;Red Bull Bragantino - SP; 1
+1;09/08/2020;Grêmio - RS;1 ;Fluminense - RJ; 0
+1;30/09/2020;Botafogo - RJ;1 ;Bahia - BA; 2
+1;30/09/2020;Corinthians - SP;0 ;Atlético - GO; 0
+1;03/12/2020;Goiás - GO;0 ;São Paulo - SP; 3
+1;26/01/2021;Palmeiras - SP;1 ;Vasco da Gama - RJ; 1
+2;12/08/2020;Red Bull Bragantino - SP;1 ;Botafogo - RJ; 1
+2;12/08/2020;Athletico Paranaense - PR;2 ;Goiás - GO; 1
+2;12/08/2020;Atlético - MG;3 ;Corinthians - SP; 2
+2;12/08/2020;Atlético - GO;3 ;Flamengo - RJ; 0
+2;12/08/2020;Bahia - BA;1 ;Coritiba - PR; 0
+2;12/08/2020;Ceará - CE;1 ;Grêmio - RS; 1
+2;12/08/2020;Fluminense - RJ;1 ;Palmeiras - SP; 1
+2;13/08/2020;São Paulo - SP;1 ;Fortaleza - CE; 0
+2;13/08/2020;Internacional - RS;2 ;Santos - SP; 0
+2;13/08/2020;Vasco da Gama - RJ;2 ;Sport - PE; 0
+3;15/08/2020;Grêmio - RS;0 ;Corinthians - SP; 0
+3;15/08/2020;Coritiba - PR;0 ;Flamengo - RJ; 1
+3;15/08/2020;Palmeiras - SP;1 ;Goiás - GO; 1
+3;16/08/2020;Atlético - MG;2 ;Ceará - CE; 0
+3;16/08/2020;Vasco da Gama - RJ;2 ;São Paulo - SP; 1
+3;16/08/2020;Bahia - BA;2 ;Red Bull Bragantino - SP; 1
+3;16/08/2020;Fluminense - RJ;2 ;Internacional - RS; 1
+3;16/08/2020;Atlético - GO;1 ;Sport - PE; 1
+3;16/08/2020;Fortaleza - CE;0 ;Botafogo - RJ; 0
+3;16/08/2020;Santos - SP;3 ;Athletico Paranaense - PR; 1
+4;19/08/2020;Flamengo - RJ;1 ;Grêmio - RS; 1
+4;19/08/2020;Red Bull Bragantino - SP;2 ;Fluminense - RJ; 1
+4;19/08/2020;Athletico Paranaense - PR;0 ;Palmeiras - SP; 1
+4;19/08/2020;Goiás - GO;1 ;Fortaleza - CE; 3
+4;19/08/2020;Internacional - RS;3 ;Atlético - GO; 0
+4;19/08/2020;Botafogo - RJ;2 ;Atlético - MG; 1
+4;19/08/2020;Corinthians - SP;3 ;Coritiba - PR; 1
+4;20/08/2020;Sport - PE;0 ;Santos - SP; 1
+4;20/08/2020;São Paulo - SP;1 ;Bahia - BA; 1
+4;20/08/2020;Ceará - CE;0 ;Vasco da Gama - RJ; 3
+5;22/08/2020;Athletico Paranaense - PR;0 ;Fluminense - RJ; 1
+5;22/08/2020;Internacional - RS;1 ;Atlético - MG; 0
+5;22/08/2020;Goiás - GO;2 ;Atlético - GO; 0
+5;23/08/2020;Flamengo - RJ;1 ;Botafogo - RJ; 1
+5;23/08/2020;Vasco da Gama - RJ;0 ;Grêmio - RS; 0
+5;23/08/2020;Palmeiras - SP;2 ;Santos - SP; 1
+5;23/08/2020;Red Bull Bragantino - SP;1 ;Coritiba - PR; 2
+5;23/08/2020;Sport - PE;0 ;São Paulo - SP; 1
+5;23/08/2020;Ceará - CE;2 ;Bahia - BA; 0
+5;26/08/2020;Corinthians - SP;1 ;Fortaleza - CE; 1
+6;29/08/2020;Botafogo - RJ;0 ;Internacional - RS; 2
+6;29/08/2020;Fluminense - RJ;2 ;Vasco da Gama - RJ; 1
+6;29/08/2020;Bahia - BA;1 ;Palmeiras - SP; 1
+6;29/08/2020;Fortaleza - CE;3 ;Red Bull Bragantino - SP; 0
+6;30/08/2020;São Paulo - SP;2 ;Corinthians - SP; 1
+6;30/08/2020;Santos - SP;0 ;Flamengo - RJ; 1
+6;30/08/2020;Coritiba - PR;1 ;Sport - PE; 0
+6;30/08/2020;Atlético - GO;0 ;Ceará - CE; 2
+6;18/11/2020;Atlético - MG;0 ;Athletico Paranaense - PR; 2
+6;30/11/2020;Grêmio - RS;2 ;Goiás - GO; 1
+7;02/09/2020;Ceará - CE;1 ;Fortaleza - CE; 0
+7;02/09/2020;Fluminense - RJ;1 ;Atlético - GO; 1
+7;02/09/2020;Goiás - GO;1 ;Corinthians - SP; 2
+7;02/09/2020;Athletico Paranaense - PR;1 ;Red Bull Bragantino - SP; 1
+7;02/09/2020;Bahia - BA;3 ;Flamengo - RJ; 5
+7;02/09/2020;Botafogo - RJ;0 ;Coritiba - PR; 0
+7;02/09/2020;Palmeiras - SP;1 ;Internacional - RS; 1
+7;02/09/2020;Santos - SP;2 ;Vasco da Gama - RJ; 2
+7;03/09/2020;Grêmio - RS;1 ;Sport - PE; 2
+7;03/09/2020;Atlético - MG;3 ;São Paulo - SP; 0
+8;05/09/2020;Flamengo - RJ;2 ;Fortaleza - CE; 1
+8;05/09/2020;Corinthians - SP;2 ;Botafogo - RJ; 2
+8;05/09/2020;Ceará - CE;0 ;Santos - SP; 1
+8;06/09/2020;Red Bull Bragantino - SP;1 ;Palmeiras - SP; 2
+8;06/09/2020;Internacional - RS;2 ;Bahia - BA; 2
+8;06/09/2020;São Paulo - SP;3 ;Fluminense - RJ; 1
+8;06/09/2020;Vasco da Gama - RJ;1 ;Athletico Paranaense - PR; 0
+8;06/09/2020;Atlético - GO;1 ;Grêmio - RS; 1
+8;06/09/2020;Coritiba - PR;0 ;Atlético - MG; 1
+8;06/09/2020;Sport - PE;2 ;Goiás - GO; 1
+9;09/09/2020;Athletico Paranaense - PR;1 ;Botafogo - RJ; 1
+9;09/09/2020;Goiás - GO;3 ;Coritiba - PR; 3
+9;09/09/2020;Fortaleza - CE;1 ;Sport - PE; 0
+9;09/09/2020;São Paulo - SP;1 ;Red Bull Bragantino - SP; 1
+9;09/09/2020;Fluminense - RJ;1 ;Flamengo - RJ; 2
+9;09/09/2020;Santos - SP;3 ;Atlético - MG; 1
+9;10/09/2020;Corinthians - SP;0 ;Palmeiras - SP; 2
+9;10/09/2020;Internacional - RS;2 ;Ceará - CE; 0
+9;10/09/2020;Bahia - BA;0 ;Grêmio - RS; 2
+9;10/09/2020;Vasco da Gama - RJ;1 ;Atlético - GO; 2
+10;12/09/2020;Athletico Paranaense - PR;1 ;Coritiba - PR; 0
+10;12/09/2020;Santos - SP;2 ;São Paulo - SP; 2
+10;13/09/2020;Fluminense - RJ;2 ;Corinthians - SP; 1
+10;13/09/2020;Grêmio - RS;1 ;Fortaleza - CE; 1
+10;13/09/2020;Atlético - MG;2 ;Red Bull Bragantino - SP; 1
+10;13/09/2020;Bahia - BA;0 ;Atlético - GO; 1
+10;13/09/2020;Ceará - CE;2 ;Flamengo - RJ; 0
+10;13/09/2020;Goiás - GO;1 ;Internacional - RS; 0
+10;13/09/2020;Palmeiras - SP;2 ;Sport - PE; 2
+10;13/09/2020;Botafogo - RJ;2 ;Vasco da Gama - RJ; 3
+11;26/08/2020;São Paulo - SP;1 ;Athletico Paranaense - PR; 0
+11;16/09/2020;Corinthians - SP;3 ;Bahia - BA; 2
+11;19/09/2020;Fortaleza - CE;1 ;Internacional - RS; 0
+11;19/09/2020;Red Bull Bragantino - SP;4 ;Ceará - CE; 2
+11;19/09/2020;Atlético - GO;3 ;Atlético - MG; 4
+11;20/09/2020;Grêmio - RS;1 ;Palmeiras - SP; 1
+11;20/09/2020;Coritiba - PR;1 ;Vasco da Gama - RJ; 0
+11;20/09/2020;Botafogo - RJ;0 ;Santos - SP; 0
+11;20/09/2020;Sport - PE;1 ;Fluminense - RJ; 0
+11;13/10/2020;Flamengo - RJ;2 ;Goiás - GO; 1
+12;23/09/2020;Sport - PE;1 ;Corinthians - SP; 0
+12;26/09/2020;Internacional - RS;1 ;São Paulo - SP; 1
+12;26/09/2020;Athletico Paranaense - PR;1 ;Bahia - BA; 0
+12;26/09/2020;Atlético - MG;3 ;Grêmio - RS; 1
+12;27/09/2020;Vasco da Gama - RJ;1 ;Red Bull Bragantino - SP; 1
+12;27/09/2020;Palmeiras - SP;1 ;Flamengo - RJ; 1
+12;27/09/2020;Ceará - CE;2 ;Goiás - GO; 2
+12;27/09/2020;Atlético - GO;1 ;Botafogo - RJ; 1
+12;27/09/2020;Santos - SP;1 ;Fortaleza - CE; 1
+12;28/09/2020;Fluminense - RJ;4 ;Coritiba - PR; 0
+13;03/10/2020;Grêmio - RS;1 ;Internacional - RS; 1
+13;03/10/2020;Palmeiras - SP;2 ;Ceará - CE; 1
+13;03/10/2020;Red Bull Bragantino - SP;0 ;Corinthians - SP; 0
+13;04/10/2020;Botafogo - RJ;1 ;Fluminense - RJ; 1
+13;04/10/2020;Coritiba - PR;1 ;São Paulo - SP; 1
+13;04/10/2020;Flamengo - RJ;3 ;Athletico Paranaense - PR; 1
+13;04/10/2020;Bahia - BA;1 ;Sport - PE; 2
+13;04/10/2020;Fortaleza - CE;0 ;Atlético - GO; 0
+13;04/10/2020;Goiás - GO;2 ;Santos - SP; 3
+13;04/10/2020;Atlético - MG;4 ;Vasco da Gama - RJ; 1
+14;07/10/2020;Corinthians - SP;1 ;Santos - SP; 1
+14;07/10/2020;Flamengo - RJ;3 ;Sport - PE; 0
+14;07/10/2020;Bahia - BA;3 ;Vasco da Gama - RJ; 0
+14;07/10/2020;Grêmio - RS;2 ;Coritiba - PR; 1
+14;07/10/2020;São Paulo - SP;3 ;Atlético - GO; 0
+14;07/10/2020;Goiás - GO;2 ;Fluminense - RJ; 4
+14;07/10/2020;Botafogo - RJ;2 ;Palmeiras - SP; 1
+14;07/10/2020;Fortaleza - CE;2 ;Atlético - MG; 1
+14;08/10/2020;Athletico Paranaense - PR;0 ;Ceará - CE; 0
+14;08/10/2020;Red Bull Bragantino - SP;0 ;Internacional - RS; 2
+15;10/10/2020;Vasco da Gama - RJ;1 ;Flamengo - RJ; 2
+15;10/10/2020;Palmeiras - SP;0 ;São Paulo - SP; 2
+15;10/10/2020;Coritiba - PR;0 ;Fortaleza - CE; 0
+15;10/10/2020;Atlético - MG;3 ;Goiás - GO; 0
+15;11/10/2020;Santos - SP;2 ;Grêmio - RS; 1
+15;11/10/2020;Fluminense - RJ;1 ;Bahia - BA; 0
+15;11/10/2020;Atlético - GO;2 ;Red Bull Bragantino - SP; 1
+15;11/10/2020;Sport - PE;1 ;Botafogo - RJ; 2
+15;11/10/2020;Internacional - RS;2 ;Athletico Paranaense - PR; 1
+15;11/10/2020;Ceará - CE;2 ;Corinthians - SP; 1
+16;14/10/2020;Palmeiras - SP;1 ;Coritiba - PR; 3
+16;14/10/2020;Grêmio - RS;3 ;Botafogo - RJ; 1
+16;14/10/2020;Santos - SP;0 ;Atlético - GO; 1
+16;14/10/2020;Athletico Paranaense - PR;0 ;Corinthians - SP; 1
+16;14/10/2020;Atlético - MG;1 ;Fluminense - RJ; 1
+16;14/10/2020;Sport - PE;3 ;Internacional - RS; 5
+16;15/10/2020;Flamengo - RJ;1 ;Red Bull Bragantino - SP; 1
+16;16/10/2020;Goiás - GO;1 ;Bahia - BA; 1
+16;19/11/2020;Vasco da Gama - RJ;0 ;Fortaleza - CE; 0
+16;25/11/2020;Ceará - CE;1 ;São Paulo - SP; 1
+17;17/10/2020;Atlético - GO;1 ;Athletico Paranaense - PR; 1
+17;17/10/2020;Fluminense - RJ;2 ;Ceará - CE; 2
+17;17/10/2020;Coritiba - PR;1 ;Santos - SP; 2
+17;17/10/2020;São Paulo - SP;0 ;Grêmio - RS; 0
+17;18/10/2020;Corinthians - SP;1 ;Flamengo - RJ; 5
+17;18/10/2020;Internacional - RS;2 ;Vasco da Gama - RJ; 0
+17;18/10/2020;Red Bull Bragantino - SP;2 ;Sport - PE; 0
+17;18/10/2020;Fortaleza - CE;2 ;Palmeiras - SP; 0
+17;19/10/2020;Bahia - BA;3 ;Atlético - MG; 1
+17;19/10/2020;Botafogo - RJ;0 ;Goiás - GO; 0
+18;21/10/2020;Vasco da Gama - RJ;1 ;Corinthians - SP; 2
+18;24/10/2020;Red Bull Bragantino - SP;2 ;Goiás - GO; 0
+18;24/10/2020;Ceará - CE;2 ;Coritiba - PR; 1
+18;24/10/2020;Atlético - MG;0 ;Sport - PE; 0
+18;25/10/2020;Atlético - GO;0 ;Palmeiras - SP; 3
+18;25/10/2020;Fluminense - RJ;3 ;Santos - SP; 1
+18;25/10/2020;Athletico Paranaense - PR;1 ;Grêmio - RS; 2
+18;25/10/2020;Internacional - RS;2 ;Flamengo - RJ; 2
+18;11/11/2020;Bahia - BA;2 ;Fortaleza - CE; 1
+18;09/12/2020;São Paulo - SP;4 ;Botafogo - RJ; 0
+19;31/10/2020;Botafogo - RJ;2 ;Ceará - CE; 2
+19;31/10/2020;Corinthians - SP;1 ;Internacional - RS; 0
+19;31/10/2020;Coritiba - PR;1 ;Atlético - GO; 0
+19;31/10/2020;Fortaleza - CE;0 ;Fluminense - RJ; 1
+19;01/11/2020;Sport - PE;1 ;Athletico Paranaense - PR; 0
+19;01/11/2020;Flamengo - RJ;1 ;São Paulo - SP; 4
+19;01/11/2020;Santos - SP;3 ;Bahia - BA; 1
+19;01/11/2020;Goiás - GO;1 ;Vasco da Gama - RJ; 1
+19;02/11/2020;Palmeiras - SP;3 ;Atlético - MG; 0
+19;02/11/2020;Grêmio - RS;2 ;Red Bull Bragantino - SP; 1
+20;07/11/2020;Athletico Paranaense - PR;2 ;Fortaleza - CE; 1
+20;07/11/2020;São Paulo - SP;2 ;Goiás - GO; 1
+20;07/11/2020;Atlético - GO;1 ;Corinthians - SP; 1
+20;08/11/2020;Internacional - RS;2 ;Coritiba - PR; 2
+20;08/11/2020;Vasco da Gama - RJ;0 ;Palmeiras - SP; 1
+20;08/11/2020;Red Bull Bragantino - SP;1 ;Santos - SP; 1
+20;08/11/2020;Atlético - MG;4 ;Flamengo - RJ; 0
+20;08/11/2020;Bahia - BA;1 ;Botafogo - RJ; 0
+20;08/11/2020;Ceará - CE;0 ;Sport - PE; 0
+20;08/11/2020;Fluminense - RJ;0 ;Grêmio - RS; 1
+21;14/11/2020;Sport - PE;0 ;Vasco da Gama - RJ; 2
+21;14/11/2020;Santos - SP;2 ;Internacional - RS; 0
+21;14/11/2020;Goiás - GO;0 ;Athletico Paranaense - PR; 1
+21;14/11/2020;Grêmio - RS;4 ;Ceará - CE; 2
+21;14/11/2020;Fortaleza - CE;2 ;São Paulo - SP; 3
+21;14/11/2020;Corinthians - SP;1 ;Atlético - MG; 2
+21;14/11/2020;Flamengo - RJ;1 ;Atlético - GO; 1
+21;14/11/2020;Palmeiras - SP;2 ;Fluminense - RJ; 0
+21;16/11/2020;Coritiba - PR;1 ;Bahia - BA; 2
+21;16/11/2020;Botafogo - RJ;1 ;Red Bull Bragantino - SP; 2
+22;20/11/2020;Red Bull Bragantino - SP;4 ;Bahia - BA; 0
+22;21/11/2020;Athletico Paranaense - PR;1 ;Santos - SP; 0
+22;21/11/2020;Flamengo - RJ;3 ;Coritiba - PR; 1
+22;21/11/2020;Goiás - GO;1 ;Palmeiras - SP; 0
+22;22/11/2020;São Paulo - SP;1 ;Vasco da Gama - RJ; 1
+22;22/11/2020;Ceará - CE;2 ;Atlético - MG; 2
+22;22/11/2020;Botafogo - RJ;1 ;Fortaleza - CE; 2
+22;22/11/2020;Internacional - RS;1 ;Fluminense - RJ; 2
+22;22/11/2020;Corinthians - SP;0 ;Grêmio - RS; 0
+22;23/11/2020;Sport - PE;0 ;Atlético - GO; 1
+23;25/11/2020;Atlético - MG;2 ;Botafogo - RJ; 1
+23;25/11/2020;Coritiba - PR;0 ;Corinthians - SP; 1
+23;26/11/2020;Fortaleza - CE;1 ;Goiás - GO; 1
+23;28/11/2020;Palmeiras - SP;3 ;Athletico Paranaense - PR; 0
+23;28/11/2020;Santos - SP;4 ;Sport - PE; 2
+23;28/11/2020;Bahia - BA;1 ;São Paulo - SP; 3
+23;28/11/2020;Atlético - GO;0 ;Internacional - RS; 0
+23;30/11/2020;Vasco da Gama - RJ;1 ;Ceará - CE; 4
+23;30/11/2020;Fluminense - RJ;0 ;Red Bull Bragantino - SP; 0
+23;28/01/2021;Grêmio - RS;2 ;Flamengo - RJ; 4
+24;02/12/2020;Fortaleza - CE;0 ;Corinthians - SP; 0
+24;05/12/2020;Botafogo - RJ;0 ;Flamengo - RJ; 1
+24;05/12/2020;Santos - SP;2 ;Palmeiras - SP; 2
+24;05/12/2020;Fluminense - RJ;3 ;Athletico Paranaense - PR; 1
+24;05/12/2020;Bahia - BA;0 ;Ceará - CE; 2
+24;05/12/2020;Coritiba - PR;0 ;Red Bull Bragantino - SP; 0
+24;06/12/2020;Grêmio - RS;4 ;Vasco da Gama - RJ; 0
+24;06/12/2020;São Paulo - SP;1 ;Sport - PE; 0
+24;06/12/2020;Atlético - MG;2 ;Internacional - RS; 2
+24;07/12/2020;Atlético - GO;0 ;Goiás - GO; 1
+25;12/12/2020;Red Bull Bragantino - SP;2 ;Fortaleza - CE; 1
+25;12/12/2020;Athletico Paranaense - PR;0 ;Atlético - MG; 1
+25;12/12/2020;Palmeiras - SP;3 ;Bahia - BA; 0
+25;12/12/2020;Internacional - RS;2 ;Botafogo - RJ; 1
+25;12/12/2020;Ceará - CE;1 ;Atlético - GO; 2
+25;12/12/2020;Goiás - GO;0 ;Grêmio - RS; 0
+25;13/12/2020;Flamengo - RJ;4 ;Santos - SP; 1
+25;13/12/2020;Corinthians - SP;1 ;São Paulo - SP; 0
+25;13/12/2020;Sport - PE;1 ;Coritiba - PR; 0
+25;13/12/2020;Vasco da Gama - RJ;1 ;Fluminense - RJ; 1
+26;16/12/2020;São Paulo - SP;3 ;Atlético - MG; 0
+26;16/12/2020;Atlético - GO;2 ;Fluminense - RJ; 1
+26;19/12/2020;Sport - PE;1 ;Grêmio - RS; 1
+26;19/12/2020;Internacional - RS;2 ;Palmeiras - SP; 0
+26;19/12/2020;Coritiba - PR;1 ;Botafogo - RJ; 2
+26;20/12/2020;Red Bull Bragantino - SP;0 ;Athletico Paranaense - PR; 1
+26;20/12/2020;Vasco da Gama - RJ;1 ;Santos - SP; 0
+26;20/12/2020;Flamengo - RJ;4 ;Bahia - BA; 3
+26;20/12/2020;Fortaleza - CE;0 ;Ceará - CE; 2
+26;21/12/2020;Corinthians - SP;2 ;Goiás - GO; 1
+27;26/12/2020;Atlético - MG;2 ;Coritiba - PR; 0
+27;26/12/2020;Fortaleza - CE;0 ;Flamengo - RJ; 0
+27;26/12/2020;Goiás - GO;1 ;Sport - PE; 0
+27;26/12/2020;Fluminense - RJ;1 ;São Paulo - SP; 2
+27;27/12/2020;Botafogo - RJ;0 ;Corinthians - SP; 2
+27;27/12/2020;Bahia - BA;1 ;Internacional - RS; 2
+27;27/12/2020;Palmeiras - SP;1 ;Red Bull Bragantino - SP; 0
+27;27/12/2020;Santos - SP;1 ;Ceará - CE; 1
+27;27/12/2020;Athletico Paranaense - PR;3 ;Vasco da Gama - RJ; 0
+27;27/12/2020;Grêmio - RS;2 ;Atlético - GO; 1
+28;06/01/2021;Botafogo - RJ;0 ;Athletico Paranaense - PR; 2
+28;06/01/2021;Grêmio - RS;2 ;Bahia - BA; 1
+28;06/01/2021;Coritiba - PR;1 ;Goiás - GO; 2
+28;06/01/2021;Sport - PE;1 ;Fortaleza - CE; 0
+28;06/01/2021;Flamengo - RJ;1 ;Fluminense - RJ; 2
+28;06/01/2021;Red Bull Bragantino - SP;4 ;São Paulo - SP; 2
+28;07/01/2021;Ceará - CE;0 ;Internacional - RS; 2
+28;07/01/2021;Atlético - GO;0 ;Vasco da Gama - RJ; 0
+28;18/01/2021;Palmeiras - SP;4 ;Corinthians - SP; 0
+28;26/01/2021;Atlético - MG;2 ;Santos - SP; 0
+29;09/01/2021;Coritiba - PR;0 ;Athletico Paranaense - PR; 0
+29;09/01/2021;Sport - PE;0 ;Palmeiras - SP; 1
+29;09/01/2021;Fortaleza - CE;0 ;Grêmio - RS; 0
+29;10/01/2021;Flamengo - RJ;0 ;Ceará - CE; 2
+29;10/01/2021;São Paulo - SP;0 ;Santos - SP; 1
+29;10/01/2021;Internacional - RS;1 ;Goiás - GO; 0
+29;10/01/2021;Atlético - GO;1 ;Bahia - BA; 1
+29;10/01/2021;Vasco da Gama - RJ;3 ;Botafogo - RJ; 0
+29;11/01/2021;Red Bull Bragantino - SP;2 ;Atlético - MG; 2
+29;13/01/2021;Corinthians - SP;5 ;Fluminense - RJ; 0
+30;15/01/2021;Palmeiras - SP;1 ;Grêmio - RS; 1
+30;16/01/2021;Fluminense - RJ;1 ;Sport - PE; 0
+30;16/01/2021;Vasco da Gama - RJ;0 ;Coritiba - PR; 1
+30;17/01/2021;Santos - SP;2 ;Botafogo - RJ; 1
+30;17/01/2021;Athletico Paranaense - PR;1 ;São Paulo - SP; 1
+30;17/01/2021;Atlético - MG;3 ;Atlético - GO; 1
+30;17/01/2021;Internacional - RS;4 ;Fortaleza - CE; 2
+30;17/01/2021;Ceará - CE;1 ;Red Bull Bragantino - SP; 2
+30;18/01/2021;Goiás - GO;0 ;Flamengo - RJ; 3
+30;28/01/2021;Bahia - BA;2 ;Corinthians - SP; 1
+31;20/01/2021;Botafogo - RJ;1 ;Atlético - GO; 3
+31;20/01/2021;Bahia - BA;1 ;Athletico Paranaense - PR; 0
+31;20/01/2021;Grêmio - RS;1 ;Atlético - MG; 1
+31;20/01/2021;Coritiba - PR;3 ;Fluminense - RJ; 3
+31;20/01/2021;São Paulo - SP;1 ;Internacional - RS; 5
+31;20/01/2021;Red Bull Bragantino - SP;4 ;Vasco da Gama - RJ; 1
+31;21/01/2021;Goiás - GO;0 ;Ceará - CE; 4
+31;21/01/2021;Fortaleza - CE;2 ;Santos - SP; 0
+31;21/01/2021;Flamengo - RJ;2 ;Palmeiras - SP; 0
+31;21/01/2021;Corinthians - SP;3 ;Sport - PE; 0
+32;23/01/2021;São Paulo - SP;1 ;Coritiba - PR; 1
+32;23/01/2021;Vasco da Gama - RJ;3 ;Atlético - MG; 2
+32;24/01/2021;Athletico Paranaense - PR;2 ;Flamengo - RJ; 1
+32;24/01/2021;Ceará - CE;2 ;Palmeiras - SP; 1
+32;24/01/2021;Internacional - RS;2 ;Grêmio - RS; 1
+32;24/01/2021;Sport - PE;2 ;Bahia - BA; 0
+32;24/01/2021;Atlético - GO;2 ;Fortaleza - CE; 0
+32;24/01/2021;Santos - SP;3 ;Goiás - GO; 4
+32;24/01/2021;Fluminense - RJ;2 ;Botafogo - RJ; 0
+32;25/01/2021;Corinthians - SP;0 ;Red Bull Bragantino - SP; 2
+33;31/01/2021;Coritiba - PR;1 ;Grêmio - RS; 1
+33;31/01/2021;Ceará - CE;0 ;Athletico Paranaense - PR; 2
+33;31/01/2021;Atlético - GO;2 ;São Paulo - SP; 1
+33;31/01/2021;Vasco da Gama - RJ;0 ;Bahia - BA; 0
+33;31/01/2021;Atlético - MG;2 ;Fortaleza - CE; 0
+33;31/01/2021;Internacional - RS;2 ;Red Bull Bragantino - SP; 1
+33;31/01/2021;Fluminense - RJ;3 ;Goiás - GO; 0
+33;01/02/2021;Sport - PE;0 ;Flamengo - RJ; 3
+33;02/02/2021;Palmeiras - SP;1 ;Botafogo - RJ; 1
+33;17/02/2021;Santos - SP;1 ;Corinthians - SP; 0
+34;03/02/2021;Grêmio - RS;3 ;Santos - SP; 3
+34;03/02/2021;Red Bull Bragantino - SP;2 ;Atlético - GO; 0
+34;03/02/2021;Bahia - BA;0 ;Fluminense - RJ; 1
+34;03/02/2021;Goiás - GO;1 ;Atlético - MG; 0
+34;03/02/2021;Corinthians - SP;2 ;Ceará - CE; 1
+34;04/02/2021;Fortaleza - CE;3 ;Coritiba - PR; 1
+34;04/02/2021;Flamengo - RJ;2 ;Vasco da Gama - RJ; 0
+34;04/02/2021;Athletico Paranaense - PR;0 ;Internacional - RS; 0
+34;05/02/2021;Botafogo - RJ;0 ;Sport - PE; 1
+34;19/02/2021;São Paulo - SP;1 ;Palmeiras - SP; 1
+35;06/02/2021;Bahia - BA;3 ;Goiás - GO; 3
+35;06/02/2021;Atlético - GO;1 ;Santos - SP; 1
+35;07/02/2021;Red Bull Bragantino - SP;1 ;Flamengo - RJ; 1
+35;08/02/2021;Botafogo - RJ;2 ;Grêmio - RS; 5
+35;10/02/2021;Internacional - RS;1 ;Sport - PE; 2
+35;10/02/2021;Fortaleza - CE;3 ;Vasco da Gama - RJ; 0
+35;10/02/2021;São Paulo - SP;1 ;Ceará - CE; 1
+35;10/02/2021;Corinthians - SP;3 ;Athletico Paranaense - PR; 3
+35;10/02/2021;Fluminense - RJ;0 ;Atlético - MG; 0
+35;17/02/2021;Coritiba - PR;1 ;Palmeiras - SP; 0
+36;13/02/2021;Goiás - GO;2 ;Botafogo - RJ; 0
+36;13/02/2021;Atlético - MG;1 ;Bahia - BA; 1
+36;13/02/2021;Santos - SP;2 ;Coritiba - PR; 0
+36;14/02/2021;Vasco da Gama - RJ;0 ;Internacional - RS; 2
+36;14/02/2021;Flamengo - RJ;2 ;Corinthians - SP; 1
+36;14/02/2021;Palmeiras - SP;3 ;Fortaleza - CE; 0
+36;14/02/2021;Athletico Paranaense - PR;2 ;Atlético - GO; 1
+36;14/02/2021;Grêmio - RS;1 ;São Paulo - SP; 2
+36;15/02/2021;Ceará - CE;1 ;Fluminense - RJ; 3
+36;15/02/2021;Sport - PE;0 ;Red Bull Bragantino - SP; 0
+37;20/02/2021;Coritiba - PR;0 ;Ceará - CE; 2
+37;20/02/2021;Fortaleza - CE;0 ;Bahia - BA; 4
+37;21/02/2021;Flamengo - RJ;2 ;Internacional - RS; 1
+37;21/02/2021;Corinthians - SP;0 ;Vasco da Gama - RJ; 0
+37;21/02/2021;Sport - PE;2 ;Atlético - MG; 3
+37;21/02/2021;Santos - SP;1 ;Fluminense - RJ; 1
+37;21/02/2021;Grêmio - RS;1 ;Athletico Paranaense - PR; 0
+37;21/02/2021;Goiás - GO;0 ;Red Bull Bragantino - SP; 0
+37;22/02/2021;Palmeiras - SP;1 ;Atlético - GO; 1
+37;22/02/2021;Botafogo - RJ;1 ;São Paulo - SP; 0
+38;25/02/2021;Fluminense - RJ;2 ;Fortaleza - CE; 0
+38;25/02/2021;Vasco da Gama - RJ;3 ;Goiás - GO; 2
+38;25/02/2021;São Paulo - SP;2 ;Flamengo - RJ; 1
+38;25/02/2021;Red Bull Bragantino - SP;1 ;Grêmio - RS; 0
+38;25/02/2021;Atlético - MG;2 ;Palmeiras - SP; 0
+38;25/02/2021;Internacional - RS;0 ;Corinthians - SP; 0
+38;25/02/2021;Bahia - BA;2 ;Santos - SP; 0
+38;25/02/2021;Athletico Paranaense - PR;2 ;Sport - PE; 0
+38;25/02/2021;Ceará - CE;2 ;Botafogo - RJ; 1
+38;25/02/2021;Atlético - GO;3 ;Coritiba - PR; 1

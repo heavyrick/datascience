@@ -1,0 +1,381 @@
+Rodada;Data;Time casa;Gols time casa;Time visitante;Gols time visitante
+1;18/04/2014;Joinville - SC;3;Portuguesa - SP;0
+1;18/04/2014;Vila Nova - GO;0;Luverdense - MT;0
+1;18/04/2014;Sampaio Correa - MA;0;Paraná - PR;2
+1;18/04/2014;Ponte Preta - SP;1;Icasa - CE;1
+1;19/04/2014;Boa - MG;1;Atlético - GO;1
+1;19/04/2014;Bragantino - SP;2;Náutico - PE;2
+1;19/04/2014;Santa Cruz - PE;1;Abc - RN;1
+1;19/04/2014;Vasco da Gama - RJ;1;América - MG;1
+1;19/04/2014;Ceará - CE;1;Oeste - SP;0
+1;19/04/2014;América - RN;3;Avaí - SC;1
+2;22/04/2014;Avaí - SC;1;Bragantino - SP;2
+2;25/04/2014;Icasa - CE;0;Sampaio Correa - MA;3
+2;25/04/2014;Paraná - PR;2;Joinville - SC;3
+2;26/04/2014;Oeste - SP;2;América - RN;1
+2;26/04/2014;Náutico - PE;2;Vila Nova - GO;0
+2;26/04/2014;Luverdense - MT;2;Vasco da Gama - RJ;1
+2;26/04/2014;Atlético - GO;2;Ponte Preta - SP;2
+2;26/04/2014;Portuguesa - SP;1;Santa Cruz - PE;1
+2;26/04/2014;Abc - RN;1;Boa - MG;0
+2;26/04/2014;América - MG;3;Ceará - CE;0
+3;29/04/2014;Bragantino - SP;2;Portuguesa - SP;2
+3;02/05/2014;Joinville - SC;2;Icasa - CE;1
+3;02/05/2014;Santa Cruz - PE;1;Paraná - PR;1
+3;03/05/2014;Ponte Preta - SP;2;Luverdense - MT;2
+3;03/05/2014;Ceará - CE;2;Náutico - PE;2
+3;03/05/2014;Vasco da Gama - RJ;3;Atlético - GO;0
+3;03/05/2014;América - RN;0;Abc - RN;2
+3;03/05/2014;Boa - MG;1;América - MG;3
+3;03/05/2014;Sampaio Correa - MA;2;Oeste - SP;2
+3;03/05/2014;Vila Nova - GO;0;Avaí - SC;1
+4;06/05/2014;Boa - MG;2;Portuguesa - SP;1
+4;09/05/2014;Vila Nova - GO;0;Icasa - CE;1
+4;10/05/2014;América - RN;3;Atlético - GO;3
+4;10/05/2014;Joinville - SC;1;Náutico - PE;0
+4;10/05/2014;Vasco da Gama - RJ;2;Oeste - SP;0
+4;10/05/2014;Santa Cruz - PE;0;Luverdense - MT;0
+4;10/05/2014;Ponte Preta - SP;2;Abc - RN;1
+4;10/05/2014;Ceará - CE;2;Paraná - PR;1
+4;10/05/2014;Bragantino - SP;0;América - MG;2
+4;07/06/2014;Sampaio Correa - MA;1;Avaí - SC;1
+5;13/05/2014;Oeste - SP;1;Ponte Preta - SP;1
+5;16/05/2014;Paraná - PR;0;Boa - MG;0
+5;17/05/2014;Abc - RN;1;Sampaio Correa - MA;0
+5;17/05/2014;Avaí - SC;1;Ceará - CE;1
+5;17/05/2014;América - MG;2;Vila Nova - GO;0
+5;17/05/2014;Portuguesa - SP;1;América - RN;2
+5;17/05/2014;Icasa - CE;1;Santa Cruz - PE;1
+5;17/05/2014;Atlético - GO;0;Joinville - SC;0
+5;17/05/2014;Luverdense - MT;2;Bragantino - SP;0
+5;12/08/2014;Náutico - PE;0;Vasco da Gama - RJ;1
+6;20/05/2014;Avaí - SC;2;Paraná - PR;1
+6;20/05/2014;América - MG;3;Joinville - SC;1
+6;20/05/2014;Oeste - SP;1;Santa Cruz - PE;1
+6;20/05/2014;Ponte Preta - SP;1;Vila Nova - GO;0
+6;20/05/2014;Atlético - GO;2;Abc - RN;0
+6;20/05/2014;Vasco da Gama - RJ;1;Sampaio Correa - MA;1
+6;20/05/2014;Náutico - PE;2;Portuguesa - SP;1
+6;20/05/2014;Luverdense - MT;4;Boa - MG;2
+6;20/05/2014;Icasa - CE;3;Bragantino - SP;0
+6;20/05/2014;América - RN;0;Ceará - CE;1
+7;23/05/2014;Santa Cruz - PE;1;América - MG;1
+7;23/05/2014;Bragantino - SP;3;Oeste - SP;0
+7;23/05/2014;Boa - MG;2;Avaí - SC;0
+7;23/05/2014;Ceará - CE;3;Ponte Preta - SP;2
+7;24/05/2014;Portuguesa - SP;2;Atlético - GO;0
+7;24/05/2014;Vila Nova - GO;1;América - RN;3
+7;24/05/2014;Joinville - SC;0;Vasco da Gama - RJ;0
+7;24/05/2014;Sampaio Correa - MA;1;Luverdense - MT;0
+7;24/05/2014;Abc - RN;3;Icasa - CE;0
+7;24/05/2014;Paraná - PR;2;Náutico - PE;0
+8;27/05/2014;Abc - RN;0;Oeste - SP;1
+8;27/05/2014;Joinville - SC;1;América - RN;0
+8;27/05/2014;Boa - MG;0;Santa Cruz - PE;2
+8;27/05/2014;Portuguesa - SP;1;Sampaio Correa - MA;4
+8;27/05/2014;Paraná - PR;1;Ponte Preta - SP;2
+8;27/05/2014;Atlético - GO;3;América - MG;0
+8;27/05/2014;Bragantino - SP;1;Vasco da Gama - RJ;1
+8;27/05/2014;Ceará - CE;4;Vila Nova - GO;0
+8;27/05/2014;Luverdense - MT;1;Icasa - CE;0
+8;27/05/2014;Náutico - PE;0;Avaí - SC;1
+9;30/05/2014;Oeste - SP;2;Paraná - PR;2
+9;30/05/2014;Avaí - SC;0;Abc - RN;1
+9;30/05/2014;América - RN;2;Luverdense - MT;0
+9;30/05/2014;Santa Cruz - PE;2;Joinville - SC;0
+9;31/05/2014;América - MG;1;Náutico - PE;3
+9;31/05/2014;Ponte Preta - SP;1;Boa - MG;0
+9;31/05/2014;Vasco da Gama - RJ;1;Portuguesa - SP;1
+9;31/05/2014;Sampaio Correa - MA;2;Ceará - CE;2
+9;31/05/2014;Icasa - CE;1;Atlético - GO;0
+9;31/05/2014;Vila Nova - GO;1;Bragantino - SP;1
+10;03/06/2014;Portuguesa - SP;2;América - MG;1
+10;03/06/2014;Sampaio Correa - MA;3;América - RN;0
+10;03/06/2014;Bragantino - SP;1;Ceará - CE;2
+10;03/06/2014;Santa Cruz - PE;2;Ponte Preta - SP;1
+10;03/06/2014;Boa - MG;0;Vasco da Gama - RJ;2
+10;03/06/2014;Icasa - CE;0;Avaí - SC;2
+10;03/06/2014;Abc - RN;1;Náutico - PE;1
+10;06/06/2014;Paraná - PR;0;Luverdense - MT;2
+10;06/06/2014;Joinville - SC;1;Vila Nova - GO;0
+10;22/07/2014;Atlético - GO;4;Oeste - SP;2
+11;15/07/2014;Avaí - SC;2;Atlético - GO;1
+11;15/07/2014;América - MG;1;Paraná - PR;0
+11;15/07/2014;Ponte Preta - SP;0;Portuguesa - SP;0
+11;15/07/2014;Vila Nova - GO;0;Boa - MG;2
+11;15/07/2014;Náutico - PE;1;Sampaio Correa - MA;0
+11;15/07/2014;América - RN;4;Bragantino - SP;2
+11;15/07/2014;Luverdense - MT;3;Abc - RN;1
+11;15/07/2014;Ceará - CE;1;Joinville - SC;3
+11;15/07/2014;Vasco da Gama - RJ;4;Santa Cruz - PE;1
+11;15/07/2014;Oeste - SP;0;Icasa - CE;0
+12;18/07/2014;América - MG;3;Oeste - SP;0
+12;18/07/2014;Abc - RN;2;Joinville - SC;1
+12;18/07/2014;Portuguesa - SP;1;Paraná - PR;1
+12;18/07/2014;Avaí - SC;1;Ponte Preta - SP;0
+12;19/07/2014;Ceará - CE;2;Icasa - CE;1
+12;19/07/2014;Vila Nova - GO;3;Santa Cruz - PE;2
+12;19/07/2014;Luverdense - MT;0;Atlético - GO;2
+12;19/07/2014;Vasco da Gama - RJ;1;América - RN;1
+12;19/07/2014;Bragantino - SP;0;Sampaio Correa - MA;1
+12;19/07/2014;Náutico - PE;1;Boa - MG;3
+13;22/07/2014;Icasa - CE;2;Portuguesa - SP;0
+13;25/07/2014;Oeste - SP;2;Luverdense - MT;1
+13;25/07/2014;Boa - MG;2;Bragantino - SP;1
+13;25/07/2014;América - RN;1;América - MG;0
+13;26/07/2014;Joinville - SC;0;Avaí - SC;1
+13;26/07/2014;Atlético - GO;2;Náutico - PE;0
+13;26/07/2014;Santa Cruz - PE;2;Ceará - CE;3
+13;26/07/2014;Ponte Preta - SP;0;Vasco da Gama - RJ;0
+13;26/07/2014;Sampaio Correa - MA;2;Vila Nova - GO;0
+13;26/07/2014;Paraná - PR;1;Abc - RN;0
+14;29/07/2014;Náutico - PE;1;Icasa - CE;0
+14;29/07/2014;Portuguesa - SP;0;Oeste - SP;0
+14;01/08/2014;Avaí - SC;1;Luverdense - MT;2
+14;01/08/2014;Vila Nova - GO;0;Atlético - GO;2
+14;02/08/2014;Bragantino - SP;1;Joinville - SC;0
+14;02/08/2014;Vasco da Gama - RJ;1;Paraná - PR;0
+14;02/08/2014;Sampaio Correa - MA;3;Ponte Preta - SP;3
+14;02/08/2014;América - RN;0;Santa Cruz - PE;1
+14;02/08/2014;América - MG;1;Abc - RN;0
+14;02/08/2014;Ceará - CE;2;Boa - MG;2
+15;05/08/2014;Luverdense - MT;3;Portuguesa - SP;1
+15;05/08/2014;Joinville - SC;3;Sampaio Correa - MA;1
+15;08/08/2014;Icasa - CE;2;América - MG;0
+15;08/08/2014;Atlético - GO;0;Ceará - CE;2
+15;08/08/2014;Ponte Preta - SP;1;Bragantino - SP;0
+15;09/08/2014;Abc - RN;1;Vasco da Gama - RJ;2
+15;09/08/2014;Paraná - PR;3;Vila Nova - GO;1
+15;09/08/2014;Santa Cruz - PE;3;Náutico - PE;0
+15;09/08/2014;Oeste - SP;0;Avaí - SC;0
+15;09/08/2014;Boa - MG;3;América - RN;2
+16;12/08/2014;Abc - RN;0;Portuguesa - SP;0
+16;12/08/2014;Avaí - SC;2;América - MG;0
+16;15/08/2014;Atlético - GO;2;Paraná - PR;1
+16;15/08/2014;Ponte Preta - SP;2;Joinville - SC;0
+16;16/08/2014;Vasco da Gama - RJ;2;Ceará - CE;0
+16;16/08/2014;Luverdense - MT;0;Náutico - PE;2
+16;16/08/2014;Icasa - CE;0;América - RN;2
+16;16/08/2014;Oeste - SP;1;Vila Nova - GO;3
+16;16/08/2014;Boa - MG;2;Sampaio Correa - MA;1
+16;14/10/2014;Santa Cruz - PE;2;Bragantino - SP;1
+17;19/08/2014;Joinville - SC;2;Boa - MG;1
+17;19/08/2014;América - RN;0;Ponte Preta - SP;2
+17;19/08/2014;Paraná - PR;1;Icasa - CE;0
+17;19/08/2014;Náutico - PE;3;Oeste - SP;2
+17;19/08/2014;Sampaio Correa - MA;0;Santa Cruz - PE;0
+17;19/08/2014;Ceará - CE;1;Abc - RN;2
+17;19/08/2014;Vila Nova - GO;2;Vasco da Gama - RJ;1
+17;19/08/2014;América - MG;2;Luverdense - MT;0
+17;19/08/2014;Portuguesa - SP;1;Avaí - SC;3
+17;19/08/2014;Bragantino - SP;2;Atlético - GO;1
+18;22/08/2014;Oeste - SP;2;Boa - MG;1
+18;22/08/2014;América - MG;3;Ponte Preta - SP;0
+18;22/08/2014;Icasa - CE;1;Vasco da Gama - RJ;1
+18;23/08/2014;Atlético - GO;2;Sampaio Correa - MA;4
+18;23/08/2014;Avaí - SC;0;Santa Cruz - PE;0
+18;23/08/2014;Náutico - PE;2;América - RN;1
+18;23/08/2014;Paraná - PR;1;Bragantino - SP;0
+18;23/08/2014;Portuguesa - SP;1;Ceará - CE;1
+18;23/08/2014;Luverdense - MT;2;Joinville - SC;2
+18;23/08/2014;Abc - RN;0;Vila Nova - GO;2
+19;26/08/2014;Boa - MG;2;Icasa - CE;0
+19;26/08/2014;Vila Nova - GO;1;Portuguesa - SP;2
+19;29/08/2014;Joinville - SC;2;Oeste - SP;1
+19;29/08/2014;Santa Cruz - PE;2;Atlético - GO;0
+19;29/08/2014;Sampaio Correa - MA;0;América - MG;0
+19;30/08/2014;América - RN;2;Paraná - PR;3
+19;30/08/2014;Vasco da Gama - RJ;0;Avaí - SC;5
+19;30/08/2014;Ponte Preta - SP;2;Náutico - PE;0
+19;30/08/2014;Bragantino - SP;1;Abc - RN;0
+19;30/08/2014;Ceará - CE;3;Luverdense - MT;1
+20;02/09/2014;Atlético - GO;0;Boa - MG;3
+20;02/09/2014;Paraná - PR;0;Sampaio Correa - MA;0
+20;02/09/2014;Portuguesa - SP;1;Joinville - SC;2
+20;05/09/2014;Icasa - CE;0;Ponte Preta - SP;1
+20;06/09/2014;América - MG;2;Vasco da Gama - RJ;3
+20;06/09/2014;Náutico - PE;0;Bragantino - SP;0
+20;06/09/2014;Abc - RN;2;Santa Cruz - PE;1
+20;06/09/2014;Avaí - SC;0;América - RN;0
+20;06/09/2014;Oeste - SP;3;Ceará - CE;1
+20;06/09/2014;Luverdense - MT;2;Vila Nova - GO;0
+21;08/09/2014;Joinville - SC;3;Paraná - PR;0
+21;09/09/2014;Boa - MG;0;Abc - RN;0
+21;09/09/2014;Ponte Preta - SP;3;Atlético - GO;4
+21;09/09/2014;Ceará - CE;5;América - MG;2
+21;09/09/2014;América - RN;0;Oeste - SP;1
+21;09/09/2014;Vila Nova - GO;0;Náutico - PE;1
+21;09/09/2014;Sampaio Correa - MA;3;Icasa - CE;2
+21;09/09/2014;Santa Cruz - PE;1;Portuguesa - SP;0
+21;09/09/2014;Vasco da Gama - RJ;2;Luverdense - MT;0
+21;09/09/2014;Bragantino - SP;1;Avaí - SC;4
+22;12/09/2014;Oeste - SP;0;Sampaio Correa - MA;0
+22;12/09/2014;Náutico - PE;2;Ceará - CE;1
+22;12/09/2014;Icasa - CE;1;Joinville - SC;1
+22;12/09/2014;Luverdense - MT;0;Ponte Preta - SP;1
+22;13/09/2014;Atlético - GO;1;Vasco da Gama - RJ;1
+22;13/09/2014;América - MG;0;Boa - MG;2
+22;13/09/2014;Abc - RN;0;América - RN;0
+22;13/09/2014;Paraná - PR;3;Santa Cruz - PE;2
+22;13/09/2014;Avaí - SC;2;Vila Nova - GO;1
+22;13/09/2014;Portuguesa - SP;1;Bragantino - SP;3
+23;16/09/2014;Avaí - SC;3;Sampaio Correa - MA;2
+23;16/09/2014;América - MG;0;Bragantino - SP;2
+23;16/09/2014;Portuguesa - SP;1;Boa - MG;1
+23;16/09/2014;Paraná - PR;0;Ceará - CE;0
+23;16/09/2014;Náutico - PE;1;Joinville - SC;2
+23;16/09/2014;Atlético - GO;2;América - RN;0
+23;16/09/2014;Abc - RN;0;Ponte Preta - SP;2
+23;16/09/2014;Oeste - SP;1;Vasco da Gama - RJ;1
+23;16/09/2014;Icasa - CE;0;Vila Nova - GO;1
+23;16/09/2014;Luverdense - MT;2;Santa Cruz - PE;1
+24;19/09/2014;América - RN;1;Portuguesa - SP;1
+24;19/09/2014;Ceará - CE;2;Avaí - SC;2
+24;20/09/2014;Ponte Preta - SP;5;Oeste - SP;1
+24;20/09/2014;Vasco da Gama - RJ;2;Náutico - PE;1
+24;20/09/2014;Santa Cruz - PE;1;Icasa - CE;1
+24;20/09/2014;Sampaio Correa - MA;2;Abc - RN;1
+24;20/09/2014;Joinville - SC;2;Atlético - GO;0
+24;20/09/2014;Vila Nova - GO;0;América - MG;1
+24;20/09/2014;Bragantino - SP;2;Luverdense - MT;0
+24;20/09/2014;Boa - MG;1;Paraná - PR;0
+25;23/09/2014;Joinville - SC;1;América - MG;1
+25;23/09/2014;Boa - MG;2;Luverdense - MT;1
+25;23/09/2014;Abc - RN;2;Atlético - GO;0
+25;23/09/2014;Vila Nova - GO;0;Ponte Preta - SP;3
+25;23/09/2014;Bragantino - SP;2;Icasa - CE;1
+25;23/09/2014;Paraná - PR;1;Avaí - SC;1
+25;23/09/2014;Sampaio Correa - MA;2;Vasco da Gama - RJ;2
+25;23/09/2014;Portuguesa - SP;0;Náutico - PE;0
+25;23/09/2014;Ceará - CE;2;América - RN;0
+25;23/09/2014;Santa Cruz - PE;3;Oeste - SP;0
+26;26/09/2014;Náutico - PE;3;Paraná - PR;1
+26;26/09/2014;América - RN;0;Vila Nova - GO;1
+26;26/09/2014;Luverdense - MT;0;Sampaio Correa - MA;1
+26;26/09/2014;Vasco da Gama - RJ;2;Joinville - SC;0
+26;27/09/2014;Oeste - SP;4;Bragantino - SP;1
+26;27/09/2014;Ponte Preta - SP;3;Ceará - CE;1
+26;27/09/2014;Avaí - SC;2;Boa - MG;0
+26;27/09/2014;América - MG;1;Santa Cruz - PE;0
+26;27/09/2014;Icasa - CE;1;Abc - RN;0
+26;27/09/2014;Atlético - GO;2;Portuguesa - SP;1
+27;30/09/2014;Sampaio Correa - MA;0;Portuguesa - SP;0
+27;30/09/2014;Vila Nova - GO;1;Ceará - CE;5
+27;30/09/2014;Icasa - CE;1;Luverdense - MT;0
+27;30/09/2014;Ponte Preta - SP;2;Paraná - PR;2
+27;03/10/2014;América - MG;1;Atlético - GO;1
+27;03/10/2014;Santa Cruz - PE;3;Boa - MG;0
+27;03/10/2014;Vasco da Gama - RJ;2;Bragantino - SP;2
+27;04/10/2014;Avaí - SC;0;Náutico - PE;2
+27;04/10/2014;Oeste - SP;1;Abc - RN;0
+27;04/10/2014;América - RN;1;Joinville - SC;0
+28;07/10/2014;Atlético - GO;0;Icasa - CE;0
+28;07/10/2014;Boa - MG;0;Ponte Preta - SP;1
+28;07/10/2014;Bragantino - SP;1;Vila Nova - GO;2
+28;07/10/2014;Paraná - PR;0;Oeste - SP;0
+28;07/10/2014;Náutico - PE;1;América - MG;4
+28;07/10/2014;Ceará - CE;1;Sampaio Correa - MA;1
+28;07/10/2014;Abc - RN;2;Avaí - SC;1
+28;07/10/2014;Luverdense - MT;2;América - RN;1
+28;07/10/2014;Joinville - SC;1;Santa Cruz - PE;1
+28;07/10/2014;Portuguesa - SP;0;Vasco da Gama - RJ;1
+29;10/10/2014;Ceará - CE;1;Bragantino - SP;0
+29;10/10/2014;Oeste - SP;1;Atlético - GO;2
+29;10/10/2014;Vila Nova - GO;0;Joinville - SC;1
+29;10/10/2014;Vasco da Gama - RJ;2;Boa - MG;0
+29;11/10/2014;América - MG;3;Portuguesa - SP;1
+29;11/10/2014;Náutico - PE;2;Abc - RN;1
+29;11/10/2014;Ponte Preta - SP;1;Santa Cruz - PE;1
+29;11/10/2014;América - RN;2;Sampaio Correa - MA;2
+29;11/10/2014;Luverdense - MT;0;Paraná - PR;2
+29;11/10/2014;Avaí - SC;1;Icasa - CE;0
+30;14/10/2014;Boa - MG;3;Vila Nova - GO;0
+30;14/10/2014;Atlético - GO;2;Avaí - SC;0
+30;17/10/2014;Icasa - CE;0;Oeste - SP;0
+30;17/10/2014;Portuguesa - SP;0;Ponte Preta - SP;3
+30;17/10/2014;Paraná - PR;1;América - MG;1
+30;18/10/2014;Santa Cruz - PE;1;Vasco da Gama - RJ;0
+30;18/10/2014;Sampaio Correa - MA;1;Náutico - PE;1
+30;18/10/2014;Joinville - SC;3;Ceará - CE;0
+30;18/10/2014;Bragantino - SP;2;América - RN;1
+30;18/10/2014;Abc - RN;0;Luverdense - MT;1
+31;21/10/2014;América - RN;2;Vasco da Gama - RJ;0
+31;21/10/2014;Oeste - SP;1;América - MG;3
+31;21/10/2014;Ponte Preta - SP;3;Avaí - SC;1
+31;21/10/2014;Paraná - PR;1;Portuguesa - SP;0
+31;21/10/2014;Sampaio Correa - MA;3;Bragantino - SP;0
+31;21/10/2014;Icasa - CE;2;Ceará - CE;1
+31;21/10/2014;Boa - MG;1;Náutico - PE;0
+31;21/10/2014;Atlético - GO;3;Luverdense - MT;0
+31;21/10/2014;Joinville - SC;3;Abc - RN;0
+31;28/10/2014;Santa Cruz - PE;5;Vila Nova - GO;1
+32;24/10/2014;Portuguesa - SP;1;Icasa - CE;2
+32;24/10/2014;Avaí - SC;0;Joinville - SC;3
+32;24/10/2014;América - MG;2;América - RN;1
+32;24/10/2014;Ceará - CE;0;Santa Cruz - PE;2
+32;24/10/2014;Abc - RN;2;Paraná - PR;1
+32;25/10/2014;Bragantino - SP;4;Boa - MG;2
+32;25/10/2014;Vasco da Gama - RJ;1;Ponte Preta - SP;1
+32;25/10/2014;Náutico - PE;1;Atlético - GO;2
+32;25/10/2014;Luverdense - MT;1;Oeste - SP;0
+32;25/10/2014;Vila Nova - GO;4;Sampaio Correa - MA;1
+33;28/10/2014;Oeste - SP;3;Portuguesa - SP;0
+33;28/10/2014;Luverdense - MT;3;Avaí - SC;1
+33;28/10/2014;Joinville - SC;1;Bragantino - SP;0
+33;31/10/2014;Atlético - GO;3;Vila Nova - GO;1
+33;31/10/2014;Paraná - PR;1;Vasco da Gama - RJ;1
+33;01/11/2014;Ponte Preta - SP;1;Sampaio Correa - MA;0
+33;01/11/2014;Santa Cruz - PE;0;América - RN;1
+33;01/11/2014;Icasa - CE;3;Náutico - PE;1
+33;01/11/2014;Abc - RN;1;América - MG;0
+33;01/11/2014;Boa - MG;3;Ceará - CE;1
+34;04/11/2014;Avaí - SC;0;Oeste - SP;0
+34;04/11/2014;Sampaio Correa - MA;1;Joinville - SC;2
+34;07/11/2014;América - RN;1;Boa - MG;3
+34;07/11/2014;Ceará - CE;0;Atlético - GO;0
+34;08/11/2014;Vasco da Gama - RJ;1;Abc - RN;0
+34;08/11/2014;Bragantino - SP;0;Ponte Preta - SP;2
+34;08/11/2014;Náutico - PE;0;Santa Cruz - PE;0
+34;08/11/2014;América - MG;1;Icasa - CE;1
+34;08/11/2014;Vila Nova - GO;2;Paraná - PR;0
+34;08/11/2014;Portuguesa - SP;1;Luverdense - MT;0
+35;11/11/2014;Portuguesa - SP;0;Abc - RN;0
+35;11/11/2014;Paraná - PR;2;Atlético - GO;0
+35;14/11/2014;Vila Nova - GO;0;Oeste - SP;1
+35;14/11/2014;América - MG;3;Avaí - SC;0
+35;15/11/2014;Joinville - SC;3;Ponte Preta - SP;1
+35;15/11/2014;Ceará - CE;2;Vasco da Gama - RJ;0
+35;15/11/2014;Náutico - PE;1;Luverdense - MT;0
+35;15/11/2014;Bragantino - SP;2;Santa Cruz - PE;1
+35;15/11/2014;Sampaio Correa - MA;3;Boa - MG;0
+35;15/11/2014;América - RN;2;Icasa - CE;0
+36;18/11/2014;Icasa - CE;1;Paraná - PR;2
+36;18/11/2014;Avaí - SC;2;Portuguesa - SP;0
+36;18/11/2014;Atlético - GO;1;Bragantino - SP;0
+36;18/11/2014;Oeste - SP;2;Náutico - PE;0
+36;18/11/2014;Santa Cruz - PE;0;Sampaio Correa - MA;2
+36;18/11/2014;Luverdense - MT;1;América - MG;2
+36;18/11/2014;Vasco da Gama - RJ;3;Vila Nova - GO;1
+36;18/11/2014;Ponte Preta - SP;2;América - RN;2
+36;18/11/2014;Abc - RN;1;Ceará - CE;0
+36;18/11/2014;Boa - MG;1;Joinville - SC;0
+37;21/11/2014;América - RN;1;Náutico - PE;0
+37;21/11/2014;Bragantino - SP;1;Paraná - PR;1
+37;21/11/2014;Vila Nova - GO;3;Abc - RN;5
+37;22/11/2014;Boa - MG;1;Oeste - SP;0
+37;22/11/2014;Joinville - SC;1;Luverdense - MT;1
+37;22/11/2014;Vasco da Gama - RJ;1;Icasa - CE;1
+37;22/11/2014;Ponte Preta - SP;0;América - MG;1
+37;22/11/2014;Santa Cruz - PE;0;Avaí - SC;1
+37;22/11/2014;Ceará - CE;2;Portuguesa - SP;1
+37;22/11/2014;Sampaio Correa - MA;1;Atlético - GO;2
+38;28/11/2014;Portuguesa - SP;2;Vila Nova - GO;3
+38;29/11/2014;Oeste - SP;1;Joinville - SC;0
+38;29/11/2014;Paraná - PR;4;América - RN;1
+38;29/11/2014;Náutico - PE;1;Ponte Preta - SP;1
+38;29/11/2014;Luverdense - MT;1;Ceará - CE;0
+38;29/11/2014;Icasa - CE;3;Boa - MG;2
+38;29/11/2014;Avaí - SC;1;Vasco da Gama - RJ;0
+38;29/11/2014;Atlético - GO;2;Santa Cruz - PE;3
+38;29/11/2014;Abc - RN;0;Bragantino - SP;2
+38;29/11/2014;América - MG;4;Sampaio Correa - MA;0

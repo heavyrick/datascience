@@ -1,0 +1,381 @@
+Rodada;Data;Time casa;Gols time casa;Time visitante;Gols time visitante
+1;13/05/2016;Vila Nova - GO;3;Bragantino - SP;1
+1;13/05/2016;Oeste - SP;0;Atlético - GO;1
+1;13/05/2016;Tupi - MG;0;Goiás - GO;1
+1;14/05/2016;Ceará - CE;2;Paysandu - PA;2
+1;14/05/2016;Brasil - RS;2;Paraná - PR;0
+1;14/05/2016;Sampaio Correa - MA;0;Vasco da Gama - RJ;4
+1;14/05/2016;Londrina - PR;0;Crb - AL;1
+1;14/05/2016;Criciúma - SC;1;Náutico - PE;0
+1;14/05/2016;Luverdense - MT;1;Joinville - SC;1
+1;14/05/2016;Bahia - BA;2;Avaí - SC;1
+2;17/05/2016;Bragantino - SP;0;Luverdense - MT;1
+2;17/05/2016;Náutico - PE;3;Vila Nova - GO;2
+2;20/05/2016;Atlético - GO;1;Brasil - RS;0
+2;20/05/2016;Goiás - GO;1;Londrina - PR;1
+2;20/05/2016;Joinville - SC;0;Criciúma - SC;0
+2;21/05/2016;Avaí - SC;2;Sampaio Correa - MA;0
+2;21/05/2016;Paysandu - PA;1;Oeste - SP;1
+2;21/05/2016;Vasco da Gama - RJ;1;Tupi - MG;0
+2;21/05/2016;Crb - AL;0;Ceará - CE;3
+2;21/05/2016;Paraná - PR;0;Bahia - BA;0
+3;24/05/2016;Brasil - RS;2;Bragantino - SP;0
+3;24/05/2016;Londrina - PR;1;Náutico - PE;0
+3;24/05/2016;Oeste - SP;2;Crb - AL;1
+3;24/05/2016;Sampaio Correa - MA;1;Paraná - PR;2
+3;24/05/2016;Ceará - CE;0;Atlético - GO;1
+3;24/05/2016;Luverdense - MT;1;Avaí - SC;1
+3;24/05/2016;Tupi - MG;5;Paysandu - PA;1
+3;24/05/2016;Criciúma - SC;3;Goiás - GO;1
+3;24/05/2016;Vila Nova - GO;0;Vasco da Gama - RJ;2
+3;25/05/2016;Bahia - BA;1;Joinville - SC;0
+4;27/05/2016;Crb - AL;2;Criciúma - SC;1
+4;27/05/2016;Paraná - PR;2;Oeste - SP;1
+4;27/05/2016;Goiás - GO;1;Brasil - RS;1
+4;27/05/2016;Náutico - PE;5;Sampaio Correa - MA;0
+4;28/05/2016;Avaí - SC;4;Ceará - CE;2
+4;28/05/2016;Atlético - GO;2;Vila Nova - GO;1
+4;28/05/2016;Joinville - SC;1;Londrina - PR;1
+4;28/05/2016;Vasco da Gama - RJ;4;Bahia - BA;3
+4;28/05/2016;Paysandu - PA;2;Luverdense - MT;1
+4;28/05/2016;Bragantino - SP;2;Tupi - MG;1
+5;31/05/2016;Criciúma - SC;1;Avaí - SC;0
+5;31/05/2016;Vila Nova - GO;1;Crb - AL;2
+5;31/05/2016;Brasil - RS;1;Paysandu - PA;0
+5;31/05/2016;Sampaio Correa - MA;0;Bragantino - SP;0
+5;31/05/2016;Bahia - BA;0;Náutico - PE;0
+5;31/05/2016;Ceará - CE;2;Goiás - GO;1
+5;31/05/2016;Londrina - PR;1;Paraná - PR;1
+5;31/05/2016;Luverdense - MT;3;Atlético - GO;2
+5;31/05/2016;Oeste - SP;1;Vasco da Gama - RJ;1
+5;31/05/2016;Tupi - MG;1;Joinville - SC;2
+6;03/06/2016;Bahia - BA;3;Paysandu - PA;0
+6;03/06/2016;Vila Nova - GO;0;Paraná - PR;0
+6;03/06/2016;Brasil - RS;1;Luverdense - MT;1
+6;03/06/2016;Náutico - PE;2;Joinville - SC;0
+6;04/06/2016;Sampaio Correa - MA;2;Ceará - CE;3
+6;04/06/2016;Oeste - SP;1;Criciúma - SC;0
+6;04/06/2016;Londrina - PR;1;Tupi - MG;0
+6;04/06/2016;Vasco da Gama - RJ;1;Goiás - GO;0
+6;04/06/2016;Atlético - GO;1;Bragantino - SP;0
+6;04/06/2016;Avaí - SC;2;Crb - AL;1
+7;07/06/2016;Tupi - MG;0;Oeste - SP;1
+7;07/06/2016;Paraná - PR;0;Atlético - GO;0
+7;07/06/2016;Criciúma - SC;3;Brasil - RS;0
+7;07/06/2016;Bragantino - SP;1;Avaí - SC;0
+7;07/06/2016;Paysandu - PA;1;Náutico - PE;3
+7;07/06/2016;Crb - AL;2;Sampaio Correa - MA;1
+7;07/06/2016;Luverdense - MT;0;Vila Nova - GO;2
+7;07/06/2016;Joinville - SC;0;Vasco da Gama - RJ;2
+7;07/06/2016;Ceará - CE;1;Londrina - PR;0
+7;07/06/2016;Goiás - GO;0;Bahia - BA;2
+8;10/06/2016;Bahia - BA;3;Crb - AL;0
+8;10/06/2016;Sampaio Correa - MA;1;Criciúma - SC;0
+8;10/06/2016;Goiás - GO;1;Oeste - SP;1
+8;11/06/2016;Brasil - RS;1;Tupi - MG;0
+8;11/06/2016;Náutico - PE;5;Paraná - PR;1
+8;11/06/2016;Avaí - SC;0;Joinville - SC;1
+8;11/06/2016;Londrina - PR;1;Vila Nova - GO;0
+8;11/06/2016;Atlético - GO;2;Vasco da Gama - RJ;1
+8;11/06/2016;Luverdense - MT;2;Ceará - CE;0
+8;11/06/2016;Bragantino - SP;0;Paysandu - PA;0
+9;14/06/2016;Oeste - SP;1;Londrina - PR;1
+9;14/06/2016;Vila Nova - GO;1;Sampaio Correa - MA;0
+9;14/06/2016;Vasco da Gama - RJ;3;Náutico - PE;2
+9;14/06/2016;Tupi - MG;0;Luverdense - MT;0
+9;14/06/2016;Joinville - SC;0;Atlético - GO;0
+9;14/06/2016;Paraná - PR;2;Goiás - GO;0
+9;14/06/2016;Criciúma - SC;3;Bahia - BA;2
+9;14/06/2016;Ceará - CE;3;Brasil - RS;0
+9;14/06/2016;Crb - AL;2;Bragantino - SP;1
+9;14/06/2016;Paysandu - PA;1;Avaí - SC;0
+10;17/06/2016;Joinville - SC;1;Ceará - CE;1
+10;17/06/2016;Paraná - PR;1;Luverdense - MT;2
+10;17/06/2016;Sampaio Correa - MA;1;Brasil - RS;1
+10;17/06/2016;Goiás - GO;2;Avaí - SC;0
+10;18/06/2016;Bahia - BA;1;Londrina - PR;2
+10;18/06/2016;Atlético - GO;1;Crb - AL;2
+10;18/06/2016;Náutico - PE;1;Bragantino - SP;1
+10;18/06/2016;Criciúma - SC;2;Tupi - MG;2
+10;18/06/2016;Vasco da Gama - RJ;0;Paysandu - PA;2
+10;18/06/2016;Oeste - SP;1;Vila Nova - GO;3
+11;21/06/2016;Tupi - MG;2;Bahia - BA;1
+11;21/06/2016;Avaí - SC;1;Atlético - GO;1
+11;21/06/2016;Londrina - PR;0;Vasco da Gama - RJ;1
+11;21/06/2016;Paysandu - PA;1;Joinville - SC;0
+11;21/06/2016;Ceará - CE;1;Oeste - SP;0
+11;21/06/2016;Crb - AL;1;Paraná - PR;1
+11;21/06/2016;Bragantino - SP;0;Goiás - GO;1
+11;21/06/2016;Luverdense - MT;0;Sampaio Correa - MA;0
+11;21/06/2016;Brasil - RS;0;Náutico - PE;0
+11;21/06/2016;Vila Nova - GO;2;Criciúma - SC;3
+12;24/06/2016;Criciúma - SC;1;Bragantino - SP;1
+12;24/06/2016;Paysandu - PA;0;Atlético - GO;0
+12;24/06/2016;Luverdense - MT;2;Londrina - PR;1
+12;24/06/2016;Brasil - RS;2;Bahia - BA;1
+12;25/06/2016;Paraná - PR;1;Joinville - SC;0
+12;25/06/2016;Vila Nova - GO;1;Goiás - GO;1
+12;25/06/2016;Crb - AL;1;Vasco da Gama - RJ;2
+12;25/06/2016;Ceará - CE;2;Náutico - PE;1
+12;25/06/2016;Tupi - MG;1;Avaí - SC;1
+12;25/06/2016;Oeste - SP;1;Sampaio Correa - MA;0
+13;27/06/2016;Atlético - GO;1;Criciúma - SC;0
+13;28/06/2016;Bahia - BA;2;Oeste - SP;0
+13;28/06/2016;Avaí - SC;3;Vila Nova - GO;1
+13;28/06/2016;Londrina - PR;1;Brasil - RS;0
+13;28/06/2016;Joinville - SC;1;Crb - AL;3
+13;28/06/2016;Náutico - PE;1;Luverdense - MT;0
+13;28/06/2016;Vasco da Gama - RJ;1;Paraná - PR;2
+13;28/06/2016;Sampaio Correa - MA;3;Tupi - MG;1
+13;28/06/2016;Bragantino - SP;1;Ceará - CE;1
+13;28/06/2016;Goiás - GO;0;Paysandu - PA;0
+14;01/07/2016;Sampaio Correa - MA;0;Paysandu - PA;0
+14;01/07/2016;Vila Nova - GO;1;Tupi - MG;0
+14;01/07/2016;Londrina - PR;2;Criciúma - SC;2
+14;02/07/2016;Atlético - GO;3;Náutico - PE;0
+14;02/07/2016;Brasil - RS;2;Joinville - SC;0
+14;02/07/2016;Luverdense - MT;0;Oeste - SP;1
+14;02/07/2016;Bragantino - SP;0;Paraná - PR;1
+14;02/07/2016;Avaí - SC;2;Vasco da Gama - RJ;1
+14;02/07/2016;Ceará - CE;1;Bahia - BA;0
+14;02/07/2016;Crb - AL;2;Goiás - GO;1
+15;05/07/2016;Paraná - PR;0;Avaí - SC;0
+15;05/07/2016;Bahia - BA;0;Vila Nova - GO;1
+15;08/07/2016;Criciúma - SC;2;Luverdense - MT;2
+15;08/07/2016;Tupi - MG;2;Ceará - CE;1
+15;09/07/2016;Náutico - PE;1;Crb - AL;3
+15;09/07/2016;Oeste - SP;1;Bragantino - SP;3
+15;09/07/2016;Goiás - GO;2;Atlético - GO;2
+15;09/07/2016;Joinville - SC;2;Sampaio Correa - MA;0
+15;09/07/2016;Vasco da Gama - RJ;2;Brasil - RS;0
+15;09/07/2016;Paysandu - PA;0;Londrina - PR;0
+16;12/07/2016;Atlético - GO;1;Londrina - PR;2
+16;12/07/2016;Paraná - PR;0;Paysandu - PA;0
+16;14/07/2016;Crb - AL;3;Tupi - MG;0
+16;15/07/2016;Avaí - SC;1;Oeste - SP;1
+16;15/07/2016;Sampaio Correa - MA;0;Bahia - BA;0
+16;16/07/2016;Ceará - CE;1;Criciúma - SC;0
+16;16/07/2016;Brasil - RS;2;Vila Nova - GO;2
+16;16/07/2016;Goiás - GO;4;Náutico - PE;2
+16;16/07/2016;Luverdense - MT;1;Vasco da Gama - RJ;1
+16;16/07/2016;Bragantino - SP;2;Joinville - SC;0
+17;19/07/2016;Oeste - SP;1;Brasil - RS;1
+17;19/07/2016;Joinville - SC;2;Goiás - GO;1
+17;22/07/2016;Criciúma - SC;3;Paraná - PR;2
+17;22/07/2016;Náutico - PE;3;Avaí - SC;1
+17;23/07/2016;Vila Nova - GO;3;Ceará - CE;4
+17;23/07/2016;Tupi - MG;1;Atlético - GO;0
+17;23/07/2016;Vasco da Gama - RJ;2;Bragantino - SP;1
+17;23/07/2016;Bahia - BA;1;Luverdense - MT;0
+17;23/07/2016;Paysandu - PA;2;Crb - AL;2
+17;23/07/2016;Londrina - PR;1;Sampaio Correa - MA;1
+18;26/07/2016;Goiás - GO;1;Luverdense - MT;1
+18;26/07/2016;Avaí - SC;1;Londrina - PR;0
+18;29/07/2016;Crb - AL;1;Brasil - RS;2
+18;29/07/2016;Náutico - PE;1;Tupi - MG;0
+18;30/07/2016;Joinville - SC;0;Oeste - SP;1
+18;30/07/2016;Bragantino - SP;1;Bahia - BA;0
+18;30/07/2016;Paysandu - PA;2;Vila Nova - GO;2
+18;30/07/2016;Paraná - PR;1;Ceará - CE;1
+18;30/07/2016;Vasco da Gama - RJ;2;Criciúma - SC;1
+18;31/07/2016;Atlético - GO;4;Sampaio Correa - MA;1
+19;02/08/2016;Criciúma - SC;0;Paysandu - PA;3
+19;02/08/2016;Londrina - PR;2;Bragantino - SP;0
+19;02/08/2016;Brasil - RS;3;Avaí - SC;0
+19;02/08/2016;Vila Nova - GO;2;Joinville - SC;1
+19;02/08/2016;Tupi - MG;2;Paraná - PR;0
+19;02/08/2016;Luverdense - MT;0;Crb - AL;0
+19;02/08/2016;Oeste - SP;0;Náutico - PE;0
+19;02/08/2016;Ceará - CE;0;Vasco da Gama - RJ;0
+19;16/08/2016;Sampaio Correa - MA;0;Goiás - GO;0
+19;16/08/2016;Bahia - BA;1;Atlético - GO;1
+20;19/08/2016;Atlético - GO;1;Oeste - SP;1
+20;19/08/2016;Paraná - PR;0;Brasil - RS;2
+20;19/08/2016;Joinville - SC;1;Luverdense - MT;1
+20;19/08/2016;Bragantino - SP;2;Vila Nova - GO;2
+20;20/08/2016;Náutico - PE;0;Criciúma - SC;1
+20;20/08/2016;Crb - AL;0;Londrina - PR;1
+20;20/08/2016;Vasco da Gama - RJ;1;Sampaio Correa - MA;1
+20;20/08/2016;Avaí - SC;0;Bahia - BA;3
+20;20/08/2016;Goiás - GO;2;Tupi - MG;1
+20;20/08/2016;Paysandu - PA;2;Ceará - CE;0
+21;23/08/2016;Sampaio Correa - MA;1;Avaí - SC;2
+21;23/08/2016;Brasil - RS;0;Atlético - GO;1
+21;23/08/2016;Londrina - PR;0;Goiás - GO;1
+21;26/08/2016;Criciúma - SC;0;Joinville - SC;1
+21;26/08/2016;Ceará - CE;1;Crb - AL;1
+21;27/08/2016;Oeste - SP;1;Paysandu - PA;0
+21;27/08/2016;Vila Nova - GO;0;Náutico - PE;2
+21;27/08/2016;Tupi - MG;2;Vasco da Gama - RJ;2
+21;27/08/2016;Bahia - BA;3;Paraná - PR;0
+21;27/08/2016;Luverdense - MT;4;Bragantino - SP;0
+22;29/08/2016;Atlético - GO;2;Ceará - CE;2
+22;30/08/2016;Paraná - PR;1;Sampaio Correa - MA;0
+22;30/08/2016;Paysandu - PA;0;Tupi - MG;3
+22;30/08/2016;Avaí - SC;2;Luverdense - MT;1
+22;30/08/2016;Joinville - SC;1;Bahia - BA;1
+22;30/08/2016;Náutico - PE;0;Londrina - PR;2
+22;30/08/2016;Crb - AL;3;Oeste - SP;1
+22;30/08/2016;Vasco da Gama - RJ;1;Vila Nova - GO;2
+22;30/08/2016;Goiás - GO;1;Criciúma - SC;1
+22;30/08/2016;Bragantino - SP;0;Brasil - RS;2
+23;02/09/2016;Brasil - RS;2;Goiás - GO;1
+23;02/09/2016;Luverdense - MT;3;Paysandu - PA;1
+23;03/09/2016;Tupi - MG;0;Bragantino - SP;1
+23;03/09/2016;Vila Nova - GO;0;Atlético - GO;0
+23;03/09/2016;Oeste - SP;3;Paraná - PR;3
+23;03/09/2016;Bahia - BA;1;Vasco da Gama - RJ;0
+23;03/09/2016;Londrina - PR;1;Joinville - SC;0
+23;03/09/2016;Criciúma - SC;1;Crb - AL;1
+23;03/09/2016;Sampaio Correa - MA;4;Náutico - PE;3
+23;04/09/2016;Ceará - CE;0;Avaí - SC;0
+24;06/09/2016;Bragantino - SP;2;Sampaio Correa - MA;1
+24;06/09/2016;Atlético - GO;2;Luverdense - MT;0
+24;09/09/2016;Joinville - SC;1;Tupi - MG;1
+24;09/09/2016;Paysandu - PA;1;Brasil - RS;1
+24;10/09/2016;Paraná - PR;2;Londrina - PR;1
+24;10/09/2016;Avaí - SC;3;Criciúma - SC;0
+24;10/09/2016;Náutico - PE;0;Bahia - BA;0
+24;10/09/2016;Vasco da Gama - RJ;3;Oeste - SP;2
+24;10/09/2016;Goiás - GO;2;Ceará - CE;0
+24;10/09/2016;Crb - AL;1;Vila Nova - GO;2
+25;13/09/2016;Paraná - PR;1;Vila Nova - GO;2
+25;13/09/2016;Joinville - SC;0;Náutico - PE;0
+25;13/09/2016;Tupi - MG;1;Londrina - PR;1
+25;13/09/2016;Paysandu - PA;2;Bahia - BA;1
+25;13/09/2016;Crb - AL;1;Avaí - SC;2
+25;13/09/2016;Bragantino - SP;1;Atlético - GO;2
+25;13/09/2016;Criciúma - SC;4;Oeste - SP;0
+25;13/09/2016;Goiás - GO;1;Vasco da Gama - RJ;1
+25;13/09/2016;Luverdense - MT;1;Brasil - RS;0
+25;13/09/2016;Ceará - CE;0;Sampaio Correa - MA;1
+26;16/09/2016;Brasil - RS;1;Criciúma - SC;2
+26;16/09/2016;Vila Nova - GO;0;Luverdense - MT;0
+26;16/09/2016;Vasco da Gama - RJ;2;Joinville - SC;0
+26;17/09/2016;Sampaio Correa - MA;1;Crb - AL;1
+26;17/09/2016;Atlético - GO;2;Paraná - PR;0
+26;17/09/2016;Avaí - SC;2;Bragantino - SP;0
+26;17/09/2016;Náutico - PE;3;Paysandu - PA;1
+26;17/09/2016;Londrina - PR;1;Ceará - CE;1
+26;17/09/2016;Bahia - BA;4;Goiás - GO;2
+26;17/09/2016;Oeste - SP;0;Tupi - MG;0
+27;20/09/2016;Ceará - CE;0;Luverdense - MT;0
+27;23/09/2016;Criciúma - SC;1;Sampaio Correa - MA;0
+27;23/09/2016;Joinville - SC;0;Avaí - SC;1
+27;23/09/2016;Oeste - SP;1;Goiás - GO;2
+27;24/09/2016;Paraná - PR;1;Náutico - PE;2
+27;24/09/2016;Crb - AL;2;Bahia - BA;2
+27;24/09/2016;Vasco da Gama - RJ;2;Atlético - GO;0
+27;24/09/2016;Vila Nova - GO;1;Londrina - PR;2
+27;24/09/2016;Tupi - MG;1;Brasil - RS;1
+27;26/09/2016;Paysandu - PA;3;Bragantino - SP;0
+28;27/09/2016;Atlético - GO;1;Joinville - SC;1
+28;27/09/2016;Brasil - RS;2;Ceará - CE;1
+28;29/09/2016;Goiás - GO;4;Paraná - PR;0
+28;30/09/2016;Bahia - BA;2;Criciúma - SC;0
+28;30/09/2016;Luverdense - MT;2;Tupi - MG;1
+28;30/09/2016;Avaí - SC;2;Paysandu - PA;0
+28;01/10/2016;Bragantino - SP;1;Crb - AL;2
+28;01/10/2016;Náutico - PE;3;Vasco da Gama - RJ;1
+28;01/10/2016;Londrina - PR;3;Oeste - SP;0
+28;25/10/2016;Sampaio Correa - MA;0;Vila Nova - GO;3
+29;04/10/2016;Londrina - PR;1;Bahia - BA;0
+29;04/10/2016;Bragantino - SP;0;Náutico - PE;1
+29;04/10/2016;Tupi - MG;0;Criciúma - SC;2
+29;04/10/2016;Ceará - CE;2;Joinville - SC;1
+29;04/10/2016;Crb - AL;1;Atlético - GO;2
+29;04/10/2016;Vila Nova - GO;1;Oeste - SP;0
+29;04/10/2016;Avaí - SC;2;Goiás - GO;0
+29;04/10/2016;Brasil - RS;1;Sampaio Correa - MA;1
+29;04/10/2016;Luverdense - MT;3;Paraná - PR;2
+29;04/10/2016;Paysandu - PA;3;Vasco da Gama - RJ;1
+30;07/10/2016;Goiás - GO;2;Bragantino - SP;1
+30;07/10/2016;Criciúma - SC;1;Vila Nova - GO;0
+30;07/10/2016;Náutico - PE;2;Brasil - RS;0
+30;08/10/2016;Atlético - GO;3;Avaí - SC;0
+30;08/10/2016;Joinville - SC;0;Paysandu - PA;0
+30;08/10/2016;Sampaio Correa - MA;2;Luverdense - MT;0
+30;08/10/2016;Oeste - SP;1;Ceará - CE;1
+30;08/10/2016;Vasco da Gama - RJ;1;Londrina - PR;0
+30;08/10/2016;Paraná - PR;5;Crb - AL;3
+30;09/10/2016;Bahia - BA;4;Tupi - MG;0
+31;10/10/2016;Bragantino - SP;2;Criciúma - SC;0
+31;11/10/2016;Sampaio Correa - MA;1;Oeste - SP;1
+31;14/10/2016;Atlético - GO;2;Paysandu - PA;1
+31;14/10/2016;Bahia - BA;1;Brasil - RS;0
+31;15/10/2016;Joinville - SC;1;Paraná - PR;0
+31;15/10/2016;Avaí - SC;1;Tupi - MG;0
+31;15/10/2016;Goiás - GO;1;Vila Nova - GO;2
+31;15/10/2016;Vasco da Gama - RJ;1;Crb - AL;2
+31;15/10/2016;Náutico - PE;1;Ceará - CE;0
+31;15/10/2016;Londrina - PR;1;Luverdense - MT;1
+32;18/10/2016;Vila Nova - GO;1;Avaí - SC;2
+32;18/10/2016;Brasil - RS;0;Londrina - PR;1
+32;21/10/2016;Ceará - CE;2;Bragantino - SP;0
+32;21/10/2016;Luverdense - MT;2;Náutico - PE;1
+32;22/10/2016;Oeste - SP;1;Bahia - BA;1
+32;22/10/2016;Paraná - PR;0;Vasco da Gama - RJ;1
+32;22/10/2016;Tupi - MG;1;Sampaio Correa - MA;1
+32;22/10/2016;Paysandu - PA;1;Goiás - GO;1
+32;22/10/2016;Criciúma - SC;1;Atlético - GO;2
+32;22/10/2016;Crb - AL;2;Joinville - SC;1
+33;25/10/2016;Oeste - SP;1;Luverdense - MT;1
+33;25/10/2016;Goiás - GO;3;Crb - AL;0
+33;26/10/2016;Vasco da Gama - RJ;0;Avaí - SC;0
+33;28/10/2016;Criciúma - SC;1;Londrina - PR;1
+33;28/10/2016;Paraná - PR;4;Bragantino - SP;1
+33;28/10/2016;Náutico - PE;2;Atlético - GO;1
+33;28/10/2016;Joinville - SC;1;Brasil - RS;1
+33;29/10/2016;Tupi - MG;1;Vila Nova - GO;0
+33;29/10/2016;Bahia - BA;3;Ceará - CE;1
+33;29/10/2016;Paysandu - PA;2;Sampaio Correa - MA;1
+34;01/11/2016;Londrina - PR;0;Paysandu - PA;0
+34;01/11/2016;Luverdense - MT;2;Criciúma - SC;1
+34;04/11/2016;Vila Nova - GO;0;Bahia - BA;1
+34;05/11/2016;Brasil - RS;2;Vasco da Gama - RJ;1
+34;05/11/2016;Sampaio Correa - MA;1;Joinville - SC;2
+34;05/11/2016;Ceará - CE;2;Tupi - MG;1
+34;05/11/2016;Atlético - GO;4;Goiás - GO;2
+34;05/11/2016;Crb - AL;1;Náutico - PE;0
+34;05/11/2016;Avaí - SC;1;Paraná - PR;0
+34;05/11/2016;Bragantino - SP;0;Oeste - SP;0
+35;08/11/2016;Tupi - MG;3;Crb - AL;4
+35;08/11/2016;Oeste - SP;0;Avaí - SC;0
+35;08/11/2016;Criciúma - SC;2;Ceará - CE;3
+35;08/11/2016;Vila Nova - GO;3;Brasil - RS;1
+35;08/11/2016;Náutico - PE;1;Goiás - GO;0
+35;08/11/2016;Bahia - BA;1;Sampaio Correa - MA;0
+35;08/11/2016;Paysandu - PA;1;Paraná - PR;1
+35;08/11/2016;Vasco da Gama - RJ;1;Luverdense - MT;1
+35;08/11/2016;Joinville - SC;1;Bragantino - SP;1
+35;08/11/2016;Londrina - PR;2;Atlético - GO;3
+36;11/11/2016;Goiás - GO;3;Joinville - SC;2
+36;11/11/2016;Crb - AL;0;Paysandu - PA;1
+36;12/11/2016;Bragantino - SP;1;Vasco da Gama - RJ;2
+36;12/11/2016;Paraná - PR;1;Criciúma - SC;2
+36;12/11/2016;Ceará - CE;2;Vila Nova - GO;3
+36;12/11/2016;Sampaio Correa - MA;1;Londrina - PR;3
+36;12/11/2016;Avaí - SC;3;Náutico - PE;0
+36;12/11/2016;Brasil - RS;1;Oeste - SP;1
+36;12/11/2016;Atlético - GO;5;Tupi - MG;3
+36;12/11/2016;Luverdense - MT;2;Bahia - BA;2
+37;18/11/2016;Oeste - SP;0;Joinville - SC;2
+37;18/11/2016;Luverdense - MT;1;Goiás - GO;0
+37;19/11/2016;Londrina - PR;0;Avaí - SC;1
+37;19/11/2016;Tupi - MG;1;Náutico - PE;4
+37;19/11/2016;Criciúma - SC;1;Vasco da Gama - RJ;0
+37;19/11/2016;Bahia - BA;3;Bragantino - SP;2
+37;19/11/2016;Sampaio Correa - MA;0;Atlético - GO;1
+37;19/11/2016;Vila Nova - GO;2;Paysandu - PA;2
+37;19/11/2016;Ceará - CE;1;Paraná - PR;1
+37;19/11/2016;Brasil - RS;1;Crb - AL;0
+38;22/11/2016;Goiás - GO;2;Sampaio Correa - MA;1
+38;25/11/2016;Paraná - PR;0;Tupi - MG;2
+38;25/11/2016;Paysandu - PA;1;Criciúma - SC;2
+38;26/11/2016;Náutico - PE;0;Oeste - SP;2
+38;26/11/2016;Crb - AL;3;Luverdense - MT;0
+38;26/11/2016;Bragantino - SP;0;Londrina - PR;1
+38;26/11/2016;Vasco da Gama - RJ;2;Ceará - CE;1
+38;26/11/2016;Atlético - GO;2;Bahia - BA;1
+38;26/11/2016;Joinville - SC;4;Vila Nova - GO;2
+38;26/11/2016;Avaí - SC;1;Brasil - RS;1

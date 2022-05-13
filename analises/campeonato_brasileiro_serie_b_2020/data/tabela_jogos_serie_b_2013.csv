@@ -1,0 +1,381 @@
+Rodada;Data;Time casa;Gols time casa;Time visitante;Gols time visitante
+1;24/05/2013;Oeste - SP;1;Avaí - SC;1
+1;24/05/2013;São Caetano - SP;0;Ceará - CE;0
+1;24/05/2013;Paysandu - PA;1;A.s.a. - AL;1
+1;24/05/2013;Boa - MG;1;Chapecoense - SC;4
+1;25/05/2013;Figueirense - SC;3;América - RN;2
+1;25/05/2013;Joinville - SC;3;Bragantino - SP;0
+1;25/05/2013;Icasa - CE;2;Sport - PE;1
+1;25/05/2013;Palmeiras - SP;1;Atlético - GO;0
+1;25/05/2013;Abc - RN;0;Paraná - PR;2
+1;25/05/2013;Guaratinguetá - SP;1;América - MG;0
+2;28/05/2013;Paraná - PR;0;São Caetano - SP;0
+2;28/05/2013;América - RN;1;Icasa - CE;1
+2;28/05/2013;Sport - PE;1;Abc - RN;0
+2;28/05/2013;Ceará - CE;1;Paysandu - PA;0
+2;28/05/2013;Avaí - SC;2;Guaratinguetá - SP;1
+2;28/05/2013;Bragantino - SP;0;Boa - MG;1
+2;28/05/2013;A.s.a. - AL;0;Palmeiras - SP;3
+2;28/05/2013;América - MG;2;Figueirense - SC;4
+2;28/05/2013;Chapecoense - SC;1;Oeste - SP;1
+2;28/05/2013;Atlético - GO;2;Joinville - SC;1
+3;31/05/2013;Icasa - CE;3;Avaí - SC;4
+3;31/05/2013;Paysandu - PA;1;América - RN;1
+3;31/05/2013;Joinville - SC;2;A.s.a. - AL;0
+3;31/05/2013;Figueirense - SC;3;Sport - PE;2
+3;31/05/2013;Abc - RN;1;Ceará - CE;1
+3;31/05/2013;Oeste - SP;1;Paraná - PR;0
+3;01/06/2013;Palmeiras - SP;0;América - MG;1
+3;01/06/2013;Bragantino - SP;2;Guaratinguetá - SP;0
+3;01/06/2013;Boa - MG;0;Atlético - GO;0
+3;01/06/2013;São Caetano - SP;0;Chapecoense - SC;1
+4;04/06/2013;Palmeiras - SP;2;Avaí - SC;1
+4;04/06/2013;Oeste - SP;2;Ceará - CE;1
+4;04/06/2013;Boa - MG;1;A.s.a. - AL;2
+4;04/06/2013;Figueirense - SC;0;Chapecoense - SC;2
+4;04/06/2013;Paysandu - PA;2;Paraná - PR;0
+4;04/06/2013;Guaratinguetá - SP;1;Sport - PE;4
+4;04/06/2013;Joinville - SC;3;América - RN;1
+4;04/06/2013;Icasa - CE;1;América - MG;2
+4;04/06/2013;Abc - RN;1;Bragantino - SP;1
+4;04/06/2013;São Caetano - SP;4;Atlético - GO;2
+5;07/06/2013;A.s.a. - AL;3;Icasa - CE;1
+5;07/06/2013;América - MG;4;Oeste - SP;3
+5;07/06/2013;Atlético - GO;1;Paysandu - PA;0
+5;07/06/2013;Avaí - SC;0;Joinville - SC;2
+5;07/06/2013;Chapecoense - SC;5;Abc - RN;1
+5;07/06/2013;América - RN;2;Guaratinguetá - SP;2
+5;08/06/2013;Sport - PE;1;Palmeiras - SP;0
+5;08/06/2013;Paraná - PR;1;Figueirense - SC;0
+5;08/06/2013;Ceará - CE;2;Boa - MG;2
+5;08/06/2013;Bragantino - SP;1;São Caetano - SP;0
+6;11/06/2013;Sport - PE;0;Bragantino - SP;2
+6;11/06/2013;Oeste - SP;0;São Caetano - SP;3
+6;11/06/2013;Chapecoense - SC;3;Paysandu - PA;2
+6;11/06/2013;Ceará - CE;1;Figueirense - SC;1
+6;11/06/2013;Guaratinguetá - SP;1;Joinville - SC;3
+6;11/06/2013;América - RN;0;Palmeiras - SP;2
+6;11/06/2013;Atlético - GO;0;Icasa - CE;3
+6;11/06/2013;Paraná - PR;1;A.s.a. - AL;0
+6;11/06/2013;Avaí - SC;1;América - MG;2
+6;11/06/2013;Boa - MG;1;Abc - RN;0
+7;02/07/2013;Bragantino - SP;0;América - RN;1
+7;02/07/2013;Paysandu - PA;4;Guaratinguetá - SP;3
+7;05/07/2013;América - MG;2;Paraná - PR;2
+7;05/07/2013;A.s.a. - AL;0;Chapecoense - SC;2
+7;06/07/2013;Abc - RN;0;Atlético - GO;1
+7;06/07/2013;Palmeiras - SP;4;Oeste - SP;0
+7;06/07/2013;Joinville - SC;2;Sport - PE;3
+7;06/07/2013;São Caetano - SP;0;Avaí - SC;0
+7;06/07/2013;Icasa - CE;1;Ceará - CE;0
+7;06/07/2013;Figueirense - SC;3;Boa - MG;0
+8;09/07/2013;Paysandu - PA;2;São Caetano - SP;2
+8;09/07/2013;Oeste - SP;0;Boa - MG;0
+8;12/07/2013;Palmeiras - SP;4;Abc - RN;1
+8;12/07/2013;Atlético - GO;2;Figueirense - SC;3
+8;13/07/2013;América - RN;2;Sport - PE;4
+8;13/07/2013;América - MG;2;Bragantino - SP;2
+8;13/07/2013;Avaí - SC;2;Paraná - PR;2
+8;13/07/2013;Joinville - SC;2;Chapecoense - SC;2
+8;13/07/2013;Ceará - CE;4;A.s.a. - AL;1
+8;13/07/2013;Guaratinguetá - SP;3;Icasa - CE;0
+9;16/07/2013;Icasa - CE;0;Oeste - SP;3
+9;16/07/2013;Sport - PE;2;Avaí - SC;0
+9;19/07/2013;São Caetano - SP;0;Guaratinguetá - SP;1
+9;19/07/2013;Paraná - PR;4;América - RN;0
+9;20/07/2013;Figueirense - SC;2;Palmeiras - SP;3
+9;20/07/2013;Bragantino - SP;2;Ceará - CE;0
+9;20/07/2013;Boa - MG;1;Paysandu - PA;0
+9;20/07/2013;A.s.a. - AL;0;Atlético - GO;1
+9;20/07/2013;Abc - RN;0;Joinville - SC;0
+9;20/08/2013;Chapecoense - SC;2;América - MG;0
+10;23/07/2013;Icasa - CE;2;Joinville - SC;1
+10;23/07/2013;A.s.a. - AL;2;Bragantino - SP;1
+10;26/07/2013;Atlético - GO;0;América - RN;1
+10;26/07/2013;Sport - PE;2;Oeste - SP;0
+10;27/07/2013;Boa - MG;1;América - MG;1
+10;27/07/2013;Guaratinguetá - SP;1;Palmeiras - SP;1
+10;27/07/2013;Chapecoense - SC;3;Avaí - SC;1
+10;27/07/2013;Paraná - PR;3;Ceará - CE;0
+10;27/07/2013;Figueirense - SC;3;São Caetano - SP;1
+10;27/07/2013;Abc - RN;3;Paysandu - PA;0
+11;30/07/2013;Oeste - SP;1;Guaratinguetá - SP;0
+11;30/07/2013;Avaí - SC;1;Atlético - GO;0
+11;30/07/2013;Joinville - SC;2;Boa - MG;3
+11;30/07/2013;Ceará - CE;3;Chapecoense - SC;1
+11;30/07/2013;América - RN;2;A.s.a. - AL;0
+11;30/07/2013;São Caetano - SP;2;Abc - RN;1
+11;30/07/2013;Paysandu - PA;2;Figueirense - SC;1
+11;30/07/2013;Bragantino - SP;0;Paraná - PR;0
+11;30/07/2013;Palmeiras - SP;4;Icasa - CE;0
+11;30/07/2013;América - MG;5;Sport - PE;0
+12;02/08/2013;América - RN;0;Boa - MG;0
+12;02/08/2013;Palmeiras - SP;2;Bragantino - SP;1
+12;02/08/2013;Oeste - SP;1;A.s.a. - AL;2
+12;02/08/2013;América - MG;2;Ceará - CE;2
+12;03/08/2013;Sport - PE;1;Chapecoense - SC;2
+12;03/08/2013;Avaí - SC;2;Paysandu - PA;0
+12;03/08/2013;Joinville - SC;3;Figueirense - SC;1
+12;03/08/2013;Icasa - CE;3;São Caetano - SP;2
+12;03/08/2013;Guaratinguetá - SP;3;Abc - RN;1
+12;03/08/2013;Atlético - GO;0;Paraná - PR;2
+13;06/08/2013;A.s.a. - AL;2;Sport - PE;4
+13;06/08/2013;Figueirense - SC;3;Icasa - CE;0
+13;06/08/2013;Chapecoense - SC;3;Atlético - GO;0
+13;06/08/2013;Ceará - CE;2;América - RN;1
+13;06/08/2013;São Caetano - SP;1;Palmeiras - SP;2
+13;06/08/2013;Bragantino - SP;1;Avaí - SC;1
+13;06/08/2013;Boa - MG;2;Guaratinguetá - SP;0
+13;06/08/2013;Abc - RN;0;Oeste - SP;0
+13;06/08/2013;Paraná - PR;1;Joinville - SC;1
+13;06/08/2013;Paysandu - PA;0;América - MG;2
+14;09/08/2013;A.s.a. - AL;2;América - MG;0
+14;09/08/2013;Ceará - CE;0;Atlético - GO;1
+14;09/08/2013;Boa - MG;1;Icasa - CE;0
+14;09/08/2013;Paysandu - PA;2;Joinville - SC;1
+14;10/08/2013;América - RN;0;Abc - RN;0
+14;10/08/2013;Palmeiras - SP;2;Paraná - PR;1
+14;10/08/2013;São Caetano - SP;2;Sport - PE;1
+14;10/08/2013;Figueirense - SC;1;Avaí - SC;3
+14;10/08/2013;Bragantino - SP;2;Oeste - SP;0
+14;11/08/2013;Chapecoense - SC;1;Guaratinguetá - SP;0
+15;13/08/2013;América - MG;2;São Caetano - SP;1
+15;13/08/2013;Sport - PE;2;Ceará - CE;1
+15;13/08/2013;Paraná - PR;3;Boa - MG;1
+15;13/08/2013;Oeste - SP;1;Paysandu - PA;0
+15;13/08/2013;Avaí - SC;2;A.s.a. - AL;0
+15;13/08/2013;Joinville - SC;0;Palmeiras - SP;1
+15;13/08/2013;Icasa - CE;2;Abc - RN;1
+15;13/08/2013;Atlético - GO;0;Bragantino - SP;1
+15;14/08/2013;Guaratinguetá - SP;1;Figueirense - SC;1
+15;27/08/2013;América - RN;0;Chapecoense - SC;1
+16;16/08/2013;São Caetano - SP;0;Boa - MG;1
+16;16/08/2013;Avaí - SC;1;Ceará - CE;1
+16;16/08/2013;Sport - PE;3;Atlético - GO;2
+16;16/08/2013;Oeste - SP;0;Joinville - SC;2
+16;17/08/2013;América - MG;1;América - RN;1
+16;17/08/2013;Chapecoense - SC;2;Paraná - PR;2
+16;17/08/2013;Abc - RN;3;Figueirense - SC;2
+16;17/08/2013;Palmeiras - SP;3;Paysandu - PA;2
+16;17/08/2013;Icasa - CE;4;Bragantino - SP;1
+16;17/08/2013;Guaratinguetá - SP;2;A.s.a. - AL;1
+17;20/08/2013;Ceará - CE;2;Guaratinguetá - SP;0
+17;20/08/2013;A.s.a. - AL;4;Abc - RN;0
+17;23/08/2013;Joinville - SC;1;São Caetano - SP;0
+17;23/08/2013;América - RN;2;Avaí - SC;3
+17;24/08/2013;Boa - MG;1;Palmeiras - SP;0
+17;24/08/2013;Paraná - PR;1;Sport - PE;0
+17;24/08/2013;Atlético - GO;1;América - MG;1
+17;24/08/2013;Bragantino - SP;1;Chapecoense - SC;0
+17;24/08/2013;Figueirense - SC;3;Oeste - SP;0
+17;24/08/2013;Paysandu - PA;1;Icasa - CE;2
+18;27/08/2013;A.s.a. - AL;3;Figueirense - SC;1
+18;27/08/2013;América - MG;0;Joinville - SC;2
+18;30/08/2013;Atlético - GO;4;Oeste - SP;0
+18;30/08/2013;Avaí - SC;2;Abc - RN;0
+18;31/08/2013;Chapecoense - SC;1;Icasa - CE;2
+18;31/08/2013;América - RN;2;São Caetano - SP;1
+18;31/08/2013;Paraná - PR;4;Guaratinguetá - SP;0
+18;31/08/2013;Bragantino - SP;0;Paysandu - PA;0
+18;31/08/2013;Ceará - CE;2;Palmeiras - SP;2
+18;31/08/2013;Sport - PE;2;Boa - MG;2
+19;03/09/2013;Figueirense - SC;2;Bragantino - SP;1
+19;03/09/2013;Boa - MG;0;Avaí - SC;0
+19;03/09/2013;Joinville - SC;1;Ceará - CE;1
+19;03/09/2013;Oeste - SP;4;América - RN;1
+19;03/09/2013;Icasa - CE;0;Paraná - PR;3
+19;03/09/2013;Guaratinguetá - SP;2;Atlético - GO;0
+19;03/09/2013;Abc - RN;2;América - MG;1
+19;03/09/2013;São Caetano - SP;3;A.s.a. - AL;0
+19;03/09/2013;Palmeiras - SP;0;Chapecoense - SC;0
+19;03/09/2013;Paysandu - PA;2;Sport - PE;0
+20;06/09/2013;Ceará - CE;4;São Caetano - SP;2
+20;06/09/2013;América - RN;2;Figueirense - SC;0
+20;06/09/2013;Avaí - SC;2;Oeste - SP;2
+20;06/09/2013;A.s.a. - AL;1;Paysandu - PA;1
+20;06/09/2013;América - MG;1;Guaratinguetá - SP;0
+20;06/09/2013;Chapecoense - SC;1;Boa - MG;0
+20;06/09/2013;Bragantino - SP;1;Joinville - SC;2
+20;07/09/2013;Atlético - GO;1;Palmeiras - SP;3
+20;07/09/2013;Sport - PE;0;Icasa - CE;2
+20;07/09/2013;Paraná - PR;1;Abc - RN;0
+21;09/09/2013;Figueirense - SC;1;América - MG;2
+21;09/09/2013;Boa - MG;0;Bragantino - SP;0
+21;10/09/2013;Oeste - SP;1;Chapecoense - SC;0
+21;10/09/2013;São Caetano - SP;2;Paraná - PR;1
+21;10/09/2013;Guaratinguetá - SP;1;Avaí - SC;0
+21;10/09/2013;Paysandu - PA;2;Ceará - CE;1
+21;10/09/2013;Abc - RN;4;Sport - PE;2
+21;10/09/2013;Palmeiras - SP;3;A.s.a. - AL;0
+21;10/09/2013;Joinville - SC;2;Atlético - GO;1
+21;10/09/2013;Icasa - CE;1;América - RN;1
+22;13/09/2013;Paraná - PR;1;Oeste - SP;2
+22;13/09/2013;Atlético - GO;3;Boa - MG;1
+22;13/09/2013;A.s.a. - AL;0;Joinville - SC;1
+22;13/09/2013;Chapecoense - SC;6;São Caetano - SP;2
+22;14/09/2013;América - MG;1;Palmeiras - SP;1
+22;14/09/2013;Avaí - SC;3;Icasa - CE;1
+22;14/09/2013;Ceará - CE;4;Abc - RN;0
+22;14/09/2013;Sport - PE;1;Figueirense - SC;0
+22;14/09/2013;América - RN;3;Paysandu - PA;0
+22;14/09/2013;Guaratinguetá - SP;1;Bragantino - SP;0
+23;17/09/2013;Atlético - GO;1;São Caetano - SP;1
+23;17/09/2013;América - MG;1;Icasa - CE;2
+23;17/09/2013;Ceará - CE;1;Oeste - SP;0
+23;17/09/2013;Sport - PE;1;Guaratinguetá - SP;0
+23;17/09/2013;Bragantino - SP;2;Abc - RN;1
+23;17/09/2013;A.s.a. - AL;0;Boa - MG;1
+23;17/09/2013;Avaí - SC;2;Palmeiras - SP;4
+23;17/09/2013;América - RN;1;Joinville - SC;1
+23;17/09/2013;Paraná - PR;3;Paysandu - PA;1
+23;22/10/2013;Chapecoense - SC;1;Figueirense - SC;1
+24;20/09/2013;Icasa - CE;5;A.s.a. - AL;2
+24;20/09/2013;São Caetano - SP;0;Bragantino - SP;1
+24;20/09/2013;Oeste - SP;1;América - MG;1
+24;20/09/2013;Joinville - SC;1;Avaí - SC;2
+24;21/09/2013;Figueirense - SC;1;Paraná - PR;0
+24;21/09/2013;Abc - RN;2;Chapecoense - SC;0
+24;21/09/2013;Boa - MG;1;Ceará - CE;2
+24;21/09/2013;Palmeiras - SP;2;Sport - PE;1
+24;21/09/2013;Paysandu - PA;0;Atlético - GO;0
+24;21/09/2013;Guaratinguetá - SP;2;América - RN;0
+25;24/09/2013;Figueirense - SC;2;Ceará - CE;1
+25;24/09/2013;Paysandu - PA;2;Chapecoense - SC;1
+25;27/09/2013;Joinville - SC;1;Guaratinguetá - SP;1
+25;27/09/2013;São Caetano - SP;2;Oeste - SP;2
+25;28/09/2013;Palmeiras - SP;0;América - RN;0
+25;28/09/2013;América - MG;0;Avaí - SC;0
+25;28/09/2013;Icasa - CE;0;Atlético - GO;0
+25;28/09/2013;Bragantino - SP;1;Sport - PE;2
+25;28/09/2013;A.s.a. - AL;1;Paraná - PR;4
+25;28/09/2013;Abc - RN;3;Boa - MG;1
+26;01/10/2013;Atlético - GO;0;Abc - RN;1
+26;01/10/2013;Guaratinguetá - SP;1;Paysandu - PA;1
+26;01/10/2013;Sport - PE;3;Joinville - SC;2
+26;01/10/2013;Ceará - CE;1;Icasa - CE;0
+26;01/10/2013;Chapecoense - SC;4;A.s.a. - AL;0
+26;01/10/2013;Avaí - SC;2;São Caetano - SP;1
+26;01/10/2013;Paraná - PR;0;América - MG;1
+26;01/10/2013;América - RN;0;Bragantino - SP;2
+26;01/10/2013;Boa - MG;0;Figueirense - SC;2
+26;01/10/2013;Oeste - SP;0;Palmeiras - SP;2
+27;04/10/2013;Boa - MG;0;Oeste - SP;4
+27;04/10/2013;Icasa - CE;3;Guaratinguetá - SP;2
+27;04/10/2013;Sport - PE;3;América - RN;0
+27;04/10/2013;Paraná - PR;0;Avaí - SC;1
+27;05/10/2013;Figueirense - SC;1;Atlético - GO;1
+27;05/10/2013;Chapecoense - SC;2;Joinville - SC;1
+27;05/10/2013;Abc - RN;3;Palmeiras - SP;2
+27;05/10/2013;A.s.a. - AL;2;Ceará - CE;3
+27;05/10/2013;São Caetano - SP;3;Paysandu - PA;1
+27;05/10/2013;Bragantino - SP;0;América - MG;1
+28;08/10/2013;Oeste - SP;0;Icasa - CE;0
+28;08/10/2013;América - MG;1;Chapecoense - SC;1
+28;08/10/2013;Palmeiras - SP;4;Figueirense - SC;0
+28;08/10/2013;Atlético - GO;5;A.s.a. - AL;1
+28;08/10/2013;Guaratinguetá - SP;3;São Caetano - SP;2
+28;08/10/2013;Paysandu - PA;0;Boa - MG;0
+28;08/10/2013;América - RN;4;Paraná - PR;1
+28;08/10/2013;Avaí - SC;1;Sport - PE;0
+28;08/10/2013;Joinville - SC;1;Abc - RN;2
+28;08/10/2013;Ceará - CE;5;Bragantino - SP;3
+29;11/10/2013;América - MG;0;Boa - MG;0
+29;11/10/2013;Joinville - SC;0;Icasa - CE;0
+29;11/10/2013;Palmeiras - SP;1;Guaratinguetá - SP;0
+29;12/10/2013;América - RN;2;Atlético - GO;1
+29;12/10/2013;Avaí - SC;1;Chapecoense - SC;2
+29;12/10/2013;Oeste - SP;0;Sport - PE;3
+29;12/10/2013;Ceará - CE;1;Paraná - PR;1
+29;12/10/2013;São Caetano - SP;0;Figueirense - SC;2
+29;12/10/2013;Bragantino - SP;2;A.s.a. - AL;0
+29;22/10/2013;Paysandu - PA;1;Abc - RN;0
+30;15/10/2013;Sport - PE;1;América - MG;3
+30;15/10/2013;A.s.a. - AL;1;América - RN;2
+30;15/10/2013;Boa - MG;1;Joinville - SC;0
+30;15/10/2013;Chapecoense - SC;1;Ceará - CE;1
+30;15/10/2013;Guaratinguetá - SP;0;Oeste - SP;0
+30;15/10/2013;Abc - RN;2;São Caetano - SP;0
+30;15/10/2013;Paraná - PR;1;Bragantino - SP;0
+30;15/10/2013;Icasa - CE;1;Palmeiras - SP;0
+30;15/10/2013;Figueirense - SC;3;Paysandu - PA;2
+30;29/10/2013;Atlético - GO;2;Avaí - SC;1
+31;18/10/2013;A.s.a. - AL;3;Oeste - SP;0
+31;18/10/2013;Boa - MG;3;América - RN;2
+31;18/10/2013;Paysandu - PA;0;Avaí - SC;2
+31;18/10/2013;Ceará - CE;1;América - MG;1
+31;19/10/2013;Abc - RN;2;Guaratinguetá - SP;4
+31;19/10/2013;Chapecoense - SC;0;Sport - PE;0
+31;19/10/2013;Bragantino - SP;0;Palmeiras - SP;2
+31;19/10/2013;Figueirense - SC;0;Joinville - SC;1
+31;19/10/2013;São Caetano - SP;2;Icasa - CE;1
+31;22/10/2013;Paraná - PR;1;Atlético - GO;1
+32;25/10/2013;Icasa - CE;1;Figueirense - SC;0
+32;25/10/2013;Atlético - GO;0;Chapecoense - SC;0
+32;25/10/2013;Avaí - SC;3;Bragantino - SP;0
+32;26/10/2013;Sport - PE;4;A.s.a. - AL;2
+32;26/10/2013;Palmeiras - SP;0;São Caetano - SP;0
+32;26/10/2013;América - RN;1;Ceará - CE;0
+32;26/10/2013;Joinville - SC;1;Paraná - PR;0
+32;26/10/2013;Oeste - SP;2;Abc - RN;1
+32;26/10/2013;Guaratinguetá - SP;0;Boa - MG;0
+32;29/10/2013;América - MG;0;Paysandu - PA;1
+33;01/11/2013;Joinville - SC;4;Paysandu - PA;2
+33;01/11/2013;América - MG;1;A.s.a. - AL;0
+33;01/11/2013;Icasa - CE;1;Boa - MG;0
+33;01/11/2013;Atlético - GO;1;Ceará - CE;3
+33;02/11/2013;Paraná - PR;1;Palmeiras - SP;1
+33;02/11/2013;Guaratinguetá - SP;0;Chapecoense - SC;0
+33;02/11/2013;Abc - RN;3;América - RN;3
+33;02/11/2013;Sport - PE;3;São Caetano - SP;0
+33;02/11/2013;Oeste - SP;2;Bragantino - SP;0
+33;03/11/2013;Avaí - SC;0;Figueirense - SC;4
+34;05/11/2013;Chapecoense - SC;0;América - RN;0
+34;05/11/2013;São Caetano - SP;1;América - MG;1
+34;08/11/2013;Bragantino - SP;2;Atlético - GO;0
+34;08/11/2013;A.s.a. - AL;1;Avaí - SC;0
+34;08/11/2013;Boa - MG;3;Paraná - PR;2
+34;09/11/2013;Palmeiras - SP;3;Joinville - SC;0
+34;09/11/2013;Ceará - CE;4;Sport - PE;1
+34;09/11/2013;Abc - RN;1;Icasa - CE;0
+34;09/11/2013;Paysandu - PA;3;Oeste - SP;3
+34;09/11/2013;Figueirense - SC;2;Guaratinguetá - SP;1
+35;12/11/2013;Boa - MG;1;São Caetano - SP;0
+35;12/11/2013;Figueirense - SC;2;Abc - RN;0
+35;12/11/2013;Joinville - SC;1;Oeste - SP;1
+35;12/11/2013;Paraná - PR;0;Chapecoense - SC;1
+35;12/11/2013;Bragantino - SP;1;Icasa - CE;2
+35;12/11/2013;Ceará - CE;2;Avaí - SC;1
+35;12/11/2013;América - RN;2;América - MG;2
+35;12/11/2013;Atlético - GO;2;Sport - PE;1
+35;12/11/2013;A.s.a. - AL;2;Guaratinguetá - SP;1
+35;12/11/2013;Paysandu - PA;1;Palmeiras - SP;0
+36;15/11/2013;Guaratinguetá - SP;0;Ceará - CE;1
+36;15/11/2013;Abc - RN;4;A.s.a. - AL;1
+36;15/11/2013;Icasa - CE;2;Paysandu - PA;1
+36;16/11/2013;Chapecoense - SC;1;Bragantino - SP;1
+36;16/11/2013;Palmeiras - SP;3;Boa - MG;0
+36;16/11/2013;América - MG;3;Atlético - GO;0
+36;16/11/2013;Avaí - SC;0;América - RN;1
+36;16/11/2013;Sport - PE;2;Paraná - PR;0
+36;16/11/2013;Oeste - SP;2;Figueirense - SC;2
+36;16/11/2013;São Caetano - SP;3;Joinville - SC;2
+37;22/11/2013;Figueirense - SC;2;A.s.a. - AL;0
+37;22/11/2013;Joinville - SC;2;América - MG;1
+37;23/11/2013;Icasa - CE;1;Chapecoense - SC;2
+37;23/11/2013;Guaratinguetá - SP;3;Paraná - PR;4
+37;23/11/2013;Paysandu - PA;0;Bragantino - SP;1
+37;23/11/2013;Oeste - SP;2;Atlético - GO;4
+37;23/11/2013;Boa - MG;2;Sport - PE;3
+37;23/11/2013;Abc - RN;1;Avaí - SC;0
+37;23/11/2013;Palmeiras - SP;4;Ceará - CE;1
+37;23/11/2013;São Caetano - SP;2;América - RN;2
+38;29/11/2013;América - MG;0;Abc - RN;0
+38;29/11/2013;A.s.a. - AL;1;São Caetano - SP;0
+38;29/11/2013;Avaí - SC;1;Boa - MG;0
+38;30/11/2013;Bragantino - SP;1;Figueirense - SC;1
+38;30/11/2013;América - RN;2;Oeste - SP;2
+38;30/11/2013;Paraná - PR;2;Icasa - CE;0
+38;30/11/2013;Ceará - CE;0;Joinville - SC;3
+38;30/11/2013;Chapecoense - SC;1;Palmeiras - SP;0
+38;30/11/2013;Sport - PE;0;Paysandu - PA;0
+38;30/11/2013;Atlético - GO;2;Guaratinguetá - SP;0

@@ -1,0 +1,381 @@
+Rodada;Data;Time casa;Gols time casa;Time visitante;Gols time visitante
+1;19/04/2014;Fluminense - RJ;3 ;Figueirense - SC; 0
+1;19/04/2014;Internacional - RS;1 ;Vitória - BA; 0
+1;19/04/2014;Chapecoense - SC;0 ;Coritiba - PR; 0
+1;20/04/2014;São Paulo - SP;3 ;Botafogo - RJ; 0
+1;20/04/2014;Atletico - PR;1 ;Grêmio - RS; 0
+1;20/04/2014;Atlético - MG;0 ;Corinthians - SP; 0
+1;20/04/2014;Bahia - BA;1 ;Cruzeiro - MG; 2
+1;20/04/2014;Flamengo - RJ;0 ;Goiás - GO; 0
+1;20/04/2014;Criciuma - SC;1 ;Palmeiras - SP; 2
+1;20/04/2014;Santos - SP;1 ;Sport - PE; 1
+2;26/04/2014;Coritiba - PR;0 ;Santos - SP; 0
+2;26/04/2014;Palmeiras - SP;0 ;Fluminense - RJ; 1
+2;27/04/2014;Botafogo - RJ;2 ;Internacional - RS; 2
+2;27/04/2014;Corinthians - SP;2 ;Flamengo - RJ; 0
+2;27/04/2014;Cruzeiro - MG;1 ;São Paulo - SP; 1
+2;27/04/2014;Vitória - BA;2 ;Atletico - PR; 2
+2;27/04/2014;Goiás - GO;1 ;Criciuma - SC; 0
+2;27/04/2014;Sport - PE;2 ;Chapecoense - SC; 1
+2;27/04/2014;Figueirense - SC;0 ;Bahia - BA; 2
+2;27/04/2014;Grêmio - RS;2 ;Atlético - MG; 1
+3;03/05/2014;Santos - SP;0 ;Grêmio - RS; 0
+3;03/05/2014;Atletico - PR;2 ;Cruzeiro - MG; 3
+3;03/05/2014;São Paulo - SP;2 ;Coritiba - PR; 2
+3;03/05/2014;Fluminense - RJ;1 ;Vitória - BA; 2
+3;04/05/2014;Flamengo - RJ;4 ;Palmeiras - SP; 2
+3;04/05/2014;Bahia - BA;1 ;Botafogo - RJ; 0
+3;04/05/2014;Internacional - RS;2 ;Sport - PE; 1
+3;04/05/2014;Criciuma - SC;1 ;Figueirense - SC; 0
+3;04/05/2014;Atlético - MG;0 ;Goiás - GO; 1
+3;04/05/2014;Chapecoense - SC;0 ;Corinthians - SP; 1
+4;10/05/2014;Internacional - RS;2 ;Atletico - PR; 1
+4;10/05/2014;Palmeiras - SP;2 ;Goiás - GO; 0
+4;10/05/2014;Botafogo - RJ;6 ;Criciuma - SC; 0
+4;11/05/2014;Fluminense - RJ;2 ;Flamengo - RJ; 0
+4;11/05/2014;Atlético - MG;2 ;Cruzeiro - MG; 1
+4;11/05/2014;Chapecoense - SC;1 ;Grêmio - RS; 2
+4;11/05/2014;São Paulo - SP;1 ;Corinthians - SP; 1
+4;11/05/2014;Coritiba - PR;0 ;Sport - PE; 1
+4;11/05/2014;Bahia - BA;1 ;Vitória - BA; 1
+4;11/05/2014;Figueirense - SC;0 ;Santos - SP; 2
+5;14/05/2014;Goiás - GO;2 ;Botafogo - RJ; 0
+5;17/05/2014;Cruzeiro - MG;3 ;Coritiba - PR; 2
+5;18/05/2014;Atletico - PR;1 ;Chapecoense - SC; 1
+5;18/05/2014;Grêmio - RS;1 ;Fluminense - RJ; 0
+5;18/05/2014;Flamengo - RJ;0 ;São Paulo - SP; 2
+5;18/05/2014;Corinthians - SP;0 ;Figueirense - SC; 1
+5;18/05/2014;Santos - SP;1 ;Atlético - MG; 2
+5;18/05/2014;Vitória - BA;0 ;Palmeiras - SP; 1
+5;18/05/2014;Criciuma - SC;0 ;Internacional - RS; 0
+5;04/06/2014;Sport - PE;1 ;Bahia - BA; 0
+6;21/05/2014;Coritiba - PR;1 ;Internacional - RS; 1
+6;21/05/2014;Flamengo - RJ;1 ;Bahia - BA; 1
+6;21/05/2014;Criciuma - SC;1 ;Chapecoense - SC; 0
+6;21/05/2014;Cruzeiro - MG;2 ;Sport - PE; 0
+6;21/05/2014;Corinthians - SP;1 ;Atletico - PR; 1
+6;21/05/2014;Grêmio - RS;2 ;Botafogo - RJ; 1
+6;21/05/2014;Fluminense - RJ;5 ;São Paulo - SP; 2
+6;22/05/2014;Palmeiras - SP;1 ;Figueirense - SC; 0
+6;22/05/2014;Goiás - GO;2 ;Santos - SP; 2
+6;22/05/2014;Vitória - BA;2 ;Atlético - MG; 3
+7;24/05/2014;Bahia - BA;0 ;Fluminense - RJ; 1
+7;24/05/2014;São Paulo - SP;1 ;Grêmio - RS; 0
+7;25/05/2014;Figueirense - SC;0 ;Goiás - GO; 1
+7;25/05/2014;Sport - PE;1 ;Corinthians - SP; 4
+7;25/05/2014;Santos - SP;0 ;Flamengo - RJ; 0
+7;25/05/2014;Atletico - PR;2 ;Coritiba - PR; 0
+7;25/05/2014;Internacional - RS;1 ;Cruzeiro - MG; 3
+7;25/05/2014;Chapecoense - SC;2 ;Palmeiras - SP; 0
+7;25/05/2014;Atlético - MG;0 ;Criciuma - SC; 0
+7;25/05/2014;Botafogo - RJ;1 ;Vitória - BA; 1
+8;28/05/2014;Sport - PE;0 ;Grêmio - RS; 0
+8;28/05/2014;Criciuma - SC;1 ;Coritiba - PR; 0
+8;28/05/2014;Palmeiras - SP;0 ;Botafogo - RJ; 2
+8;28/05/2014;Internacional - RS;2 ;Chapecoense - SC; 0
+8;28/05/2014;Goiás - GO;0 ;Vitória - BA; 0
+8;28/05/2014;Atlético - MG;2 ;Fluminense - RJ; 0
+8;28/05/2014;Atletico - PR;2 ;São Paulo - SP; 2
+8;28/05/2014;Corinthians - SP;1 ;Cruzeiro - MG; 0
+8;29/05/2014;Flamengo - RJ;1 ;Figueirense - SC; 1
+8;29/05/2014;Bahia - BA;0 ;Santos - SP; 2
+9;31/05/2014;Coritiba - PR;3 ;Goiás - GO; 0
+9;31/05/2014;São Paulo - SP;2 ;Atlético - MG; 1
+9;31/05/2014;Vitória - BA;0 ;Sport - PE; 1
+9;01/06/2014;Chapecoense - SC;2 ;Bahia - BA; 1
+9;01/06/2014;Grêmio - RS;0 ;Palmeiras - SP; 0
+9;01/06/2014;Cruzeiro - MG;3 ;Flamengo - RJ; 0
+9;01/06/2014;Santos - SP;2 ;Criciuma - SC; 0
+9;01/06/2014;Fluminense - RJ;1 ;Internacional - RS; 1
+9;01/06/2014;Figueirense - SC;1 ;Atletico - PR; 3
+9;11/10/2014;Botafogo - RJ;1 ;Corinthians - SP; 0
+10;16/07/2014;Coritiba - PR;0 ;Figueirense - SC; 2
+10;16/07/2014;Sport - PE;1 ;Botafogo - RJ; 0
+10;16/07/2014;Grêmio - RS;0 ;Goiás - GO; 0
+10;16/07/2014;Bahia - BA;0 ;São Paulo - SP; 2
+10;16/07/2014;Criciuma - SC;3 ;Fluminense - RJ; 2
+10;16/07/2014;Flamengo - RJ;1 ;Atletico - PR; 2
+10;17/07/2014;Corinthians - SP;2 ;Internacional - RS; 1
+10;17/07/2014;Santos - SP;2 ;Palmeiras - SP; 0
+10;17/07/2014;Cruzeiro - MG;3 ;Vitória - BA; 1
+10;06/08/2014;Chapecoense - SC;1 ;Atlético - MG; 1
+11;19/07/2014;São Paulo - SP;0 ;Chapecoense - SC; 1
+11;19/07/2014;Figueirense - SC;0 ;Grêmio - RS; 1
+11;19/07/2014;Atlético - MG;1 ;Bahia - BA; 1
+11;19/07/2014;Botafogo - RJ;1 ;Coritiba - PR; 0
+11;20/07/2014;Internacional - RS;4 ;Flamengo - RJ; 0
+11;20/07/2014;Palmeiras - SP;1 ;Cruzeiro - MG; 2
+11;20/07/2014;Vitória - BA;0 ;Corinthians - SP; 0
+11;20/07/2014;Goiás - GO;0 ;Sport - PE; 0
+11;20/07/2014;Atletico - PR;2 ;Criciuma - SC; 0
+11;20/07/2014;Fluminense - RJ;1 ;Santos - SP; 0
+12;26/07/2014;Santos - SP;3 ;Chapecoense - SC; 0
+12;26/07/2014;Criciuma - SC;1 ;Vitória - BA; 3
+12;26/07/2014;Cruzeiro - MG;5 ;Figueirense - SC; 0
+12;26/07/2014;Bahia - BA;0 ;Internacional - RS; 1
+12;27/07/2014;Goiás - GO;2 ;São Paulo - SP; 1
+12;27/07/2014;Atletico - PR;0 ;Fluminense - RJ; 3
+12;27/07/2014;Sport - PE;2 ;Atlético - MG; 1
+12;27/07/2014;Corinthians - SP;2 ;Palmeiras - SP; 0
+12;27/07/2014;Grêmio - RS;2 ;Coritiba - PR; 3
+12;27/07/2014;Flamengo - RJ;1 ;Botafogo - RJ; 0
+13;02/08/2014;Botafogo - RJ;1 ;Cruzeiro - MG; 1
+13;02/08/2014;São Paulo - SP;1 ;Criciuma - SC; 1
+13;02/08/2014;Vitória - BA;2 ;Grêmio - RS; 1
+13;03/08/2014;Figueirense - SC;3 ;Sport - PE; 0
+13;03/08/2014;Chapecoense - SC;1 ;Flamengo - RJ; 0
+13;03/08/2014;Coritiba - PR;0 ;Corinthians - SP; 0
+13;03/08/2014;Palmeiras - SP;1 ;Bahia - BA; 1
+13;03/08/2014;Atlético - MG;3 ;Atletico - PR; 1
+13;03/08/2014;Internacional - RS;1 ;Santos - SP; 0
+13;03/08/2014;Fluminense - RJ;2 ;Goiás - GO; 0
+14;09/08/2014;Criciuma - SC;0 ;Cruzeiro - MG; 0
+14;09/08/2014;Bahia - BA;1 ;Goiás - GO; 0
+14;09/08/2014;Fluminense - RJ;1 ;Coritiba - PR; 1
+14;10/08/2014;Internacional - RS;2 ;Grêmio - RS; 0
+14;10/08/2014;Atletico - PR;2 ;Botafogo - RJ; 0
+14;10/08/2014;Santos - SP;0 ;Corinthians - SP; 1
+14;10/08/2014;Flamengo - RJ;1 ;Sport - PE; 0
+14;10/08/2014;Atlético - MG;2 ;Palmeiras - SP; 1
+14;10/08/2014;São Paulo - SP;3 ;Vitória - BA; 1
+14;10/08/2014;Chapecoense - SC;0 ;Figueirense - SC; 1
+15;16/08/2014;Goiás - GO;0 ;Internacional - RS; 1
+15;16/08/2014;Corinthians - SP;1 ;Bahia - BA; 1
+15;17/08/2014;Grêmio - RS;2 ;Criciuma - SC; 0
+15;17/08/2014;Vitória - BA;0 ;Chapecoense - SC; 0
+15;17/08/2014;Cruzeiro - MG;3 ;Santos - SP; 0
+15;17/08/2014;Coritiba - PR;0 ;Flamengo - RJ; 1
+15;17/08/2014;Palmeiras - SP;1 ;São Paulo - SP; 2
+15;17/08/2014;Sport - PE;1 ;Atletico - PR; 1
+15;17/08/2014;Figueirense - SC;2 ;Atlético - MG; 2
+15;17/08/2014;Botafogo - RJ;2 ;Fluminense - RJ; 0
+16;20/08/2014;Sport - PE;2 ;Palmeiras - SP; 1
+16;20/08/2014;Figueirense - SC;1 ;Botafogo - RJ; 0
+16;20/08/2014;Santos - SP;2 ;Atletico - PR; 0
+16;20/08/2014;Bahia - BA;0 ;Criciuma - SC; 0
+16;20/08/2014;Coritiba - PR;2 ;Vitória - BA; 0
+16;20/08/2014;Internacional - RS;0 ;São Paulo - SP; 1
+16;20/08/2014;Chapecoense - SC;1 ;Fluminense - RJ; 0
+16;20/08/2014;Flamengo - RJ;2 ;Atlético - MG; 1
+16;21/08/2014;Corinthians - SP;5 ;Goiás - GO; 2
+16;21/08/2014;Cruzeiro - MG;1 ;Grêmio - RS; 0
+17;23/08/2014;Botafogo - RJ;1 ;Chapecoense - SC; 0
+17;23/08/2014;Atlético - MG;1 ;Internacional - RS; 0
+17;23/08/2014;Palmeiras - SP;1 ;Coritiba - PR; 0
+17;24/08/2014;Fluminense - RJ;4 ;Sport - PE; 0
+17;24/08/2014;São Paulo - SP;2 ;Santos - SP; 1
+17;24/08/2014;Vitória - BA;0 ;Figueirense - SC; 1
+17;24/08/2014;Grêmio - RS;2 ;Corinthians - SP; 1
+17;24/08/2014;Criciuma - SC;0 ;Flamengo - RJ; 2
+17;24/08/2014;Atletico - PR;0 ;Bahia - BA; 0
+17;24/08/2014;Goiás - GO;0 ;Cruzeiro - MG; 1
+18;30/08/2014;Palmeiras - SP;0 ;Internacional - RS; 1
+18;30/08/2014;Cruzeiro - MG;4 ;Chapecoense - SC; 2
+18;31/08/2014;Figueirense - SC;1 ;São Paulo - SP; 1
+18;31/08/2014;Botafogo - RJ;1 ;Santos - SP; 0
+18;31/08/2014;Coritiba - PR;0 ;Atlético - MG; 0
+18;31/08/2014;Corinthians - SP;1 ;Fluminense - RJ; 1
+18;31/08/2014;Sport - PE;2 ;Criciuma - SC; 0
+18;31/08/2014;Vitória - BA;1 ;Flamengo - RJ; 2
+18;31/08/2014;Grêmio - RS;1 ;Bahia - BA; 0
+18;31/08/2014;Goiás - GO;3 ;Atletico - PR; 1
+19;06/09/2014;Flamengo - RJ;0 ;Grêmio - RS; 1
+19;06/09/2014;Santos - SP;3 ;Vitória - BA; 1
+19;06/09/2014;Chapecoense - SC;0 ;Goiás - GO; 0
+19;07/09/2014;Criciuma - SC;0 ;Corinthians - SP; 0
+19;07/09/2014;Atlético - MG;1 ;Botafogo - RJ; 0
+19;07/09/2014;São Paulo - SP;2 ;Sport - PE; 0
+19;07/09/2014;Fluminense - RJ;3 ;Cruzeiro - MG; 3
+19;07/09/2014;Atletico - PR;1 ;Palmeiras - SP; 1
+19;07/09/2014;Bahia - BA;0 ;Coritiba - PR; 0
+19;07/09/2014;Internacional - RS;2 ;Figueirense - SC; 3
+20;10/09/2014;Grêmio - RS;1 ;Atletico - PR; 0
+20;10/09/2014;Palmeiras - SP;1 ;Criciuma - SC; 0
+20;10/09/2014;Figueirense - SC;1 ;Fluminense - RJ; 1
+20;10/09/2014;Sport - PE;3 ;Santos - SP; 1
+20;10/09/2014;Coritiba - PR;3 ;Chapecoense - SC; 0
+20;10/09/2014;Goiás - GO;1 ;Flamengo - RJ; 0
+20;10/09/2014;Botafogo - RJ;2 ;São Paulo - SP; 4
+20;10/09/2014;Vitória - BA;2 ;Internacional - RS; 0
+20;11/09/2014;Corinthians - SP;1 ;Atlético - MG; 0
+20;11/09/2014;Cruzeiro - MG;2 ;Bahia - BA; 1
+21;13/09/2014;Fluminense - RJ;3 ;Palmeiras - SP; 0
+21;13/09/2014;Chapecoense - SC;3 ;Sport - PE; 1
+21;13/09/2014;Santos - SP;2 ;Coritiba - PR; 1
+21;14/09/2014;Flamengo - RJ;1 ;Corinthians - SP; 0
+21;14/09/2014;Internacional - RS;2 ;Botafogo - RJ; 0
+21;14/09/2014;São Paulo - SP;2 ;Cruzeiro - MG; 0
+21;14/09/2014;Bahia - BA;3 ;Figueirense - SC; 0
+21;14/09/2014;Criciuma - SC;1 ;Goiás - GO; 0
+21;14/09/2014;Atlético - MG;0 ;Grêmio - RS; 0
+21;14/09/2014;Atletico - PR;2 ;Vitória - BA; 0
+22;17/09/2014;Cruzeiro - MG;2 ;Atletico - PR; 0
+22;17/09/2014;Vitória - BA;3 ;Fluminense - RJ; 1
+22;17/09/2014;Figueirense - SC;1 ;Criciuma - SC; 1
+22;17/09/2014;Sport - PE;0 ;Internacional - RS; 0
+22;17/09/2014;Botafogo - RJ;2 ;Bahia - BA; 3
+22;17/09/2014;Palmeiras - SP;2 ;Flamengo - RJ; 2
+22;17/09/2014;Coritiba - PR;3 ;São Paulo - SP; 1
+22;18/09/2014;Goiás - GO;2 ;Atlético - MG; 3
+22;18/09/2014;Corinthians - SP;1 ;Chapecoense - SC; 1
+22;18/09/2014;Grêmio - RS;0 ;Santos - SP; 0
+23;20/09/2014;Atletico - PR;0 ;Internacional - RS; 1
+23;20/09/2014;Criciuma - SC;1 ;Botafogo - RJ; 1
+23;21/09/2014;Vitória - BA;2 ;Bahia - BA; 1
+23;21/09/2014;Cruzeiro - MG;2 ;Atlético - MG; 3
+23;21/09/2014;Flamengo - RJ;1 ;Fluminense - RJ; 1
+23;21/09/2014;Corinthians - SP;3 ;São Paulo - SP; 2
+23;21/09/2014;Sport - PE;1 ;Coritiba - PR; 0
+23;21/09/2014;Santos - SP;3 ;Figueirense - SC; 1
+23;21/09/2014;Grêmio - RS;1 ;Chapecoense - SC; 0
+23;21/09/2014;Goiás - GO;6 ;Palmeiras - SP; 0
+24;24/09/2014;Coritiba - PR;1 ;Cruzeiro - MG; 2
+24;24/09/2014;Internacional - RS;3 ;Criciuma - SC; 0
+24;24/09/2014;Bahia - BA;1 ;Sport - PE; 0
+24;24/09/2014;Chapecoense - SC;3 ;Atletico - PR; 0
+24;24/09/2014;Fluminense - RJ;0 ;Grêmio - RS; 0
+24;24/09/2014;São Paulo - SP;2 ;Flamengo - RJ; 2
+24;24/09/2014;Figueirense - SC;1 ;Corinthians - SP; 0
+24;25/09/2014;Botafogo - RJ;1 ;Goiás - GO; 0
+24;25/09/2014;Palmeiras - SP;2 ;Vitória - BA; 0
+24;25/09/2014;Atlético - MG;3 ;Santos - SP; 2
+25;27/09/2014;Chapecoense - SC;1 ;Criciuma - SC; 1
+25;27/09/2014;Sport - PE;0 ;Cruzeiro - MG; 0
+25;27/09/2014;São Paulo - SP;1 ;Fluminense - RJ; 3
+25;28/09/2014;Atletico - PR;1 ;Corinthians - SP; 0
+25;28/09/2014;Atlético - MG;2 ;Vitória - BA; 0
+25;28/09/2014;Bahia - BA;2 ;Flamengo - RJ; 1
+25;28/09/2014;Botafogo - RJ;0 ;Grêmio - RS; 2
+25;28/09/2014;Internacional - RS;4 ;Coritiba - PR; 2
+25;28/09/2014;Figueirense - SC;3 ;Palmeiras - SP; 1
+25;28/09/2014;Santos - SP;2 ;Goiás - GO; 0
+26;02/10/2014;Palmeiras - SP;4 ;Chapecoense - SC; 2
+26;04/10/2014;Grêmio - RS;0 ;São Paulo - SP; 1
+26;04/10/2014;Vitória - BA;2 ;Botafogo - RJ; 1
+26;04/10/2014;Coritiba - PR;1 ;Atletico - PR; 0
+26;04/10/2014;Fluminense - RJ;1 ;Bahia - BA; 1
+26;04/10/2014;Flamengo - RJ;0 ;Santos - SP; 1
+26;04/10/2014;Cruzeiro - MG;2 ;Internacional - RS; 1
+26;04/10/2014;Corinthians - SP;3 ;Sport - PE; 0
+26;04/10/2014;Criciuma - SC;3 ;Atlético - MG; 1
+26;04/10/2014;Goiás - GO;1 ;Figueirense - SC; 0
+27;08/10/2014;Botafogo - RJ;0 ;Palmeiras - SP; 1
+27;08/10/2014;São Paulo - SP;1 ;Atletico - PR; 0
+27;08/10/2014;Coritiba - PR;1 ;Criciuma - SC; 0
+27;08/10/2014;Vitória - BA;2 ;Goiás - GO; 2
+27;08/10/2014;Grêmio - RS;2 ;Sport - PE; 0
+27;08/10/2014;Figueirense - SC;1 ;Flamengo - RJ; 2
+27;08/10/2014;Cruzeiro - MG;0 ;Corinthians - SP; 1
+27;09/10/2014;Santos - SP;1 ;Bahia - BA; 0
+27;09/10/2014;Fluminense - RJ;0 ;Atlético - MG; 0
+27;09/10/2014;Chapecoense - SC;5 ;Internacional - RS; 0
+28;01/06/2014;Corinthians - SP;1 ;Botafogo - RJ; 1
+28;11/10/2014;Goiás - GO;3 ;Coritiba - PR; 0
+28;11/10/2014;Palmeiras - SP;2 ;Grêmio - RS; 1
+28;12/10/2014;Internacional - RS;2 ;Fluminense - RJ; 1
+28;12/10/2014;Bahia - BA;0 ;Chapecoense - SC; 1
+28;12/10/2014;Atlético - MG;1 ;São Paulo - SP; 0
+28;12/10/2014;Flamengo - RJ;3 ;Cruzeiro - MG; 0
+28;12/10/2014;Atletico - PR;3 ;Figueirense - SC; 0
+28;12/10/2014;Sport - PE;1 ;Vitória - BA; 2
+28;12/10/2014;Criciuma - SC;3 ;Santos - SP; 0
+29;18/10/2014;Goiás - GO;0 ;Grêmio - RS; 0
+29;18/10/2014;Fluminense - RJ;4 ;Criciuma - SC; 2
+29;18/10/2014;São Paulo - SP;2 ;Bahia - BA; 1
+29;18/10/2014;Atlético - MG;1 ;Chapecoense - SC; 0
+29;19/10/2014;Internacional - RS;1 ;Corinthians - SP; 2
+29;19/10/2014;Figueirense - SC;4 ;Coritiba - PR; 0
+29;19/10/2014;Atletico - PR;2 ;Flamengo - RJ; 1
+29;19/10/2014;Palmeiras - SP;1 ;Santos - SP; 3
+29;19/10/2014;Vitória - BA;0 ;Cruzeiro - MG; 1
+29;19/10/2014;Botafogo - RJ;1 ;Sport - PE; 1
+30;21/10/2014;Bahia - BA;1 ;Atlético - MG; 1
+30;22/10/2014;Flamengo - RJ;2 ;Internacional - RS; 0
+30;22/10/2014;Corinthians - SP;2 ;Vitória - BA; 1
+30;22/10/2014;Cruzeiro - MG;1 ;Palmeiras - SP; 1
+30;22/10/2014;Criciuma - SC;0 ;Atletico - PR; 1
+30;22/10/2014;Coritiba - PR;2 ;Botafogo - RJ; 0
+30;22/10/2014;Grêmio - RS;1 ;Figueirense - SC; 0
+30;22/10/2014;Santos - SP;0 ;Fluminense - RJ; 1
+30;22/10/2014;Chapecoense - SC;0 ;São Paulo - SP; 0
+30;22/10/2014;Sport - PE;(-)0 ;Goiás - GO; 1
+31;25/10/2014;Palmeiras - SP;1 ;Corinthians - SP; 1
+31;25/10/2014;Figueirense - SC;1 ;Cruzeiro - MG; 1
+31;25/10/2014;Fluminense - RJ;2 ;Atletico - PR; 1
+31;25/10/2014;Coritiba - PR;1 ;Grêmio - RS; 1
+31;25/10/2014;Atlético - MG;3 ;Sport - PE; 2
+31;25/10/2014;Vitória - BA;3 ;Criciuma - SC; 1
+31;25/10/2014;Chapecoense - SC;1 ;Santos - SP; 1
+31;25/10/2014;Internacional - RS;2 ;Bahia - BA; 0
+31;25/10/2014;Botafogo - RJ;2 ;Flamengo - RJ; 1
+31;27/10/2014;São Paulo - SP;3 ;Goiás - GO; 0
+32;01/11/2014;Grêmio - RS;1 ;Vitória - BA; 0
+32;01/11/2014;Goiás - GO;0 ;Fluminense - RJ; 2
+32;01/11/2014;Corinthians - SP;2 ;Coritiba - PR; 2
+32;02/11/2014;Sport - PE;1 ;Figueirense - SC; 0
+32;02/11/2014;Santos - SP;1 ;Internacional - RS; 2
+32;02/11/2014;Cruzeiro - MG;2 ;Botafogo - RJ; 1
+32;02/11/2014;Criciuma - SC;1 ;São Paulo - SP; 2
+32;02/11/2014;Flamengo - RJ;3 ;Chapecoense - SC; 0
+32;02/11/2014;Atletico - PR;1 ;Atlético - MG; 0
+32;02/11/2014;Bahia - BA;0 ;Palmeiras - SP; 1
+33;08/11/2014;Palmeiras - SP;0 ;Atlético - MG; 2
+33;08/11/2014;Coritiba - PR;1 ;Fluminense - RJ; 0
+33;08/11/2014;Botafogo - RJ;0 ;Atletico - PR; 2
+33;09/11/2014;Figueirense - SC;1 ;Chapecoense - SC; 0
+33;09/11/2014;Grêmio - RS;4 ;Internacional - RS; 1
+33;09/11/2014;Vitória - BA;1 ;São Paulo - SP; 2
+33;09/11/2014;Sport - PE;2 ;Flamengo - RJ; 2
+33;09/11/2014;Cruzeiro - MG;3 ;Criciuma - SC; 1
+33;09/11/2014;Corinthians - SP;1 ;Santos - SP; 0
+33;09/11/2014;Goiás - GO;3 ;Bahia - BA; 0
+34;15/11/2014;Fluminense - RJ;1 ;Botafogo - RJ; 0
+34;15/11/2014;Criciuma - SC;0 ;Grêmio - RS; 3
+34;16/11/2014;Bahia - BA;1 ;Corinthians - SP; 2
+34;16/11/2014;Internacional - RS;1 ;Goiás - GO; 0
+34;16/11/2014;Santos - SP;0 ;Cruzeiro - MG; 1
+34;16/11/2014;Flamengo - RJ;3 ;Coritiba - PR; 2
+34;16/11/2014;Atletico - PR;0 ;Sport - PE; 1
+34;16/11/2014;Atlético - MG;1 ;Figueirense - SC; 1
+34;16/11/2014;São Paulo - SP;2 ;Palmeiras - SP; 0
+34;16/11/2014;Chapecoense - SC;0 ;Vitória - BA; 1
+35;12/11/2014;São Paulo - SP;1 ;Internacional - RS; 1
+35;19/11/2014;Atletico - PR;1 ;Santos - SP; 1
+35;19/11/2014;Botafogo - RJ;0 ;Figueirense - SC; 1
+35;19/11/2014;Criciuma - SC;0 ;Bahia - BA; 1
+35;19/11/2014;Vitória - BA;1 ;Coritiba - PR; 1
+35;19/11/2014;Goiás - GO;0 ;Corinthians - SP; 1
+35;19/11/2014;Palmeiras - SP;0 ;Sport - PE; 2
+35;19/11/2014;Atlético - MG;4 ;Flamengo - RJ; 0
+35;20/11/2014;Fluminense - RJ;1 ;Chapecoense - SC; 4
+35;20/11/2014;Grêmio - RS;1 ;Cruzeiro - MG; 2
+36;22/11/2014;Internacional - RS;2 ;Atlético - MG; 1
+36;22/11/2014;Bahia - BA;1 ;Atletico - PR; 2
+36;23/11/2014;Cruzeiro - MG;2 ;Goiás - GO; 1
+36;23/11/2014;Figueirense - SC;2 ;Vitória - BA; 0
+36;23/11/2014;Santos - SP;0 ;São Paulo - SP; 1
+36;23/11/2014;Sport - PE;2 ;Fluminense - RJ; 2
+36;23/11/2014;Flamengo - RJ;1 ;Criciuma - SC; 1
+36;23/11/2014;Coritiba - PR;2 ;Palmeiras - SP; 0
+36;23/11/2014;Corinthians - SP;1 ;Grêmio - RS; 0
+36;23/11/2014;Chapecoense - SC;2 ;Botafogo - RJ; 0
+37;29/11/2014;Criciuma - SC;2 ;Sport - PE; 2
+37;29/11/2014;Internacional - RS;3 ;Palmeiras - SP; 1
+37;29/11/2014;Flamengo - RJ;4 ;Vitória - BA; 0
+37;30/11/2014;São Paulo - SP;1 ;Figueirense - SC; 1
+37;30/11/2014;Fluminense - RJ;5 ;Corinthians - SP; 2
+37;30/11/2014;Chapecoense - SC;1 ;Cruzeiro - MG; 1
+37;30/11/2014;Santos - SP;2 ;Botafogo - RJ; 0
+37;30/11/2014;Atletico - PR;1 ;Goiás - GO; 0
+37;30/11/2014;Atlético - MG;1 ;Coritiba - PR; 2
+37;30/11/2014;Bahia - BA;1 ;Grêmio - RS; 0
+38;06/12/2014;Figueirense - SC;1 ;Internacional - RS; 2
+38;06/12/2014;Corinthians - SP;2 ;Criciuma - SC; 1
+38;07/12/2014;Vitória - BA;0 ;Santos - SP; 1
+38;07/12/2014;Grêmio - RS;1 ;Flamengo - RJ; 1
+38;07/12/2014;Sport - PE;1 ;São Paulo - SP; 0
+38;07/12/2014;Cruzeiro - MG;2 ;Fluminense - RJ; 1
+38;07/12/2014;Coritiba - PR;3 ;Bahia - BA; 2
+38;07/12/2014;Palmeiras - SP;1 ;Atletico - PR; 1
+38;07/12/2014;Botafogo - RJ;0 ;Atlético - MG; 0
+38;07/12/2014;Goiás - GO;4 ;Chapecoense - SC; 2

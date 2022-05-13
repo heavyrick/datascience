@@ -1,0 +1,381 @@
+Rodada;Data;Time casa;Gols time casa;Time visitante;Gols time visitante
+1;13/04/2018;Fortaleza - CE;2;Guarani - SP;1
+1;13/04/2018;Oeste - SP;2;Crb - AL;0
+1;13/04/2018;Atlético - GO;3;Criciúma - SC;2
+1;13/04/2018;Figueirense - SC;2;Juventude - RS;1
+1;14/04/2018;Brasil - RS;1;São Bento - SP;1
+1;14/04/2018;Vila Nova - GO;1;Avaí - SC;0
+1;14/04/2018;Csa - AL;2;Goiás - GO;1
+1;14/04/2018;Londrina - PR;1;Boa - MG;0
+1;14/04/2018;Sampaio Correa - MA;2;Coritiba - PR;0
+1;14/04/2018;Ponte Preta - SP;0;Paysandu - PA;1
+2;17/04/2018;Boa - MG;0;Fortaleza - CE;2
+2;17/04/2018;Coritiba - PR;1;Atlético - GO;0
+2;20/04/2018;Juventude - RS;1;Oeste - SP;1
+2;20/04/2018;São Bento - SP;2;Csa - AL;1
+2;20/04/2018;Paysandu - PA;1;Londrina - PR;0
+2;21/04/2018;Avaí - SC;2;Brasil - RS;2
+2;21/04/2018;Goiás - GO;0;Figueirense - SC;2
+2;21/04/2018;Crb - AL;0;Vila Nova - GO;1
+2;21/04/2018;Guarani - SP;2;Sampaio Correa - MA;0
+2;21/04/2018;Criciúma - SC;0;Ponte Preta - SP;1
+3;24/04/2018;Atlético - GO;3;Guarani - SP;2
+3;24/04/2018;Fortaleza - CE;3;Crb - AL;1
+3;27/04/2018;Figueirense - SC;2;Boa - MG;0
+3;27/04/2018;Csa - AL;5;Oeste - SP;1
+3;27/04/2018;Coritiba - PR;2;Criciúma - SC;1
+3;28/04/2018;Juventude - RS;1;Avaí - SC;3
+3;28/04/2018;Vila Nova - GO;3;Sampaio Correa - MA;1
+3;28/04/2018;Paysandu - PA;2;Brasil - RS;1
+3;28/04/2018;Ponte Preta - SP;0;Londrina - PR;1
+3;28/04/2018;São Bento - SP;1;Goiás - GO;1
+4;01/05/2018;Criciúma - SC;1;Csa - AL;3
+4;01/05/2018;Boa - MG;1;Juventude - RS;2
+4;01/05/2018;Brasil - RS;1;Figueirense - SC;0
+4;01/05/2018;Londrina - PR;1;Fortaleza - CE;1
+4;04/05/2018;Sampaio Correa - MA;1;Paysandu - PA;1
+4;04/05/2018;Crb - AL;3;Atlético - GO;1
+4;04/05/2018;Oeste - SP;1;Coritiba - PR;1
+4;05/05/2018;Goiás - GO;1;Vila Nova - GO;3
+4;05/05/2018;Avaí - SC;1;São Bento - SP;1
+4;05/05/2018;Guarani - SP;2;Ponte Preta - SP;3
+5;07/05/2018;Sampaio Correa - MA;2;Crb - AL;3
+5;08/05/2018;Guarani - SP;1;Criciúma - SC;0
+5;08/05/2018;Coritiba - PR;1;Brasil - RS;0
+5;11/05/2018;Juventude - RS;1;Paysandu - PA;1
+5;11/05/2018;Atlético - GO;0;Londrina - PR;0
+5;12/05/2018;São Bento - SP;1;Oeste - SP;0
+5;12/05/2018;Figueirense - SC;0;Avaí - SC;1
+5;12/05/2018;Csa - AL;1;Boa - MG;0
+5;12/05/2018;Fortaleza - CE;3;Goiás - GO;0
+5;13/05/2018;Vila Nova - GO;0;Ponte Preta - SP;0
+6;15/05/2018;Crb - AL;0;Avaí - SC;4
+6;15/05/2018;Criciúma - SC;0;Juventude - RS;0
+6;18/05/2018;Goiás - GO;1;Guarani - SP;1
+6;18/05/2018;Figueirense - SC;1;Fortaleza - CE;3
+6;19/05/2018;Ponte Preta - SP;1;Atlético - GO;3
+6;19/05/2018;Londrina - PR;1;Csa - AL;2
+6;19/05/2018;Paysandu - PA;1;São Bento - SP;1
+6;19/05/2018;Oeste - SP;2;Vila Nova - GO;0
+6;19/05/2018;Boa - MG;1;Coritiba - PR;1
+6;19/05/2018;Brasil - RS;1;Sampaio Correa - MA;2
+7;22/05/2018;Csa - AL;1;Figueirense - SC;4
+7;22/05/2018;Fortaleza - CE;2;Criciúma - SC;0
+7;25/05/2018;Avaí - SC;3;Paysandu - PA;1
+7;25/05/2018;Atlético - GO;2;Oeste - SP;2
+7;25/05/2018;Coritiba - PR;2;Vila Nova - GO;0
+7;26/05/2018;Brasil - RS;3;Londrina - PR;0
+7;26/05/2018;Goiás - GO;1;Boa - MG;2
+7;26/05/2018;São Bento - SP;2;Juventude - RS;2
+7;26/05/2018;Guarani - SP;2;Crb - AL;0
+7;28/05/2018;Sampaio Correa - MA;1;Ponte Preta - SP;0
+8;29/05/2018;São Bento - SP;1;Figueirense - SC;1
+8;29/05/2018;Londrina - PR;3;Coritiba - PR;2
+8;01/06/2018;Juventude - RS;1;Guarani - SP;0
+8;01/06/2018;Vila Nova - GO;0;Csa - AL;1
+8;01/06/2018;Paysandu - PA;2;Boa - MG;0
+8;01/06/2018;Avaí - SC;0;Criciúma - SC;1
+8;02/06/2018;Fortaleza - CE;1;Sampaio Correa - MA;0
+8;02/06/2018;Atlético - GO;1;Goiás - GO;3
+8;02/06/2018;Crb - AL;1;Brasil - RS;1
+8;02/06/2018;Ponte Preta - SP;1;Oeste - SP;1
+9;05/06/2018;Juventude - RS;2;Atlético - GO;2
+9;05/06/2018;Figueirense - SC;1;Londrina - PR;1
+9;05/06/2018;Criciúma - SC;4;Paysandu - PA;1
+9;05/06/2018;Coritiba - PR;1;Crb - AL;0
+9;05/06/2018;Boa - MG;2;São Bento - SP;2
+9;05/06/2018;Csa - AL;1;Guarani - SP;2
+9;05/06/2018;Sampaio Correa - MA;1;Avaí - SC;1
+9;05/06/2018;Ponte Preta - SP;2;Goiás - GO;1
+9;05/06/2018;Oeste - SP;0;Brasil - RS;0
+9;05/06/2018;Vila Nova - GO;0;Fortaleza - CE;0
+10;08/06/2018;Londrina - PR;0;Juventude - RS;1
+10;08/06/2018;Goiás - GO;2;Paysandu - PA;1
+10;08/06/2018;Avaí - SC;2;Coritiba - PR;0
+10;09/06/2018;Criciúma - SC;1;Boa - MG;1
+10;09/06/2018;São Bento - SP;2;Fortaleza - CE;1
+10;09/06/2018;Csa - AL;0;Crb - AL;0
+10;09/06/2018;Guarani - SP;1;Vila Nova - GO;1
+10;09/06/2018;Sampaio Correa - MA;2;Oeste - SP;0
+10;09/06/2018;Atlético - GO;3;Figueirense - SC;4
+10;09/06/2018;Brasil - RS;0;Ponte Preta - SP;2
+11;11/06/2018;Juventude - RS;1;Coritiba - PR;1
+11;12/06/2018;Londrina - PR;1;Goiás - GO;3
+11;12/06/2018;Figueirense - SC;1;Sampaio Correa - MA;0
+11;14/06/2018;Guarani - SP;0;São Bento - SP;0
+11;15/06/2018;Fortaleza - CE;2;Brasil - RS;0
+11;15/06/2018;Boa - MG;0;Avaí - SC;2
+11;15/06/2018;Crb - AL;2;Ponte Preta - SP;0
+11;16/06/2018;Vila Nova - GO;0;Atlético - GO;0
+11;16/06/2018;Oeste - SP;2;Criciúma - SC;2
+11;16/06/2018;Paysandu - PA;0;Csa - AL;0
+12;19/06/2018;Ponte Preta - SP;1;Csa - AL;1
+12;19/06/2018;Avaí - SC;3;Guarani - SP;3
+12;21/06/2018;Brasil - RS;1;Criciúma - SC;0
+12;21/06/2018;Goiás - GO;1;Juventude - RS;1
+12;23/06/2018;Coritiba - PR;1;Figueirense - SC;1
+12;23/06/2018;São Bento - SP;0;Londrina - PR;1
+12;23/06/2018;Fortaleza - CE;1;Oeste - SP;2
+12;23/06/2018;Boa - MG;0;Vila Nova - GO;2
+12;23/06/2018;Sampaio Correa - MA;2;Atlético - GO;3
+12;23/06/2018;Crb - AL;1;Paysandu - PA;1
+13;26/06/2018;Juventude - RS;0;Vila Nova - GO;1
+13;26/06/2018;Oeste - SP;1;Avaí - SC;0
+13;26/06/2018;Goiás - GO;2;Crb - AL;1
+13;29/06/2018;Csa - AL;2;Coritiba - PR;2
+13;29/06/2018;Atlético - GO;2;Brasil - RS;1
+13;29/06/2018;Guarani - SP;1;Boa - MG;1
+13;30/06/2018;Criciúma - SC;1;São Bento - SP;0
+13;30/06/2018;Figueirense - SC;0;Ponte Preta - SP;2
+13;30/06/2018;Paysandu - PA;0;Fortaleza - CE;1
+13;01/07/2018;Londrina - PR;1;Sampaio Correa - MA;1
+14;04/07/2018;Coritiba - PR;2;Paysandu - PA;0
+14;04/07/2018;Atlético - GO;2;Boa - MG;0
+14;04/07/2018;Crb - AL;1;São Bento - SP;0
+14;04/07/2018;Avaí - SC;0;Goiás - GO;1
+14;05/07/2018;Oeste - SP;0;Guarani - SP;1
+14;05/07/2018;Vila Nova - GO;1;Londrina - PR;1
+14;05/07/2018;Brasil - RS;0;Csa - AL;2
+14;05/07/2018;Criciúma - SC;1;Figueirense - SC;1
+14;08/07/2018;Ponte Preta - SP;2;Fortaleza - CE;0
+14;17/07/2018;Sampaio Correa - MA;0;Juventude - RS;0
+15;09/07/2018;Guarani - SP;2;Coritiba - PR;1
+15;09/07/2018;Figueirense - SC;1;Oeste - SP;2
+15;12/07/2018;Londrina - PR;1;Avaí - SC;2
+15;12/07/2018;Paysandu - PA;1;Vila Nova - GO;2
+15;13/07/2018;Brasil - RS;1;Juventude - RS;1
+15;13/07/2018;Goiás - GO;2;Criciúma - SC;1
+15;13/07/2018;Boa - MG;0;Crb - AL;1
+15;13/07/2018;Csa - AL;1;Sampaio Correa - MA;0
+15;14/07/2018;Fortaleza - CE;0;Atlético - GO;1
+15;14/07/2018;São Bento - SP;0;Ponte Preta - SP;2
+16;17/07/2018;Avaí - SC;0;Atlético - GO;0
+16;17/07/2018;Vila Nova - GO;0;Brasil - RS;0
+16;17/07/2018;Guarani - SP;2;Figueirense - SC;3
+16;20/07/2018;Criciúma - SC;2;Londrina - PR;1
+16;20/07/2018;Sampaio Correa - MA;1;Goiás - GO;3
+16;20/07/2018;Csa - AL;0;Fortaleza - CE;0
+16;21/07/2018;Coritiba - PR;2;São Bento - SP;2
+16;21/07/2018;Juventude - RS;1;Crb - AL;0
+16;21/07/2018;Boa - MG;2;Ponte Preta - SP;1
+16;21/07/2018;Oeste - SP;2;Paysandu - PA;2
+17;23/07/2018;Atlético - GO;2;Csa - AL;2
+17;24/07/2018;Londrina - PR;3;Oeste - SP;0
+17;24/07/2018;Brasil - RS;2;Boa - MG;0
+17;24/07/2018;Figueirense - SC;2;Vila Nova - GO;1
+17;24/07/2018;Goiás - GO;0;Coritiba - PR;1
+17;24/07/2018;Crb - AL;0;Criciúma - SC;0
+17;24/07/2018;Paysandu - PA;1;Guarani - SP;0
+17;24/07/2018;Ponte Preta - SP;0;Juventude - RS;1
+17;24/07/2018;Fortaleza - CE;1;Avaí - SC;1
+17;24/07/2018;São Bento - SP;2;Sampaio Correa - MA;1
+18;27/07/2018;Avaí - SC;0;Csa - AL;0
+18;27/07/2018;Paysandu - PA;2;Figueirense - SC;0
+18;28/07/2018;Crb - AL;1;Londrina - PR;1
+18;28/07/2018;Guarani - SP;2;Brasil - RS;1
+18;28/07/2018;São Bento - SP;2;Atlético - GO;1
+18;28/07/2018;Juventude - RS;0;Fortaleza - CE;3
+18;28/07/2018;Goiás - GO;1;Oeste - SP;0
+18;28/07/2018;Coritiba - PR;0;Ponte Preta - SP;0
+18;28/07/2018;Criciúma - SC;1;Vila Nova - GO;0
+18;28/07/2018;Boa - MG;3;Sampaio Correa - MA;1
+19;31/07/2018;Figueirense - SC;0;Crb - AL;0
+19;31/07/2018;Atlético - GO;1;Paysandu - PA;0
+19;03/08/2018;Londrina - PR;1;Guarani - SP;2
+19;03/08/2018;Oeste - SP;1;Boa - MG;1
+19;03/08/2018;Csa - AL;1;Juventude - RS;0
+19;04/08/2018;Brasil - RS;1;Goiás - GO;0
+19;04/08/2018;Fortaleza - CE;2;Coritiba - PR;1
+19;04/08/2018;Vila Nova - GO;1;São Bento - SP;0
+19;04/08/2018;Ponte Preta - SP;2;Avaí - SC;2
+19;04/08/2018;Sampaio Correa - MA;0;Criciúma - SC;1
+20;07/08/2018;Avaí - SC;1;Vila Nova - GO;0
+20;07/08/2018;Paysandu - PA;0;Ponte Preta - SP;4
+20;10/08/2018;Goiás - GO;3;Csa - AL;0
+20;10/08/2018;Boa - MG;1;Londrina - PR;0
+20;10/08/2018;Coritiba - PR;0;Sampaio Correa - MA;0
+20;11/08/2018;Guarani - SP;2;Fortaleza - CE;3
+20;11/08/2018;Crb - AL;0;Oeste - SP;1
+20;11/08/2018;São Bento - SP;1;Brasil - RS;1
+20;11/08/2018;Criciúma - SC;1;Atlético - GO;1
+20;11/08/2018;Juventude - RS;0;Figueirense - SC;0
+21;14/08/2018;Brasil - RS;1;Avaí - SC;1
+21;14/08/2018;Ponte Preta - SP;3;Criciúma - SC;1
+21;17/08/2018;Londrina - PR;2;Paysandu - PA;1
+21;17/08/2018;Vila Nova - GO;0;Crb - AL;0
+21;17/08/2018;Figueirense - SC;1;Goiás - GO;2
+21;18/08/2018;Fortaleza - CE;2;Boa - MG;1
+21;18/08/2018;Atlético - GO;1;Coritiba - PR;0
+21;18/08/2018;Oeste - SP;0;Juventude - RS;0
+21;18/08/2018;Sampaio Correa - MA;0;Guarani - SP;2
+21;18/08/2018;Csa - AL;1;São Bento - SP;0
+22;21/08/2018;Criciúma - SC;2;Coritiba - PR;2
+22;21/08/2018;Londrina - PR;1;Ponte Preta - SP;0
+22;21/08/2018;Avaí - SC;1;Juventude - RS;0
+22;21/08/2018;Brasil - RS;0;Paysandu - PA;0
+22;21/08/2018;Boa - MG;0;Figueirense - SC;2
+22;21/08/2018;Crb - AL;2;Fortaleza - CE;1
+22;21/08/2018;Goiás - GO;2;São Bento - SP;1
+22;21/08/2018;Guarani - SP;2;Atlético - GO;0
+22;21/08/2018;Sampaio Correa - MA;0;Vila Nova - GO;0
+22;21/08/2018;Oeste - SP;2;Csa - AL;1
+23;24/08/2018;Coritiba - PR;0;Oeste - SP;2
+23;24/08/2018;Figueirense - SC;1;Brasil - RS;1
+23;24/08/2018;Atlético - GO;1;Crb - AL;0
+23;25/08/2018;Ponte Preta - SP;0;Guarani - SP;0
+23;25/08/2018;Csa - AL;3;Criciúma - SC;0
+23;25/08/2018;Paysandu - PA;0;Sampaio Correa - MA;1
+23;25/08/2018;Vila Nova - GO;3;Goiás - GO;0
+23;25/08/2018;São Bento - SP;0;Avaí - SC;1
+23;25/08/2018;Fortaleza - CE;2;Londrina - PR;1
+23;25/08/2018;Juventude - RS;0;Boa - MG;0
+24;27/08/2018;Brasil - RS;0;Coritiba - PR;1
+24;28/08/2018;Criciúma - SC;0;Guarani - SP;0
+24;28/08/2018;Oeste - SP;0;São Bento - SP;1
+24;31/08/2018;Londrina - PR;4;Atlético - GO;1
+24;31/08/2018;Paysandu - PA;3;Juventude - RS;3
+24;31/08/2018;Crb - AL;2;Sampaio Correa - MA;1
+24;31/08/2018;Ponte Preta - SP;1;Vila Nova - GO;1
+24;01/09/2018;Avaí - SC;0;Figueirense - SC;1
+24;01/09/2018;Goiás - GO;3;Fortaleza - CE;1
+24;01/09/2018;Boa - MG;3;Csa - AL;0
+25;03/09/2018;Vila Nova - GO;1;Oeste - SP;1
+25;04/09/2018;Guarani - SP;0;Goiás - GO;2
+25;04/09/2018;Avaí - SC;1;Crb - AL;0
+25;04/09/2018;Atlético - GO;2;Ponte Preta - SP;0
+25;04/09/2018;Coritiba - PR;2;Boa - MG;1
+25;04/09/2018;São Bento - SP;1;Paysandu - PA;0
+25;04/09/2018;Juventude - RS;0;Criciúma - SC;1
+25;04/09/2018;Csa - AL;4;Londrina - PR;1
+25;04/09/2018;Sampaio Correa - MA;1;Brasil - RS;2
+25;04/09/2018;Fortaleza - CE;2;Figueirense - SC;2
+26;07/09/2018;Oeste - SP;1;Atlético - GO;2
+26;07/09/2018;Boa - MG;1;Goiás - GO;0
+26;07/09/2018;Crb - AL;1;Guarani - SP;1
+26;07/09/2018;Paysandu - PA;2;Avaí - SC;1
+26;08/09/2018;Criciúma - SC;2;Fortaleza - CE;0
+26;08/09/2018;Juventude - RS;0;São Bento - SP;2
+26;08/09/2018;Londrina - PR;1;Brasil - RS;0
+26;08/09/2018;Figueirense - SC;1;Csa - AL;2
+26;08/09/2018;Ponte Preta - SP;0;Sampaio Correa - MA;0
+26;08/09/2018;Vila Nova - GO;2;Coritiba - PR;1
+27;11/09/2018;Csa - AL;1;Vila Nova - GO;2
+27;13/09/2018;Guarani - SP;1;Juventude - RS;0
+27;14/09/2018;Coritiba - PR;0;Londrina - PR;1
+27;14/09/2018;Figueirense - SC;2;São Bento - SP;2
+27;14/09/2018;Sampaio Correa - MA;1;Fortaleza - CE;0
+27;15/09/2018;Brasil - RS;1;Crb - AL;0
+27;15/09/2018;Criciúma - SC;3;Avaí - SC;2
+27;15/09/2018;Boa - MG;1;Paysandu - PA;1
+27;15/09/2018;Goiás - GO;2;Atlético - GO;1
+27;15/09/2018;Oeste - SP;0;Ponte Preta - SP;0
+28;18/09/2018;Atlético - GO;0;Juventude - RS;1
+28;18/09/2018;Londrina - PR;2;Figueirense - SC;0
+28;21/09/2018;Goiás - GO;2;Ponte Preta - SP;2
+28;21/09/2018;Crb - AL;1;Coritiba - PR;1
+28;21/09/2018;São Bento - SP;0;Boa - MG;0
+28;21/09/2018;Fortaleza - CE;2;Vila Nova - GO;0
+28;22/09/2018;Paysandu - PA;1;Criciúma - SC;1
+28;22/09/2018;Brasil - RS;1;Oeste - SP;3
+28;22/09/2018;Guarani - SP;1;Csa - AL;0
+28;22/09/2018;Avaí - SC;3;Sampaio Correa - MA;1
+29;25/09/2018;Fortaleza - CE;2;São Bento - SP;1
+29;25/09/2018;Ponte Preta - SP;0;Brasil - RS;1
+29;27/09/2018;Juventude - RS;0;Londrina - PR;0
+29;28/09/2018;Paysandu - PA;2;Goiás - GO;3
+29;28/09/2018;Vila Nova - GO;1;Guarani - SP;1
+29;29/09/2018;Crb - AL;0;Csa - AL;0
+29;29/09/2018;Oeste - SP;0;Sampaio Correa - MA;0
+29;29/09/2018;Figueirense - SC;2;Atlético - GO;2
+29;29/09/2018;Coritiba - PR;1;Avaí - SC;0
+29;29/09/2018;Boa - MG;1;Criciúma - SC;2
+30;02/10/2018;Sampaio Correa - MA;1;Figueirense - SC;0
+30;02/10/2018;Criciúma - SC;0;Oeste - SP;0
+30;02/10/2018;Goiás - GO;0;Londrina - PR;0
+30;02/10/2018;Csa - AL;1;Paysandu - PA;0
+30;05/10/2018;São Bento - SP;1;Guarani - SP;0
+30;05/10/2018;Brasil - RS;0;Fortaleza - CE;1
+30;05/10/2018;Avaí - SC;2;Boa - MG;0
+30;05/10/2018;Coritiba - PR;2;Juventude - RS;1
+30;06/10/2018;Atlético - GO;2;Vila Nova - GO;2
+30;06/10/2018;Ponte Preta - SP;1;Crb - AL;0
+31;09/10/2018;Paysandu - PA;1;Crb - AL;1
+31;09/10/2018;Criciúma - SC;0;Brasil - RS;1
+31;12/10/2018;Juventude - RS;3;Goiás - GO;5
+31;12/10/2018;Atlético - GO;1;Sampaio Correa - MA;2
+31;12/10/2018;Csa - AL;1;Ponte Preta - SP;2
+31;13/10/2018;Guarani - SP;1;Avaí - SC;2
+31;13/10/2018;Oeste - SP;0;Fortaleza - CE;0
+31;13/10/2018;Vila Nova - GO;2;Boa - MG;0
+31;13/10/2018;Figueirense - SC;2;Coritiba - PR;2
+31;13/10/2018;Londrina - PR;2;São Bento - SP;1
+32;16/10/2018;Coritiba - PR;1;Csa - AL;1
+32;16/10/2018;Brasil - RS;1;Atlético - GO;2
+32;19/10/2018;Crb - AL;2;Goiás - GO;0
+32;19/10/2018;São Bento - SP;0;Criciúma - SC;0
+32;19/10/2018;Ponte Preta - SP;2;Figueirense - SC;1
+32;20/10/2018;Vila Nova - GO;1;Juventude - RS;0
+32;20/10/2018;Boa - MG;2;Guarani - SP;1
+32;20/10/2018;Avaí - SC;1;Oeste - SP;1
+32;20/10/2018;Fortaleza - CE;1;Paysandu - PA;0
+32;20/10/2018;Sampaio Correa - MA;1;Londrina - PR;2
+33;23/10/2018;Csa - AL;2;Brasil - RS;0
+33;26/10/2018;Londrina - PR;3;Vila Nova - GO;2
+33;26/10/2018;Fortaleza - CE;1;Ponte Preta - SP;1
+33;26/10/2018;Juventude - RS;1;Sampaio Correa - MA;0
+33;26/10/2018;Goiás - GO;0;Avaí - SC;3
+33;27/10/2018;Figueirense - SC;3;Criciúma - SC;2
+33;27/10/2018;Guarani - SP;1;Oeste - SP;1
+33;27/10/2018;São Bento - SP;1;Crb - AL;0
+33;27/10/2018;Boa - MG;0;Atlético - GO;2
+33;27/10/2018;Paysandu - PA;1;Coritiba - PR;1
+34;01/11/2018;Criciúma - SC;2;Goiás - GO;2
+34;01/11/2018;Juventude - RS;0;Brasil - RS;1
+34;02/11/2018;Ponte Preta - SP;2;São Bento - SP;1
+34;02/11/2018;Vila Nova - GO;0;Paysandu - PA;0
+34;02/11/2018;Oeste - SP;0;Figueirense - SC;0
+34;02/11/2018;Sampaio Correa - MA;2;Csa - AL;3
+34;03/11/2018;Avaí - SC;1;Londrina - PR;1
+34;03/11/2018;Crb - AL;2;Boa - MG;1
+34;03/11/2018;Atlético - GO;1;Fortaleza - CE;2
+34;03/11/2018;Coritiba - PR;0;Guarani - SP;2
+35;05/11/2018;Goiás - GO;1;Sampaio Correa - MA;0
+35;06/11/2018;Brasil - RS;5;Vila Nova - GO;0
+35;06/11/2018;Atlético - GO;2;Avaí - SC;2
+35;06/11/2018;Londrina - PR;4;Criciúma - SC;2
+35;06/11/2018;São Bento - SP;5;Coritiba - PR;2
+35;06/11/2018;Ponte Preta - SP;1;Boa - MG;0
+35;06/11/2018;Fortaleza - CE;1;Csa - AL;1
+35;06/11/2018;Crb - AL;2;Juventude - RS;0
+35;06/11/2018;Paysandu - PA;4;Oeste - SP;3
+35;06/11/2018;Figueirense - SC;0;Guarani - SP;0
+36;09/11/2018;Vila Nova - GO;3;Figueirense - SC;1
+36;09/11/2018;Juventude - RS;0;Ponte Preta - SP;1
+36;09/11/2018;Boa - MG;0;Brasil - RS;1
+36;09/11/2018;Coritiba - PR;1;Goiás - GO;0
+36;10/11/2018;Csa - AL;0;Atlético - GO;0
+36;10/11/2018;Criciúma - SC;3;Crb - AL;3
+36;10/11/2018;Oeste - SP;0;Londrina - PR;0
+36;10/11/2018;Avaí - SC;0;Fortaleza - CE;1
+36;10/11/2018;Sampaio Correa - MA;2;São Bento - SP;1
+36;10/11/2018;Guarani - SP;0;Paysandu - PA;2
+37;13/11/2018;Figueirense - SC;2;Paysandu - PA;3
+37;13/11/2018;Ponte Preta - SP;2;Coritiba - PR;0
+37;15/11/2018;Fortaleza - CE;4;Juventude - RS;1
+37;16/11/2018;Atlético - GO;1;São Bento - SP;0
+37;16/11/2018;Londrina - PR;1;Crb - AL;2
+37;17/11/2018;Brasil - RS;1;Guarani - SP;1
+37;17/11/2018;Csa - AL;0;Avaí - SC;1
+37;17/11/2018;Sampaio Correa - MA;1;Boa - MG;0
+37;17/11/2018;Vila Nova - GO;2;Criciúma - SC;2
+37;17/11/2018;Oeste - SP;1;Goiás - GO;3
+38;23/11/2018;Coritiba - PR;1;Fortaleza - CE;0
+38;24/11/2018;Guarani - SP;1;Londrina - PR;0
+38;24/11/2018;São Bento - SP;2;Vila Nova - GO;2
+38;24/11/2018;Juventude - RS;0;Csa - AL;4
+38;24/11/2018;Avaí - SC;0;Ponte Preta - SP;0
+38;24/11/2018;Criciúma - SC;2;Sampaio Correa - MA;0
+38;24/11/2018;Goiás - GO;0;Brasil - RS;1
+38;24/11/2018;Boa - MG;0;Oeste - SP;0
+38;24/11/2018;Crb - AL;2;Figueirense - SC;1
+38;24/11/2018;Paysandu - PA;2;Atlético - GO;5

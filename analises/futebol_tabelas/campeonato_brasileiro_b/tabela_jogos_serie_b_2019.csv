@@ -1,0 +1,381 @@
+Rodada;Data;Time casa;Gols time casa;Time visitante;Gols time visitante
+1;26/04/2019;Operario - PR;1;America Fc - MG;0
+1;26/04/2019;Brasil - RS;0;Bragantino - SP;1
+1;26/04/2019;Sport - PE;1;Oeste - SP;1
+1;26/04/2019;São Bento - SP;1;Atlético - GO;3
+1;27/04/2019;Botafogo - SP;3;Vitória - BA;1
+1;27/04/2019;Guarani - SP;0;Figueirense - SC;0
+1;27/04/2019;Criciúma - SC;0;Cuiabá - MT;1
+1;27/04/2019;Vila Nova - GO;1;Paraná - PR;1
+1;28/04/2019;Crb - AL;1;Londrina - PR;2
+1;29/04/2019;Coritiba - PR;2;Ponte Preta - SP;0
+2;30/04/2019;America Fc - MG;0;Botafogo - SP;1
+2;01/05/2019;Oeste - SP;2;Guarani - SP;0
+2;02/05/2019;Ponte Preta - SP;1;Criciúma - SC;1
+2;03/05/2019;Londrina - PR;1;Brasil - RS;0
+2;03/05/2019;Atlético - GO;1;Coritiba - PR;1
+2;04/05/2019;Figueirense - SC;2;São Bento - SP;2
+2;04/05/2019;Vitória - BA;2;Vila Nova - GO;1
+2;04/05/2019;Cuiabá - MT;2;Operario - PR;1
+2;04/05/2019;Paraná - PR;1;Crb - AL;0
+2;06/05/2019;Bragantino - SP;1;Sport - PE;1
+3;09/05/2019;São Bento - SP;0;Botafogo - SP;1
+3;09/05/2019;Coritiba - PR;0;Londrina - PR;0
+3;10/05/2019;Bragantino - SP;3;Atlético - GO;0
+3;10/05/2019;Vila Nova - GO;0;Ponte Preta - SP;0
+3;11/05/2019;Criciúma - SC;0;America Fc - MG;0
+3;11/05/2019;Sport - PE;0;Figueirense - SC;0
+3;11/05/2019;Cuiabá - MT;1;Paraná - PR;1
+3;11/05/2019;Operario - PR;0;Oeste - SP;0
+3;11/05/2019;Brasil - RS;0;Crb - AL;2
+3;13/05/2019;Guarani - SP;3;Vitória - BA;2
+4;14/05/2019;Oeste - SP;1;Cuiabá - MT;1
+4;14/05/2019;Figueirense - SC;1;Brasil - RS;0
+4;17/05/2019;Atlético - GO;3;Criciúma - SC;1
+4;17/05/2019;Ponte Preta - SP;1;Operario - PR;0
+4;18/05/2019;Londrina - PR;1;Bragantino - SP;0
+4;18/05/2019;Paraná - PR;0;Guarani - SP;0
+4;18/05/2019;Vitória - BA;1;São Bento - SP;3
+4;18/05/2019;Botafogo - SP;0;Vila Nova - GO;1
+4;19/05/2019;America Fc - MG;1;Sport - PE;2
+4;20/05/2019;Crb - AL;1;Coritiba - PR;0
+5;21/05/2019;Criciúma - SC;1;Guarani - SP;0
+5;21/05/2019;Bragantino - SP;2;Figueirense - SC;0
+5;24/05/2019;Crb - AL;1;Vila Nova - GO;1
+5;24/05/2019;Sport - PE;3;Londrina - PR;2
+5;25/05/2019;Coritiba - PR;2;Cuiabá - MT;1
+5;25/05/2019;São Bento - SP;1;Oeste - SP;0
+5;25/05/2019;Ponte Preta - SP;4;Paraná - PR;2
+5;25/05/2019;Brasil - RS;2;America Fc - MG;1
+5;25/05/2019;Operario - PR;0;Botafogo - SP;2
+5;26/05/2019;Atlético - GO;1;Vitória - BA;1
+6;28/05/2019;Operario - PR;2;Sport - PE;1
+6;28/05/2019;Guarani - SP;1;Brasil - RS;2
+6;31/05/2019;Figueirense - SC;1;Atlético - GO;0
+6;31/05/2019;São Bento - SP;1;Crb - AL;2
+6;31/05/2019;Vitória - BA;0;Bragantino - SP;2
+6;01/06/2019;Paraná - PR;0;Oeste - SP;0
+6;01/06/2019;Botafogo - SP;1;Criciúma - SC;0
+6;01/06/2019;Vila Nova - GO;0;Londrina - PR;1
+6;01/06/2019;Cuiabá - MT;1;Ponte Preta - SP;3
+6;03/06/2019;America Fc - MG;1;Coritiba - PR;1
+7;04/06/2019;Bragantino - SP;2;São Bento - SP;0
+7;06/06/2019;Atlético - GO;1;Guarani - SP;0
+7;07/06/2019;Londrina - PR;1;Cuiabá - MT;0
+7;07/06/2019;Ponte Preta - SP;0;Botafogo - SP;0
+7;08/06/2019;Oeste - SP;0;Figueirense - SC;0
+7;08/06/2019;Brasil - RS;1;Operario - PR;0
+7;08/06/2019;Criciúma - SC;1;Vila Nova - GO;1
+7;08/06/2019;Coritiba - PR;2;Paraná - PR;3
+7;08/06/2019;Sport - PE;3;Vitória - BA;1
+7;08/06/2019;Crb - AL;1;America Fc - MG;3
+8;10/06/2019;Londrina - PR;1;Ponte Preta - SP;3
+8;11/06/2019;Brasil - RS;0;Criciúma - SC;1
+8;11/06/2019;Figueirense - SC;2;Botafogo - SP;1
+8;11/06/2019;Vila Nova - GO;1;São Bento - SP;0
+8;11/06/2019;Cuiabá - MT;0;Atlético - GO;1
+8;11/06/2019;Bragantino - SP;2;America Fc - MG;0
+8;11/06/2019;Oeste - SP;3;Vitória - BA;0
+8;11/06/2019;Paraná - PR;1;Operario - PR;0
+8;11/06/2019;Sport - PE;1;Crb - AL;0
+8;11/06/2019;Guarani - SP;0;Coritiba - PR;1
+9;08/07/2019;São Bento - SP;2;Sport - PE;2
+9;09/07/2019;Vitória - BA;0;Cuiabá - MT;1
+9;09/07/2019;Criciúma - SC;2;Coritiba - PR;1
+9;12/07/2019;Crb - AL;2;Guarani - SP;1
+9;12/07/2019;Ponte Preta - SP;3;Oeste - SP;2
+9;13/07/2019;America Fc - MG;0;Figueirense - SC;4
+9;13/07/2019;Atlético - GO;2;Vila Nova - GO;0
+9;13/07/2019;Botafogo - SP;2;Brasil - RS;3
+9;13/07/2019;Paraná - PR;2;Bragantino - SP;1
+9;13/07/2019;Operario - PR;2;Londrina - PR;0
+10;15/07/2019;Cuiabá - MT;1;Sport - PE;1
+10;16/07/2019;Coritiba - PR;2;São Bento - SP;1
+10;16/07/2019;Ponte Preta - SP;0;Atlético - GO;0
+10;18/07/2019;Brasil - RS;0;Paraná - PR;1
+10;19/07/2019;Figueirense - SC;1;Londrina - PR;1
+10;19/07/2019;Vitória - BA;2;Criciúma - SC;0
+10;20/07/2019;Oeste - SP;0;Bragantino - SP;0
+10;20/07/2019;Vila Nova - GO;1;America Fc - MG;1
+10;20/07/2019;Operario - PR;2;Crb - AL;1
+10;20/07/2019;Botafogo - SP;0;Guarani - SP;0
+11;22/07/2019;Sport - PE;0;Brasil - RS;0
+11;23/07/2019;São Bento - SP;1;Operario - PR;1
+11;23/07/2019;Coritiba - PR;2;Vila Nova - GO;0
+11;23/07/2019;Guarani - SP;0;Cuiabá - MT;1
+11;23/07/2019;Figueirense - SC;0;Paraná - PR;1
+11;23/07/2019;Bragantino - SP;2;Ponte Preta - SP;1
+11;23/07/2019;Atlético - GO;1;Botafogo - SP;2
+11;23/07/2019;Crb - AL;2;Criciúma - SC;0
+11;23/07/2019;America Fc - MG;0;Oeste - SP;0
+11;23/07/2019;Londrina - PR;3;Vitória - BA;1
+12;26/07/2019;Operario - PR;1;Coritiba - PR;1
+12;26/07/2019;America Fc - MG;0;Atlético - GO;1
+12;26/07/2019;Guarani - SP;2;São Bento - SP;1
+12;26/07/2019;Botafogo - SP;0;Crb - AL;2
+12;26/07/2019;Paraná - PR;0;Sport - PE;1
+12;27/07/2019;Criciúma - SC;1;Figueirense - SC;1
+12;27/07/2019;Vitória - BA;2;Ponte Preta - SP;1
+12;27/07/2019;Oeste - SP;1;Londrina - PR;0
+12;27/07/2019;Cuiabá - MT;1;Brasil - RS;1
+12;27/07/2019;Vila Nova - GO;0;Bragantino - SP;1
+13;29/07/2019;Coritiba - PR;3;Botafogo - SP;2
+13;29/07/2019;Sport - PE;1;Guarani - SP;1
+13;30/07/2019;Londrina - PR;3;Paraná - PR;0
+13;30/07/2019;Figueirense - SC;1;Vitória - BA;1
+13;30/07/2019;Brasil - RS;0;Vila Nova - GO;2
+13;30/07/2019;São Bento - SP;1;Criciúma - SC;0
+13;30/07/2019;Atlético - GO;4;Operario - PR;2
+13;30/07/2019;Crb - AL;2;Oeste - SP;2
+13;30/07/2019;Ponte Preta - SP;0;America Fc - MG;1
+13;30/07/2019;Bragantino - SP;2;Cuiabá - MT;2
+14;01/08/2019;Sport - PE;1;Coritiba - PR;1
+14;02/08/2019;Londrina - PR;1;Atlético - GO;1
+14;02/08/2019;Botafogo - SP;3;Oeste - SP;2
+14;02/08/2019;Guarani - SP;1;Bragantino - SP;0
+14;03/08/2019;Brasil - RS;1;Vitória - BA;0
+14;03/08/2019;São Bento - SP;0;Ponte Preta - SP;0
+14;03/08/2019;Criciúma - SC;1;Operario - PR;2
+14;03/08/2019;Paraná - PR;0;America Fc - MG;0
+14;03/08/2019;Crb - AL;0;Cuiabá - MT;1
+14;03/08/2019;Vila Nova - GO;0;Figueirense - SC;0
+15;06/08/2019;Atlético - GO;0;Crb - AL;1
+15;06/08/2019;America Fc - MG;4;Londrina - PR;3
+15;08/08/2019;Oeste - SP;1;Brasil - RS;1
+15;09/08/2019;Operario - PR;1;Vila Nova - GO;0
+15;09/08/2019;Bragantino - SP;0;Botafogo - SP;0
+15;10/08/2019;Coritiba - PR;2;Figueirense - SC;0
+15;10/08/2019;Vitória - BA;2;Paraná - PR;0
+15;10/08/2019;Cuiabá - MT;3;São Bento - SP;2
+15;11/08/2019;Ponte Preta - SP;1;Guarani - SP;0
+15;11/08/2019;Criciúma - SC;1;Sport - PE;0
+16;12/08/2019;Bragantino - SP;4;Operario - PR;0
+16;13/08/2019;Atlético - GO;2;Oeste - SP;0
+16;13/08/2019;Coritiba - PR;2;Brasil - RS;0
+16;15/08/2019;Figueirense - SC;0;Ponte Preta - SP;1
+16;16/08/2019;Londrina - PR;1;Criciúma - SC;1
+16;16/08/2019;Guarani - SP;0;Vila Nova - GO;2
+16;17/08/2019;São Bento - SP;2;Paraná - PR;1
+16;17/08/2019;Sport - PE;3;Botafogo - SP;0
+16;17/08/2019;America Fc - MG;2;Cuiabá - MT;1
+16;18/08/2019;Crb - AL;0;Vitória - BA;1
+17;19/08/2019;Oeste - SP;0;Coritiba - PR;2
+17;19/08/2019;Criciúma - SC;0;Bragantino - SP;2
+17;20/08/2019;Operario - PR;1;Guarani - SP;0
+17;20/08/2019;Brasil - RS;2;São Bento - SP;1
+17;20/08/2019;Botafogo - SP;2;Londrina - PR;1
+17;20/08/2019;Paraná - PR;0;Atlético - GO;0
+17;20/08/2019;Vila Nova - GO;0;Sport - PE;2
+17;20/08/2019;Cuiabá - MT;3;Figueirense - SC;0
+17;21/08/2019;Vitória - BA;0;America Fc - MG;0
+17;21/08/2019;Ponte Preta - SP;0;Crb - AL;1
+18;22/08/2019;Bragantino - SP;1;Coritiba - PR;1
+18;23/08/2019;Atlético - GO;0;Brasil - RS;0
+18;23/08/2019;Cuiabá - MT;2;Botafogo - SP;0
+18;24/08/2019;Paraná - PR;0;Criciúma - SC;0
+18;24/08/2019;Vitória - BA;0;Operario - PR;0
+18;24/08/2019;Oeste - SP;1;Vila Nova - GO;1
+18;24/08/2019;Londrina - PR;2;São Bento - SP;4
+18;24/08/2019;Ponte Preta - SP;2;Sport - PE;2
+18;24/08/2019;Figueirense - SC;2;Crb - AL;2
+18;25/08/2019;America Fc - MG;3;Guarani - SP;2
+19;27/08/2019;Crb - AL;0;Bragantino - SP;3
+19;27/08/2019;Botafogo - SP;0;Paraná - PR;1
+19;27/08/2019;Brasil - RS;1;Ponte Preta - SP;0
+19;27/08/2019;Vila Nova - GO;0;Cuiabá - MT;0
+19;27/08/2019;Coritiba - PR;1;Vitória - BA;1
+19;27/08/2019;Criciúma - SC;3;Oeste - SP;1
+19;27/08/2019;Operario - PR;1;Figueirense - SC;0
+19;27/08/2019;Sport - PE;1;Atlético - GO;1
+19;28/08/2019;São Bento - SP;0;America Fc - MG;2
+19;28/08/2019;Guarani - SP;1;Londrina - PR;0
+20;30/08/2019;Paraná - PR;1;Vila Nova - GO;1
+20;30/08/2019;Cuiabá - MT;0;Criciúma - SC;0
+20;30/08/2019;Vitória - BA;0;Botafogo - SP;0
+20;31/08/2019;Oeste - SP;0;Sport - PE;0
+20;31/08/2019;Figueirense - SC;0;Guarani - SP;1
+20;31/08/2019;Ponte Preta - SP;1;Coritiba - PR;0
+20;31/08/2019;Londrina - PR;0;Crb - AL;1
+20;31/08/2019;Atlético - GO;1;São Bento - SP;0
+20;31/08/2019;Bragantino - SP;2;Brasil - RS;1
+20;31/08/2019;America Fc - MG;0;Operario - PR;0
+21;03/09/2019;Vila Nova - GO;0;Vitória - BA;2
+21;03/09/2019;Brasil - RS;1;Londrina - PR;0
+21;03/09/2019;Criciúma - SC;0;Ponte Preta - SP;0
+21;05/09/2019;Crb - AL;1;Paraná - PR;2
+21;06/09/2019;São Bento - SP;0;Figueirense - SC;0
+21;07/09/2019;Botafogo - SP;0;America Fc - MG;0
+21;07/09/2019;Guarani - SP;2;Oeste - SP;3
+21;07/09/2019;Operario - PR;2;Cuiabá - MT;1
+21;07/09/2019;Sport - PE;2;Bragantino - SP;1
+21;08/09/2019;Coritiba - PR;1;Atlético - GO;2
+22;10/09/2019;Crb - AL;3;Brasil - RS;1
+22;10/09/2019;America Fc - MG;2;Criciúma - SC;1
+22;12/09/2019;Ponte Preta - SP;0;Vila Nova - GO;1
+22;13/09/2019;Botafogo - SP;1;São Bento - SP;0
+22;13/09/2019;Oeste - SP;3;Operario - PR;0
+22;13/09/2019;Atlético - GO;1;Bragantino - SP;1
+22;14/09/2019;Londrina - PR;2;Coritiba - PR;1
+22;14/09/2019;Vitória - BA;0;Guarani - SP;1
+22;14/09/2019;Paraná - PR;0;Cuiabá - MT;0
+22;15/09/2019;Figueirense - SC;1;Sport - PE;2
+23;16/09/2019;Operario - PR;2;Ponte Preta - SP;1
+23;17/09/2019;Vila Nova - GO;0;Botafogo - SP;2
+23;17/09/2019;São Bento - SP;2;Vitória - BA;0
+23;19/09/2019;Brasil - RS;2;Figueirense - SC;2
+23;20/09/2019;Criciúma - SC;0;Atlético - GO;1
+23;20/09/2019;Sport - PE;0;America Fc - MG;2
+23;21/09/2019;Guarani - SP;1;Paraná - PR;0
+23;21/09/2019;Bragantino - SP;4;Londrina - PR;1
+23;21/09/2019;Coritiba - PR;0;Crb - AL;2
+23;21/09/2019;Cuiabá - MT;2;Oeste - SP;0
+24;24/09/2019;Guarani - SP;1;Criciúma - SC;0
+24;24/09/2019;Botafogo - SP;1;Operario - PR;1
+24;24/09/2019;Londrina - PR;1;Sport - PE;2
+24;24/09/2019;Oeste - SP;2;São Bento - SP;1
+24;24/09/2019;Vila Nova - GO;2;Crb - AL;2
+24;24/09/2019;America Fc - MG;2;Brasil - RS;0
+24;24/09/2019;Vitória - BA;0;Atlético - GO;0
+24;24/09/2019;Figueirense - SC;0;Bragantino - SP;3
+24;25/09/2019;Paraná - PR;1;Ponte Preta - SP;1
+24;29/10/2019;Cuiabá - MT;3;Coritiba - PR;3
+25;27/09/2019;Londrina - PR;0;Vila Nova - GO;1
+25;27/09/2019;Brasil - RS;0;Guarani - SP;0
+25;27/09/2019;Atlético - GO;2;Figueirense - SC;0
+25;28/09/2019;Criciúma - SC;2;Botafogo - SP;0
+25;28/09/2019;Ponte Preta - SP;3;Cuiabá - MT;0
+25;28/09/2019;Coritiba - PR;2;America Fc - MG;1
+25;28/09/2019;Oeste - SP;1;Paraná - PR;1
+25;28/09/2019;Sport - PE;3;Operario - PR;1
+25;28/09/2019;Crb - AL;1;São Bento - SP;1
+25;29/09/2019;Bragantino - SP;2;Vitória - BA;0
+26;30/09/2019;Guarani - SP;2;Atlético - GO;0
+26;01/10/2019;Vila Nova - GO;1;Criciúma - SC;1
+26;03/10/2019;America Fc - MG;1;Crb - AL;0
+26;03/10/2019;Vitória - BA;2;Sport - PE;2
+26;04/10/2019;Figueirense - SC;1;Oeste - SP;2
+26;04/10/2019;São Bento - SP;0;Bragantino - SP;3
+26;05/10/2019;Botafogo - SP;4;Ponte Preta - SP;1
+26;05/10/2019;Paraná - PR;2;Coritiba - PR;0
+26;05/10/2019;Operario - PR;1;Brasil - RS;2
+26;05/10/2019;Cuiabá - MT;0;Londrina - PR;1
+27;07/10/2019;Crb - AL;1;Sport - PE;1
+27;07/10/2019;São Bento - SP;3;Vila Nova - GO;1
+27;08/10/2019;Operario - PR;0;Paraná - PR;1
+27;08/10/2019;Botafogo - SP;0;Figueirense - SC;0
+27;08/10/2019;Coritiba - PR;1;Guarani - SP;0
+27;08/10/2019;Vitória - BA;3;Oeste - SP;1
+27;08/10/2019;Criciúma - SC;2;Brasil - RS;2
+27;08/10/2019;Atlético - GO;1;Cuiabá - MT;1
+27;08/10/2019;America Fc - MG;2;Bragantino - SP;0
+27;08/10/2019;Ponte Preta - SP;3;Londrina - PR;1
+28;11/10/2019;Vila Nova - GO;1;Atlético - GO;1
+28;11/10/2019;Brasil - RS;1;Botafogo - SP;0
+28;11/10/2019;Sport - PE;2;São Bento - SP;0
+28;11/10/2019;Guarani - SP;1;Crb - AL;0
+28;11/10/2019;Oeste - SP;1;Ponte Preta - SP;1
+28;11/10/2019;Cuiabá - MT;1;Vitória - BA;3
+28;12/10/2019;Bragantino - SP;2;Paraná - PR;0
+28;12/10/2019;Coritiba - PR;1;Criciúma - SC;0
+28;12/10/2019;Londrina - PR;1;Operario - PR;2
+28;12/10/2019;Figueirense - SC;2;America Fc - MG;1
+29;14/10/2019;Atlético - GO;0;Ponte Preta - SP;0
+29;14/10/2019;Sport - PE;2;Cuiabá - MT;0
+29;14/10/2019;Guarani - SP;0;Botafogo - SP;2
+29;15/10/2019;Paraná - PR;1;Brasil - RS;0
+29;15/10/2019;Londrina - PR;0;Figueirense - SC;0
+29;15/10/2019;Criciúma - SC;1;Vitória - BA;1
+29;15/10/2019;America Fc - MG;2;Vila Nova - GO;0
+29;15/10/2019;Crb - AL;0;Operario - PR;0
+29;15/10/2019;Bragantino - SP;2;Oeste - SP;2
+29;15/10/2019;São Bento - SP;1;Coritiba - PR;2
+30;17/10/2019;Botafogo - SP;0;Atlético - GO;0
+30;17/10/2019;Cuiabá - MT;2;Guarani - SP;1
+30;18/10/2019;Criciúma - SC;0;Crb - AL;1
+30;18/10/2019;Vitória - BA;0;Londrina - PR;1
+30;19/10/2019;Oeste - SP;0;America Fc - MG;1
+30;19/10/2019;Vila Nova - GO;2;Coritiba - PR;2
+30;19/10/2019;Ponte Preta - SP;1;Bragantino - SP;1
+30;19/10/2019;Paraná - PR;0;Figueirense - SC;1
+30;19/10/2019;Operario - PR;2;São Bento - SP;1
+30;20/10/2019;Brasil - RS;0;Sport - PE;0
+31;23/10/2019;Sport - PE;2;Paraná - PR;1
+31;24/10/2019;Crb - AL;1;Botafogo - SP;0
+31;24/10/2019;Coritiba - PR;0;Operario - PR;0
+31;25/10/2019;Atlético - GO;2;America Fc - MG;2
+31;25/10/2019;Londrina - PR;0;Oeste - SP;2
+31;25/10/2019;Bragantino - SP;3;Vila Nova - GO;1
+31;26/10/2019;Figueirense - SC;2;Criciúma - SC;2
+31;26/10/2019;Brasil - RS;0;Cuiabá - MT;0
+31;26/10/2019;São Bento - SP;1;Guarani - SP;1
+31;27/10/2019;Ponte Preta - SP;1;Vitória - BA;2
+32;28/10/2019;Paraná - PR;1;Londrina - PR;0
+32;29/10/2019;Vila Nova - GO;0;Brasil - RS;2
+32;31/10/2019;Guarani - SP;1;Sport - PE;0
+32;01/11/2019;Botafogo - SP;0;Coritiba - PR;1
+32;01/11/2019;Operario - PR;1;Atlético - GO;1
+32;01/11/2019;Cuiabá - MT;2;Bragantino - SP;0
+32;02/11/2019;Vitória - BA;2;Figueirense - SC;2
+32;02/11/2019;Oeste - SP;3;Crb - AL;3
+32;02/11/2019;Criciúma - SC;1;São Bento - SP;1
+32;02/11/2019;America Fc - MG;0;Ponte Preta - SP;0
+33;04/11/2019;Coritiba - PR;0;Sport - PE;0
+33;05/11/2019;Oeste - SP;0;Botafogo - SP;2
+33;05/11/2019;Atlético - GO;2;Londrina - PR;1
+33;05/11/2019;Vitória - BA;3;Brasil - RS;0
+33;05/11/2019;America Fc - MG;0;Paraná - PR;2
+33;05/11/2019;Figueirense - SC;0;Vila Nova - GO;0
+33;05/11/2019;Operario - PR;1;Criciúma - SC;0
+33;05/11/2019;Bragantino - SP;3;Guarani - SP;1
+33;05/11/2019;Ponte Preta - SP;1;São Bento - SP;1
+33;05/11/2019;Cuiabá - MT;5;Crb - AL;1
+34;08/11/2019;Botafogo - SP;2;Bragantino - SP;3
+34;08/11/2019;Paraná - PR;0;Vitória - BA;0
+34;08/11/2019;Vila Nova - GO;0;Operario - PR;0
+34;08/11/2019;Londrina - PR;0;America Fc - MG;1
+34;08/11/2019;São Bento - SP;1;Cuiabá - MT;2
+34;08/11/2019;Figueirense - SC;1;Coritiba - PR;1
+34;09/11/2019;Sport - PE;1;Criciúma - SC;0
+34;09/11/2019;Guarani - SP;0;Ponte Preta - SP;0
+34;09/11/2019;Crb - AL;2;Atlético - GO;1
+34;09/11/2019;Brasil - RS;2;Oeste - SP;2
+35;11/11/2019;Cuiabá - MT;0;America Fc - MG;2
+35;12/11/2019;Oeste - SP;0;Atlético - GO;4
+35;12/11/2019;Brasil - RS;0;Coritiba - PR;2
+35;12/11/2019;Vitória - BA;2;Crb - AL;2
+35;12/11/2019;Ponte Preta - SP;1;Figueirense - SC;3
+35;12/11/2019;Criciúma - SC;2;Londrina - PR;0
+35;12/11/2019;Paraná - PR;2;São Bento - SP;1
+35;12/11/2019;Operario - PR;0;Bragantino - SP;2
+35;13/11/2019;Vila Nova - GO;1;Guarani - SP;1
+35;13/11/2019;Botafogo - SP;0;Sport - PE;2
+36;15/11/2019;America Fc - MG;2;Vitória - BA;1
+36;15/11/2019;Bragantino - SP;1;Criciúma - SC;1
+36;15/11/2019;Atlético - GO;1;Paraná - PR;0
+36;16/11/2019;Crb - AL;2;Ponte Preta - SP;0
+36;16/11/2019;Coritiba - PR;1;Oeste - SP;0
+36;16/11/2019;Guarani - SP;1;Operario - PR;0
+36;16/11/2019;Londrina - PR;1;Botafogo - SP;1
+36;17/11/2019;São Bento - SP;3;Brasil - RS;1
+36;17/11/2019;Sport - PE;0;Vila Nova - GO;0
+36;17/11/2019;Figueirense - SC;0;Cuiabá - MT;0
+37;19/11/2019;Criciúma - SC;1;Paraná - PR;1
+37;19/11/2019;Operario - PR;1;Vitória - BA;2
+37;20/11/2019;Vila Nova - GO;1;Oeste - SP;1
+37;20/11/2019;Sport - PE;2;Ponte Preta - SP;1
+37;21/11/2019;São Bento - SP;4;Londrina - PR;1
+37;21/11/2019;Brasil - RS;2;Atlético - GO;2
+37;22/11/2019;Crb - AL;0;Figueirense - SC;0
+37;22/11/2019;Guarani - SP;0;America Fc - MG;1
+37;23/11/2019;Botafogo - SP;0;Cuiabá - MT;0
+37;24/11/2019;Coritiba - PR;1;Bragantino - SP;0
+38;26/11/2019;Ponte Preta - SP;4;Brasil - RS;0
+38;29/11/2019;Paraná - PR;3;Botafogo - SP;3
+38;29/11/2019;Oeste - SP;1;Criciúma - SC;2
+38;30/11/2019;Bragantino - SP;2;Crb - AL;0
+38;30/11/2019;Atlético - GO;0;Sport - PE;0
+38;30/11/2019;Londrina - PR;2;Guarani - SP;0
+38;30/11/2019;Figueirense - SC;1;Operario - PR;1
+38;30/11/2019;America Fc - MG;1;São Bento - SP;2
+38;30/11/2019;Vitória - BA;1;Coritiba - PR;2
+38;30/11/2019;Cuiabá - MT;1;Vila Nova - GO;2

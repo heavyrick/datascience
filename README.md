@@ -5,7 +5,8 @@ Neste repositório deixarei os projetos de data science e áreas relacionadas.
 - <a href='#l1'>Programação</a>
 - <a href='#l2'>Estatística</a>
 - <a href='#l3'>Machine Learning</a>
-- <a href='#l4'>Análises</a>
+- <a href='#l4'>Web Scrapping</a>
+- <a href='#l5'>Análises</a>
 
 <a id='l1'></a>
 
@@ -44,8 +45,16 @@ Neste repositório deixarei os projetos de data science e áreas relacionadas.
     - [Análise de sentimento com Spacy and Scikit-Learn](https://github.com/heavyrick/datascience/blob/master/machine_learning/nlp/analise_sentimento_spacy.ipynb) 
      - [NLP Básico](https://github.com/heavyrick/datascience/blob/master/machine_learning/nlp/nlp_basico.ipynb)
 
-
 <a id='l4'></a>
+
+---
+
+<h2 style="color:red">Web Scrapping</h2>
+
+* [Extraindo dados do site da CBF com Beautiful Soup](https://github.com/heavyrick/datascience/blob/master/web_scrapping/beautiful_soup/beautiful_soup.ipynb)
+
+
+<a id='l5'></a>
 
 ---
 

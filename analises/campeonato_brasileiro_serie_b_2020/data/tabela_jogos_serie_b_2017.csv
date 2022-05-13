@@ -1,0 +1,381 @@
+Rodada;Data;Time casa;Gols time casa;Time visitante;Gols time visitante
+1;12/05/2017;Crb - AL;1;Ceará - CE;0
+1;12/05/2017;Juventude - RS;2;Luverdense - MT;1
+1;12/05/2017;Guarani - SP;2;Brasil - RS;0
+1;12/05/2017;Náutico - PE;0;América - MG;0
+1;13/05/2017;Boa - MG;0;Vila Nova - GO;1
+1;13/05/2017;Abc - RN;0;Paraná - PR;0
+1;13/05/2017;Londrina - PR;0;Internacional - RS;3
+1;13/05/2017;Criciúma - SC;1;Santa Cruz - PE;2
+1;13/05/2017;Goiás - GO;0;Figueirense - SC;1
+1;13/05/2017;Paysandu - PA;2;Oeste - SP;0
+2;16/05/2017;Brasil - RS;1;Londrina - PR;1
+2;16/05/2017;Ceará - CE;0;Boa - MG;0
+2;19/05/2017;Paraná - PR;0;Paysandu - PA;0
+2;19/05/2017;Vila Nova - GO;0;Juventude - RS;0
+2;19/05/2017;América - MG;1;Goiás - GO;1
+2;20/05/2017;Santa Cruz - PE;2;Guarani - SP;1
+2;20/05/2017;Figueirense - SC;3;Náutico - PE;0
+2;20/05/2017;Oeste - SP;1;Criciúma - SC;0
+2;20/05/2017;Luverdense - MT;1;Crb - AL;1
+2;20/05/2017;Internacional - RS;1;Abc - RN;1
+3;23/05/2017;Crb - AL;1;Santa Cruz - PE;0
+3;23/05/2017;Guarani - SP;2;Figueirense - SC;0
+3;26/05/2017;Criciúma - SC;1;América - MG;3
+3;26/05/2017;Boa - MG;1;Oeste - SP;1
+3;26/05/2017;Goiás - GO;1;Brasil - RS;1
+3;27/05/2017;Londrina - PR;3;Luverdense - MT;1
+3;27/05/2017;Paysandu - PA;1;Internacional - RS;0
+3;27/05/2017;Náutico - PE;0;Ceará - CE;2
+3;27/05/2017;Abc - RN;1;Vila Nova - GO;0
+3;27/05/2017;Juventude - RS;2;Paraná - PR;1
+4;16/05/2017;Paraná - PR;2;Goiás - GO;0
+4;30/05/2017;Figueirense - SC;0;Boa - MG;2
+4;30/05/2017;Brasil - RS;2;Náutico - PE;0
+4;02/06/2017;América - MG;0;Paysandu - PA;2
+4;02/06/2017;Oeste - SP;2;Crb - AL;0
+4;02/06/2017;Ceará - CE;1;Londrina - PR;0
+4;03/06/2017;Vila Nova - GO;3;Guarani - SP;1
+4;03/06/2017;Santa Cruz - PE;2;Abc - RN;1
+4;03/06/2017;Luverdense - MT;0;Criciúma - SC;0
+4;03/06/2017;Internacional - RS;1;Juventude - RS;1
+5;06/06/2017;Abc - RN;2;Paysandu - PA;1
+5;06/06/2017;Guarani - SP;2;Boa - MG;1
+5;06/06/2017;Juventude - RS;1;Criciúma - SC;0
+5;06/06/2017;Náutico - PE;1;Oeste - SP;1
+5;06/06/2017;Figueirense - SC;1;Internacional - RS;2
+5;06/06/2017;Goiás - GO;2;Santa Cruz - PE;1
+5;06/06/2017;Londrina - PR;1;Paraná - PR;1
+5;06/06/2017;Crb - AL;0;Brasil - RS;1
+5;06/06/2017;América - MG;1;Ceará - CE;0
+5;06/06/2017;Luverdense - MT;1;Vila Nova - GO;1
+6;09/06/2017;Criciúma - SC;1;Crb - AL;0
+6;09/06/2017;Santa Cruz - PE;1;Londrina - PR;3
+6;09/06/2017;Vila Nova - GO;2;América - MG;0
+6;09/06/2017;Paysandu - PA;0;Goiás - GO;1
+6;10/06/2017;Boa - MG;0;Juventude - RS;2
+6;10/06/2017;Internacional - RS;4;Náutico - PE;2
+6;10/06/2017;Paraná - PR;0;Guarani - SP;1
+6;10/06/2017;Brasil - RS;2;Ceará - CE;3
+6;10/06/2017;Abc - RN;2;Figueirense - SC;2
+6;10/06/2017;Oeste - SP;0;Luverdense - MT;0
+7;13/06/2017;Náutico - PE;1;Paraná - PR;2
+7;13/06/2017;Guarani - SP;2;Paysandu - PA;0
+7;13/06/2017;Londrina - PR;1;Oeste - SP;1
+7;13/06/2017;Figueirense - SC;2;Criciúma - SC;2
+7;13/06/2017;Goiás - GO;4;Boa - MG;1
+7;13/06/2017;Juventude - RS;3;Abc - RN;0
+7;13/06/2017;Crb - AL;1;Vila Nova - GO;2
+7;13/06/2017;Ceará - CE;1;Santa Cruz - PE;3
+7;13/06/2017;América - MG;1;Internacional - RS;1
+7;13/06/2017;Luverdense - MT;4;Brasil - RS;0
+8;16/06/2017;Criciúma - SC;3;Guarani - SP;2
+8;16/06/2017;Paraná - PR;1;Figueirense - SC;0
+8;16/06/2017;Ceará - CE;1;Luverdense - MT;1
+8;16/06/2017;Goiás - GO;1;Abc - RN;2
+8;17/06/2017;Santa Cruz - PE;0;Internacional - RS;0
+8;17/06/2017;Paysandu - PA;0;Juventude - RS;0
+8;17/06/2017;Crb - AL;0;Londrina - PR;3
+8;17/06/2017;Boa - MG;2;Náutico - PE;1
+8;17/06/2017;Brasil - RS;3;Vila Nova - GO;0
+8;17/06/2017;Oeste - SP;0;América - MG;0
+9;20/06/2017;Náutico - PE;2;Goiás - GO;3
+9;20/06/2017;Juventude - RS;1;Brasil - RS;2
+9;20/06/2017;América - MG;1;Santa Cruz - PE;0
+9;20/06/2017;Paysandu - PA;0;Boa - MG;0
+9;20/06/2017;Abc - RN;1;Crb - AL;3
+9;20/06/2017;Figueirense - SC;2;Luverdense - MT;3
+9;20/06/2017;Londrina - PR;0;Criciúma - SC;1
+9;20/06/2017;Internacional - RS;0;Paraná - PR;0
+9;20/06/2017;Vila Nova - GO;1;Ceará - CE;1
+9;20/06/2017;Guarani - SP;0;Oeste - SP;0
+10;23/06/2017;Crb - AL;2;Paysandu - PA;1
+10;23/06/2017;Boa - MG;2;Abc - RN;1
+10;23/06/2017;Luverdense - MT;0;América - MG;3
+10;23/06/2017;Criciúma - SC;2;Paraná - PR;1
+10;24/06/2017;Londrina - PR;2;Juventude - RS;2
+10;24/06/2017;Brasil - RS;0;Internacional - RS;1
+10;24/06/2017;Goiás - GO;0;Vila Nova - GO;2
+10;24/06/2017;Ceará - CE;3;Oeste - SP;0
+10;24/06/2017;Santa Cruz - PE;1;Figueirense - SC;1
+10;24/06/2017;Guarani - SP;2;Náutico - PE;1
+11;27/06/2017;Juventude - RS;3;Goiás - GO;0
+11;27/06/2017;Figueirense - SC;3;Londrina - PR;1
+11;30/06/2017;Paysandu - PA;1;Luverdense - MT;1
+11;30/06/2017;Vila Nova - GO;0;Criciúma - SC;0
+11;30/06/2017;Náutico - PE;0;Crb - AL;1
+11;01/07/2017;Oeste - SP;2;Santa Cruz - PE;0
+11;01/07/2017;Paraná - PR;1;Ceará - CE;0
+11;01/07/2017;Internacional - RS;0;Boa - MG;1
+11;01/07/2017;Abc - RN;0;Guarani - SP;1
+11;01/07/2017;América - MG;3;Brasil - RS;0
+12;04/07/2017;Paysandu - PA;1;Londrina - PR;2
+12;04/07/2017;Abc - RN;0;Náutico - PE;1
+12;07/07/2017;Santa Cruz - PE;3;Brasil - RS;0
+12;07/07/2017;Goiás - GO;3;Luverdense - MT;1
+12;07/07/2017;Paraná - PR;1;América - MG;1
+12;08/07/2017;Figueirense - SC;0;Ceará - CE;2
+12;08/07/2017;Internacional - RS;1;Criciúma - SC;1
+12;08/07/2017;Oeste - SP;2;Vila Nova - GO;2
+12;08/07/2017;Juventude - RS;2;Guarani - SP;0
+12;08/07/2017;Boa - MG;0;Crb - AL;0
+13;11/07/2017;Londrina - PR;3;Abc - RN;1
+13;11/07/2017;Brasil - RS;3;Oeste - SP;1
+13;11/07/2017;Criciúma - SC;1;Paysandu - PA;1
+13;11/07/2017;Vila Nova - GO;3;Paraná - PR;2
+13;11/07/2017;América - MG;2;Boa - MG;0
+13;11/07/2017;Guarani - SP;1;Goiás - GO;0
+13;11/07/2017;Ceará - CE;0;Internacional - RS;2
+13;11/07/2017;Luverdense - MT;2;Santa Cruz - PE;2
+13;11/07/2017;Crb - AL;2;Figueirense - SC;1
+13;11/07/2017;Náutico - PE;1;Juventude - RS;1
+14;14/07/2017;Brasil - RS;1;Figueirense - SC;2
+14;14/07/2017;Oeste - SP;2;Paraná - PR;0
+14;14/07/2017;Criciúma - SC;1;Goiás - GO;0
+14;15/07/2017;Crb - AL;2;Internacional - RS;0
+14;15/07/2017;América - MG;0;Guarani - SP;0
+14;15/07/2017;Vila Nova - GO;1;Paysandu - PA;2
+14;15/07/2017;Náutico - PE;0;Santa Cruz - PE;0
+14;15/07/2017;Londrina - PR;2;Boa - MG;2
+14;15/07/2017;Ceará - CE;2;Juventude - RS;0
+14;15/07/2017;Luverdense - MT;1;Abc - RN;0
+15;18/07/2017;Paysandu - PA;1;Náutico - PE;0
+15;18/07/2017;Paraná - PR;4;Brasil - RS;1
+15;18/07/2017;Figueirense - SC;0;Oeste - SP;0
+15;18/07/2017;Juventude - RS;1;Crb - AL;1
+15;18/07/2017;Goiás - GO;0;Londrina - PR;1
+15;18/07/2017;Guarani - SP;2;Ceará - CE;2
+15;18/07/2017;Abc - RN;0;América - MG;1
+15;18/07/2017;Santa Cruz - PE;1;Vila Nova - GO;0
+15;18/07/2017;Boa - MG;2;Criciúma - SC;0
+15;18/07/2017;Internacional - RS;1;Luverdense - MT;0
+16;21/07/2017;América - MG;4;Figueirense - SC;2
+16;21/07/2017;Luverdense - MT;1;Paraná - PR;1
+16;21/07/2017;Santa Cruz - PE;1;Boa - MG;1
+16;21/07/2017;Ceará - CE;0;Goiás - GO;1
+16;22/07/2017;Criciúma - SC;2;Abc - RN;1
+16;22/07/2017;Vila Nova - GO;2;Internacional - RS;1
+16;22/07/2017;Londrina - PR;0;Náutico - PE;0
+16;22/07/2017;Oeste - SP;3;Juventude - RS;0
+16;22/07/2017;Brasil - RS;2;Paysandu - PA;1
+16;22/07/2017;Crb - AL;1;Guarani - SP;1
+17;25/07/2017;Abc - RN;1;Brasil - RS;0
+17;25/07/2017;Internacional - RS;2;Oeste - SP;0
+17;28/07/2017;Juventude - RS;0;América - MG;1
+17;28/07/2017;Paysandu - PA;1;Ceará - CE;2
+17;29/07/2017;Figueirense - SC;0;Vila Nova - GO;1
+17;29/07/2017;Goiás - GO;3;Crb - AL;0
+17;29/07/2017;Guarani - SP;2;Londrina - PR;3
+17;29/07/2017;Paraná - PR;4;Santa Cruz - PE;0
+17;29/07/2017;Boa - MG;1;Luverdense - MT;0
+17;29/07/2017;Náutico - PE;1;Criciúma - SC;2
+18;01/08/2017;Figueirense - SC;2;Juventude - RS;2
+18;01/08/2017;Brasil - RS;0;Boa - MG;0
+18;01/08/2017;Paraná - PR;4;Crb - AL;1
+18;01/08/2017;Santa Cruz - PE;1;Paysandu - PA;2
+18;01/08/2017;Vila Nova - GO;0;Náutico - PE;1
+18;01/08/2017;Oeste - SP;1;Abc - RN;1
+18;01/08/2017;América - MG;3;Londrina - PR;2
+18;01/08/2017;Ceará - CE;3;Criciúma - SC;1
+18;01/08/2017;Internacional - RS;3;Goiás - GO;0
+18;01/08/2017;Luverdense - MT;1;Guarani - SP;0
+19;04/08/2017;Criciúma - SC;1;Brasil - RS;2
+19;04/08/2017;Náutico - PE;1;Luverdense - MT;0
+19;04/08/2017;Goiás - GO;0;Oeste - SP;2
+19;04/08/2017;Crb - AL;2;América - MG;1
+19;05/08/2017;Abc - RN;0;Ceará - CE;1
+19;05/08/2017;Guarani - SP;0;Internacional - RS;2
+19;05/08/2017;Juventude - RS;2;Santa Cruz - PE;1
+19;05/08/2017;Boa - MG;2;Paraná - PR;1
+19;05/08/2017;Paysandu - PA;0;Figueirense - SC;1
+19;07/08/2017;Londrina - PR;0;Vila Nova - GO;1
+20;08/08/2017;Santa Cruz - PE;1;Criciúma - SC;2
+20;08/08/2017;Luverdense - MT;1;Juventude - RS;0
+20;11/08/2017;Brasil - RS;1;Guarani - SP;0
+20;11/08/2017;Vila Nova - GO;1;Boa - MG;0
+20;11/08/2017;América - MG;1;Náutico - PE;0
+20;12/08/2017;Ceará - CE;1;Crb - AL;0
+20;12/08/2017;Paraná - PR;1;Abc - RN;0
+20;12/08/2017;Internacional - RS;3;Londrina - PR;1
+20;12/08/2017;Oeste - SP;1;Paysandu - PA;3
+20;12/08/2017;Figueirense - SC;1;Goiás - GO;1
+21;15/08/2017;Londrina - PR;4;Brasil - RS;1
+21;15/08/2017;Náutico - PE;2;Figueirense - SC;0
+21;18/08/2017;Juventude - RS;1;Vila Nova - GO;0
+21;18/08/2017;Criciúma - SC;1;Oeste - SP;1
+21;18/08/2017;Goiás - GO;1;América - MG;1
+21;19/08/2017;Abc - RN;0;Internacional - RS;3
+21;19/08/2017;Guarani - SP;2;Santa Cruz - PE;0
+21;19/08/2017;Boa - MG;4;Ceará - CE;1
+21;19/08/2017;Crb - AL;2;Luverdense - MT;2
+21;19/08/2017;Paysandu - PA;0;Paraná - PR;0
+22;22/08/2017;Brasil - RS;2;Goiás - GO;1
+22;22/08/2017;América - MG;0;Criciúma - SC;0
+22;25/08/2017;Ceará - CE;1;Náutico - PE;0
+22;25/08/2017;Paraná - PR;2;Juventude - RS;0
+22;25/08/2017;Internacional - RS;3;Paysandu - PA;2
+22;26/08/2017;Vila Nova - GO;2;Abc - RN;0
+22;26/08/2017;Oeste - SP;4;Boa - MG;1
+22;26/08/2017;Santa Cruz - PE;1;Crb - AL;2
+22;26/08/2017;Figueirense - SC;2;Guarani - SP;1
+22;26/08/2017;Luverdense - MT;1;Londrina - PR;0
+23;04/09/2017;Guarani - SP;0;Vila Nova - GO;0
+23;06/09/2017;Goiás - GO;0;Paraná - PR;1
+23;06/09/2017;Náutico - PE;1;Brasil - RS;0
+23;08/09/2017;Boa - MG;1;Figueirense - SC;1
+23;08/09/2017;Paysandu - PA;0;América - MG;1
+23;09/09/2017;Criciúma - SC;2;Luverdense - MT;1
+23;09/09/2017;Juventude - RS;2;Internacional - RS;1
+23;09/09/2017;Londrina - PR;3;Ceará - CE;2
+23;09/09/2017;Crb - AL;0;Oeste - SP;1
+23;09/09/2017;Abc - RN;0;Santa Cruz - PE;0
+24;12/09/2017;Boa - MG;2;Guarani - SP;2
+24;12/09/2017;Criciúma - SC;1;Juventude - RS;2
+24;15/09/2017;Santa Cruz - PE;3;Goiás - GO;0
+24;15/09/2017;Ceará - CE;1;América - MG;1
+24;16/09/2017;Vila Nova - GO;2;Luverdense - MT;1
+24;16/09/2017;Oeste - SP;1;Náutico - PE;0
+24;16/09/2017;Brasil - RS;2;Crb - AL;0
+24;16/09/2017;Paysandu - PA;2;Abc - RN;0
+24;16/09/2017;Internacional - RS;3;Figueirense - SC;0
+24;16/09/2017;Paraná - PR;2;Londrina - PR;1
+25;19/09/2017;América - MG;1;Vila Nova - GO;0
+25;19/09/2017;Guarani - SP;0;Paraná - PR;4
+25;22/09/2017;Juventude - RS;0;Boa - MG;0
+25;22/09/2017;Luverdense - MT;0;Oeste - SP;0
+25;22/09/2017;Londrina - PR;1;Santa Cruz - PE;1
+25;23/09/2017;Figueirense - SC;2;Abc - RN;0
+25;23/09/2017;Náutico - PE;0;Internacional - RS;1
+25;23/09/2017;Crb - AL;1;Criciúma - SC;2
+25;23/09/2017;Goiás - GO;2;Paysandu - PA;1
+25;23/09/2017;Ceará - CE;2;Brasil - RS;1
+26;26/09/2017;Santa Cruz - PE;0;Ceará - CE;0
+26;26/09/2017;Criciúma - SC;1;Figueirense - SC;1
+26;26/09/2017;Brasil - RS;0;Luverdense - MT;1
+26;26/09/2017;Vila Nova - GO;3;Crb - AL;0
+26;26/09/2017;Oeste - SP;4;Londrina - PR;1
+26;26/09/2017;Paraná - PR;3;Náutico - PE;0
+26;26/09/2017;Boa - MG;2;Goiás - GO;0
+26;26/09/2017;Paysandu - PA;2;Guarani - SP;1
+26;26/09/2017;Abc - RN;1;Juventude - RS;1
+26;27/09/2017;Internacional - RS;2;América - MG;1
+27;29/09/2017;Figueirense - SC;1;Paraná - PR;0
+27;29/09/2017;Londrina - PR;4;Crb - AL;1
+27;29/09/2017;Abc - RN;0;Goiás - GO;1
+27;29/09/2017;Juventude - RS;1;Paysandu - PA;0
+27;30/09/2017;Internacional - RS;2;Santa Cruz - PE;0
+27;30/09/2017;Vila Nova - GO;1;Brasil - RS;1
+27;30/09/2017;Náutico - PE;2;Boa - MG;0
+27;30/09/2017;Guarani - SP;0;Criciúma - SC;0
+27;30/09/2017;Luverdense - MT;0;Ceará - CE;1
+27;01/10/2017;América - MG;1;Oeste - SP;2
+28;03/10/2017;Ceará - CE;2;Vila Nova - GO;0
+28;03/10/2017;Paraná - PR;1;Internacional - RS;0
+28;03/10/2017;Brasil - RS;1;Juventude - RS;0
+28;06/10/2017;Boa - MG;1;Paysandu - PA;2
+28;06/10/2017;Crb - AL;1;Abc - RN;0
+28;06/10/2017;Goiás - GO;2;Náutico - PE;0
+28;07/10/2017;Criciúma - SC;2;Londrina - PR;1
+28;07/10/2017;Oeste - SP;3;Guarani - SP;0
+28;07/10/2017;Santa Cruz - PE;0;América - MG;1
+28;07/10/2017;Luverdense - MT;3;Figueirense - SC;0
+29;09/10/2017;Internacional - RS;1;Brasil - RS;0
+29;13/10/2017;Paysandu - PA;0;Crb - AL;0
+29;13/10/2017;Paraná - PR;2;Criciúma - SC;1
+29;13/10/2017;Juventude - RS;0;Londrina - PR;2
+29;14/10/2017;Abc - RN;1;Boa - MG;0
+29;14/10/2017;Vila Nova - GO;0;Goiás - GO;0
+29;14/10/2017;Figueirense - SC;2;Santa Cruz - PE;1
+29;14/10/2017;América - MG;2;Luverdense - MT;1
+29;14/10/2017;Náutico - PE;2;Guarani - SP;0
+29;14/10/2017;Oeste - SP;0;Ceará - CE;1
+30;17/10/2017;Boa - MG;0;Internacional - RS;0
+30;17/10/2017;Guarani - SP;1;Abc - RN;1
+30;17/10/2017;Londrina - PR;1;Figueirense - SC;0
+30;17/10/2017;Ceará - CE;1;Paraná - PR;0
+30;17/10/2017;Santa Cruz - PE;2;Oeste - SP;2
+30;17/10/2017;Criciúma - SC;0;Vila Nova - GO;1
+30;17/10/2017;Brasil - RS;0;América - MG;0
+30;17/10/2017;Goiás - GO;1;Juventude - RS;0
+30;17/10/2017;Luverdense - MT;1;Paysandu - PA;1
+30;17/10/2017;Crb - AL;2;Náutico - PE;2
+31;20/10/2017;Guarani - SP;2;Juventude - RS;0
+31;20/10/2017;Crb - AL;1;Boa - MG;1
+31;20/10/2017;Náutico - PE;1;Abc - RN;2
+31;20/10/2017;Ceará - CE;2;Figueirense - SC;2
+31;21/10/2017;Criciúma - SC;2;Internacional - RS;3
+31;21/10/2017;Vila Nova - GO;0;Oeste - SP;0
+31;21/10/2017;Brasil - RS;1;Santa Cruz - PE;1
+31;21/10/2017;Londrina - PR;2;Paysandu - PA;0
+31;21/10/2017;América - MG;1;Paraná - PR;1
+31;21/10/2017;Luverdense - MT;1;Goiás - GO;2
+32;24/10/2017;Juventude - RS;0;Náutico - PE;0
+32;24/10/2017;Paraná - PR;1;Vila Nova - GO;0
+32;27/10/2017;Figueirense - SC;3;Crb - AL;1
+32;27/10/2017;Oeste - SP;1;Brasil - RS;0
+32;27/10/2017;Paysandu - PA;1;Criciúma - SC;0
+32;28/10/2017;Boa - MG;2;América - MG;2
+32;28/10/2017;Internacional - RS;0;Ceará - CE;1
+32;28/10/2017;Abc - RN;3;Londrina - PR;0
+32;28/10/2017;Santa Cruz - PE;0;Luverdense - MT;0
+32;28/10/2017;Goiás - GO;1;Guarani - SP;1
+33;31/10/2017;Goiás - GO;1;Criciúma - SC;1
+33;31/10/2017;Paraná - PR;1;Oeste - SP;2
+33;03/11/2017;Internacional - RS;0;Crb - AL;0
+33;03/11/2017;Juventude - RS;1;Ceará - CE;0
+33;03/11/2017;Paysandu - PA;1;Vila Nova - GO;1
+33;03/11/2017;Abc - RN;0;Luverdense - MT;1
+33;04/11/2017;Figueirense - SC;2;Brasil - RS;0
+33;04/11/2017;Guarani - SP;0;América - MG;1
+33;04/11/2017;Santa Cruz - PE;2;Náutico - PE;3
+33;04/11/2017;Boa - MG;0;Londrina - PR;1
+34;06/11/2017;Luverdense - MT;2;Internacional - RS;2
+34;07/11/2017;Criciúma - SC;2;Boa - MG;0
+34;07/11/2017;América - MG;2;Abc - RN;0
+34;07/11/2017;Vila Nova - GO;1;Santa Cruz - PE;1
+34;07/11/2017;Londrina - PR;2;Goiás - GO;0
+34;07/11/2017;Oeste - SP;1;Figueirense - SC;1
+34;07/11/2017;Brasil - RS;2;Paraná - PR;0
+34;07/11/2017;Náutico - PE;1;Paysandu - PA;3
+34;07/11/2017;Ceará - CE;2;Guarani - SP;2
+34;07/11/2017;Crb - AL;2;Juventude - RS;0
+35;10/11/2017;Juventude - RS;0;Oeste - SP;0
+35;10/11/2017;Abc - RN;3;Criciúma - SC;1
+35;10/11/2017;Paraná - PR;2;Luverdense - MT;0
+35;11/11/2017;Internacional - RS;1;Vila Nova - GO;1
+35;11/11/2017;Figueirense - SC;1;América - MG;2
+35;11/11/2017;Boa - MG;4;Santa Cruz - PE;2
+35;11/11/2017;Goiás - GO;0;Ceará - CE;0
+35;11/11/2017;Náutico - PE;1;Londrina - PR;2
+35;11/11/2017;Paysandu - PA;2;Brasil - RS;3
+35;11/11/2017;Guarani - SP;2;Crb - AL;1
+36;14/11/2017;Criciúma - SC;0;Náutico - PE;0
+36;14/11/2017;Londrina - PR;1;Guarani - SP;0
+36;14/11/2017;Vila Nova - GO;1;Figueirense - SC;1
+36;14/11/2017;Oeste - SP;0;Internacional - RS;0
+36;14/11/2017;Brasil - RS;3;Abc - RN;0
+36;14/11/2017;Crb - AL;2;Goiás - GO;1
+36;14/11/2017;Luverdense - MT;0;Boa - MG;1
+36;14/11/2017;América - MG;1;Juventude - RS;0
+36;14/11/2017;Santa Cruz - PE;0;Paraná - PR;0
+36;14/11/2017;Ceará - CE;2;Paysandu - PA;0
+37;17/11/2017;Guarani - SP;0;Luverdense - MT;0
+37;17/11/2017;Juventude - RS;0;Figueirense - SC;0
+37;18/11/2017;Londrina - PR;0;América - MG;0
+37;18/11/2017;Goiás - GO;0;Internacional - RS;2
+37;18/11/2017;Boa - MG;2;Brasil - RS;1
+37;18/11/2017;Paysandu - PA;4;Santa Cruz - PE;2
+37;18/11/2017;Náutico - PE;1;Vila Nova - GO;2
+37;18/11/2017;Abc - RN;2;Oeste - SP;0
+37;18/11/2017;Crb - AL;0;Paraná - PR;1
+37;18/11/2017;Criciúma - SC;1;Ceará - CE;1
+38;21/11/2017;Santa Cruz - PE;5;Juventude - RS;2
+38;24/11/2017;Brasil - RS;3;Criciúma - SC;2
+38;24/11/2017;Figueirense - SC;1;Paysandu - PA;0
+38;25/11/2017;Ceará - CE;1;Abc - RN;0
+38;25/11/2017;Vila Nova - GO;0;Londrina - PR;1
+38;25/11/2017;Oeste - SP;1;Goiás - GO;1
+38;25/11/2017;Paraná - PR;1;Boa - MG;1
+38;25/11/2017;América - MG;1;Crb - AL;0
+38;25/11/2017;Luverdense - MT;3;Náutico - PE;0
+38;25/11/2017;Internacional - RS;2;Guarani - SP;0
