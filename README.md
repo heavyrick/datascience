@@ -79,7 +79,7 @@ Neste repositório deixarei os projetos de data science e áreas relacionadas.
 
 ---
 
-### [Campeonato Brasileiro Série B 2020](https://github.com/heavyrick/datascience/blob/master/analises/campeonato_brasileiro_serie_b/campeonato_brasileiro_serie_b.ipynb)
+### [Campeonato Brasileiro Série B 2020](https://github.com/heavyrick/datascience/blob/master/analises/campeonato_brasileiro_serie_b_2020/campeonato_brasileiro_serie_b.ipynb)
 * Análise de dados do Campeonato Brasileiro Série B de 2020.
 
 ---
