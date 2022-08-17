@@ -29,6 +29,7 @@ Neste repositório deixarei os projetos de data science e áreas relacionadas.
 
 - [Média, mediana, moda](https://github.com/heavyrick/datascience/blob/master/estatistica/medidas_tendencia_central.ipynb)
 - [Amplitude, variância e desvio padrão](https://github.com/heavyrick/datascience/blob/master/estatistica/medidas_variacao.ipynb)
+- [Probabilidade](https://github.com/heavyrick/datascience/blob/master/estatistica/probabilidade.ipynb)
 
 <a id='l3'></a>
 
@@ -42,8 +43,7 @@ Neste repositório deixarei os projetos de data science e áreas relacionadas.
 
 
 * [NLP](https://github.com/heavyrick/datascience/blob/master/machine_learning/nlp)
-    - [Análise de sentimento com Spacy and Scikit-Learn](https://github.com/heavyrick/datascience/blob/master/machine_learning/nlp/analise_sentimento_spacy.ipynb) 
-     - [NLP Básico](https://github.com/heavyrick/datascience/blob/master/machine_learning/nlp/nlp_basico.ipynb)
+    - [Análise de sentimento com Spacy and Scikit-Learn](https://github.com/heavyrick/datascience/blob/master/machine_learning/nlp/analise_sentimento_spacy.ipynb)
 
 <a id='l4'></a>
 
