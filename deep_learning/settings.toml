@@ -1,0 +1,5 @@
+PORT=5902
+DEBUG=1
+ENVIRONMENT='local'
+arquivos_entrada = "storage/input"
+FRONTEND='./frontend/'

@@ -1,0 +1,22 @@
+function confirmar(){
+    if(confirm("Quer mesmo realizar esta operação?") == false){
+        event.stopPropagation();
+        event.preventDefault();
+    }
+}
+
+$('form input[type="file"]').change(event => {
+  let arquivos = event.target.files;
+  if (arquivos.length === 0) {
+    console.log('sem imagem pra mostrar')
+  } else {
+      if(arquivos[0].type == 'image/jpeg' || arquivos[0].type == 'image/png') {
+        $('img').remove();
+        let imagem = $('<img class="img-responsive">');
+        imagem.attr('src', window.URL.createObjectURL(arquivos[0]));
+        $('figure').prepend(imagem);
+      } else {
+        alert('Formato não suportado')
+      }
+  }
+});
