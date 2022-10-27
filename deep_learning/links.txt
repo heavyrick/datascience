@@ -1,0 +1,3 @@
+https://www.geeksforgeeks.org/running-python-script-on-gpu/
+
+https://blog.paperspace.com/deploying-deep-learning-models-flask-web-python/
