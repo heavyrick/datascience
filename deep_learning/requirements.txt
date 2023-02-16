@@ -27,4 +27,4 @@ scipy==1.9.0
 six==1.16.0
 torch==1.12.1
 typing_extensions==4.3.0
-Werkzeug==2.2.2
+Werkzeug==2.2.3
